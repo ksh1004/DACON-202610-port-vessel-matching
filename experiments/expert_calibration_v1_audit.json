@@ -1,0 +1,214 @@
+{
+  "tag": "expert_calibration_v1",
+  "complete_folds": [
+    0,
+    2
+  ],
+  "reference_v12": {
+    "testlike": 0.9178774610130318,
+    "testlike_hangul": 0.8839503386004516,
+    "hard": 0.8660027782601145,
+    "hard_hangul": 0.8668171557562077,
+    "oof": 0.9975320885525352,
+    "scenarios": {
+      "clean": 0.9977426636568849,
+      "gt_missing": 0.9909706546275395,
+      "drop_word": 0.8465011286681715,
+      "both": 0.5869074492099323
+    }
+  },
+  "contenders": {
+    "conditional6": {
+      "candidate": {
+        "testlike": 0.9133266709453116,
+        "testlike_hangul": 0.8774492099322799,
+        "hard": 0.8636325750998437,
+        "hard_hangul": 0.863431151241535,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.9864559819413092,
+          "drop_word": 0.8284424379232506,
+          "both": 0.5778781038374717
+        }
+      },
+      "matched_control": {
+        "testlike": 0.9178774610130318,
+        "testlike_hangul": 0.8839503386004516,
+        "hard": 0.8660027782601145,
+        "hard_hangul": 0.8668171557562077,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.9909706546275395,
+          "drop_word": 0.8465011286681715,
+          "both": 0.5869074492099323
+        }
+      },
+      "matched_control_recipe": "Unchanged actual v12, exactly zero correction. pooled3 and conditional6 are both prospectively selectable in that fixed priority order conditional6 then pooled3; no later coefficient search.",
+      "delta_vs_v12": -0.00455079006772019,
+      "delta_vs_matched_control": -0.00455079006772019,
+      "bootstrap_95_vs_v12": [
+        -0.01000078451882845,
+        0.0
+      ],
+      "delta_by_fold_vs_v12": {
+        "0": -0.004296137339055761,
+        "2": -0.004833333333333245
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": false,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": false
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9177819914345762,
+          "testlike_hangul": 0.8838139534883721,
+          "hard": 0.8639982110912343,
+          "hard_hangul": 0.8639534883720931,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.9906976744186047,
+            "drop_word": 0.8488372093023255,
+            "both": 0.5837209302325581
+          }
+        },
+        "candidate": {
+          "testlike": 0.9130936193415529,
+          "testlike_hangul": 0.8771162790697674,
+          "hard": 0.8615563506261179,
+          "hard_hangul": 0.8604651162790697,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.986046511627907,
+            "drop_word": 0.8302325581395349,
+            "both": 0.5744186046511628
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 5,
+          "lost": 8
+        },
+        "testlike": {
+          "gained": 7,
+          "lost": 21
+        }
+      }
+    },
+    "pooled3": {
+      "candidate": {
+        "testlike": 0.9129632397940701,
+        "testlike_hangul": 0.8769300225733636,
+        "hard": 0.8628425073797534,
+        "hard_hangul": 0.8623024830699775,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.9864559819413092,
+          "drop_word": 0.8261851015801355,
+          "both": 0.5778781038374717
+        }
+      },
+      "matched_control": {
+        "testlike": 0.9178774610130318,
+        "testlike_hangul": 0.8839503386004516,
+        "hard": 0.8660027782601145,
+        "hard_hangul": 0.8668171557562077,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.9909706546275395,
+          "drop_word": 0.8465011286681715,
+          "both": 0.5869074492099323
+        }
+      },
+      "matched_control_recipe": "Unchanged actual v12, exactly zero correction. pooled3 and conditional6 are both prospectively selectable in that fixed priority order conditional6 then pooled3; no later coefficient search.",
+      "delta_vs_v12": -0.0049142212189616785,
+      "delta_vs_matched_control": -0.0049142212189616785,
+      "bootstrap_95_vs_v12": [
+        -0.010484765624999998,
+        -0.00038883771929824624
+      ],
+      "delta_by_fold_vs_v12": {
+        "0": -0.004296137339055761,
+        "2": -0.005600000000000049
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": false,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": false
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9177819914345762,
+          "testlike_hangul": 0.8838139534883721,
+          "hard": 0.8639982110912343,
+          "hard_hangul": 0.8639534883720931,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.9906976744186047,
+            "drop_word": 0.8488372093023255,
+            "both": 0.5837209302325581
+          }
+        },
+        "candidate": {
+          "testlike": 0.9127192007369016,
+          "testlike_hangul": 0.8765813953488372,
+          "hard": 0.8607423971377459,
+          "hard_hangul": 0.8593023255813953,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.986046511627907,
+            "drop_word": 0.827906976744186,
+            "both": 0.5744186046511628
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 5,
+          "lost": 9
+        },
+        "testlike": {
+          "gained": 7,
+          "lost": 22
+        }
+      }
+    }
+  },
+  "selected": null,
+  "truth_outside_top20": {
+    "oof": 0,
+    "hard": 33,
+    "testlike": 32
+  },
+  "actual_competition_submission": false,
+  "caveat": "Reused exploratory synthetic CV with historical v8 retrieval mapper exception. Single proxy anchor for fitting differs from actual v8 ensemble at inference. Log-loss improvement does not prove accuracy gain. No Public0.97 guarantee."
+}

@@ -1,0 +1,25 @@
+byte fold1 pilot epoch1 train4.4702 validation2.3544 selected1
+byte fold1 pilot epoch2/12 train1.7761 seconds53.1
+byte fold1 pilot epoch3 train1.2780 validation2.0080 selected3
+byte fold1 pilot epoch4/12 train1.0435 seconds101.7
+byte fold1 pilot epoch5/12 train0.9346 seconds120.8
+byte fold1 pilot epoch6 train0.8506 validation2.2520 selected3
+byte fold1 pilot epoch7/12 train0.7956 seconds159.0
+byte fold1 pilot epoch8/12 train0.7532 seconds179.6
+byte fold1 pilot epoch9/12 train0.7242 seconds198.7
+byte fold1 pilot epoch10/12 train0.6990 seconds217.9
+byte fold1 pilot epoch11/12 train0.6785 seconds235.7
+byte fold1 pilot epoch12 train0.6412 validation2.9696 selected3
+byte fold1 full epoch1/3 train4.1852 seconds20.7
+byte fold1 full epoch2/3 train1.5778 seconds43.6
+byte fold1 full epoch3/3 train1.3439 seconds67.5
+byte fold1 trained pairs256/6548 seconds2.4
+byte fold1 trained pairs2304/6548 seconds21.5
+byte fold1 trained pairs4352/6548 seconds40.8
+byte fold1 trained pairs6400/6548 seconds60.2
+byte fold1 trained pairs6548/6548 seconds61.8
+byte fold1 untrained pairs256/6548 seconds2.4
+byte fold1 untrained pairs2304/6548 seconds21.8
+byte fold1 untrained pairs4352/6548 seconds41.0
+byte fold1 untrained pairs6400/6548 seconds60.3
+byte fold1 untrained pairs6548/6548 seconds61.8

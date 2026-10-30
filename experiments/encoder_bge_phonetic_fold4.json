@@ -1,0 +1,68 @@
+{
+  "protocol": {
+    "fold": 4,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "input_recipe": "phonetic",
+    "source_revision": {
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    },
+    "training_groups": 2400,
+    "max_tokens": 256,
+    "seed": 42,
+    "epochs": 1,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": 0.0001,
+    "groups_per_batch": 2,
+    "negative_mode": "five train-only LGB hard plus two lexical",
+    "vessel_overlap": 0,
+    "train_cache": "strict_han_f4_train_b2bd476d9d4f.joblib",
+    "training_at_cap": 0,
+    "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+  },
+  "metrics": {
+    "baseline": {
+      "testlike_hangul": 0.8663176895306859,
+      "hard_hangul": 0.8267148014440433,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9530685920577617,
+        "drop_word": 0.8231046931407943,
+        "both": 0.5451263537906137
+      }
+    },
+    "reference_v11": {
+      "testlike_hangul": 0.8689530685920578,
+      "hard_hangul": 0.8357400722021661,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9530685920577617,
+        "drop_word": 0.8375451263537906,
+        "both": 0.5415162454873647
+      }
+    },
+    "encoder25": {
+      "testlike_hangul": 0.8710469314079422,
+      "hard_hangul": 0.8465703971119134,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9675090252707581,
+        "drop_word": 0.8050541516245487,
+        "both": 0.5812274368231047
+      }
+    },
+    "equal_ensemble": {
+      "testlike_hangul": 0.874115523465704,
+      "hard_hangul": 0.8429602888086642,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9675090252707581,
+        "drop_word": 0.8303249097472925,
+        "both": 0.5667870036101083
+      }
+    }
+  },
+  "train_eval_minutes": 4.206570709999263,
+  "deployment_precision": "merged, cast to BF16, saved and reloaded before evaluation"
+}

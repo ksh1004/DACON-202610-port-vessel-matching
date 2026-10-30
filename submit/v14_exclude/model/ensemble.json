@@ -1,0 +1,35 @@
+{
+  "mode": "prob",
+  "members": [
+    {
+      "name": "cat_yeti400",
+      "kind": "cat",
+      "file": "m0_cat_yeti400.cbm",
+      "weight": 3.0
+    },
+    {
+      "name": "cat_yeti400@8",
+      "kind": "cat",
+      "file": "m1_cat_yeti400_s8.cbm",
+      "weight": 3.0
+    },
+    {
+      "name": "cat_yeti400@9",
+      "kind": "cat",
+      "file": "m2_cat_yeti400_s9.cbm",
+      "weight": 3.0
+    },
+    {
+      "name": "lgb_base",
+      "kind": "lgb",
+      "file": "m3_lgb_base.txt",
+      "weight": 1.0
+    },
+    {
+      "name": "lgb_base@8",
+      "kind": "lgb",
+      "file": "m4_lgb_base_s8.txt",
+      "weight": 1.0
+    }
+  ]
+}

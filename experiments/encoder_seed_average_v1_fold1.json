@@ -1,0 +1,95 @@
+{
+  "protocol": {
+    "fold": 1,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "input_recipe": "phonetic",
+    "source_revision": {
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    },
+    "training_groups": 2400,
+    "max_tokens": 256,
+    "seed": 42,
+    "epochs": 1,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": 0.0001,
+    "groups_per_batch": 2,
+    "negative_mode": "five train-only LGB hard plus two lexical",
+    "vessel_overlap": 0,
+    "train_cache": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+    "training_at_cap": 0,
+    "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+    "reference": "v12",
+    "training_seed": 2026,
+    "data_selection_seed": 42,
+    "weight_average": [
+      0.5,
+      0.5
+    ],
+    "trainer_sha256": "8d79a0438e047e3dd53ab38cac2d7206f3e425ba1b18ec1cef57cf68759f1a26"
+  },
+  "training": {
+    "seed": 2026,
+    "training_groups": 2400,
+    "epochs": 1,
+    "training_seconds": 227.3973639999749,
+    "updates": 1200,
+    "loss_first100": 0.6748761448409641,
+    "loss_last100": 0.4864230929021875
+  },
+  "average": {
+    "weight_average": [
+      0.5,
+      0.5
+    ],
+    "seeds": [
+      42,
+      2026
+    ],
+    "changed_tensors_vs_seed42": 75,
+    "averaging_precision": "FP32 then original BF16"
+  },
+  "diagnostic_metrics_vs_v11": {
+    "baseline": {
+      "testlike_hangul": 0.8599122807017544,
+      "hard_hangul": 0.8486842105263158,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9692982456140351,
+        "drop_word": 0.7850877192982456,
+        "both": 0.5657894736842105
+      }
+    },
+    "reference_v11": {
+      "testlike_hangul": 0.8576754385964913,
+      "hard_hangul": 0.8552631578947368,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9517543859649122,
+        "drop_word": 0.8114035087719298,
+        "both": 0.5350877192982456
+      }
+    },
+    "encoder25": {
+      "testlike_hangul": 0.8656578947368421,
+      "hard_hangul": 0.8596491228070176,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9912280701754386,
+        "drop_word": 0.7894736842105263,
+        "both": 0.5745614035087719
+      }
+    },
+    "equal_ensemble": {
+      "testlike_hangul": 0.8637280701754386,
+      "hard_hangul": 0.8574561403508771,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9736842105263158,
+        "drop_word": 0.8026315789473685,
+        "both": 0.5614035087719298
+      }
+    }
+  }
+}

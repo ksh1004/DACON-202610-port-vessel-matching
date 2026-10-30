@@ -1,0 +1,1153 @@
+{
+  "client_date": "2026-10-29",
+  "completed_utc": "2026-10-29T05:43:52.197284+00:00",
+  "selected": null,
+  "decisions": {
+    "byte_names_v1": {
+      "tag": "byte_names_v1",
+      "selected": null,
+      "stage": "screen",
+      "screen": {
+        "tag": "byte_names_v1",
+        "complete_folds": [
+          1,
+          4
+        ],
+        "reference_v12": {
+          "testlike": 0.9087787707227457,
+          "testlike_hangul": 0.8702574257425743,
+          "hard": 0.8475056283134426,
+          "hard_hangul": 0.8485148514851485,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9702970297029703,
+            "drop_word": 0.8198019801980198,
+            "both": 0.5663366336633663
+          }
+        },
+        "contenders": {
+          "residual30": {
+            "candidate": {
+              "testlike": 0.9044124340890823,
+              "testlike_hangul": 0.864019801980198,
+              "hard": 0.8412680045510663,
+              "hard_hangul": 0.8396039603960396,
+              "oof": 0.996826295475221,
+              "scenarios": {
+                "clean": 0.996039603960396,
+                "gt_missing": 0.9623762376237623,
+                "drop_word": 0.8138613861386138,
+                "both": 0.5465346534653466
+              }
+            },
+            "matched_control": {
+              "testlike": 0.8959431271583893,
+              "testlike_hangul": 0.851920792079208,
+              "hard": 0.8350303807886901,
+              "hard_hangul": 0.8306930693069307,
+              "oof": 0.996826295475221,
+              "scenarios": {
+                "clean": 0.996039603960396,
+                "gt_missing": 0.9524752475247524,
+                "drop_word": 0.8,
+                "both": 0.5069306930693069
+              }
+            },
+            "matched_control_recipe": "Same fixed0.7*v12_actual_top20 +0.3*name probability, public untuned ByT5 with no task training; not selectable",
+            "delta_vs_v12": -0.00436633663366337,
+            "delta_vs_matched_control": 0.008469306930693032,
+            "bootstrap_95_vs_v12": [
+              -0.009658710478181341,
+              -0.0005104113021594007
+            ],
+            "delta_by_fold_vs_v12": {
+              "1": -0.0023333333333334094,
+              "4": -0.006039711191335728
+            },
+            "clean_lost_rows": 0,
+            "screen_checks": {
+              "folds": true,
+              "testlike": false,
+              "worst_fold": false,
+              "hard_hangul": false,
+              "drop_word": false,
+              "clean_lost": true,
+              "matched_control": true
+            },
+            "screen_gate_pass": false,
+            "without_shots": {
+              "reference_v12": {
+                "testlike": 0.9095147281221666,
+                "testlike_hangul": 0.8713087934560327,
+                "hard": 0.8461832690836545,
+                "hard_hangul": 0.8466257668711656,
+                "oof": 0.9967355870178721,
+                "scenarios": {
+                  "clean": 0.9959100204498977,
+                  "gt_missing": 0.9693251533742331,
+                  "drop_word": 0.820040899795501,
+                  "both": 0.5725971370143149
+                }
+              },
+              "candidate": {
+                "testlike": 0.9050055256681789,
+                "testlike_hangul": 0.8648670756646217,
+                "hard": 0.8397415512922435,
+                "hard_hangul": 0.8374233128834356,
+                "oof": 0.9967355870178721,
+                "scenarios": {
+                  "clean": 0.9959100204498977,
+                  "gt_missing": 0.9611451942740287,
+                  "drop_word": 0.8139059304703476,
+                  "both": 0.5521472392638037
+                }
+              }
+            },
+            "changes": {
+              "oof": {
+                "gained": 0,
+                "lost": 0
+              },
+              "hard": {
+                "gained": 1,
+                "lost": 10
+              },
+              "testlike": {
+                "gained": 4,
+                "lost": 21
+              }
+            }
+          }
+        },
+        "selected": null,
+        "truth_outside_top20": {
+          "oof": 0,
+          "hard": 50,
+          "testlike": 51
+        },
+        "actual_competition_submission": false,
+        "caveat": "Repeated exploratory synthetic CV and historical v8 outer retrieval mapper exception. Forward frozen beams have original fewshots; report no-shot sensitivity. Weak fragment supervision can be wrong despite exact spelling. Label-aware oracle used for pretraining architecture analysis, not performance forecast."
+      },
+      "actual_competition_submission": false
+    },
+    "byte_names_length_v1": {
+      "selected": null,
+      "screen_qualified": false,
+      "stage": "screen",
+      "candidate": null,
+      "report": {
+        "tag": "byte_names_length_v1",
+        "complete_folds": [
+          1,
+          4
+        ],
+        "reference_v12": {
+          "testlike": 0.9087787707227457,
+          "testlike_hangul": 0.8702574257425743,
+          "hard": 0.8475056283134426,
+          "hard_hangul": 0.8485148514851485,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9702970297029703,
+            "drop_word": 0.8198019801980198,
+            "both": 0.5663366336633663
+          }
+        },
+        "contenders": {
+          "residual30": {
+            "candidate": {
+              "testlike": 0.8986045132970032,
+              "testlike_hangul": 0.8557227722772278,
+              "hard": 0.8357234500956208,
+              "hard_hangul": 0.8316831683168316,
+              "oof": 0.996826295475221,
+              "scenarios": {
+                "clean": 0.996039603960396,
+                "gt_missing": 0.9603960396039604,
+                "drop_word": 0.7920792079207921,
+                "both": 0.5306930693069307
+              }
+            },
+            "matched_control": {
+              "testlike": 0.8973154043861121,
+              "testlike_hangul": 0.853881188118812,
+              "hard": 0.8294858263332445,
+              "hard_hangul": 0.8227722772277227,
+              "oof": 0.996826295475221,
+              "scenarios": {
+                "clean": 0.996039603960396,
+                "gt_missing": 0.9524752475247524,
+                "drop_word": 0.801980198019802,
+                "both": 0.5148514851485149
+              }
+            },
+            "matched_control_recipe": "Identical length normalisation and fixed residual0.3 applied to the same public untuned ByT5 checkpoint; no alternate coefficient",
+            "delta_vs_v12": -0.010174257425742517,
+            "delta_vs_matched_control": 0.001289108910891068,
+            "bootstrap_95_vs_v12": [
+              -0.01696833576477098,
+              -0.004531403878687351
+            ],
+            "delta_by_fold_vs_v12": {
+              "1": -0.012741228070175525,
+              "4": -0.008061371841155185
+            },
+            "clean_lost_rows": 0,
+            "screen_checks": {
+              "folds": true,
+              "testlike": false,
+              "worst_fold": false,
+              "hard_hangul": false,
+              "drop_word": false,
+              "clean_lost": true,
+              "matched_control": true
+            },
+            "screen_gate_pass": false,
+            "without_shots": {
+              "reference_v12": {
+                "testlike": 0.9095147281221666,
+                "testlike_hangul": 0.8713087934560327,
+                "hard": 0.8461832690836545,
+                "hard_hangul": 0.8466257668711656,
+                "oof": 0.9967355870178721,
+                "scenarios": {
+                  "clean": 0.9959100204498977,
+                  "gt_missing": 0.9693251533742331,
+                  "drop_word": 0.820040899795501,
+                  "both": 0.5725971370143149
+                }
+              },
+              "candidate": {
+                "testlike": 0.8990075706579539,
+                "testlike_hangul": 0.8562985685071574,
+                "hard": 0.8340155799221004,
+                "hard_hangul": 0.8292433537832311,
+                "oof": 0.9967355870178721,
+                "scenarios": {
+                  "clean": 0.9959100204498977,
+                  "gt_missing": 0.9591002044989775,
+                  "drop_word": 0.7914110429447853,
+                  "both": 0.5357873210633947
+                }
+              }
+            },
+            "changes": {
+              "oof": {
+                "gained": 0,
+                "lost": 0
+              },
+              "hard": {
+                "gained": 2,
+                "lost": 19
+              },
+              "testlike": {
+                "gained": 7,
+                "lost": 44
+              }
+            }
+          }
+        },
+        "selected": null,
+        "truth_outside_top20": {
+          "oof": 0,
+          "hard": 50,
+          "testlike": 51
+        },
+        "actual_competition_submission": false,
+        "caveat": "Repeated exploratory synthetic CV and historical v8 outer retrieval mapper exception. Forward frozen beams have original fewshots; report no-shot sensitivity. Weak fragment supervision can be wrong despite exact spelling. Label-aware oracle used for pretraining architecture analysis, not performance forecast."
+      },
+      "actual_competition_submission": false
+    }
+  },
+  "audits": {
+    "byte_names_v1": {
+      "tag": "byte_names_v1",
+      "complete_folds": [
+        1,
+        4
+      ],
+      "reference_v12": {
+        "testlike": 0.9087787707227457,
+        "testlike_hangul": 0.8702574257425743,
+        "hard": 0.8475056283134426,
+        "hard_hangul": 0.8485148514851485,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9702970297029703,
+          "drop_word": 0.8198019801980198,
+          "both": 0.5663366336633663
+        }
+      },
+      "contenders": {
+        "residual30": {
+          "candidate": {
+            "testlike": 0.9044124340890823,
+            "testlike_hangul": 0.864019801980198,
+            "hard": 0.8412680045510663,
+            "hard_hangul": 0.8396039603960396,
+            "oof": 0.996826295475221,
+            "scenarios": {
+              "clean": 0.996039603960396,
+              "gt_missing": 0.9623762376237623,
+              "drop_word": 0.8138613861386138,
+              "both": 0.5465346534653466
+            }
+          },
+          "matched_control": {
+            "testlike": 0.8959431271583893,
+            "testlike_hangul": 0.851920792079208,
+            "hard": 0.8350303807886901,
+            "hard_hangul": 0.8306930693069307,
+            "oof": 0.996826295475221,
+            "scenarios": {
+              "clean": 0.996039603960396,
+              "gt_missing": 0.9524752475247524,
+              "drop_word": 0.8,
+              "both": 0.5069306930693069
+            }
+          },
+          "matched_control_recipe": "Same fixed0.7*v12_actual_top20 +0.3*name probability, public untuned ByT5 with no task training; not selectable",
+          "delta_vs_v12": -0.00436633663366337,
+          "delta_vs_matched_control": 0.008469306930693032,
+          "bootstrap_95_vs_v12": [
+            -0.009658710478181341,
+            -0.0005104113021594007
+          ],
+          "delta_by_fold_vs_v12": {
+            "1": -0.0023333333333334094,
+            "4": -0.006039711191335728
+          },
+          "clean_lost_rows": 0,
+          "screen_checks": {
+            "folds": true,
+            "testlike": false,
+            "worst_fold": false,
+            "hard_hangul": false,
+            "drop_word": false,
+            "clean_lost": true,
+            "matched_control": true
+          },
+          "screen_gate_pass": false,
+          "without_shots": {
+            "reference_v12": {
+              "testlike": 0.9095147281221666,
+              "testlike_hangul": 0.8713087934560327,
+              "hard": 0.8461832690836545,
+              "hard_hangul": 0.8466257668711656,
+              "oof": 0.9967355870178721,
+              "scenarios": {
+                "clean": 0.9959100204498977,
+                "gt_missing": 0.9693251533742331,
+                "drop_word": 0.820040899795501,
+                "both": 0.5725971370143149
+              }
+            },
+            "candidate": {
+              "testlike": 0.9050055256681789,
+              "testlike_hangul": 0.8648670756646217,
+              "hard": 0.8397415512922435,
+              "hard_hangul": 0.8374233128834356,
+              "oof": 0.9967355870178721,
+              "scenarios": {
+                "clean": 0.9959100204498977,
+                "gt_missing": 0.9611451942740287,
+                "drop_word": 0.8139059304703476,
+                "both": 0.5521472392638037
+              }
+            }
+          },
+          "changes": {
+            "oof": {
+              "gained": 0,
+              "lost": 0
+            },
+            "hard": {
+              "gained": 1,
+              "lost": 10
+            },
+            "testlike": {
+              "gained": 4,
+              "lost": 21
+            }
+          }
+        }
+      },
+      "selected": null,
+      "truth_outside_top20": {
+        "oof": 0,
+        "hard": 50,
+        "testlike": 51
+      },
+      "actual_competition_submission": false,
+      "caveat": "Repeated exploratory synthetic CV and historical v8 outer retrieval mapper exception. Forward frozen beams have original fewshots; report no-shot sensitivity. Weak fragment supervision can be wrong despite exact spelling. Label-aware oracle used for pretraining architecture analysis, not performance forecast."
+    },
+    "byte_names_length_v1": {
+      "tag": "byte_names_length_v1",
+      "complete_folds": [
+        1,
+        4
+      ],
+      "reference_v12": {
+        "testlike": 0.9087787707227457,
+        "testlike_hangul": 0.8702574257425743,
+        "hard": 0.8475056283134426,
+        "hard_hangul": 0.8485148514851485,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9702970297029703,
+          "drop_word": 0.8198019801980198,
+          "both": 0.5663366336633663
+        }
+      },
+      "contenders": {
+        "residual30": {
+          "candidate": {
+            "testlike": 0.8986045132970032,
+            "testlike_hangul": 0.8557227722772278,
+            "hard": 0.8357234500956208,
+            "hard_hangul": 0.8316831683168316,
+            "oof": 0.996826295475221,
+            "scenarios": {
+              "clean": 0.996039603960396,
+              "gt_missing": 0.9603960396039604,
+              "drop_word": 0.7920792079207921,
+              "both": 0.5306930693069307
+            }
+          },
+          "matched_control": {
+            "testlike": 0.8973154043861121,
+            "testlike_hangul": 0.853881188118812,
+            "hard": 0.8294858263332445,
+            "hard_hangul": 0.8227722772277227,
+            "oof": 0.996826295475221,
+            "scenarios": {
+              "clean": 0.996039603960396,
+              "gt_missing": 0.9524752475247524,
+              "drop_word": 0.801980198019802,
+              "both": 0.5148514851485149
+            }
+          },
+          "matched_control_recipe": "Identical length normalisation and fixed residual0.3 applied to the same public untuned ByT5 checkpoint; no alternate coefficient",
+          "delta_vs_v12": -0.010174257425742517,
+          "delta_vs_matched_control": 0.001289108910891068,
+          "bootstrap_95_vs_v12": [
+            -0.01696833576477098,
+            -0.004531403878687351
+          ],
+          "delta_by_fold_vs_v12": {
+            "1": -0.012741228070175525,
+            "4": -0.008061371841155185
+          },
+          "clean_lost_rows": 0,
+          "screen_checks": {
+            "folds": true,
+            "testlike": false,
+            "worst_fold": false,
+            "hard_hangul": false,
+            "drop_word": false,
+            "clean_lost": true,
+            "matched_control": true
+          },
+          "screen_gate_pass": false,
+          "without_shots": {
+            "reference_v12": {
+              "testlike": 0.9095147281221666,
+              "testlike_hangul": 0.8713087934560327,
+              "hard": 0.8461832690836545,
+              "hard_hangul": 0.8466257668711656,
+              "oof": 0.9967355870178721,
+              "scenarios": {
+                "clean": 0.9959100204498977,
+                "gt_missing": 0.9693251533742331,
+                "drop_word": 0.820040899795501,
+                "both": 0.5725971370143149
+              }
+            },
+            "candidate": {
+              "testlike": 0.8990075706579539,
+              "testlike_hangul": 0.8562985685071574,
+              "hard": 0.8340155799221004,
+              "hard_hangul": 0.8292433537832311,
+              "oof": 0.9967355870178721,
+              "scenarios": {
+                "clean": 0.9959100204498977,
+                "gt_missing": 0.9591002044989775,
+                "drop_word": 0.7914110429447853,
+                "both": 0.5357873210633947
+              }
+            }
+          },
+          "changes": {
+            "oof": {
+              "gained": 0,
+              "lost": 0
+            },
+            "hard": {
+              "gained": 2,
+              "lost": 19
+            },
+            "testlike": {
+              "gained": 7,
+              "lost": 44
+            }
+          }
+        }
+      },
+      "selected": null,
+      "truth_outside_top20": {
+        "oof": 0,
+        "hard": 50,
+        "testlike": 51
+      },
+      "actual_competition_submission": false,
+      "caveat": "Repeated exploratory synthetic CV and historical v8 outer retrieval mapper exception. Forward frozen beams have original fewshots; report no-shot sensitivity. Weak fragment supervision can be wrong despite exact spelling. Label-aware oracle used for pretraining architecture analysis, not performance forecast."
+    }
+  },
+  "runtime_checks": {
+    "byte_names_v1": {
+      "status": "PASS",
+      "fingerprint": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+      "checks": [
+        {
+          "fold": 1,
+          "actual_queries": 3,
+          "saved_scores_exact": true,
+          "final_predictions_equal": true,
+          "row_reverse_subset_single_exact": true,
+          "candidate_permutation_exact": true
+        },
+        {
+          "fold": 4,
+          "actual_queries": 3,
+          "saved_scores_exact": true,
+          "final_predictions_equal": true,
+          "row_reverse_subset_single_exact": true,
+          "candidate_permutation_exact": true
+        }
+      ],
+      "scope": "Actual saved byte model plus frozen per-query anchor/candidates; not a complete new submission ZIP"
+    },
+    "byte_names_length_v1": {
+      "status": "PASS",
+      "fingerprint": "6445cd731650ed0cd4e1782c4d737a90d40d73f0d1edec6c0e7ea21d063a7859",
+      "checks": [
+        {
+          "fold": 1,
+          "actual_queries": 3,
+          "saved_scores_exact": true,
+          "final_predictions_equal": true,
+          "row_reverse_subset_single_exact": true,
+          "candidate_permutation_exact": true
+        },
+        {
+          "fold": 4,
+          "actual_queries": 3,
+          "saved_scores_exact": true,
+          "final_predictions_equal": true,
+          "row_reverse_subset_single_exact": true,
+          "candidate_permutation_exact": true
+        }
+      ],
+      "scope": "Actual saved byte model plus frozen per-query anchor/candidates; not a complete new submission ZIP"
+    }
+  },
+  "training": [
+    {
+      "fingerprint": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+      "fold": 1,
+      "phase": "pilot",
+      "epochs": 12,
+      "selected_epoch": 3,
+      "validation_history": [
+        {
+          "epoch": 1,
+          "validation_token_nll": 2.3543504666591035
+        },
+        {
+          "epoch": 3,
+          "validation_token_nll": 2.007955361823529
+        },
+        {
+          "epoch": 6,
+          "validation_token_nll": 2.2519518643761605
+        },
+        {
+          "epoch": 12,
+          "validation_token_nll": 2.969623411047286
+        }
+      ],
+      "examples": 670,
+      "steps": 504,
+      "last_training_token_nll": 0.6412443419297537,
+      "resumed_after_epoch": 0,
+      "seconds_this_segment": 259.34749110008124,
+      "all_losses_and_gradients_finite": true,
+      "data_sha256": "2bdf487b077d008803977ee59d261b3eeccc82b4ab5e106af9b91fe3ef60eee3",
+      "deployment_dtype": "float32"
+    },
+    {
+      "fingerprint": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+      "fold": 1,
+      "phase": "full",
+      "epochs": 3,
+      "selected_epoch": 3,
+      "validation_history": [],
+      "examples": 877,
+      "steps": 165,
+      "last_training_token_nll": 1.343883093920621,
+      "resumed_after_epoch": 0,
+      "seconds_this_segment": 87.62810219998937,
+      "all_losses_and_gradients_finite": true,
+      "data_sha256": "2bdf487b077d008803977ee59d261b3eeccc82b4ab5e106af9b91fe3ef60eee3",
+      "deployment_dtype": "float32"
+    },
+    {
+      "fingerprint": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+      "fold": 4,
+      "phase": "pilot",
+      "epochs": 12,
+      "selected_epoch": 1,
+      "validation_history": [
+        {
+          "epoch": 1,
+          "validation_token_nll": 1.8105399000878428
+        },
+        {
+          "epoch": 3,
+          "validation_token_nll": 1.843883241800701
+        },
+        {
+          "epoch": 6,
+          "validation_token_nll": 2.150922679725815
+        },
+        {
+          "epoch": 12,
+          "validation_token_nll": 2.1681970266104056
+        }
+      ],
+      "examples": 648,
+      "steps": 492,
+      "last_training_token_nll": 0.2229584359177729,
+      "resumed_after_epoch": 0,
+      "seconds_this_segment": 244.11007349996362,
+      "all_losses_and_gradients_finite": true,
+      "data_sha256": "cbf4bb566c6efc7f076403ed707d5d7156e86312126b2bf0459957e24df4299f",
+      "deployment_dtype": "float32"
+    },
+    {
+      "fingerprint": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+      "fold": 4,
+      "phase": "full",
+      "epochs": 1,
+      "selected_epoch": 1,
+      "validation_history": [],
+      "examples": 852,
+      "steps": 54,
+      "last_training_token_nll": 4.072297623863927,
+      "resumed_after_epoch": 0,
+      "seconds_this_segment": 34.81620100000873,
+      "all_losses_and_gradients_finite": true,
+      "data_sha256": "cbf4bb566c6efc7f076403ed707d5d7156e86312126b2bf0459957e24df4299f",
+      "deployment_dtype": "float32"
+    }
+  ],
+  "forward_teacher_probe": {
+    "tag": "forward_kanana_v1",
+    "rows": 48,
+    "distinct_vessels": 48,
+    "reference_correct": 17,
+    "candidate_correct": 15,
+    "gained": 0,
+    "lost": 2,
+    "net_gain": -2,
+    "admitted": false,
+    "seconds": 150.7066468000412,
+    "scorer_protocol": {
+      "model_dir": "D:\\KSH\\hf_models\\kakaocorp__kanana-1.5-2.1b-instruct-2505",
+      "prompt": "You restore the original Latin-alphabet spelling of ship names that were written in Korean Hangul. The names come from many languages (English, Korean, Chinese pinyin, Japanese, Greek, Dutch ...). Korean particles such as '\uc81cN' or a trailing '\ud638' mean 'No. N' or nothing. Answer with the ship name only, in English letters. Use UPPERCASE Latin letters. Render only the name words present in the input; do not invent missing words.",
+      "few_shot_examples": 12,
+      "input_fields": [
+        "observed_name",
+        "candidate_name"
+      ],
+      "batch_size": 32,
+      "pad_length": 512,
+      "padding_side": "left",
+      "padded_last_batch": "repeat last candidate",
+      "candidate_order": "sorted unique raw name strings",
+      "position_ids": "attention-mask cumulative positions, padded positions zero",
+      "dtype": "torch.bfloat16",
+      "attention": "sdpa",
+      "target_tokenization": "separate target encode, add_special_tokens=False",
+      "fixed_logits_to_keep": 33,
+      "maximum_target_tokens": 32,
+      "score": "observed target tokens only; EOS reported separately",
+      "prompt_sha256": "073325bf22954b7a536307791e6e2fe21c4df584461af52f6d2be2e1d4a9ceb1",
+      "source_sha256": "902942c15a0345db968ff133195b4b697bf9fa275167ea04ed17594ab7aae95e",
+      "model_config_sha256": "8064bf2423445240e73247a03631b53dd839a880a26908e4747c0fc679d46031",
+      "tokenizer_sha256": "31d17e500c82ff116fc14d4dd0106a08e49bd3512d8a81473047121ef8ea09f9",
+      "direction": "P(uppercase Latin fragment + assistant turn end | observed Korean)",
+      "examples": [
+        [
+          "\ubaa8\ub2dd \uba54\ub098\ub4dc",
+          "MORNING MENAD"
+        ],
+        [
+          "\ucf00\uc774\uc5e0\ud2f0\uc528 \ud558\uc774\ud401",
+          "KMTC HAIPHONG"
+        ],
+        [
+          "\ud765\uc544 \uc0ac\ub77c",
+          "HEUNG A SARAH"
+        ],
+        [
+          "\ubc14\uc624\ub8e8\uc774\ub9c1",
+          "BAO RUI LING"
+        ],
+        [
+          "\uce74\uc2dc\ub9c8 \ub9c8\ub8e8 10",
+          "KASHIMA MARU NO 10"
+        ],
+        [
+          "\uc81c2\ud765\uc544 \ud30c\uc774\uc624\ub2c8\uc5b4\ud638",
+          "NO 2 HEUNG A PIONEER"
+        ],
+        [
+          "\uc5e0\uc5d0\uc2a4\uc0e4\ub860",
+          "MS SHARON"
+        ],
+        [
+          "\ud5e4\ub85c\uc775\uc5d0\uc774\uc2a4",
+          "HEROIC ACE"
+        ],
+        [
+          "\uac70\uc601\uc36c5",
+          "KEOYOUNG SUN 5"
+        ],
+        [
+          "\ub3cc\ud53c\uc98c\uadf8\ub77c\uce20",
+          "DOLFIJNGRACHT"
+        ],
+        [
+          "\uc0e8\ub3d9 \ud478 \uc720\uc548",
+          "SHANDONG FU YUAN"
+        ],
+        [
+          "\ud504\ub7f0\ud2b8 \ub514\uc2a4\ucee4\ubc84\ub9ac",
+          "FRONT DISCOVERY"
+        ]
+      ],
+      "target_terminator_id": 128009,
+      "own_source_sha256": "b4c6eb46574b3f5ca55f4799a44f77d6b6a5bd92e9216680fbcd5dc4bafde744"
+    },
+    "exact_pair_order_and_single_checks": true,
+    "details": [
+      {
+        "sample_id": "TRAIN_09046_both",
+        "before": 2022,
+        "after": 2022,
+        "truth": 15399
+      },
+      {
+        "sample_id": "TRAIN_01033_drop_word",
+        "before": 36320,
+        "after": 36320,
+        "truth": 36320
+      },
+      {
+        "sample_id": "TRAIN_11519_both",
+        "before": 59215,
+        "after": 59215,
+        "truth": 59215
+      },
+      {
+        "sample_id": "TRAIN_09939_drop_word",
+        "before": 15421,
+        "after": 15330,
+        "truth": 15421
+      },
+      {
+        "sample_id": "TRAIN_01802_both",
+        "before": 33947,
+        "after": 33947,
+        "truth": 36637
+      },
+      {
+        "sample_id": "TRAIN_02934_both",
+        "before": 34393,
+        "after": 34393,
+        "truth": 34392
+      },
+      {
+        "sample_id": "TRAIN_04938_both",
+        "before": 37272,
+        "after": 37272,
+        "truth": 37278
+      },
+      {
+        "sample_id": "TRAIN_04241_both",
+        "before": 20952,
+        "after": 20952,
+        "truth": 45641
+      },
+      {
+        "sample_id": "TRAIN_08446_both",
+        "before": 2359,
+        "after": 2359,
+        "truth": 2359
+      },
+      {
+        "sample_id": "TRAIN_06750_both",
+        "before": 8378,
+        "after": 31402,
+        "truth": 4413
+      },
+      {
+        "sample_id": "TRAIN_08220_both",
+        "before": 41643,
+        "after": 42577,
+        "truth": 42898
+      },
+      {
+        "sample_id": "TRAIN_05558_drop_word",
+        "before": 27638,
+        "after": 27638,
+        "truth": 27638
+      },
+      {
+        "sample_id": "TRAIN_09229_both",
+        "before": 29159,
+        "after": 29159,
+        "truth": 41476
+      },
+      {
+        "sample_id": "TRAIN_08873_drop_word",
+        "before": 28839,
+        "after": 28839,
+        "truth": 28839
+      },
+      {
+        "sample_id": "TRAIN_01491_both",
+        "before": 35113,
+        "after": 35113,
+        "truth": 34281
+      },
+      {
+        "sample_id": "TRAIN_04613_both",
+        "before": 15458,
+        "after": 15458,
+        "truth": 15458
+      },
+      {
+        "sample_id": "TRAIN_06135_both",
+        "before": 7794,
+        "after": 7794,
+        "truth": 7292
+      },
+      {
+        "sample_id": "TRAIN_10067_both",
+        "before": 36586,
+        "after": 36586,
+        "truth": 36588
+      },
+      {
+        "sample_id": "TRAIN_01862_both",
+        "before": 7179,
+        "after": 6124,
+        "truth": 8230
+      },
+      {
+        "sample_id": "TRAIN_04925_both",
+        "before": 15470,
+        "after": 15470,
+        "truth": 15470
+      },
+      {
+        "sample_id": "TRAIN_05610_drop_word",
+        "before": 28727,
+        "after": 27970,
+        "truth": 28727
+      },
+      {
+        "sample_id": "TRAIN_03266_both",
+        "before": 23228,
+        "after": 23228,
+        "truth": 23228
+      },
+      {
+        "sample_id": "TRAIN_04839_both",
+        "before": 59489,
+        "after": 40658,
+        "truth": 59492
+      },
+      {
+        "sample_id": "TRAIN_04684_both",
+        "before": 15470,
+        "after": 15470,
+        "truth": 15322
+      },
+      {
+        "sample_id": "TRAIN_01111_both",
+        "before": 7326,
+        "after": 7326,
+        "truth": 15404
+      },
+      {
+        "sample_id": "TRAIN_01130_both",
+        "before": 24732,
+        "after": 24732,
+        "truth": 24732
+      },
+      {
+        "sample_id": "TRAIN_09629_both",
+        "before": 15484,
+        "after": 15484,
+        "truth": 14449
+      },
+      {
+        "sample_id": "TRAIN_09114_both",
+        "before": 35652,
+        "after": 36628,
+        "truth": 36627
+      },
+      {
+        "sample_id": "TRAIN_08651_both",
+        "before": 24715,
+        "after": 24715,
+        "truth": 27731
+      },
+      {
+        "sample_id": "TRAIN_10440_both",
+        "before": 35276,
+        "after": 35276,
+        "truth": 33355
+      },
+      {
+        "sample_id": "TRAIN_04448_both",
+        "before": 77766,
+        "after": 77766,
+        "truth": 60311
+      },
+      {
+        "sample_id": "TRAIN_08721_both",
+        "before": 6828,
+        "after": 6828,
+        "truth": 6804
+      },
+      {
+        "sample_id": "TRAIN_06395_both",
+        "before": 4456,
+        "after": 4456,
+        "truth": 4456
+      },
+      {
+        "sample_id": "TRAIN_00620_both",
+        "before": 22940,
+        "after": 22940,
+        "truth": 27028
+      },
+      {
+        "sample_id": "TRAIN_11226_both",
+        "before": 8882,
+        "after": 8882,
+        "truth": 9314
+      },
+      {
+        "sample_id": "TRAIN_10171_both",
+        "before": 33825,
+        "after": 33825,
+        "truth": 34516
+      },
+      {
+        "sample_id": "TRAIN_11907_both",
+        "before": 41162,
+        "after": 41162,
+        "truth": 27988
+      },
+      {
+        "sample_id": "TRAIN_07154_both",
+        "before": 34938,
+        "after": 34938,
+        "truth": 34938
+      },
+      {
+        "sample_id": "TRAIN_04857_both",
+        "before": 7124,
+        "after": 7124,
+        "truth": 3403
+      },
+      {
+        "sample_id": "TRAIN_00978_both",
+        "before": 42666,
+        "after": 42666,
+        "truth": 42666
+      },
+      {
+        "sample_id": "TRAIN_07199_drop_word",
+        "before": 8392,
+        "after": 8392,
+        "truth": 8440
+      },
+      {
+        "sample_id": "TRAIN_02420_both",
+        "before": 78222,
+        "after": 78222,
+        "truth": 78017
+      },
+      {
+        "sample_id": "TRAIN_03751_both",
+        "before": 15778,
+        "after": 15778,
+        "truth": 15778
+      },
+      {
+        "sample_id": "TRAIN_07818_both",
+        "before": 59063,
+        "after": 59063,
+        "truth": 59063
+      },
+      {
+        "sample_id": "TRAIN_00495_both",
+        "before": 1775,
+        "after": 1775,
+        "truth": 2725
+      },
+      {
+        "sample_id": "TRAIN_02940_both",
+        "before": 42563,
+        "after": 42563,
+        "truth": 42561
+      },
+      {
+        "sample_id": "TRAIN_07215_both",
+        "before": 58973,
+        "after": 58973,
+        "truth": 58972
+      },
+      {
+        "sample_id": "TRAIN_00170_both",
+        "before": 77981,
+        "after": 77981,
+        "truth": 77981
+      }
+    ],
+    "actual_competition_submission": false,
+    "diagnostic_not_competition_score": true
+  },
+  "canonical_forward_scorer_protocol": {
+    "model_dir": "D:\\KSH\\hf_models\\kakaocorp__kanana-1.5-2.1b-instruct-2505",
+    "prompt": "You restore the original Latin-alphabet spelling of ship names that were written in Korean Hangul. The names come from many languages (English, Korean, Chinese pinyin, Japanese, Greek, Dutch ...). Korean particles such as '\uc81cN' or a trailing '\ud638' mean 'No. N' or nothing. Answer with the ship name only, in English letters. Use UPPERCASE Latin letters. Render only the name words present in the input; do not invent missing words.",
+    "few_shot_examples": 12,
+    "input_fields": [
+      "observed_korean_name",
+      "candidate_latin_fragment"
+    ],
+    "batch_size": 32,
+    "pad_length": 512,
+    "padding_side": "left",
+    "padded_last_batch": "repeat last candidate",
+    "candidate_order": "sorted unique raw name strings",
+    "position_ids": "attention-mask cumulative positions, padded positions zero",
+    "dtype": "torch.bfloat16",
+    "attention": "sdpa",
+    "target_tokenization": "separate target encode, add_special_tokens=False",
+    "fixed_logits_to_keep": 33,
+    "maximum_target_tokens": 32,
+    "score": "Latin target tokens plus assistant-turn end log probability",
+    "prompt_sha256": "fb373ed54671ac61d3a29a6d8f2abc3f6517cef5dd1a5b9d04810c0a7c72db60",
+    "source_sha256": "902942c15a0345db968ff133195b4b697bf9fa275167ea04ed17594ab7aae95e",
+    "model_config_sha256": "8064bf2423445240e73247a03631b53dd839a880a26908e4747c0fc679d46031",
+    "tokenizer_sha256": "31d17e500c82ff116fc14d4dd0106a08e49bd3512d8a81473047121ef8ea09f9",
+    "direction": "P(uppercase Latin fragment + assistant turn end | observed Korean)",
+    "examples": [
+      [
+        "\ubaa8\ub2dd \uba54\ub098\ub4dc",
+        "MORNING MENAD"
+      ],
+      [
+        "\ucf00\uc774\uc5e0\ud2f0\uc528 \ud558\uc774\ud401",
+        "KMTC HAIPHONG"
+      ],
+      [
+        "\ud765\uc544 \uc0ac\ub77c",
+        "HEUNG A SARAH"
+      ],
+      [
+        "\ubc14\uc624\ub8e8\uc774\ub9c1",
+        "BAO RUI LING"
+      ],
+      [
+        "\uce74\uc2dc\ub9c8 \ub9c8\ub8e8 10",
+        "KASHIMA MARU NO 10"
+      ],
+      [
+        "\uc81c2\ud765\uc544 \ud30c\uc774\uc624\ub2c8\uc5b4\ud638",
+        "NO 2 HEUNG A PIONEER"
+      ],
+      [
+        "\uc5e0\uc5d0\uc2a4\uc0e4\ub860",
+        "MS SHARON"
+      ],
+      [
+        "\ud5e4\ub85c\uc775\uc5d0\uc774\uc2a4",
+        "HEROIC ACE"
+      ],
+      [
+        "\uac70\uc601\uc36c5",
+        "KEOYOUNG SUN 5"
+      ],
+      [
+        "\ub3cc\ud53c\uc98c\uadf8\ub77c\uce20",
+        "DOLFIJNGRACHT"
+      ],
+      [
+        "\uc0e8\ub3d9 \ud478 \uc720\uc548",
+        "SHANDONG FU YUAN"
+      ],
+      [
+        "\ud504\ub7f0\ud2b8 \ub514\uc2a4\ucee4\ubc84\ub9ac",
+        "FRONT DISCOVERY"
+      ]
+    ],
+    "target_terminator_id": 128009,
+    "own_source_sha256": "b4c6eb46574b3f5ca55f4799a44f77d6b6a5bd92e9216680fbcd5dc4bafde744"
+  },
+  "inherited_parent_metadata_retained_in_raw_probe": {
+    "prompt_sha256": "073325bf22954b7a536307791e6e2fe21c4df584461af52f6d2be2e1d4a9ceb1",
+    "input_fields": [
+      "observed_name",
+      "candidate_name"
+    ],
+    "score": "observed target tokens only; EOS reported separately"
+  },
+  "metadata_note": "Parent protocol descriptors were inherited from the reverse scorer; actual forward prompt text, examples, source, and terminator were already recorded. Canonical fields above correct reporting only; no tokens, scores, cases or decisions changed.",
+  "verified_source_counts": {
+    "primary": 39,
+    "length": 5,
+    "forward_probe": 10
+  },
+  "frozen_v12_source_modules_verified": 13,
+  "v12_zip_sha256_verified": "d1ee05642102d018efaac732f2e735419904d9f0bb84ec64d646903300ae9fb3",
+  "generic_byt5_weights_sha256_verified": "5c5aaf56299d6f2d4eaadad550a40765198828ead4d74f0a15f91cbe0961931a",
+  "actual_best_public": 0.9065951735,
+  "actual_server_seconds": 591,
+  "actual_submissions": 9,
+  "target_public": 0.97,
+  "new_final_model": false,
+  "new_zip": false,
+  "actual_competition_submission": false,
+  "callsign_or_identity_lookup": false,
+  "fresh_candidate_validation": false,
+  "full_five_fold_candidate_validation": false,
+  "caveats": [
+    "Reused synthetic CV; historical outer retrieval mapper exception remains.",
+    "Weak exact fragment labels and small training support do not establish correct pronunciations.",
+    "Length correction registered after common training began but before outer performance inspection; original recipe was preserved.",
+    "48vessel teacher diagnostic is not a competition accuracy estimate.",
+    "Scorer checks are not a new end-to-end submission ZIP execution."
+  ]
+}

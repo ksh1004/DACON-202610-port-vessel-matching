@@ -1,0 +1,73 @@
+{
+  "fold": 4,
+  "source": "b2bd476d9d4f",
+  "training_groups": 2400,
+  "max_tokens": 256,
+  "negative_count": 7,
+  "training_vessels_overlap": 0,
+  "pretrained": {
+    "baseline": {
+      "testlike_hangul": 0.8565342960288809,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9530685920577617,
+        "drop_word": 0.8014440433212996,
+        "both": 0.51985559566787
+      },
+      "hard_hangul": 0.8158844765342961
+    },
+    "neural": {
+      "testlike_hangul": 0.6843682310469315,
+      "scenarios": {
+        "clean": 0.8086642599277978,
+        "gt_missing": 0.6750902527075813,
+        "drop_word": 0.6895306859205776,
+        "both": 0.3971119133574007
+      },
+      "hard_hangul": 0.5433212996389891
+    },
+    "blend25": {
+      "testlike_hangul": 0.8584837545126354,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9530685920577617,
+        "drop_word": 0.8158844765342961,
+        "both": 0.5126353790613718
+      },
+      "hard_hangul": 0.8194945848375451
+    }
+  },
+  "epoch1": {
+    "baseline": {
+      "testlike_hangul": 0.8565342960288809,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9530685920577617,
+        "drop_word": 0.8014440433212996,
+        "both": 0.51985559566787
+      },
+      "hard_hangul": 0.8158844765342961
+    },
+    "neural": {
+      "testlike_hangul": 0.7724548736462094,
+      "scenarios": {
+        "clean": 0.9350180505415162,
+        "gt_missing": 0.703971119133574,
+        "drop_word": 0.7833935018050542,
+        "both": 0.4332129963898917
+      },
+      "hard_hangul": 0.6534296028880866
+    },
+    "blend25": {
+      "testlike_hangul": 0.8682671480144404,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9530685920577617,
+        "drop_word": 0.8375451263537906,
+        "both": 0.5379061371841155
+      },
+      "hard_hangul": 0.8321299638989169
+    }
+  },
+  "training_minutes": 19.808875140000602
+}

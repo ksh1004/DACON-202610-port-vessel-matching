@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "fold": 0,
+      "actual_queries": 3,
+      "calibrators": 2,
+      "saved_scores_and_predictions_exact": true,
+      "query_order_and_subset_exact": true,
+      "candidate_order_exact": true,
+      "pointwise_arithmetic_exact": true
+    },
+    {
+      "fold": 2,
+      "actual_queries": 3,
+      "calibrators": 2,
+      "saved_scores_and_predictions_exact": true,
+      "query_order_and_subset_exact": true,
+      "candidate_order_exact": true,
+      "pointwise_arithmetic_exact": true
+    }
+  ],
+  "fingerprint": "2c87cc9154390ec4bce81cecaebb6ba957ee2d83417da4bb0098713bcbfef551",
+  "scope": "Reloaded calibrator coefficients plus frozen expert distributions, not a new full neural pipeline/ZIP"
+}

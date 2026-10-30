@@ -1,0 +1,297 @@
+{
+  "tag": "encoder_catalog_warm_v1",
+  "reference": "v12",
+  "complete_folds": [
+    0,
+    2
+  ],
+  "complete": false,
+  "reference_v12": {
+    "testlike": 0.9178774610130318,
+    "testlike_hangul": 0.8839503386004516,
+    "hard": 0.8660027782601145,
+    "hard_hangul": 0.8668171557562077,
+    "oof": 0.9975320885525352,
+    "scenarios": {
+      "clean": 0.9977426636568849,
+      "gt_missing": 0.9909706546275395,
+      "drop_word": 0.8465011286681715,
+      "both": 0.5869074492099323
+    }
+  },
+  "candidate": {
+    "testlike": 0.917766851532219,
+    "testlike_hangul": 0.8837923250564335,
+    "hard": 0.8652127105400242,
+    "hard_hangul": 0.8656884875846501,
+    "oof": 0.9975320885525352,
+    "scenarios": {
+      "clean": 0.9977426636568849,
+      "gt_missing": 0.9909706546275395,
+      "drop_word": 0.8532731376975169,
+      "both": 0.5778781038374717
+    }
+  },
+  "delta_vs_v12": -0.00011060948081276223,
+  "bootstrap_95_vs_v12": [
+    -0.0029586007666153446,
+    0.0030978558299065745
+  ],
+  "delta_by_fold_vs_v12": {
+    "0": -0.00045064377682402235,
+    "2": 0.0002666666666666373
+  },
+  "clean_lost_rows_vs_v12": 0,
+  "screen_checks": {
+    "folds": true,
+    "testlike": false,
+    "worst_fold": true,
+    "hard_hangul": true,
+    "drop_word": true,
+    "clean_lost": true
+  },
+  "screen_gate_pass": false,
+  "without_shots": {
+    "reference_v12": {
+      "testlike": 0.9177819914345762,
+      "testlike_hangul": 0.8838139534883721,
+      "hard": 0.8639982110912343,
+      "hard_hangul": 0.8639534883720931,
+      "oof": 0.9974843170159715,
+      "scenarios": {
+        "clean": 0.9976744186046511,
+        "gt_missing": 0.9906976744186047,
+        "drop_word": 0.8488372093023255,
+        "both": 0.5837209302325581
+      }
+    },
+    "candidate": {
+      "testlike": 0.9176680379462041,
+      "testlike_hangul": 0.8836511627906978,
+      "hard": 0.8631842576028621,
+      "hard_hangul": 0.8627906976744186,
+      "oof": 0.9974843170159715,
+      "scenarios": {
+        "clean": 0.9976744186046511,
+        "gt_missing": 0.9906976744186047,
+        "drop_word": 0.8558139534883721,
+        "both": 0.5744186046511628
+      }
+    }
+  },
+  "changes": {
+    "oof": {
+      "gained": 0,
+      "lost": 0
+    },
+    "hard": {
+      "gained": 3,
+      "lost": 4
+    },
+    "testlike": {
+      "gained": 4,
+      "lost": 5
+    }
+  },
+  "protocols": {
+    "0": {
+      "fold": 0,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f0_train_cd185bcf8e28.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+      "tag": "encoder_catalog_warm_v1",
+      "initialization": "novel catalog name-only warmup",
+      "real_data_fingerprint": "306d87c9204b40fa596e78c7b94266b0e0d601cb00e1689f48d4bdb9ee2ca970",
+      "registered": {
+        "reference": "v12",
+        "reference_public": 0.9065951735,
+        "reference_server_seconds": 591,
+        "registered_before_training": true,
+        "training_groups": 2400,
+        "epochs": 1,
+        "seed": 42,
+        "lora_rank": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.05,
+        "learning_rate": 0.0001,
+        "groups_per_batch": 2,
+        "group_size": 8,
+        "max_tokens": 256,
+        "fixed_mix": {
+          "v8": 0.75,
+          "qwen_v11": 0.125,
+          "new_encoder": 0.125
+        },
+        "negative_mode": "strict train-fold LGB top5 plus two lexical",
+        "screen_folds": [
+          0,
+          2
+        ],
+        "screen_gate": {
+          "testlike_gain_min": 0.002,
+          "minimum_fold_delta": -0.002,
+          "hard_hangul_delta_min": -0.002,
+          "drop_word_delta_min": -0.002,
+          "clean_lost_rows_max": 1
+        },
+        "fresh_guard": {
+          "fold": 3,
+          "minimum_mean_accuracy_delta": -0.002,
+          "few_shot_vessels_excluded": true,
+          "training_only_retrieval": true
+        },
+        "full_gate": {
+          "all_5_folds_required": true,
+          "testlike_gain_min": 0.003,
+          "hard_hangul_delta_min": -0.001,
+          "drop_word_delta_min": -0.002,
+          "oof_delta_min": -0.0006,
+          "positive_folds_min": 4
+        },
+        "actual_competition_submission": false,
+        "caveat": "Exploratory reused synthetic CV, historical v8 evaluation retrieval mapper exception. No callsign or same-vessel lookup.",
+        "source_hashes": {
+          "src/catalog_warm_experiment.py": "01b5f5bca0c7042c9fce868bd537fa14dcdb3e9bbaaf1e9620637e6089d51b5a",
+          "tools/prepare_catalog_warmup.py": "a5b2f8a334f106223db016f49039ca3153008b43d43d5b282c20061494ef4e60",
+          "src/encoder_phonetic_experiment.py": "3de675e84a56e466afe1f85821a51e3b11cab353ee247e39b93a0f547be2b857",
+          "src/encoder_phonetics.py": "4ba7adb40ce087990c671dbf7d35c0fc4655f318d979f777248aee07fcf6cc1b",
+          "src/encoder_extended_experiment.py": "b0adb11954ba52486256f434cbf18b392c3ba95bd9516b061197e313a2629198",
+          "tools/audit_encoder_extension.py": "025210bff213145082d61befcac98d81d182fce2b7b2f06ad11bdbbac313ca8d",
+          "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+          "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+          "experiments/catalog_synthetic_v1/warm_corpus.json": "b046ac5094fbf01da5f8c6b35e291993535dab4f8eee9890278f0a80d1dfffd0"
+        },
+        "tag": "encoder_catalog_warm_v1",
+        "recipe": "name-only novel official catalog warmup followed by exact original v12 2400 real groups",
+        "warmup": {
+          "groups": 1200,
+          "minimum_distinct_names": 600,
+          "epochs": 1,
+          "learning_rate": 5e-05,
+          "seed": 42,
+          "all_train_entities_and_fullnames_excluded": true,
+          "metadata": "all null",
+          "latin_beams": [],
+          "word_deletion": false
+        }
+      },
+      "warm_training_sha256": "8f5e854ad6344af6d373f9d2ec0443a6abd0199d311c761dd7aae0e8336fdcb3"
+    },
+    "2": {
+      "fold": 2,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f2_train_5b13f22dba22.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+      "tag": "encoder_catalog_warm_v1",
+      "initialization": "novel catalog name-only warmup",
+      "real_data_fingerprint": "2432325b4196c157020438a97110618872b42cc2a16572e398ecc97ccbd5ea0a",
+      "registered": {
+        "reference": "v12",
+        "reference_public": 0.9065951735,
+        "reference_server_seconds": 591,
+        "registered_before_training": true,
+        "training_groups": 2400,
+        "epochs": 1,
+        "seed": 42,
+        "lora_rank": 8,
+        "lora_alpha": 16,
+        "lora_dropout": 0.05,
+        "learning_rate": 0.0001,
+        "groups_per_batch": 2,
+        "group_size": 8,
+        "max_tokens": 256,
+        "fixed_mix": {
+          "v8": 0.75,
+          "qwen_v11": 0.125,
+          "new_encoder": 0.125
+        },
+        "negative_mode": "strict train-fold LGB top5 plus two lexical",
+        "screen_folds": [
+          0,
+          2
+        ],
+        "screen_gate": {
+          "testlike_gain_min": 0.002,
+          "minimum_fold_delta": -0.002,
+          "hard_hangul_delta_min": -0.002,
+          "drop_word_delta_min": -0.002,
+          "clean_lost_rows_max": 1
+        },
+        "fresh_guard": {
+          "fold": 3,
+          "minimum_mean_accuracy_delta": -0.002,
+          "few_shot_vessels_excluded": true,
+          "training_only_retrieval": true
+        },
+        "full_gate": {
+          "all_5_folds_required": true,
+          "testlike_gain_min": 0.003,
+          "hard_hangul_delta_min": -0.001,
+          "drop_word_delta_min": -0.002,
+          "oof_delta_min": -0.0006,
+          "positive_folds_min": 4
+        },
+        "actual_competition_submission": false,
+        "caveat": "Exploratory reused synthetic CV, historical v8 evaluation retrieval mapper exception. No callsign or same-vessel lookup.",
+        "source_hashes": {
+          "src/catalog_warm_experiment.py": "01b5f5bca0c7042c9fce868bd537fa14dcdb3e9bbaaf1e9620637e6089d51b5a",
+          "tools/prepare_catalog_warmup.py": "a5b2f8a334f106223db016f49039ca3153008b43d43d5b282c20061494ef4e60",
+          "src/encoder_phonetic_experiment.py": "3de675e84a56e466afe1f85821a51e3b11cab353ee247e39b93a0f547be2b857",
+          "src/encoder_phonetics.py": "4ba7adb40ce087990c671dbf7d35c0fc4655f318d979f777248aee07fcf6cc1b",
+          "src/encoder_extended_experiment.py": "b0adb11954ba52486256f434cbf18b392c3ba95bd9516b061197e313a2629198",
+          "tools/audit_encoder_extension.py": "025210bff213145082d61befcac98d81d182fce2b7b2f06ad11bdbbac313ca8d",
+          "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+          "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+          "experiments/catalog_synthetic_v1/warm_corpus.json": "b046ac5094fbf01da5f8c6b35e291993535dab4f8eee9890278f0a80d1dfffd0"
+        },
+        "tag": "encoder_catalog_warm_v1",
+        "recipe": "name-only novel official catalog warmup followed by exact original v12 2400 real groups",
+        "warmup": {
+          "groups": 1200,
+          "minimum_distinct_names": 600,
+          "epochs": 1,
+          "learning_rate": 5e-05,
+          "seed": 42,
+          "all_train_entities_and_fullnames_excluded": true,
+          "metadata": "all null",
+          "latin_beams": [],
+          "word_deletion": false
+        }
+      },
+      "warm_training_sha256": "8f5e854ad6344af6d373f9d2ec0443a6abd0199d311c761dd7aae0e8336fdcb3"
+    }
+  },
+  "caveat": "Reused exploratory validation; historical v8 shared retrieval mapper exception remains."
+}

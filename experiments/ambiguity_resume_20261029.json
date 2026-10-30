@@ -1,0 +1,35 @@
+{
+  "client_date": "2026-10-29",
+  "status": "completed_rejected",
+  "main_command": ".venv/Scripts/python.exe -u -m tools.run_ambiguity_iteration",
+  "main_log": "experiments/run_ambiguity_iteration.log",
+  "per_fold_logs": [
+    "experiments/encoder_ambiguity_v1_screen_fold1_run.log",
+    "experiments/encoder_ambiguity_v1_screen_fold4_run.log"
+  ],
+  "protocol": "experiments/encoder_ambiguity_v1_protocol.json",
+  "protocol_fingerprint": "f95dd38dd6337ac5d0965bcdcae2aaeb9374ac05e74b3eef748b36efb1355a43",
+  "arms": [
+    "none",
+    "targeted",
+    "random"
+  ],
+  "only_selectable_arm": "targeted",
+  "stage_order": "fold1 thenfold4, each none/targeted/random training+saved-BF16-reloaded scoring; paired screen; conditional fresh3 andfull5 only ifpass",
+  "do_not_duplicate_running_main": true,
+  "no_protocol_or_locked_source_changes_after_training": true,
+  "setup_checks": "PASS; all19200tokens/fold exact legacy, weighted CE math and gradients; perquery same maskcounts; vesseloverlap0",
+  "checkpoint_checks": "PASS; actual none/fold1/step200 adapter exact andoptimizer finite CPUreload; not full GPUcontinuation test",
+  "after_main": "Completed. Read experiments/encoder_ambiguity_v1_final.json and docs/ambiguity_loss_20261029.md; do not rerun frozen selection or start automatic ByT5/prior fallback.",
+  "runtime_check_tool": "tools/check_ambiguity_runtime.py",
+  "scope_report": "docs/ambiguity_loss_20261029.md",
+  "actual_public": 0.9065951735,
+  "actual_server_seconds": 591,
+  "actual_submission_count": 9,
+  "call_sign_or_identity_lookup": false,
+  "actual_DACON_submission": false,
+  "current_progress": "All six models trained and evaluated; targeted screen failed; runtime and baseline preservation checks PASS",
+  "selection": "experiments/encoder_ambiguity_v1_selection.json",
+  "final_audit": "experiments/encoder_ambiguity_v1_final.json",
+  "active_jobs": []
+}

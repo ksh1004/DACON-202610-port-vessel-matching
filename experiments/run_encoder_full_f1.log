@@ -1,0 +1,112 @@
+Prepared D:\KSH\pjt\DACON202610\experiments\cache\encoder_groups_f1_c99cfa0bd98a.joblib
+{"fold": 1, "model": "BAAI/bge-reranker-v2-m3", "input_recipe": "phonetic", "source_revision": {"repo": "BAAI/bge-reranker-v2-m3", "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"}, "training_groups": 4680, "max_tokens": 256, "seed": 42, "epochs": 1, "lora_rank": 8, "lora_alpha": 16, "learning_rate": 0.0001, "groups_per_batch": 2, "negative_mode": "five train-only LGB hard plus two lexical", "vessel_overlap": 0, "train_cache": "strict_han_f1_train_6a0d6fcccc6b.joblib", "training_at_cap": 0, "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.", "reference": "v12", "training_recipe": "all eligible original plus four seed7 augmentations, one epoch", "trainer_sha256": "b0adb11954ba52486256f434cbf18b392c3ba95bd9516b061197e313a2629198"}
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+extended encoder step 100/2340, loss 0.8483, elapsed 0.4m
+extended encoder step 200/2340, loss 0.6308, elapsed 0.7m
+extended encoder step 300/2340, loss 0.6186, elapsed 1.0m
+extended encoder step 400/2340, loss 0.3442, elapsed 1.3m
+extended encoder step 500/2340, loss 0.5062, elapsed 1.6m
+extended encoder step 600/2340, loss 0.6370, elapsed 1.9m
+extended encoder step 700/2340, loss 0.4903, elapsed 2.2m
+extended encoder step 800/2340, loss 0.2464, elapsed 2.5m
+extended encoder step 900/2340, loss 0.4154, elapsed 2.8m
+extended encoder step 1000/2340, loss 0.3921, elapsed 3.1m
+extended encoder step 1100/2340, loss 0.3817, elapsed 3.4m
+extended encoder step 1200/2340, loss 0.5687, elapsed 3.7m
+extended encoder step 1300/2340, loss 0.2458, elapsed 4.1m
+extended encoder step 1400/2340, loss 0.5108, elapsed 4.4m
+extended encoder step 1500/2340, loss 0.4136, elapsed 4.7m
+extended encoder step 1600/2340, loss 0.2265, elapsed 5.0m
+extended encoder step 1700/2340, loss 0.3800, elapsed 5.3m
+extended encoder step 1800/2340, loss 0.5880, elapsed 5.6m
+extended encoder step 1900/2340, loss 0.3009, elapsed 5.9m
+extended encoder step 2000/2340, loss 0.2340, elapsed 6.2m
+extended encoder step 2100/2340, loss 0.2532, elapsed 6.5m
+extended encoder step 2200/2340, loss 0.2935, elapsed 6.8m
+extended encoder step 2300/2340, loss 0.3455, elapsed 7.1m
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_bge_full_v1\fold1_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+encoder eval oof: 200/228
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+encoder eval hard: 200/456
+encoder eval hard: 400/456
+encoder eval testlike: 200/684
+encoder eval testlike: 400/684
+encoder eval testlike: 600/684
+{
+  "protocol": {
+    "fold": 1,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "input_recipe": "phonetic",
+    "source_revision": {
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    },
+    "training_groups": 4680,
+    "max_tokens": 256,
+    "seed": 42,
+    "epochs": 1,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": 0.0001,
+    "groups_per_batch": 2,
+    "negative_mode": "five train-only LGB hard plus two lexical",
+    "vessel_overlap": 0,
+    "train_cache": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+    "training_at_cap": 0,
+    "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+    "reference": "v12",
+    "training_recipe": "all eligible original plus four seed7 augmentations, one epoch",
+    "trainer_sha256": "b0adb11954ba52486256f434cbf18b392c3ba95bd9516b061197e313a2629198"
+  },
+  "training": {
+    "training_seconds": 440.83690499991644,
+    "training_groups": 4680,
+    "updates": 2340,
+    "loss_first100": 0.8483345031899444,
+    "loss_last100": 0.3830168153275411,
+    "precision": "merged BF16, saved then reloaded before evaluation"
+  },
+  "diagnostic_metrics_vs_v11": {
+    "baseline": {
+      "testlike_hangul": 0.8599122807017544,
+      "hard_hangul": 0.8486842105263158,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9692982456140351,
+        "drop_word": 0.7850877192982456,
+        "both": 0.5657894736842105
+      }
+    },
+    "reference_v11": {
+      "testlike_hangul": 0.8576754385964913,
+      "hard_hangul": 0.8552631578947368,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9517543859649122,
+        "drop_word": 0.8114035087719298,
+        "both": 0.5350877192982456
+      }
+    },
+    "encoder25": {
+      "testlike_hangul": 0.860701754385965,
+      "hard_hangul": 0.8530701754385965,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9736842105263158,
+        "drop_word": 0.7894736842105263,
+        "both": 0.5614035087719298
+      }
+    },
+    "equal_ensemble": {
+      "testlike_hangul": 0.8662280701754386,
+      "hard_hangul": 0.8530701754385965,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9736842105263158,
+        "drop_word": 0.8026315789473685,
+        "both": 0.5745614035087719
+      }
+    }
+  },
+  "note": "Decision must use audit_encoder_extension against v12, not these v11 diagnostics."
+}

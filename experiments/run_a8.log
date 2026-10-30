@@ -1,0 +1,4 @@
+[aug_h4_e1_s8_d0.3] 후보·특징 생성 586.6초 (15795행)
+{'oof': 12222, 'hard': 5382, 'testlike': 3573}
+{"name": "lgb_base_prior_a8", "testlike": 0.8968, "testlike_hangul": 0.8533, "tl_gt": 0.9664, "tl_dw": 0.7842, "tl_both": 0.5315, "oof": 0.9941, "oof_hangul": 0.9924, "oof_non_hangul": 0.9981, "hard": 0.8408, "hard_hangul": 0.8367, "hard_non_hangul": 0.8503, "minutes": 6.1}
+{"name": "lgb_small_prior_a8", "testlike": 0.8965, "testlike_hangul": 0.8529, "tl_gt": 0.9673, "tl_dw": 0.775, "tl_both": 0.5399, "oof": 0.9942, "oof_hangul": 0.9924, "oof_non_hangul": 0.9982, "hard": 0.8436, "hard_hangul": 0.8392, "hard_non_hangul": 0.854, "minutes": 10.0}

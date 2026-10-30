@@ -1,0 +1,75 @@
+{
+  "registered_utc": "2026-10-28T23:47:39.547593+00:00",
+  "registered_client_date": "2026-10-29",
+  "data_fingerprint": "69ac713de1d6200ddeb057a901fa5c2568b810e45a0fe1bd58ef4143337fd7b7",
+  "before_inner_neural_training_and_new_head_validation": true,
+  "source_and_input_hashes": {
+    "experiments/nested_combiner_v1_protocol.json": "5f84486a8cd402d207938acd190004ceaf7ec47d20ad62c076c78d0c132b44db",
+    "experiments/nested_combiner_reverse_v1_protocol.json": "d7ac440dd7cab68f53e1897059fc2953d5bc6add72c0f80cddfc9879fdfe63e2",
+    "tools/nested_combiner_experiment.py": "eadad6793e839cf521c26a0812b73ed5dcbe3ce5c4e83bc83aa6cb5a0aa4dd88",
+    "tools/nested_reverse_extension.py": "c496302e5228e8ec42556d2905291e44e4dfffd8274d146bc988cf6fea44b12b",
+    "src/nested_features.py": "156c5d8bf313e1792305aabb1e5ddd62fed7bcdadc779a71a04a8609be78d791",
+    "tools/audit_reverse_ranker.py": "cfd30508ec5785283bc500ca01e538926333af62e2d3aa161e4989cc01c15a47",
+    "src/neural_pair.py": "ba17461516c168713e54adc4e2975136980ee64ad9eca6dff2d7f4b8bafd357b",
+    "src/pair_evidence.py": "846c9b564933e9f96c2bf4ef441ed395d4a2562f0b74ecb75c8ec684f5cbf16d",
+    "src/encoder_phonetics.py": "4ba7adb40ce087990c671dbf7d35c0fc4655f318d979f777248aee07fcf6cc1b",
+    "src/features.py": "1df5899912dbc5bb3366cce769efb17268ac0c0c72ae4693f8081cda4737d75d",
+    "src/retrieval.py": "59c4216c9a8be48fce4b1ada93b2a17747888ed2bab3e68bb8de42a5b8ea49c9",
+    "src/augment.py": "bea2fe2e56208bfc7972bd8f4d94251e444deae0afde4fdb8cd272cff49ccbb2",
+    "src/train_ranker.py": "1b9b9c40a9328002b84af97eb44cb00be3fdee604f97cf1bf7473660ed4f5618",
+    "src/llm_cache.py": "8e3a7c309a36ff5b51e5aec26486ef0ceb7a8df7099c2c1f0383a55ae7db07b1",
+    "src/llm_translit.py": "6b82a58245bfefe91c28dece1f5a718f5609fe41ac6318f40964b559bcccd835",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+    "experiments/folds.csv": "99bc9010ca3c8f0fc518110fb059ce705f130146f8b8b9e625f483bd7df58c9d",
+    "experiments\\cache\\llm_kanana_73ef4cc1.json": "ad981215831ac736f23ab12c1bd375fc2f21d666424749146f043770dd55d47c"
+  },
+  "baseline_precision_amendment": {
+    "utc": "2026-10-28T23:54:21.361279+00:00",
+    "previous_source_sha256": "b7773696fc6754de921575a3ecbb5386b1918ee9e63aa8e0b8e5e2c0e55b80db",
+    "reason": "Broader legacy-only check found5Qwen rows with one BF16-level logit difference(max0.125), no changed v12 winners. Record floating differences, require exact v12 winner identity on all outer rows; no performance gate or training recipe changed; no inner NN or new head trained/evaluated yet. All probabilities still recomputed from deployed models, including previously pruned rows.",
+    "previous_source_snapshot": "experiments/source_snapshots/nested_combiner_experiment_before_precision_check.py"
+  },
+  "environment": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "torch": "2.7.1+cu128",
+    "transformers": "4.57.6",
+    "peft": "0.17.1",
+    "lightgbm": "4.6.0",
+    "numpy": "1.26.4",
+    "pandas": "2.0.3"
+  },
+  "public_model_metadata_hashes": {
+    "Qwen__Qwen3-Reranker-0.6B": {
+      "config.json": "d479c427a9ca5295218063d4f9aca4f297ab4ac27487cca7af42c84643d51ef0",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "codex_revision.json": "cffd3adf44f778b85972a3df41660520dfaaa8f4b45472a56bb220881e14a0d1"
+    },
+    "BAAI__bge-reranker-v2-m3": {
+      "config.json": "13dcd6c31d9fec9d1d8e158702072f62d7fa7d312a64b9fe057bec9a08cfe41a",
+      "tokenizer.json": "69564b696052886ed0ac63fa393e928384e0f8caada38c1f4864a9bfbf379c15",
+      "codex_revision.json": "85ee6dc72a62c8b04aeba014a56225c3c96b93b6dca64e3dd407e5ae783df8d8"
+    }
+  },
+  "conditional_token_prior_registration": {
+    "registered_utc": "2026-10-29T00:20:00.538145+00:00",
+    "no_new_head_validation_observed": true,
+    "training_only_feasibility_excludes_outer0_2": true,
+    "source_hashes": {
+      "src/name_token_prior.py": "7ac5aba6a6ec10a022c89660caac4c3933790c12c88165bd50ea34cd9d3d7c1d",
+      "tools/nested_token_prior_extension.py": "079f1555d9605f3d1a306947aaf07093d6ac584dcd041badc9ee4e51f387645d",
+      "experiments/nested_combiner_token_prior_v1_protocol.json": "84df77e2b6beb58709fb6ffa49464b850df3f4c2a39620cbdff4061316f22ea5",
+      "experiments/training_prefix_feasibility_20261029.json": "1848de551efed5c20c804fe95dec611ff4e94c21ab7bcfaea33723ac85418d68"
+    },
+    "scope_clarification": {
+      "previous_protocol_sha256": "8e0334b505898fb78fab88c46fc15db76000a3f61939084b340da4c0253deea3",
+      "reason": "Distinguish common neural training already in progress from future token-head training; reporting clarification only"
+    }
+  },
+  "nonhangul_comparison_fix": {
+    "utc": "2026-10-29T01:21:26.223750+00:00",
+    "previous_source_sha256": "57885cdbfff7309a73fe3f3ead1cf62929f72d9b8bd5423b1fdb865905fbb1a0",
+    "reason": "Old Qwen archive includes neural scores for some augmentation names that are actually non-Hangul; v12 and new scorer correctly route them to base and returnNone. Skip unused archived logits in comparison only. No change to training, head features, actual routing, labels or gates; no new head trained/evaluated.",
+    "source_snapshot": "experiments/source_snapshots/nested_combiner_experiment_before_nonhangul_check.py"
+  }
+}

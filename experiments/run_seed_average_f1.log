@@ -1,0 +1,22 @@
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+seed2026 step 100, loss 0.6749, elapsed 0.3m
+seed2026 step 200, loss 0.6047, elapsed 0.6m
+seed2026 step 300, loss 0.5133, elapsed 0.9m
+seed2026 step 400, loss 0.6869, elapsed 1.2m
+seed2026 step 500, loss 0.4656, elapsed 1.5m
+seed2026 step 600, loss 0.5044, elapsed 1.9m
+seed2026 step 700, loss 0.4270, elapsed 2.2m
+seed2026 step 800, loss 0.5057, elapsed 2.5m
+seed2026 step 900, loss 0.4193, elapsed 2.8m
+seed2026 step 1000, loss 0.3756, elapsed 3.1m
+seed2026 step 1100, loss 0.3280, elapsed 3.4m
+seed2026 step 1200, loss 0.4864, elapsed 3.7m
+{"weight_average": [0.5, 0.5], "seeds": [42, 2026], "changed_tensors_vs_seed42": 75, "averaging_precision": "FP32 then original BF16"}
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_seed_average_v1\fold1_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+encoder eval oof: 200/228
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+encoder eval hard: 200/456
+encoder eval hard: 400/456
+encoder eval testlike: 200/684
+encoder eval testlike: 400/684
+encoder eval testlike: 600/684

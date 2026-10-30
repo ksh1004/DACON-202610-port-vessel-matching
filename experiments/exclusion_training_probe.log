@@ -1,0 +1,44 @@
+lgb_base normal fold 0 done
+lgb_base normal fold 1 done
+lgb_base normal fold 2 done
+lgb_base normal fold 3 done
+lgb_base normal fold 4 done
+{"lgb_base_normal": {"testlike": 0.9154, "testlike_hangul": 0.88, "tl_gt": 0.9681, "tl_dw": 0.8556, "tl_both": 0.5844, "oof": 0.9941, "oof_hangul": 0.9924, "oof_non_hangul": 0.9981, "hard": 0.8617, "hard_hangul": 0.8619, "hard_non_hangul": 0.8613}}
+lgb_base filtered fold 0 done
+lgb_base filtered fold 1 done
+lgb_base filtered fold 2 done
+lgb_base filtered fold 3 done
+lgb_base filtered fold 4 done
+{"lgb_base_filtered": {"testlike": 0.9178, "testlike_hangul": 0.8834, "tl_gt": 0.9706, "tl_dw": 0.8589, "tl_both": 0.5961, "oof": 0.9942, "oof_hangul": 0.9924, "oof_non_hangul": 0.9982, "hard": 0.8626, "hard_hangul": 0.8627, "hard_non_hangul": 0.8623}}
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 normal fold 0 done
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 normal fold 1 done
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 normal fold 2 done
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 normal fold 3 done
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 normal fold 4 done
+{"catg_400_normal": {"testlike": 0.8993, "testlike_hangul": 0.8573, "tl_gt": 0.9597, "tl_dw": 0.8237, "tl_both": 0.5214, "oof": 0.9904, "oof_hangul": 0.9874, "oof_non_hangul": 0.9973, "hard": 0.8133, "hard_hangul": 0.8044, "hard_non_hangul": 0.834}}
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 filtered fold 0 done
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 filtered fold 1 done
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 filtered fold 2 done
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 filtered fold 3 done
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+catg_400 filtered fold 4 done
+{"catg_400_filtered": {"testlike": 0.8999, "testlike_hangul": 0.8582, "tl_gt": 0.9597, "tl_dw": 0.8279, "tl_both": 0.5248, "oof": 0.9892, "oof_hangul": 0.9857, "oof_non_hangul": 0.9974, "hard": 0.8185, "hard_hangul": 0.8123, "hard_non_hangul": 0.833}}

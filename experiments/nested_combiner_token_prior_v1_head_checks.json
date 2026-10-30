@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "tag": "nested_combiner_token_prior_v1",
+  "checks": [
+    {
+      "outer": 0,
+      "recipe": "sets",
+      "features": 115,
+      "candidate_rows": 27860,
+      "exact_save_reload": true,
+      "exact_row_shuffle_and_single": true,
+      "exact_candidate_permutation_groups": 32
+    },
+    {
+      "outer": 2,
+      "recipe": "sets",
+      "features": 115,
+      "candidate_rows": 25160,
+      "exact_save_reload": true,
+      "exact_row_shuffle_and_single": true,
+      "exact_candidate_permutation_groups": 32
+    }
+  ],
+  "scope": "Cached expert scores and head trees; not an end-to-end submission/package test"
+}

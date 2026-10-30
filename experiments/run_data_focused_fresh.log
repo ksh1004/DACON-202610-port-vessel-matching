@@ -1,0 +1,111 @@
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\neural_evidence_v1\fold4_runtime_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+PASS: evidence_only; merged/reloaded logits equal OOF, mixing agrees, grouped/shuffled/single scores equal
+Fresh fold 4: 1827 cases, 0 missing transliterations
+Prepared fresh candidates: D:\KSH\pjt\DACON202610\experiments\cache\fresh_pairs_f4_3e882022d2d7.joblib
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\neural_evidence_v1\fold4_runtime_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_bge_phonetic\fold4_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_focused20_v1\fold4_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Fresh extension: 100 uncertain rows
+Fresh extension: 200 uncertain rows
+Fresh extension: 300 uncertain rows
+Fresh extension: 400 uncertain rows
+{
+  "tag": "encoder_focused20_v1",
+  "fold": 4,
+  "rows": 1827,
+  "neural_rows": 403,
+  "source": "3e882022d2d7be9ec80b3579ed75fda77f15e1eb2a0063cf06c5c72238cc6af8",
+  "mean_accuracy": {
+    "reference_v12": 0.7909140667761357,
+    "candidate": 0.7870826491516146
+  },
+  "delta_vs_v12": -0.0038314176245210726,
+  "bootstrap_95": [
+    -0.011858883869753435,
+    0.0036643653744025417
+  ],
+  "gained": 6,
+  "lost": 13,
+  "scenarios": {
+    "gt_only_missing": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 1.0,
+        "candidate": 1.0
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "igt_only_missing": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 1.0,
+        "candidate": 1.0
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "conflicting_gt": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.9961685823754789,
+        "candidate": 0.9961685823754789
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "first_with_gt": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.685823754789272,
+        "candidate": 0.6704980842911877
+      },
+      "changed_rows": 194,
+      "changed_only": {
+        "reference_v12": 0.5773195876288659,
+        "candidate": 0.5567010309278351
+      }
+    },
+    "last_with_gt": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.8582375478927203,
+        "candidate": 0.8735632183908046
+      },
+      "changed_rows": 194,
+      "changed_only": {
+        "reference_v12": 0.8092783505154639,
+        "candidate": 0.8298969072164949
+      }
+    },
+    "first_both_missing": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.3486590038314176,
+        "candidate": 0.3333333333333333
+      },
+      "changed_rows": 194,
+      "changed_only": {
+        "reference_v12": 0.17010309278350516,
+        "candidate": 0.14948453608247422
+      }
+    },
+    "last_both_missing": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.6475095785440613,
+        "candidate": 0.6360153256704981
+      },
+      "changed_rows": 194,
+      "changed_only": {
+        "reference_v12": 0.5721649484536082,
+        "candidate": 0.5567010309278351
+      }
+    }
+  },
+  "caveat": "Diagnostic equal scenario mix, not official/testlike metric. Train-only retrieval; few-shot vessels excluded."
+}

@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "fingerprint": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+  "checks": [
+    {
+      "fold": 1,
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "final_predictions_equal": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true
+    },
+    {
+      "fold": 4,
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "final_predictions_equal": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true
+    }
+  ],
+  "scope": "Actual saved byte model plus frozen per-query anchor/candidates; not a complete new submission ZIP"
+}

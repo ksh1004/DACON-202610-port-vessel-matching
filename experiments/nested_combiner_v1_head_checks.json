@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "tag": "nested_combiner_v1",
+  "checks": [
+    {
+      "outer": 0,
+      "recipe": "sets",
+      "features": 105,
+      "candidate_rows": 27860,
+      "exact_save_reload": true,
+      "exact_row_shuffle_and_single": true,
+      "exact_candidate_permutation_groups": 32
+    },
+    {
+      "outer": 0,
+      "recipe": "controls",
+      "features": 78,
+      "candidate_rows": 27860,
+      "exact_save_reload": true,
+      "exact_row_shuffle_and_single": true,
+      "exact_candidate_permutation_groups": 32
+    },
+    {
+      "outer": 2,
+      "recipe": "sets",
+      "features": 105,
+      "candidate_rows": 25160,
+      "exact_save_reload": true,
+      "exact_row_shuffle_and_single": true,
+      "exact_candidate_permutation_groups": 32
+    },
+    {
+      "outer": 2,
+      "recipe": "controls",
+      "features": 78,
+      "candidate_rows": 25160,
+      "exact_save_reload": true,
+      "exact_row_shuffle_and_single": true,
+      "exact_candidate_permutation_groups": 32
+    }
+  ],
+  "scope": "Cached expert scores and head trees; not an end-to-end submission/package test"
+}

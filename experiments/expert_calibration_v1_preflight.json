@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "maximum_gradient_error": 3.763851869065249e-10,
+  "zero_correction_winner_exact": true,
+  "pointwise_and_candidate_order_exact": true,
+  "calibrator_identity_inputs_ignored": true,
+  "training_only_preparation": {
+    "0": {
+      "splits": [
+        {
+          "inner": 0,
+          "meta_groups": 3335,
+          "active_training_groups": 511,
+          "fit_vessels": 2340,
+          "meta_vessels": 2341,
+          "outer_vessels": 1170,
+          "overlap": 0
+        },
+        {
+          "inner": 1,
+          "meta_groups": 4101,
+          "active_training_groups": 676,
+          "fit_vessels": 2341,
+          "meta_vessels": 2340,
+          "outer_vessels": 1170,
+          "overlap": 0
+        }
+      ],
+      "groups": 1187,
+      "vessels": 245,
+      "missing_size_groups": 667,
+      "fitting_weight_sum": 245.0,
+      "outer_vessel_overlap": 0
+    },
+    "2": {
+      "splits": [
+        {
+          "inner": 0,
+          "meta_groups": 3756,
+          "active_training_groups": 602,
+          "fit_vessels": 2339,
+          "meta_vessels": 2343,
+          "outer_vessels": 1169,
+          "overlap": 0
+        },
+        {
+          "inner": 1,
+          "meta_groups": 3839,
+          "active_training_groups": 556,
+          "fit_vessels": 2343,
+          "meta_vessels": 2339,
+          "outer_vessels": 1169,
+          "overlap": 0
+        }
+      ],
+      "groups": 1158,
+      "vessels": 244,
+      "missing_size_groups": 646,
+      "fitting_weight_sum": 244.0,
+      "outer_vessel_overlap": 0
+    }
+  },
+  "new_optimizer_fit_or_outer_performance": false
+}

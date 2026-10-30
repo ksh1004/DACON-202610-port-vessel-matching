@@ -1,0 +1,35 @@
+[
+  {
+    "query": "가스오너",
+    "truth": "Gas Honour",
+    "chosen": "Gas One",
+    "beams": [
+      "Gasoner",
+      "Gasooner",
+      "Gasoener",
+      "Gasunner"
+    ]
+  },
+  {
+    "query": "펭슈하이",
+    "truth": "Feng Xiu Hai",
+    "chosen": "Feng Shou Hai",
+    "beams": [
+      "Pengshui Hai",
+      "Pengshuihai",
+      "Pingxuhei",
+      "Pingxuhai"
+    ]
+  },
+  {
+    "query": "루니",
+    "truth": "Luni",
+    "chosen": "SS Luna",
+    "beams": [
+      "Rune",
+      "Runi",
+      "Luni",
+      "Roni"
+    ]
+  }
+]

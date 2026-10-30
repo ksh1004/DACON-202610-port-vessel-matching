@@ -1,0 +1,33 @@
+{
+ "base": {
+  "testlike": 0.905,
+  "testlike_hangul": 0.865,
+  "tl_gt": 0.974,
+  "tl_dw": 0.8094,
+  "tl_both": 0.5491,
+  "oof": 0.9965,
+  "oof_hangul": 0.9958,
+  "oof_non_hangul": 0.9982,
+  "hard": 0.8462,
+  "hard_hangul": 0.8438,
+  "hard_non_hangul": 0.8517
+ },
+ "exclude_train_vessels": {
+  "testlike": 0.9239,
+  "testlike_hangul": 0.8921,
+  "tl_gt": 0.974,
+  "tl_dw": 0.8766,
+  "tl_both": 0.6104,
+  "oof": 0.9965,
+  "oof_hangul": 0.9958,
+  "oof_non_hangul": 0.9982,
+  "hard": 0.8632,
+  "hard_hangul": 0.8648,
+  "hard_non_hangul": 0.8593
+ },
+ "changed_top1": {
+  "oof": 0,
+  "hard": 276,
+  "testlike": 426
+ }
+}

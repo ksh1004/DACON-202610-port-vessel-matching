@@ -1,0 +1,23 @@
+{
+  "mode": "prob",
+  "members": [
+    {
+      "name": "cat_yeti400",
+      "kind": "cat",
+      "file": "m0_cat_yeti400.cbm",
+      "weight": 3.0
+    },
+    {
+      "name": "lgb_base",
+      "kind": "lgb",
+      "file": "m1_lgb_base.txt",
+      "weight": 1.0
+    },
+    {
+      "name": "lgb_base@8",
+      "kind": "lgb",
+      "file": "m2_lgb_base_s8.txt",
+      "weight": 1.0
+    }
+  ]
+}

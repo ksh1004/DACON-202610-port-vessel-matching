@@ -1,0 +1,124 @@
+{
+  "fold": 3,
+  "tag": "neural_evidence_v1",
+  "rows": 1645,
+  "source": "7af06988f6dc80539de63c12e98eabce178dd6f9d265a9f0cb29d3fab7d4a71a",
+  "scenario_accuracy": {
+    "gt_only_missing": {
+      "rows": 235,
+      "accuracy": {
+        "baseline": 1.0,
+        "v10": 1.0,
+        "candidate": 1.0,
+        "ensemble": 1.0
+      },
+      "name_changed_rows": 0,
+      "changed_only_accuracy": null
+    },
+    "igt_only_missing": {
+      "rows": 235,
+      "accuracy": {
+        "baseline": 1.0,
+        "v10": 1.0,
+        "candidate": 1.0,
+        "ensemble": 1.0
+      },
+      "name_changed_rows": 0,
+      "changed_only_accuracy": null
+    },
+    "conflicting_gt": {
+      "rows": 235,
+      "accuracy": {
+        "baseline": 1.0,
+        "v10": 1.0,
+        "candidate": 1.0,
+        "ensemble": 1.0
+      },
+      "name_changed_rows": 0,
+      "changed_only_accuracy": null
+    },
+    "first_with_gt": {
+      "rows": 235,
+      "accuracy": {
+        "baseline": 0.6936170212765957,
+        "v10": 0.7063829787234043,
+        "candidate": 0.7446808510638298,
+        "ensemble": 0.7191489361702128
+      },
+      "name_changed_rows": 164,
+      "changed_only_accuracy": {
+        "baseline": 0.5609756097560976,
+        "v10": 0.5792682926829268,
+        "candidate": 0.6341463414634146,
+        "ensemble": 0.5975609756097561
+      }
+    },
+    "last_with_gt": {
+      "rows": 235,
+      "accuracy": {
+        "baseline": 0.8468085106382979,
+        "v10": 0.8851063829787233,
+        "candidate": 0.851063829787234,
+        "ensemble": 0.8851063829787233
+      },
+      "name_changed_rows": 164,
+      "changed_only_accuracy": {
+        "baseline": 0.7804878048780488,
+        "v10": 0.8353658536585366,
+        "candidate": 0.7865853658536586,
+        "ensemble": 0.8353658536585366
+      }
+    },
+    "first_both_missing": {
+      "rows": 235,
+      "accuracy": {
+        "baseline": 0.43829787234042555,
+        "v10": 0.4297872340425532,
+        "candidate": 0.4808510638297872,
+        "ensemble": 0.4723404255319149
+      },
+      "name_changed_rows": 164,
+      "changed_only_accuracy": {
+        "baseline": 0.21341463414634146,
+        "v10": 0.20121951219512196,
+        "candidate": 0.25609756097560976,
+        "ensemble": 0.24390243902439024
+      }
+    },
+    "last_both_missing": {
+      "rows": 235,
+      "accuracy": {
+        "baseline": 0.5617021276595745,
+        "v10": 0.5829787234042553,
+        "candidate": 0.5361702127659574,
+        "ensemble": 0.5787234042553191
+      },
+      "name_changed_rows": 164,
+      "changed_only_accuracy": {
+        "baseline": 0.3902439024390244,
+        "v10": 0.42073170731707316,
+        "candidate": 0.3353658536585366,
+        "ensemble": 0.39634146341463417
+      }
+    }
+  },
+  "mean_accuracy": {
+    "baseline": 0.7914893617021277,
+    "v10": 0.8006079027355623,
+    "candidate": 0.8018237082066869,
+    "ensemble": 0.8079027355623101
+  },
+  "candidate_delta_vs_v10": 0.0012158054711246201,
+  "bootstrap_95_vs_v10": [
+    -0.02166704590777538,
+    0.02215768573439228
+  ],
+  "gains_vs_v10": 48,
+  "losses_vs_v10": 46,
+  "ensemble_delta_vs_v10": 0.00729483282674772,
+  "caveat": "Diagnostic, equal scenario mix; strict Korean-only LGB baseline, not official metric/testlike/Public.",
+  "ensemble_bootstrap_95_vs_v10": [
+    -0.007776210400478183,
+    0.02295918367346939
+  ]
+}

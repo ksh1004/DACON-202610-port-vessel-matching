@@ -1,0 +1,5 @@
+[train] 후보·특징 생성 147.2초 (12222행)
+[aug_h4_e1_s7_d0.3] 후보·특징 생성 256.9초 (15795행)
+[hard_s2026] 후보·특징 생성 107.0초 (5382행)
+hard 세트 5382행 (한글 원본 2382행)
+{"name": "lgb_tok", "oof": 0.9941, "oof_hangul": 0.9924, "oof_non_hangul": 0.998, "hard": 0.8379, "hard_hangul": 0.8312, "hard_non_hangul": 0.8533, "minutes": 2.9}

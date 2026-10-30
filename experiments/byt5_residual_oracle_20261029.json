@@ -1,0 +1,57 @@
+{
+  "label_aware_diagnostic_only": true,
+  "reference": {
+    "testlike": 0.9118708558226221,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8219983207388749,
+      "both": 0.5751469353484466
+    }
+  },
+  "ideal_name_expert": {
+    "0.2": {
+      "testlike": 0.9679707718595659,
+      "scenarios": {
+        "clean": 0.9974811083123426,
+        "gt_missing": 0.9874055415617129,
+        "drop_word": 0.924433249370277,
+        "both": 0.869857262804366
+      }
+    },
+    "0.25": {
+      "testlike": 0.9738011664859303,
+      "scenarios": {
+        "clean": 0.9974811083123426,
+        "gt_missing": 0.9874055415617129,
+        "drop_word": 0.9412258606213266,
+        "both": 0.8933669185558354
+      }
+    },
+    "0.3": {
+      "testlike": 0.9793553226572149,
+      "scenarios": {
+        "clean": 0.9974811083123426,
+        "gt_missing": 0.9882451721242653,
+        "drop_word": 0.9571788413098237,
+        "both": 0.9151973131821999
+      }
+    },
+    "0.4": {
+      "testlike": 0.9869489414649394,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9899244332493703,
+        "drop_word": 0.9874055415617129,
+        "both": 0.9286314021830394
+      }
+    }
+  },
+  "potential_name_calls_all_eval_sets": {
+    "0.2": 1210,
+    "0.25": 1265,
+    "0.3": 1462,
+    "0.4": 1860
+  },
+  "definition": "Residual mixture of actual v12 top20 distribution (base fallback on its pruned rows) and a perfect new name-only expert; not learned accuracy or Public ceiling."
+}

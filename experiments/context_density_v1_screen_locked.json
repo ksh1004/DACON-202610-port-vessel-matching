@@ -1,0 +1,122 @@
+{
+  "tag": "context_density_v1",
+  "complete_folds": [
+    1,
+    4
+  ],
+  "reference_v12": {
+    "testlike": 0.9087787707227457,
+    "testlike_hangul": 0.8702574257425743,
+    "hard": 0.8475056283134426,
+    "hard_hangul": 0.8485148514851485,
+    "oof": 0.996826295475221,
+    "scenarios": {
+      "clean": 0.996039603960396,
+      "gt_missing": 0.9702970297029703,
+      "drop_word": 0.8198019801980198,
+      "both": 0.5663366336633663
+    }
+  },
+  "contenders": {
+    "association": {
+      "candidate": {
+        "testlike": 0.9063114439900725,
+        "testlike_hangul": 0.8667326732673267,
+        "hard": 0.8440402817787891,
+        "hard_hangul": 0.8435643564356435,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9623762376237623,
+          "drop_word": 0.8158415841584158,
+          "both": 0.5584158415841585
+        }
+      },
+      "matched_control": {
+        "testlike": 0.9085708499306665,
+        "testlike_hangul": 0.869960396039604,
+        "hard": 0.8475056283134426,
+        "hard_hangul": 0.8485148514851485,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9702970297029703,
+          "drop_word": 0.8217821782178217,
+          "both": 0.5623762376237624
+        }
+      },
+      "matched_control_recipe": "Identical model/data/weights, query context family deranged between fitting vessels, minus same candidate-only classifier; same fixed posterior correction. Not selectable.",
+      "delta_vs_v12": -0.0024673267326732473,
+      "delta_vs_matched_control": -0.002259405940594039,
+      "bootstrap_95_vs_v12": [
+        -0.006910152140005815,
+        0.0005450819672131146
+      ],
+      "delta_by_fold_vs_v12": {
+        "1": -0.005464912280701895,
+        "4": 0.0
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": false,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": false
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9095147281221666,
+          "testlike_hangul": 0.8713087934560327,
+          "hard": 0.8461832690836545,
+          "hard_hangul": 0.8466257668711656,
+          "oof": 0.9967355870178721,
+          "scenarios": {
+            "clean": 0.9959100204498977,
+            "gt_missing": 0.9693251533742331,
+            "drop_word": 0.820040899795501,
+            "both": 0.5725971370143149
+          }
+        },
+        "candidate": {
+          "testlike": 0.9069666708624529,
+          "testlike_hangul": 0.8676687116564417,
+          "hard": 0.8426045369773151,
+          "hard_hangul": 0.8415132924335378,
+          "oof": 0.9967355870178721,
+          "scenarios": {
+            "clean": 0.9959100204498977,
+            "gt_missing": 0.9611451942740287,
+            "drop_word": 0.8159509202453987,
+            "both": 0.5644171779141104
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 3,
+          "lost": 8
+        },
+        "testlike": {
+          "gained": 2,
+          "lost": 12
+        }
+      }
+    }
+  },
+  "selected": null,
+  "truth_outside_top20": {
+    "oof": 0,
+    "hard": 50,
+    "testlike": 51
+  },
+  "actual_competition_submission": false,
+  "caveat": "Repeated exploratory synthetic CV, not confirmed test distribution. Historical v8 outer retrieval mapper exception remains in reference comparison. Metadata likelihood may duplicate existing base evidence; fixed small trial tests net benefit. No guarantee of Public0.97."
+}

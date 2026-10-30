@@ -1,0 +1,383 @@
+{
+  "reference": "v12",
+  "public": 0.9065951735,
+  "local_testlike": 0.9118708558226222,
+  "scenario_mix": {
+    "clean": 0.44,
+    "gt_missing": 0.14,
+    "drop_word": 0.23,
+    "both": 0.19
+  },
+  "error_budget": {
+    "clean": {
+      "rows": 1191,
+      "errors": 3,
+      "weighted_loss": 0.0007758186397984887,
+      "share_of_weighted_error": 0.008803201790283993
+    },
+    "gt_missing": {
+      "rows": 1191,
+      "errors": 20,
+      "weighted_loss": 0.0016456759026028547,
+      "share_of_weighted_error": 0.018673458343026653
+    },
+    "drop_word": {
+      "rows": 1191,
+      "errors": 212,
+      "weighted_loss": 0.02865827036104114,
+      "share_of_weighted_error": 0.3251849388592784
+    },
+    "both": {
+      "rows": 1191,
+      "errors": 506,
+      "weighted_loss": 0.05650545759865658,
+      "share_of_weighted_error": 0.6411665303923507
+    },
+    "non_hangul": {
+      "rows": 11031,
+      "errors": 20,
+      "weighted_loss": 0.0005439216752787598,
+      "share_of_weighted_error": 0.006171870615060176
+    }
+  },
+  "stage_counts": {
+    "clean": {
+      "rows": 1191,
+      "truth_in_base_top2": 1190,
+      "truth_in_base_top5": 1191,
+      "truth_in_base_top10": 1191,
+      "truth_in_base_top20": 1191,
+      "truth_in_base_top50": 1191,
+      "truth_in_all_candidates": 1191,
+      "correct": 1188,
+      "top20_active_selection_error": 1,
+      "top20_present_but_pruned": 2
+    },
+    "gt_missing": {
+      "rows": 1191,
+      "truth_in_base_top2": 1169,
+      "truth_in_base_top5": 1183,
+      "truth_in_base_top10": 1183,
+      "truth_in_base_top20": 1183,
+      "truth_in_base_top50": 1187,
+      "truth_in_all_candidates": 1187,
+      "correct": 1171,
+      "top20_active_selection_error": 6,
+      "absent_from_retrieval": 4,
+      "top20_present_but_pruned": 6,
+      "outside_neural_top20": 4
+    },
+    "drop_word": {
+      "rows": 1191,
+      "truth_in_base_top2": 1067,
+      "truth_in_base_top5": 1154,
+      "truth_in_base_top10": 1179,
+      "truth_in_base_top20": 1184,
+      "truth_in_base_top50": 1189,
+      "truth_in_all_candidates": 1189,
+      "correct": 979,
+      "top20_active_selection_error": 154,
+      "top20_present_but_pruned": 51,
+      "outside_neural_top20": 5,
+      "absent_from_retrieval": 2
+    },
+    "both": {
+      "rows": 1191,
+      "truth_in_base_top2": 774,
+      "truth_in_base_top5": 949,
+      "truth_in_base_top10": 1049,
+      "truth_in_base_top20": 1112,
+      "truth_in_base_top50": 1163,
+      "truth_in_all_candidates": 1163,
+      "correct": 685,
+      "top20_active_selection_error": 397,
+      "outside_neural_top20": 51,
+      "absent_from_retrieval": 28,
+      "top20_present_but_pruned": 28,
+      "routed_non_hangul": 2
+    }
+  },
+  "weighted_error_by_stage": {
+    "routed_non_hangul": 0.00022334172963895882,
+    "absent_from_retrieval": 0.003726280436607892,
+    "outside_neural_top20": 0.0067002518891687655,
+    "top20_present_but_pruned": 0.011031905961376993,
+    "top20_active_selection_error": 0.06590344248530647
+  },
+  "v12_topk": {
+    "clean": {
+      "v12_top2_hits": 1190,
+      "v12_top5_hits": 1191,
+      "v12_top10_hits": 1191,
+      "v12_top20_hits": 1191
+    },
+    "gt_missing": {
+      "v12_top2_hits": 1178,
+      "v12_top5_hits": 1183,
+      "v12_top10_hits": 1183,
+      "v12_top20_hits": 1183
+    },
+    "drop_word": {
+      "v12_top2_hits": 1066,
+      "v12_top5_hits": 1150,
+      "v12_top10_hits": 1179,
+      "v12_top20_hits": 1184
+    },
+    "both": {
+      "v12_top2_hits": 789,
+      "v12_top5_hits": 942,
+      "v12_top10_hits": 1049,
+      "v12_top20_hits": 1112
+    }
+  },
+  "view_diagnostics": {
+    "clean": {
+      "top1_union_hits": 1188,
+      "active_rows": 11,
+      "active_agree": 10,
+      "active_agree_wrong": 0
+    },
+    "gt_missing": {
+      "top1_union_hits": 1176,
+      "active_rows": 48,
+      "active_agree": 23,
+      "active_agree_wrong": 0
+    },
+    "drop_word": {
+      "top1_union_hits": 1038,
+      "active_rows": 276,
+      "active_agree": 125,
+      "active_agree_wrong": 56
+    },
+    "both": {
+      "top1_union_hits": 779,
+      "active_rows": 661,
+      "active_agree": 183,
+      "active_agree_wrong": 95
+    }
+  },
+  "archived_top1_switch_oracle": 0.9307549868049898,
+  "wrong_candidate_metadata": {
+    "clean": {
+      "same_catalog_tonnage": 3,
+      "same_catalog_tonnage_type_flag": 3
+    },
+    "gt_missing": {
+      "same_catalog_tonnage": 3,
+      "same_catalog_tonnage_type_flag": 3
+    },
+    "drop_word": {
+      "same_catalog_tonnage": 140,
+      "same_catalog_tonnage_type_flag": 124
+    },
+    "both": {
+      "same_catalog_tonnage": 80,
+      "same_catalog_tonnage_type_flag": 71
+    }
+  },
+  "examples": [
+    {
+      "scenario": "both",
+      "stage": "outside_neural_top20",
+      "query_name": "케이엠티씨",
+      "truth_name": "KMTC Seoul",
+      "chosen_name": "KMTC Yokohama",
+      "truth_base_rank": 29
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "파이오니어",
+      "truth_name": "Busan Pioneer",
+      "chosen_name": "Kobe Pioneer",
+      "truth_base_rank": 3
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "에스",
+      "truth_name": "S Mercury",
+      "chosen_name": "S Freddie",
+      "truth_base_rank": 2
+    },
+    {
+      "scenario": "both",
+      "stage": "outside_neural_top20",
+      "query_name": "케이엠티씨",
+      "truth_name": "KMTC Seoul",
+      "chosen_name": "KMTC Yokohama",
+      "truth_base_rank": 29
+    },
+    {
+      "scenario": "both",
+      "stage": "outside_neural_top20",
+      "query_name": "에스아이티씨",
+      "truth_name": "SITC Weihai",
+      "chosen_name": "SITC Zhi",
+      "truth_base_rank": 38
+    },
+    {
+      "scenario": "both",
+      "stage": "outside_neural_top20",
+      "query_name": "글로비스",
+      "truth_name": "Glovis Champion",
+      "chosen_name": "Glovis Captain",
+      "truth_base_rank": 24
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "보이저",
+      "truth_name": "Jakarta Voyager",
+      "chosen_name": "Shanghai Voyager",
+      "truth_base_rank": 2
+    },
+    {
+      "scenario": "both",
+      "stage": "outside_neural_top20",
+      "query_name": "에스티아이",
+      "truth_name": "STI Lombard",
+      "chosen_name": "STI Alexis",
+      "truth_base_rank": 26
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "보이저",
+      "truth_name": "Vostochny Voyager",
+      "chosen_name": "Hakata Voyager",
+      "truth_base_rank": 3
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "보이져",
+      "truth_name": "Tianjin Voyager",
+      "chosen_name": "Ningbo Voyager",
+      "truth_base_rank": 2
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "에스",
+      "truth_name": "S Mercury",
+      "chosen_name": "S Freddie",
+      "truth_base_rank": 2
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "보이져",
+      "truth_name": "Tianjin Voyager",
+      "chosen_name": "Ningbo Voyager",
+      "truth_base_rank": 2
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "보이저",
+      "truth_name": "Vostochny Voyager",
+      "chosen_name": "Hakata Voyager",
+      "truth_base_rank": 3
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "보이져",
+      "truth_name": "Tianjin Voyager",
+      "chosen_name": "Ningbo Voyager",
+      "truth_base_rank": 2
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "뉴",
+      "truth_name": "New Stella",
+      "chosen_name": "New Challenge",
+      "truth_base_rank": 2
+    },
+    {
+      "scenario": "drop_word",
+      "stage": "top20_present_but_pruned",
+      "query_name": "스타",
+      "truth_name": "Star Express",
+      "chosen_name": "Star Skipper",
+      "truth_base_rank": 4
+    }
+  ],
+  "counterfactual_local_if_both_perfect_others_fixed": 0.9683763134212787,
+  "counterfactual_local_if_all_other_hangul_perfect_both_fixed": 0.9429506207260646,
+  "caveat": "Historical reused synthetic CV and shared v8 retrieval mapper. Oracles/counterfactuals use labels and are not learned scores/Public projections. Catalog metadata equality is not a proof of indistinguishability.",
+  "training_fold_diagnostics": {
+    "1": {
+      "fold": 1,
+      "source": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+      "eligibility": {
+        "rows": 4815,
+        "eligible": 4680,
+        "positive_absent": 135
+      },
+      "selected_profile": {
+        "rows": 2400,
+        "name_unchanged": 962,
+        "both_tonnages_missing": 758,
+        "exact_word_drop_no_other_text_changes": 212,
+        "exact_word_drop_and_both_tonnages_missing": 88,
+        "text_changed_other_than_exact_word_drop": 1226
+      },
+      "selected_unique_vessels": 304,
+      "max_groups_one_vessel": 16,
+      "top10_vessel_group_share": 0.06041666666666667
+    },
+    "2": {
+      "fold": 2,
+      "source": "strict_han_f2_train_5b13f22dba22.joblib",
+      "eligibility": {
+        "rows": 4905,
+        "eligible": 4778,
+        "positive_absent": 127
+      },
+      "selected_profile": {
+        "rows": 2400,
+        "name_unchanged": 932,
+        "both_tonnages_missing": 741,
+        "exact_word_drop_no_other_text_changes": 211,
+        "exact_word_drop_and_both_tonnages_missing": 87,
+        "text_changed_other_than_exact_word_drop": 1257
+      },
+      "selected_unique_vessels": 313,
+      "max_groups_one_vessel": 15,
+      "top10_vessel_group_share": 0.057916666666666665
+    }
+  },
+  "actual_name_change_by_scenario": {
+    "gt_missing": {
+      "rows": 1191,
+      "actually_changed_names": 0,
+      "changed_name_errors": 0,
+      "unchanged_name_errors": 20,
+      "weighted_mass_changed": 0.0
+    },
+    "drop_word": {
+      "rows": 1191,
+      "actually_changed_names": 879,
+      "changed_name_errors": 209,
+      "unchanged_name_errors": 3,
+      "weighted_mass_changed": 0.16974811083123426
+    },
+    "both": {
+      "rows": 1191,
+      "actually_changed_names": 879,
+      "changed_name_errors": 494,
+      "unchanged_name_errors": 12,
+      "weighted_mass_changed": 0.14022670025188919
+    }
+  },
+  "v12_topk_oracles": {
+    "2": 0.9363385300459638,
+    "5": 0.9654493612802209,
+    "10": 0.9813183789124625,
+    "20": 0.9890295459989445
+  },
+  "analysis_source_sha256": "dcf840d657e328fe3b217c8b2f44e7954fa370b41a9d1c11fb917b56f7f41610"
+}

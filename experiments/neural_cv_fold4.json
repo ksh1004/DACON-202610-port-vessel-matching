@@ -1,0 +1,31 @@
+{
+  "fold": 4,
+  "source": "b2bd476d9d4f",
+  "training_groups": 0,
+  "max_tokens": 256,
+  "negative_count": 7,
+  "training_vessels_overlap": 0,
+  "merged": {
+    "baseline": {
+      "testlike_hangul": 0.8565342960288809,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9530685920577617,
+        "drop_word": 0.8014440433212996,
+        "both": 0.51985559566787
+      },
+      "hard_hangul": 0.8158844765342961
+    },
+    "blend25": {
+      "testlike_hangul": 0.8684115523465704,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9530685920577617,
+        "drop_word": 0.8411552346570397,
+        "both": 0.5342960288808665
+      },
+      "hard_hangul": 0.8339350180505415
+    }
+  },
+  "reused_adapter": "experiments\\artifacts\\neural_v1\\fold4_adapter"
+}

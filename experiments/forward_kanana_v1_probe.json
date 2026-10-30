@@ -1,0 +1,383 @@
+{
+  "tag": "forward_kanana_v1",
+  "rows": 48,
+  "distinct_vessels": 48,
+  "reference_correct": 17,
+  "candidate_correct": 15,
+  "gained": 0,
+  "lost": 2,
+  "net_gain": -2,
+  "admitted": false,
+  "seconds": 150.7066468000412,
+  "scorer_protocol": {
+    "model_dir": "D:\\KSH\\hf_models\\kakaocorp__kanana-1.5-2.1b-instruct-2505",
+    "prompt": "You restore the original Latin-alphabet spelling of ship names that were written in Korean Hangul. The names come from many languages (English, Korean, Chinese pinyin, Japanese, Greek, Dutch ...). Korean particles such as '\uc81cN' or a trailing '\ud638' mean 'No. N' or nothing. Answer with the ship name only, in English letters. Use UPPERCASE Latin letters. Render only the name words present in the input; do not invent missing words.",
+    "few_shot_examples": 12,
+    "input_fields": [
+      "observed_name",
+      "candidate_name"
+    ],
+    "batch_size": 32,
+    "pad_length": 512,
+    "padding_side": "left",
+    "padded_last_batch": "repeat last candidate",
+    "candidate_order": "sorted unique raw name strings",
+    "position_ids": "attention-mask cumulative positions, padded positions zero",
+    "dtype": "torch.bfloat16",
+    "attention": "sdpa",
+    "target_tokenization": "separate target encode, add_special_tokens=False",
+    "fixed_logits_to_keep": 33,
+    "maximum_target_tokens": 32,
+    "score": "observed target tokens only; EOS reported separately",
+    "prompt_sha256": "073325bf22954b7a536307791e6e2fe21c4df584461af52f6d2be2e1d4a9ceb1",
+    "source_sha256": "902942c15a0345db968ff133195b4b697bf9fa275167ea04ed17594ab7aae95e",
+    "model_config_sha256": "8064bf2423445240e73247a03631b53dd839a880a26908e4747c0fc679d46031",
+    "tokenizer_sha256": "31d17e500c82ff116fc14d4dd0106a08e49bd3512d8a81473047121ef8ea09f9",
+    "direction": "P(uppercase Latin fragment + assistant turn end | observed Korean)",
+    "examples": [
+      [
+        "\ubaa8\ub2dd \uba54\ub098\ub4dc",
+        "MORNING MENAD"
+      ],
+      [
+        "\ucf00\uc774\uc5e0\ud2f0\uc528 \ud558\uc774\ud401",
+        "KMTC HAIPHONG"
+      ],
+      [
+        "\ud765\uc544 \uc0ac\ub77c",
+        "HEUNG A SARAH"
+      ],
+      [
+        "\ubc14\uc624\ub8e8\uc774\ub9c1",
+        "BAO RUI LING"
+      ],
+      [
+        "\uce74\uc2dc\ub9c8 \ub9c8\ub8e8 10",
+        "KASHIMA MARU NO 10"
+      ],
+      [
+        "\uc81c2\ud765\uc544 \ud30c\uc774\uc624\ub2c8\uc5b4\ud638",
+        "NO 2 HEUNG A PIONEER"
+      ],
+      [
+        "\uc5e0\uc5d0\uc2a4\uc0e4\ub860",
+        "MS SHARON"
+      ],
+      [
+        "\ud5e4\ub85c\uc775\uc5d0\uc774\uc2a4",
+        "HEROIC ACE"
+      ],
+      [
+        "\uac70\uc601\uc36c5",
+        "KEOYOUNG SUN 5"
+      ],
+      [
+        "\ub3cc\ud53c\uc98c\uadf8\ub77c\uce20",
+        "DOLFIJNGRACHT"
+      ],
+      [
+        "\uc0e8\ub3d9 \ud478 \uc720\uc548",
+        "SHANDONG FU YUAN"
+      ],
+      [
+        "\ud504\ub7f0\ud2b8 \ub514\uc2a4\ucee4\ubc84\ub9ac",
+        "FRONT DISCOVERY"
+      ]
+    ],
+    "target_terminator_id": 128009,
+    "own_source_sha256": "b4c6eb46574b3f5ca55f4799a44f77d6b6a5bd92e9216680fbcd5dc4bafde744"
+  },
+  "exact_pair_order_and_single_checks": true,
+  "details": [
+    {
+      "sample_id": "TRAIN_09046_both",
+      "before": 2022,
+      "after": 2022,
+      "truth": 15399
+    },
+    {
+      "sample_id": "TRAIN_01033_drop_word",
+      "before": 36320,
+      "after": 36320,
+      "truth": 36320
+    },
+    {
+      "sample_id": "TRAIN_11519_both",
+      "before": 59215,
+      "after": 59215,
+      "truth": 59215
+    },
+    {
+      "sample_id": "TRAIN_09939_drop_word",
+      "before": 15421,
+      "after": 15330,
+      "truth": 15421
+    },
+    {
+      "sample_id": "TRAIN_01802_both",
+      "before": 33947,
+      "after": 33947,
+      "truth": 36637
+    },
+    {
+      "sample_id": "TRAIN_02934_both",
+      "before": 34393,
+      "after": 34393,
+      "truth": 34392
+    },
+    {
+      "sample_id": "TRAIN_04938_both",
+      "before": 37272,
+      "after": 37272,
+      "truth": 37278
+    },
+    {
+      "sample_id": "TRAIN_04241_both",
+      "before": 20952,
+      "after": 20952,
+      "truth": 45641
+    },
+    {
+      "sample_id": "TRAIN_08446_both",
+      "before": 2359,
+      "after": 2359,
+      "truth": 2359
+    },
+    {
+      "sample_id": "TRAIN_06750_both",
+      "before": 8378,
+      "after": 31402,
+      "truth": 4413
+    },
+    {
+      "sample_id": "TRAIN_08220_both",
+      "before": 41643,
+      "after": 42577,
+      "truth": 42898
+    },
+    {
+      "sample_id": "TRAIN_05558_drop_word",
+      "before": 27638,
+      "after": 27638,
+      "truth": 27638
+    },
+    {
+      "sample_id": "TRAIN_09229_both",
+      "before": 29159,
+      "after": 29159,
+      "truth": 41476
+    },
+    {
+      "sample_id": "TRAIN_08873_drop_word",
+      "before": 28839,
+      "after": 28839,
+      "truth": 28839
+    },
+    {
+      "sample_id": "TRAIN_01491_both",
+      "before": 35113,
+      "after": 35113,
+      "truth": 34281
+    },
+    {
+      "sample_id": "TRAIN_04613_both",
+      "before": 15458,
+      "after": 15458,
+      "truth": 15458
+    },
+    {
+      "sample_id": "TRAIN_06135_both",
+      "before": 7794,
+      "after": 7794,
+      "truth": 7292
+    },
+    {
+      "sample_id": "TRAIN_10067_both",
+      "before": 36586,
+      "after": 36586,
+      "truth": 36588
+    },
+    {
+      "sample_id": "TRAIN_01862_both",
+      "before": 7179,
+      "after": 6124,
+      "truth": 8230
+    },
+    {
+      "sample_id": "TRAIN_04925_both",
+      "before": 15470,
+      "after": 15470,
+      "truth": 15470
+    },
+    {
+      "sample_id": "TRAIN_05610_drop_word",
+      "before": 28727,
+      "after": 27970,
+      "truth": 28727
+    },
+    {
+      "sample_id": "TRAIN_03266_both",
+      "before": 23228,
+      "after": 23228,
+      "truth": 23228
+    },
+    {
+      "sample_id": "TRAIN_04839_both",
+      "before": 59489,
+      "after": 40658,
+      "truth": 59492
+    },
+    {
+      "sample_id": "TRAIN_04684_both",
+      "before": 15470,
+      "after": 15470,
+      "truth": 15322
+    },
+    {
+      "sample_id": "TRAIN_01111_both",
+      "before": 7326,
+      "after": 7326,
+      "truth": 15404
+    },
+    {
+      "sample_id": "TRAIN_01130_both",
+      "before": 24732,
+      "after": 24732,
+      "truth": 24732
+    },
+    {
+      "sample_id": "TRAIN_09629_both",
+      "before": 15484,
+      "after": 15484,
+      "truth": 14449
+    },
+    {
+      "sample_id": "TRAIN_09114_both",
+      "before": 35652,
+      "after": 36628,
+      "truth": 36627
+    },
+    {
+      "sample_id": "TRAIN_08651_both",
+      "before": 24715,
+      "after": 24715,
+      "truth": 27731
+    },
+    {
+      "sample_id": "TRAIN_10440_both",
+      "before": 35276,
+      "after": 35276,
+      "truth": 33355
+    },
+    {
+      "sample_id": "TRAIN_04448_both",
+      "before": 77766,
+      "after": 77766,
+      "truth": 60311
+    },
+    {
+      "sample_id": "TRAIN_08721_both",
+      "before": 6828,
+      "after": 6828,
+      "truth": 6804
+    },
+    {
+      "sample_id": "TRAIN_06395_both",
+      "before": 4456,
+      "after": 4456,
+      "truth": 4456
+    },
+    {
+      "sample_id": "TRAIN_00620_both",
+      "before": 22940,
+      "after": 22940,
+      "truth": 27028
+    },
+    {
+      "sample_id": "TRAIN_11226_both",
+      "before": 8882,
+      "after": 8882,
+      "truth": 9314
+    },
+    {
+      "sample_id": "TRAIN_10171_both",
+      "before": 33825,
+      "after": 33825,
+      "truth": 34516
+    },
+    {
+      "sample_id": "TRAIN_11907_both",
+      "before": 41162,
+      "after": 41162,
+      "truth": 27988
+    },
+    {
+      "sample_id": "TRAIN_07154_both",
+      "before": 34938,
+      "after": 34938,
+      "truth": 34938
+    },
+    {
+      "sample_id": "TRAIN_04857_both",
+      "before": 7124,
+      "after": 7124,
+      "truth": 3403
+    },
+    {
+      "sample_id": "TRAIN_00978_both",
+      "before": 42666,
+      "after": 42666,
+      "truth": 42666
+    },
+    {
+      "sample_id": "TRAIN_07199_drop_word",
+      "before": 8392,
+      "after": 8392,
+      "truth": 8440
+    },
+    {
+      "sample_id": "TRAIN_02420_both",
+      "before": 78222,
+      "after": 78222,
+      "truth": 78017
+    },
+    {
+      "sample_id": "TRAIN_03751_both",
+      "before": 15778,
+      "after": 15778,
+      "truth": 15778
+    },
+    {
+      "sample_id": "TRAIN_07818_both",
+      "before": 59063,
+      "after": 59063,
+      "truth": 59063
+    },
+    {
+      "sample_id": "TRAIN_00495_both",
+      "before": 1775,
+      "after": 1775,
+      "truth": 2725
+    },
+    {
+      "sample_id": "TRAIN_02940_both",
+      "before": 42563,
+      "after": 42563,
+      "truth": 42561
+    },
+    {
+      "sample_id": "TRAIN_07215_both",
+      "before": 58973,
+      "after": 58973,
+      "truth": 58972
+    },
+    {
+      "sample_id": "TRAIN_00170_both",
+      "before": 77981,
+      "after": 77981,
+      "truth": 77981
+    }
+  ],
+  "actual_competition_submission": false,
+  "diagnostic_not_competition_score": true
+}

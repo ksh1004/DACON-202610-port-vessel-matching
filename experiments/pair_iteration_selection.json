@@ -1,0 +1,55 @@
+{
+  "tag": "neural_evidence_v1",
+  "selected_variant": "evidence_only",
+  "decisions": {
+    "evidence_only": {
+      "passed": true,
+      "checks": {
+        "testlike": true,
+        "hard_hangul": true,
+        "oof": true,
+        "positive_folds": true,
+        "fresh_stress": true
+      },
+      "metrics": {
+        "testlike": 0.9087617038494902,
+        "testlike_hangul": 0.8704366078925272,
+        "hard": 0.8541146095717884,
+        "hard_hangul": 0.8551637279596978,
+        "oof": 0.997692854143361,
+        "scenarios": {
+          "clean": 0.9974811083123426,
+          "gt_missing": 0.9739714525608733,
+          "drop_word": 0.8270361041141897,
+          "both": 0.5524769101595298
+        }
+      }
+    },
+    "equal_neural_ensemble": {
+      "passed": false,
+      "checks": {
+        "testlike": true,
+        "hard_hangul": true,
+        "oof": true,
+        "positive_folds": false,
+        "fresh_stress": true
+      },
+      "metrics": {
+        "testlike": 0.9093318130014634,
+        "testlike_hangul": 0.8712510495382032,
+        "hard": 0.8544084802686818,
+        "hard_hangul": 0.855583543240974,
+        "oof": 0.997692854143361,
+        "scenarios": {
+          "clean": 0.9974811083123426,
+          "gt_missing": 0.9798488664987406,
+          "drop_word": 0.8228379513014273,
+          "both": 0.5575146935348446
+        }
+      }
+    }
+  },
+  "cv_audit_sha256": "948dd495887b98e28871c9919e05d0a144fd3a5fc67fe7a66993a58bd21bfcd9",
+  "actual_competition_submission": false,
+  "caveat": "Operational gates on exploratory reused validation; not proof of Public improvement or 0.97."
+}

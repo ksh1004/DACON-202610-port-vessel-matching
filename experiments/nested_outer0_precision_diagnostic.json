@@ -1,0 +1,37 @@
+{
+  "complete_qwen_groups": 1398,
+  "bge_groups": 1398,
+  "qwen_active_nonexact_rows": [
+    {
+      "index": 399,
+      "sample_id": "TRAIN_04336_aug0_hard",
+      "max_abs": 0.03125,
+      "changed_logits": 1
+    },
+    {
+      "index": 511,
+      "sample_id": "TRAIN_07557_aug0_hard",
+      "max_abs": 0.125,
+      "changed_logits": 1
+    },
+    {
+      "index": 1082,
+      "sample_id": "TRAIN_06889_both",
+      "max_abs": 0.125,
+      "changed_logits": 1
+    },
+    {
+      "index": 1118,
+      "sample_id": "TRAIN_07557_both",
+      "max_abs": 0.125,
+      "changed_logits": 1
+    },
+    {
+      "index": 1247,
+      "sample_id": "TRAIN_09664_both",
+      "max_abs": 0.125,
+      "changed_logits": 1
+    }
+  ],
+  "v12_winner_flips": []
+}

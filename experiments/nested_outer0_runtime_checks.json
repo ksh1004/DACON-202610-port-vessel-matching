@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "nonexact_archive_rows_recomputed": 5,
+  "exact_current_repeat": true,
+  "exact_reverse_row_order": true,
+  "v12_winner_flips": 0,
+  "note": "Historical BF16 scores differ in5single candidate logits, but current deployed scorer repeats exactly and all v12 winners agree; no new head evaluated."
+}

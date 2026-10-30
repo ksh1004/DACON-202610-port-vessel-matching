@@ -1,0 +1,28 @@
+{
+  "registered_utc": "2026-10-29T00:36:08.058162+00:00",
+  "registered_before_any_new_head_fit_or_validation": true,
+  "common_inner_neural_training_already_in_progress": true,
+  "family_order": [
+    "nested_combiner_v1",
+    "nested_raw78_fallback_v1",
+    "nested_combiner_reverse_v1",
+    "nested_combiner_token_prior_v1"
+  ],
+  "contender_priority": [
+    "anchor50",
+    "direct"
+  ],
+  "stop_after_first_screen_qualifier": true,
+  "no_later_family_after_fresh_or_full_rejection": true,
+  "raw_fallback_reason": "Retain a qualifying improvement caused by meta data/weighting even if adding neural features does not beat the matched raw78 control; same v12 improvement and noninferiority gates, no feature-attribution claim.",
+  "source_hashes": {
+    "tools/select_nested_family.py": "a38afc3ee48b1006cd3ed49ddb1f15b6fef0c8f0bc9bd5e03a16cfba6999775f",
+    "tools/audit_nested_raw_fallback.py": "ff44097d15f0bff88048950e1f3e5af22eb888d5289d647cfe79d6a0286e65a1",
+    "experiments/nested_raw78_fallback_v1_protocol.json": "45b8bfa00aa21ec8d37d0c2cb7f39ac970259349fa24a70f91dc106d315c0580",
+    "tools/nested_reverse_extension.py": "c496302e5228e8ec42556d2905291e44e4dfffd8274d146bc988cf6fea44b12b",
+    "experiments/nested_combiner_reverse_v1_protocol.json": "d7ac440dd7cab68f53e1897059fc2953d5bc6add72c0f80cddfc9879fdfe63e2",
+    "tools/nested_token_prior_extension.py": "079f1555d9605f3d1a306947aaf07093d6ac584dcd041badc9ee4e51f387645d",
+    "experiments/nested_combiner_token_prior_v1_protocol.json": "84df77e2b6beb58709fb6ffa49464b850df3f4c2a39620cbdff4061316f22ea5"
+  },
+  "actual_competition_submission": false
+}

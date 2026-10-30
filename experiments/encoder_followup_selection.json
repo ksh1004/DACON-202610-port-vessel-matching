@@ -1,0 +1,65 @@
+{
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "selected": null,
+  "trials": [
+    {
+      "tag": "encoder_bge_full_v1",
+      "kind": "expanded",
+      "passed": false,
+      "stage": "screen",
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": true,
+        "hard_hangul": true,
+        "drop_word": true,
+        "clean_lost": true
+      }
+    },
+    {
+      "tag": "encoder_confidence40_v1",
+      "kind": "confidence",
+      "passed": false,
+      "stage": "screen",
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": true,
+        "hard_hangul": true,
+        "drop_word": true,
+        "clean_lost": true
+      }
+    },
+    {
+      "tag": "encoder_seed_average_v1",
+      "kind": "seed_average",
+      "passed": false,
+      "stage": "screen",
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": true,
+        "hard_hangul": true,
+        "drop_word": true,
+        "clean_lost": true
+      }
+    },
+    {
+      "tag": "encoder_seed_probability_v1",
+      "kind": "seed_probability",
+      "passed": false,
+      "stage": "screen",
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": true,
+        "drop_word": false,
+        "clean_lost": true
+      }
+    }
+  ],
+  "actual_competition_submission": false,
+  "caveat": "Exploratory reused validation, sequential predeclared fallback; Public improvement unmeasured."
+}

@@ -1,0 +1,26 @@
+{
+  "client_date": "2026-10-29",
+  "status": "completed_rejected",
+  "main_log": "experiments/run_byte_names_v1.log",
+  "per_fold_logs": [
+    "experiments/byte_names_v1_fold1_run.log",
+    "experiments/byte_names_v1_fold4_run.log"
+  ],
+  "protocol": "experiments/byte_names_v1_protocol.json",
+  "protocol_fingerprint": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+  "scope": "Single name-only ByT5 transduction candidate; residual0.3 to actual v12top20 with generic untuned ByT5 control",
+  "training": "pilot group20% innerheldout, exactpair purge, NLL checkpoints1/3/6/12 then refit outerfull for chosenepoch; full300M finetune Adafactor1e-3, AMPBF16, FP32weights; two rolling checkpoint slots",
+  "important": "Do not duplicate running main or edit registered source/protocol after training. No automatic context prior or coefficient search after failure.",
+  "if_rejected": "Run -m tools.check_byte_names --runtime, verifybaselinev12/source/ZIP, finalize docs/portfolio43; no fullmodel/ZIP/upload.",
+  "model": "D:/KSH/hf_models/google__byt5-small",
+  "actual_public": 0.9065951735,
+  "actual_server_seconds": 591,
+  "actual_submissions": 9,
+  "actual_submission": false,
+  "callsign_or_identity_lookup": false,
+  "active_jobs": [],
+  "final_audit": "experiments/name_iteration_20261029.json",
+  "conditional_length_protocol": "experiments/byte_names_length_v1_protocol.json",
+  "independent_forward_probe": "experiments/forward_kanana_v1_probe.json",
+  "notes": "RawByT5 and training-length normalisation both screen-rejected; independent forwardKanana48vessel probe17to15 also rejected. Runtime and baseline preservation checks PASS. No fresh/full/modelZIP/submission. Do not restart completed frozen selections."
+}

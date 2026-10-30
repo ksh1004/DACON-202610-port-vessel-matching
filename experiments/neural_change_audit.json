@@ -1,0 +1,44 @@
+{
+  "oof": {
+    "all": {
+      "gained_rows": 2,
+      "lost_rows": 0,
+      "gained_vessels": 1,
+      "lost_vessels": 0
+    }
+  },
+  "hard": {
+    "all": {
+      "gained_rows": 53,
+      "lost_rows": 39,
+      "gained_vessels": 44,
+      "lost_vessels": 35
+    }
+  },
+  "testlike": {
+    "all": {
+      "gained_rows": 111,
+      "lost_rows": 93,
+      "gained_vessels": 55,
+      "lost_vessels": 49
+    },
+    "gt_missing": {
+      "gained_rows": 11,
+      "lost_rows": 4,
+      "gained_vessels": 4,
+      "lost_vessels": 2
+    },
+    "drop_word": {
+      "gained_rows": 38,
+      "lost_rows": 34,
+      "gained_vessels": 23,
+      "lost_vessels": 19
+    },
+    "both": {
+      "gained_rows": 62,
+      "lost_rows": 55,
+      "gained_vessels": 36,
+      "lost_vessels": 32
+    }
+  }
+}

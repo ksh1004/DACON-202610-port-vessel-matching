@@ -1,0 +1,27 @@
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:01<00:01,  1.75s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.66s/it]Loading checkpoint shards: 100%|██████████| 2/2 [00:03<00:00,  1.67s/it]
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Dedicated4B probe 8/48 seconds9.0
+Dedicated4B probe 16/48 seconds18.0
+Dedicated4B probe 24/48 seconds27.0
+Dedicated4B probe 32/48 seconds36.0
+Dedicated4B probe 40/48 seconds45.0
+Dedicated4B probe 48/48 seconds54.1
+{
+  "tag": "dedicated_reranker4b_v1",
+  "rows": 48,
+  "distinct_vessels": 48,
+  "reference_correct": 17,
+  "candidate_correct": 15,
+  "gained": 3,
+  "lost": 5,
+  "net_gain": -2,
+  "admitted": false,
+  "seconds": 62.917666899971664,
+  "actual_batch": 4,
+  "exact_order_single_checks": true,
+  "max_cuda_allocated_bytes": 8139622912,
+  "model_revision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+  "actual_competition_submission": false,
+  "new_model_training": false,
+  "diagnostic_not_competition_score": true
+}

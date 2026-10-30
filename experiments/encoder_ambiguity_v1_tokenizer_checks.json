@@ -1,0 +1,9 @@
+{
+  "fold1_actual_saved_tokenizer_all_eval_pairs_equal_cached": true,
+  "candidate_pairs": 27360,
+  "only_legacy_tokenizer_json_changes": [
+    "truncation"
+  ],
+  "training_replay_logit_difference_cause_not_established": true,
+  "scope": "Encoding equivalence only; unmasked retraining is a separate paired control, not an exact historical-weight replay"
+}

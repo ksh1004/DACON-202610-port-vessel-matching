@@ -1,0 +1,121 @@
+{
+  "tag": "encoder_ambiguity_v1",
+  "registered_utc": "2026-10-29T03:35:01.726812+00:00",
+  "registered_before_new_training_or_scores": true,
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "reference_server_seconds": 591,
+  "training_groups": 2400,
+  "epochs": 1,
+  "seed": 42,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "learning_rate": 0.0001,
+  "groups_per_batch": 2,
+  "group_size": 8,
+  "max_tokens": 256,
+  "arms": [
+    "none",
+    "targeted",
+    "random"
+  ],
+  "only_selectable_arm": "targeted",
+  "negative_weight": 0.25,
+  "loss": "cross_entropy(scores + log(negative_weights), positive0); positive_weight1, unselected_negative_weight1, selected_negative_weight0.25",
+  "target_rule": "Actual Hangul; a query-only cached Latin beam exactly matches a contiguous word span in both positive and negative catalog names; same candidate flag/type when query has that field; same positive catalogGT when either queryGT orIGT is positive. Other vessel IDs stay negatives; training pressure only is relaxed.",
+  "random_control": "Same number per identical query, uniform choice among all7negatives without replacement; independent numpy RNG seed20261029+10000*fold+groupPosition; overlap with targeted masks allowed.",
+  "training_inputs": "Exact all19200 tokenized pairs from the original v12 phonetic groups; all three arms share initialization, ordering, shape and updates. Reset seed immediately before model initialization.",
+  "fixed_mix": {
+    "v8": 0.75,
+    "qwen_v11": 0.125,
+    "new_encoder": 0.125
+  },
+  "screen_folds": [
+    1,
+    4
+  ],
+  "screen_gate": {
+    "testlike_gain_min": 0.003,
+    "minimum_fold_delta": -0.002,
+    "hard_hangul_delta_min": -0.002,
+    "drop_word_delta_min": -0.002,
+    "clean_lost_rows_max": 1,
+    "gain_vs_unmasked_min": 0.001,
+    "gain_vs_random_min": 0.001
+  },
+  "fresh_guard": {
+    "fold": 3,
+    "minimum_mean_accuracy_delta": -0.002,
+    "seed": 2026102901,
+    "scenarios": [
+      "gt_only_missing",
+      "igt_only_missing",
+      "gt15pct_conflict",
+      "word_drop_gt",
+      "truncated_gt",
+      "word_drop_missing",
+      "truncated_missing"
+    ],
+    "few_shot_vessels_excluded": true,
+    "training_only_retrieval": true,
+    "previously_used_vessels_not_pristine": true
+  },
+  "full_gate": {
+    "all_5_folds_required": true,
+    "testlike_gain_min": 0.005,
+    "hard_hangul_delta_min": -0.001,
+    "drop_word_delta_min": -0.002,
+    "oof_delta_min": -0.0006,
+    "positive_folds_min": 4,
+    "gain_vs_unmasked_min": 0.001,
+    "gain_vs_random_min": 0.001
+  },
+  "model": {
+    "path": "D:\\KSH\\hf_models\\BAAI__bge-reranker-v2-m3",
+    "revision": {
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    },
+    "config_sha256": "13dcd6c31d9fec9d1d8e158702072f62d7fa7d312a64b9fe057bec9a08cfe41a",
+    "tokenizer_sha256": "69564b696052886ed0ac63fa393e928384e0f8caada38c1f4864a9bfbf379c15"
+  },
+  "source_hashes": {
+    "src/ambiguity_loss.py": "340b0f0cb7e498a4e1f23c48ba1d45f4efeb60c0a9dd211b5fb85e48ea8006ff",
+    "tools/ambiguity_encoder_experiment.py": "cef3cf77d919bae58c9123ccabbedaa9b2b0ba1910e10786e99a5bf99fc218d5",
+    "tools/audit_observation_ambiguity.py": "68bf3f527b2a355fc93ceb8b19613faf51372a58deb81479fad9124a6c3da1ff",
+    "tools/audit_ambiguity_iteration.py": "e9e059e59eea5a417b629435a62cef9abc4fb7809ed82b4364c1eb12cf7f493c",
+    "tools/check_ambiguity_setup.py": "e1b624a9f6a30807e3be5e698ad148b3c17ecdc0bd63a067b93442438da327d5",
+    "tools/run_ambiguity_iteration.py": "c48a87601bdf5082ff89322ae207c9d07469375dcb78e4ef6a5773565fcbb181",
+    "tools/register_ambiguity_iteration.py": "53796bd959feee33c1cbfef52e54f1f135f8012dd00a0f21a1f2977661c74d06",
+    "tools/fresh_ambiguity_guard.py": "12f75e0a8a9d8c0393b0eb8138a36837edf8713ac04aa893f247122e158a6cfc",
+    "tools/fresh_encoder_extension.py": "ac1475303d977038c55b2055a5724b0f985f62a4303eed2180575970d2fbd2f9",
+    "tools/audit_encoder_extension.py": "025210bff213145082d61befcac98d81d182fce2b7b2f06ad11bdbbac313ca8d",
+    "src/focused_encoder_experiment.py": "f562530e14fe7dc3db90c17c6b26d616fed3c7f2d4b42ec03403d46d66a0c072",
+    "src/encoder_phonetic_experiment.py": "3de675e84a56e466afe1f85821a51e3b11cab353ee247e39b93a0f547be2b857",
+    "src/encoder_extended_experiment.py": "b0adb11954ba52486256f434cbf18b392c3ba95bd9516b061197e313a2629198",
+    "src/encoder_phonetics.py": "4ba7adb40ce087990c671dbf7d35c0fc4655f318d979f777248aee07fcf6cc1b",
+    "src/encoder_pair.py": "687764251db138cae140e80b2c7a676c6215020680734202ed5364f6e39cd7e0",
+    "src/pair_views.py": "850907ff855ac9540fa818c5f6d93ebae778d901e47ba721b3eeca4f2de564e4",
+    "src/pair_evidence.py": "846c9b564933e9f96c2bf4ef441ed395d4a2562f0b74ecb75c8ec684f5cbf16d",
+    "src/neural_pair.py": "ba17461516c168713e54adc4e2975136980ee64ad9eca6dff2d7f4b8bafd357b",
+    "src/features.py": "1df5899912dbc5bb3366cce769efb17268ac0c0c72ae4693f8081cda4737d75d",
+    "src/retrieval.py": "59c4216c9a8be48fce4b1ada93b2a17747888ed2bab3e68bb8de42a5b8ea49c9",
+    "src/augment.py": "bea2fe2e56208bfc7972bd8f4d94251e444deae0afde4fdb8cd272cff49ccbb2",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+    "experiments/folds.csv": "99bc9010ca3c8f0fc518110fb059ce705f130146f8b8b9e625f483bd7df58c9d",
+    "experiments\\cache\\llm_kanana_73ef4cc1.json": "ad981215831ac736f23ab12c1bd375fc2f21d666424749146f043770dd55d47c",
+    "experiments/artifacts/strict_han_v1/base_fold0.txt": "cde56255e6b5a1199e29970ea5d9938fcb9517b8d3daaf636092249fe240b1ee",
+    "experiments/artifacts/strict_han_v1/base_fold1.txt": "8bf3bc6707aff16effaa6c1d19dae22c4bc6665686f40c691a5b339741e3d665",
+    "experiments/artifacts/strict_han_v1/base_fold2.txt": "a7b61d6b117969dfb18022adfbc573766b019a2fd6b297c8a8324cfad56560cd",
+    "experiments/artifacts/strict_han_v1/base_fold3.txt": "3f5dfd80ec6da53248475b837d2d54c352db0fb9b8a6d9dc2c95340de55a6664",
+    "experiments/artifacts/strict_han_v1/base_fold4.txt": "fd2baa6bb71fdd2a0fdc8d8765937c391d27188a700f090c9f44a6753c0e23de"
+  },
+  "no_hyperparameter_or_mask_rule_search": true,
+  "random_or_unmasked_not_fallback_candidates": true,
+  "no_automatic_byt5_or_context_prior_after_failure": true,
+  "callsign_or_identity_lookup": false,
+  "actual_competition_submission": false,
+  "caveat": "Repeated exploratory validation; historical v8 outer retrieval mapper exception. Training retrieval/miner strictly vessel-held-out. Existing public forward-LLM fewshots; report no-shot-vessel sensitivity. BGE12.5% replacement is a causal loss pilot, not a direct route to Public0.97."
+}

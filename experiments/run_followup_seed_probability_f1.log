@@ -1,0 +1,9 @@
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_seed_average_v1\fold1_seed2026_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+encoder eval oof: 200/228
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+encoder eval hard: 200/456
+encoder eval hard: 400/456
+encoder eval testlike: 200/684
+encoder eval testlike: 400/684
+encoder eval testlike: 600/684
+{"note": "raw-seed diagnostics; use probability-mean auditor for decisions", "metrics": {"baseline": {"testlike_hangul": 0.8599122807017544, "hard_hangul": 0.8486842105263158, "scenarios": {"clean": 0.9912280701754386, "gt_missing": 0.9692982456140351, "drop_word": 0.7850877192982456, "both": 0.5657894736842105}}, "reference_v11": {"testlike_hangul": 0.8576754385964913, "hard_hangul": 0.8552631578947368, "scenarios": {"clean": 0.9912280701754386, "gt_missing": 0.9517543859649122, "drop_word": 0.8114035087719298, "both": 0.5350877192982456}}, "encoder25": {"testlike_hangul": 0.8666666666666667, "hard_hangul": 0.8486842105263158, "scenarios": {"clean": 0.9912280701754386, "gt_missing": 0.9912280701754386, "drop_word": 0.793859649122807, "both": 0.5745614035087719}}, "equal_ensemble": {"testlike_hangul": 0.8637280701754386, "hard_hangul": 0.8530701754385965, "scenarios": {"clean": 0.9912280701754386, "gt_missing": 0.9736842105263158, "drop_word": 0.8026315789473685, "both": 0.5614035087719298}}}}

@@ -1,0 +1,29 @@
+{"fold": 1, "groups": 2400, "affected_groups": 99, "relaxed_negatives": 252, "random_overlap_with_target": 140, "same_per_query_mask_counts": true, "all_19200_pairs_exactly_legacy": true, "vessel_overlap": 0, "fingerprint": "f95dd38dd6337ac5d0965bcdcae2aaeb9374ac05e74b3eef748b36efb1355a43", "token_sha256": "03c9ef9e27146e389717fc34adf4fe07ffa93a8580709c35c148a1000932ada3"}
+{"fold": 4, "groups": 2400, "affected_groups": 108, "relaxed_negatives": 289, "random_overlap_with_target": 144, "same_per_query_mask_counts": true, "all_19200_pairs_exactly_legacy": true, "vessel_overlap": 0, "fingerprint": "f95dd38dd6337ac5d0965bcdcae2aaeb9374ac05e74b3eef748b36efb1355a43", "token_sha256": "21f578e9505c972f944f9088d3181c477c5133e034b8cce41ce0639dd3380852"}
+{
+  "status": "PASS",
+  "fingerprint": "f95dd38dd6337ac5d0965bcdcae2aaeb9374ac05e74b3eef748b36efb1355a43",
+  "unmasked_loss_and_gradient_exact": true,
+  "manual_weighted_loss_equal": true,
+  "positive_mask_rejected": true,
+  "folds": [
+    {
+      "fold": 1,
+      "groups": 2400,
+      "all_tokens_equal_legacy": true,
+      "per_query_relaxed_counts_equal": true,
+      "id_and_callsign_ignored": true,
+      "positive_preserved": true,
+      "target_mask_permutation_exact": true
+    },
+    {
+      "fold": 4,
+      "groups": 2400,
+      "all_tokens_equal_legacy": true,
+      "per_query_relaxed_counts_equal": true,
+      "id_and_callsign_ignored": true,
+      "positive_preserved": true,
+      "target_mask_permutation_exact": true
+    }
+  ]
+}

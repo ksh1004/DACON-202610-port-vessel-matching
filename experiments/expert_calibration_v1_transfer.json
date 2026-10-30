@@ -1,0 +1,152 @@
+{
+  "tag": "expert_calibration_v1",
+  "client_date": "2026-10-30",
+  "post_result_diagnostic": true,
+  "source_sha256": "93f2e1c5dc52466e9b41b226fa72187d23e7e0c7944c7ab68be81b1f298c1993",
+  "protocol_sha256": "2c87cc9154390ec4bce81cecaebb6ba957ee2d83417da4bb0098713bcbfef551",
+  "reference": {
+    "testlike": 0.9178774610130318,
+    "scenarios": {
+      "clean": 0.9977426636568849,
+      "gt_missing": 0.9909706546275395,
+      "drop_word": 0.8465011286681715,
+      "both": 0.5869074492099323
+    }
+  },
+  "label_aware_expert_choice_oracles": {
+    "union_top1": {
+      "testlike": 0.9340264452116773,
+      "scenarios": {
+        "clean": 0.9977426636568849,
+        "gt_missing": 0.9909706546275395,
+        "drop_word": 0.8871331828442438,
+        "both": 0.6591422121896162
+      }
+    },
+    "union_top3": {
+      "testlike": 0.9641912307647247,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9932279909706546,
+        "drop_word": 0.9345372460496614,
+        "both": 0.8216704288939052
+      }
+    },
+    "union_top5": {
+      "testlike": 0.9720603052568242,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9932279909706546,
+        "drop_word": 0.9367945823927766,
+        "both": 0.8781038374717833
+      }
+    }
+  },
+  "counts": {
+    "oof": {
+      "baseline_error_rows": 1,
+      "baseline_errors_on_old_pruned_rows": 0,
+      "active_rows": 7,
+      "active_truth_in_top20": 7,
+      "baseline_error_recoverable_expert_top1": 0,
+      "baseline_error_recoverable_expert_top3": 1,
+      "baseline_error_recoverable_expert_top5": 1
+    },
+    "hard": {
+      "baseline_error_rows": 118,
+      "baseline_errors_on_old_pruned_rows": 28,
+      "active_rows": 159,
+      "active_truth_outside_top20": 24,
+      "active_truth_in_top20": 135,
+      "baseline_error_recoverable_expert_top1": 24,
+      "baseline_error_recoverable_expert_top3": 50,
+      "baseline_error_recoverable_expert_top5": 57
+    },
+    "testlike": {
+      "baseline_error_rows": 254,
+      "baseline_errors_on_old_pruned_rows": 29,
+      "active_rows": 369,
+      "active_truth_in_top20": 344,
+      "baseline_error_recoverable_expert_top1": 50,
+      "baseline_error_recoverable_expert_top3": 144,
+      "baseline_error_recoverable_expert_top5": 170,
+      "active_truth_outside_top20": 25
+    }
+  },
+  "training_objective": [
+    {
+      "fold": 0,
+      "mode": "conditional6",
+      "objective_before": 1.6579185177430333,
+      "objective_after": 1.50497302755449,
+      "nll_after_without_regularizer": 1.4961031806781317
+    },
+    {
+      "fold": 0,
+      "mode": "pooled3",
+      "objective_before": 1.6579185177430333,
+      "objective_after": 1.5001727836207366,
+      "nll_after_without_regularizer": 1.4936902644687158
+    },
+    {
+      "fold": 2,
+      "mode": "conditional6",
+      "objective_before": 1.6751520892735456,
+      "objective_after": 1.506213548298359,
+      "nll_after_without_regularizer": 1.4994101355858125
+    },
+    {
+      "fold": 2,
+      "mode": "pooled3",
+      "objective_before": 1.6751520892735456,
+      "objective_after": 1.514666894926391,
+      "nll_after_without_regularizer": 1.5103692062523402
+    }
+  ],
+  "outer_conditional_nll": {
+    "oof": {
+      "conditional6": {
+        "rows": 7,
+        "reference_nll": 0.7100001452060882,
+        "candidate_nll": 0.48698807350449913,
+        "nll_delta": -0.223012071701589
+      },
+      "pooled3": {
+        "rows": 7,
+        "reference_nll": 0.7100001452060882,
+        "candidate_nll": 0.46912032727764297,
+        "nll_delta": -0.24087981792844512
+      }
+    },
+    "hard": {
+      "conditional6": {
+        "rows": 135,
+        "reference_nll": 1.5055953974649048,
+        "candidate_nll": 1.2933162043792326,
+        "nll_delta": -0.2122791930856726
+      },
+      "pooled3": {
+        "rows": 135,
+        "reference_nll": 1.5055953974649048,
+        "candidate_nll": 1.3004871107974698,
+        "nll_delta": -0.20510828666743494
+      }
+    },
+    "testlike": {
+      "conditional6": {
+        "rows": 344,
+        "reference_nll": 1.745678511282127,
+        "candidate_nll": 1.6716352282631641,
+        "nll_delta": -0.07404328301896243
+      },
+      "pooled3": {
+        "rows": 344,
+        "reference_nll": 1.745678511282127,
+        "candidate_nll": 1.6567224944341497,
+        "nll_delta": -0.08895601684797748
+      }
+    }
+  },
+  "scope": "Only original v12 neural-active rows can be changed; oracle may keep actual v12 winner or choose any top-k base/Qwen/BGE candidate using true labels. Other rows unchanged.",
+  "caveat": "Oracles are not learned scores, Public forecasts or bounds for more general reranking. NLL excludes inactive or truth-outside-top20 rows, so is conditional and cannot be read as full-population loss. Fitting uses a half-training single proxy and neural models; outer evaluation uses the full-training v8 ensemble and neural models. A distribution shift is a plausible limitation, not a proven unique cause."
+}

@@ -1,0 +1,42 @@
+{
+  "client_date": "2026-10-29",
+  "recorded_utc": "2026-10-29T02:56:15.892762+00:00",
+  "status": "diagnostic_and_proposal_only",
+  "sources": [
+    {
+      "url": "https://aclanthology.org/2022.tacl-1.17/",
+      "role": "Byte-level spelling/pronunciation and noise rationale; no Korean ship-matching guarantee"
+    },
+    {
+      "url": "https://huggingface.co/google/byt5-small",
+      "role": "Generic pretrained checkpoint, Apache-2.0, downstream finetuning required"
+    },
+    {
+      "url": "https://papers.neurips.cc/paper_files/paper/2020/hash/63c3ddcc7b23daa1e42dc41f9a44a873-Abstract.html",
+      "role": "Negative-sampling rationale; not the same-label problem as different ship identities"
+    },
+    {
+      "url": "https://proceedings.mlr.press/v286/fuchs25a.html",
+      "role": "UAI2025 ambiguity reference; unknown-ground-truth PLL setting differs from this competition"
+    },
+    {
+      "url": "https://dacon.io/competitions/official/236771/overview/rules",
+      "role": "Official-data and public generic pretrained-weights scope; row-independent inference"
+    }
+  ],
+  "artifacts_sha256": {
+    "tools/audit_observation_ambiguity.py": "68bf3f527b2a355fc93ceb8b19613faf51372a58deb81479fad9124a6c3da1ff",
+    "experiments/observation_ambiguity_20261029.json": "7fd32fb2f8de8594af62e2cf894805e08d4c38edce74e141ebc0e9adf29d6602",
+    "experiments/byt5_feasibility_20261029.json": "f9c8e08bd8d9616a6159e9da342b88e93526ff8711812cc10ef9319bc04449df",
+    "docs/observation_aware_redesign_20261029.md": "5c60c0c075f1e11e3807c8d68782d681737b7a9a173f92c19f869eccfac15d18"
+  },
+  "new_training": false,
+  "new_performance_claim": false,
+  "weights_downloaded": false,
+  "new_zip": false,
+  "actual_competition_submission": false,
+  "best_public": 0.9065951735,
+  "server_seconds": 591,
+  "actual_submissions": 9,
+  "proposal_is_not_a_preregistered_experiment": true
+}

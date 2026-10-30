@@ -1,0 +1,10 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+[testlike_s3031] 후보·특징 생성 129.9초 (3573행)
+{'oof': 12222, 'hard': 5382, 'testlike': 3573}
+{"name": "lgb_base", "testlike": 0.8951, "testlike_hangul": 0.851, "tl_gt": 0.9647, "tl_dw": 0.7859, "tl_both": 0.5147, "oof": 0.9953, "oof_hangul": 0.9941, "oof_non_hangul": 0.9979, "hard": 0.8388, "hard_hangul": 0.8333, "hard_non_hangul": 0.8517, "minutes": 2.8}
+{"name": "lgb_bin", "testlike": 0.8938, "testlike_hangul": 0.8491, "tl_gt": 0.9605, "tl_dw": 0.7842, "tl_both": 0.5155, "oof": 0.9936, "oof_hangul": 0.9916, "oof_non_hangul": 0.9982, "hard": 0.8312, "hard_hangul": 0.8266, "hard_non_hangul": 0.842, "minutes": 4.7}
+{"name": "lgb_wh3", "testlike": 0.8938, "testlike_hangul": 0.8492, "tl_gt": 0.9664, "tl_dw": 0.7884, "tl_both": 0.5046, "oof": 0.9941, "oof_hangul": 0.9924, "oof_non_hangul": 0.998, "hard": 0.8333, "hard_hangul": 0.8258, "hard_non_hangul": 0.851, "minutes": 3.2}
+{"name": "lgb_s1", "testlike": 0.8943, "testlike_hangul": 0.8498, "tl_gt": 0.9681, "tl_dw": 0.7809, "tl_both": 0.5155, "oof": 0.9941, "oof_hangul": 0.9924, "oof_non_hangul": 0.9981, "hard": 0.8375, "hard_hangul": 0.8325, "hard_non_hangul": 0.8493, "minutes": 3.3}
+{"name": "lgb_s2", "testlike": 0.8959, "testlike_hangul": 0.8521, "tl_gt": 0.9681, "tl_dw": 0.7884, "tl_both": 0.5206, "oof": 0.9936, "oof_hangul": 0.9916, "oof_non_hangul": 0.9981, "hard": 0.8356, "hard_hangul": 0.8291, "hard_non_hangul": 0.8507, "minutes": 3.2}
+{"name": "lgb_big", "testlike": 0.8946, "testlike_hangul": 0.8502, "tl_gt": 0.9656, "tl_dw": 0.7884, "tl_both": 0.5088, "oof": 0.9948, "oof_hangul": 0.9933, "oof_non_hangul": 0.9982, "hard": 0.8378, "hard_hangul": 0.8329, "hard_non_hangul": 0.8493, "minutes": 6.1}
+{"name": "lgb_small", "testlike": 0.8962, "testlike_hangul": 0.8525, "tl_gt": 0.9673, "tl_dw": 0.7809, "tl_both": 0.5306, "oof": 0.9942, "oof_hangul": 0.9924, "oof_non_hangul": 0.9982, "hard": 0.8386, "hard_hangul": 0.8321, "hard_non_hangul": 0.8537, "minutes": 5.1}

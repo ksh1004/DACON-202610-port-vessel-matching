@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8",
+  "checks": [
+    {
+      "fold": 1,
+      "width": 8,
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "query_reverse_subset_single_exact": true,
+      "candidate_order_exact": true,
+      "identity_fields_ignored_in_tokens": true
+    },
+    {
+      "fold": 1,
+      "width": 20,
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "query_reverse_subset_single_exact": true,
+      "candidate_order_exact": true,
+      "identity_fields_ignored_in_tokens": true
+    },
+    {
+      "fold": 4,
+      "width": 8,
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "query_reverse_subset_single_exact": true,
+      "candidate_order_exact": true,
+      "identity_fields_ignored_in_tokens": true
+    },
+    {
+      "fold": 4,
+      "width": 20,
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "query_reverse_subset_single_exact": true,
+      "candidate_order_exact": true,
+      "identity_fields_ignored_in_tokens": true
+    }
+  ],
+  "scope": "Four actual saved BGE models, frozen candidates and row-local beams. No new submission ZIP executed."
+}

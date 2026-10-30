@@ -1,0 +1,96 @@
+{
+  "purpose": "Training-only aggregate-prefix feasibility; no new model/validation performance inspected",
+  "outer0_2_vessels_excluded": true,
+  "training_rows": 7386,
+  "unique_training_vessels": 3512,
+  "prefixes_with_3plus_distinct_vessels": 242,
+  "fraction_training_vessels_with_supported_prefix": 0.5039863325740319,
+  "largest_prefix_groups": [
+    [
+      "STI",
+      37
+    ],
+    [
+      "BOW",
+      34
+    ],
+    [
+      "TORM",
+      33
+    ],
+    [
+      "GAS",
+      32
+    ],
+    [
+      "FRONT",
+      31
+    ],
+    [
+      "HAFNIA",
+      30
+    ],
+    [
+      "BBC",
+      30
+    ],
+    [
+      "GOLDEN",
+      28
+    ],
+    [
+      "PACIFIC",
+      28
+    ],
+    [
+      "STOLT",
+      27
+    ],
+    [
+      "NEW",
+      24
+    ],
+    [
+      "STAR",
+      24
+    ],
+    [
+      "OCEAN",
+      24
+    ],
+    [
+      "MORNING",
+      23
+    ],
+    [
+      "XIN",
+      23
+    ]
+  ],
+  "query_flag_examples": {
+    "파나마": 1448,
+    "마샬 제도": 905,
+    "라이베리아": 695,
+    "싱가포르": 523,
+    "홍콩": 420,
+    "대한민국": 361,
+    "중국": 241,
+    "바하마": 179
+  },
+  "query_type_examples": {
+    "석유제품 운반선": 1731,
+    "일반화물선": 1382,
+    "산물선(벌크선)": 1123,
+    "케미칼 운반선": 902,
+    "원유운반선": 755,
+    "LPG 운반선": 493,
+    "자동차운반선": 462,
+    "풀컨테이너선": 398
+  },
+  "model_alphabetic_token_support": {
+    "first_token_classes_3plus": 242,
+    "last_token_classes_3plus": 238,
+    "minimum_distinct_vessels": 3,
+    "one_vote_per_vessel": true
+  }
+}

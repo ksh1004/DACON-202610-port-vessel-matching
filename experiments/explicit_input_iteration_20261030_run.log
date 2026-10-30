@@ -1,0 +1,9 @@
+{
+  "artifact": "D:\\KSH\\pjt\\DACON202610\\experiments\\explicit_input_iteration_20261030.json",
+  "selected": null,
+  "neural_models": 4,
+  "optimizer_updates": 2400,
+  "source_count": 50,
+  "input_pairs_audited": 15756,
+  "baseline_v12_preserved": true
+}

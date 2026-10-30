@@ -1,0 +1,135 @@
+{
+  "fold": 1,
+  "tag": "encoder_bge_phonetic",
+  "rows": 1596,
+  "neural_rows": 306,
+  "source": "998f2fb026bb01703feb81fe0d3844c0279518915561a115e4d7a5a943d46fe1",
+  "mean_accuracy": {
+    "baseline": 0.8026315789473685,
+    "reference_v11": 0.8051378446115288,
+    "candidate": 0.806390977443609,
+    "ensemble": 0.8045112781954887
+  },
+  "scenarios": {
+    "gt_only_missing": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.9912280701754386,
+        "reference_v11": 0.9912280701754386,
+        "candidate": 0.9912280701754386,
+        "ensemble": 0.9912280701754386
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "igt_only_missing": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.9912280701754386,
+        "reference_v11": 0.9912280701754386,
+        "candidate": 0.9912280701754386,
+        "ensemble": 0.9912280701754386
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "conflicting_gt": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.9912280701754386,
+        "reference_v11": 0.9912280701754386,
+        "candidate": 0.9912280701754386,
+        "ensemble": 0.9912280701754386
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "first_with_gt": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.6578947368421053,
+        "reference_v11": 0.7017543859649122,
+        "candidate": 0.6403508771929824,
+        "ensemble": 0.6973684210526315
+      },
+      "changed_rows": 158,
+      "changed_only": {
+        "baseline": 0.5189873417721519,
+        "reference_v11": 0.5822784810126582,
+        "candidate": 0.4936708860759494,
+        "ensemble": 0.5759493670886076
+      }
+    },
+    "last_with_gt": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.8859649122807017,
+        "reference_v11": 0.8947368421052632,
+        "candidate": 0.9035087719298246,
+        "ensemble": 0.8771929824561403
+      },
+      "changed_rows": 158,
+      "changed_only": {
+        "baseline": 0.8481012658227848,
+        "reference_v11": 0.8607594936708861,
+        "candidate": 0.8734177215189873,
+        "ensemble": 0.8354430379746836
+      }
+    },
+    "first_both_missing": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.4342105263157895,
+        "reference_v11": 0.4517543859649123,
+        "candidate": 0.47368421052631576,
+        "ensemble": 0.45614035087719296
+      },
+      "changed_rows": 158,
+      "changed_only": {
+        "baseline": 0.22784810126582278,
+        "reference_v11": 0.27848101265822783,
+        "candidate": 0.25316455696202533,
+        "ensemble": 0.25316455696202533
+      }
+    },
+    "last_both_missing": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.6666666666666666,
+        "reference_v11": 0.6140350877192983,
+        "candidate": 0.6535087719298246,
+        "ensemble": 0.6271929824561403
+      },
+      "changed_rows": 158,
+      "changed_only": {
+        "baseline": 0.5632911392405063,
+        "reference_v11": 0.5126582278481012,
+        "candidate": 0.5126582278481012,
+        "ensemble": 0.5
+      }
+    }
+  },
+  "comparisons": {
+    "candidate": {
+      "delta": 0.0012531328320802004,
+      "bootstrap_95": [
+        -0.01874956594207931,
+        0.022422211036881114
+      ],
+      "gains": 39,
+      "losses": 37
+    },
+    "ensemble": {
+      "delta": -0.0006265664160401002,
+      "bootstrap_95": [
+        -0.014529390551749009,
+        0.01460394889663182
+      ],
+      "gains": 18,
+      "losses": 19
+    }
+  },
+  "candidate_delta_vs_v11": 0.0012531328320802004,
+  "ensemble_delta_vs_v11": -0.0006265664160401002,
+  "caveat": "Diagnostic equal scenario mix with train-fold-only retrieval and LGB; not official score or historical testlike."
+}

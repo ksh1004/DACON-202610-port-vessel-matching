@@ -1,0 +1,92 @@
+{
+  "tag": "dedicated_reranker4b_v1",
+  "client_date": "2026-10-30",
+  "registered_utc": "2026-10-30T01:41:43.532886+00:00",
+  "registered_before_new_probe_pair_scores_and_accuracy": true,
+  "pre_registration_numeric_checks": "Official nonprobe fold3 rows and official catalog inputs without accuracy labels; fixed-shape order/single tests only",
+  "model": {
+    "repo": "Qwen/Qwen3-Reranker-4B",
+    "revision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+    "license": "apache-2.0",
+    "dtype": "BF16",
+    "weight_bytes": 8043614960,
+    "files_sha256": {
+      "config.json": "38bff5eac700032a185745e4076eccad7aa453473cafc2a27de412cdb7b79e19",
+      "generation_config.json": "81051cd3f6e77013827148d0b8a6ead93f8ac390d5ab805f849199f0af6a08db",
+      "merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "model-00001-of-00002.safetensors": "cf2e87cbf71fa628961532232e04dd6c19702a0a057f5e2aff95ea1aca4fd488",
+      "model-00002-of-00002.safetensors": "78946d22b7f6456ea7a5358dbdf3982de36c5bac1f166a5fd58e18e31db8048a",
+      "model.safetensors.index.json": "18a783f197360068da36d2ff9ecffce0121542a87598fd1fef3079ead1c3cc08",
+      "README.md": "b7cf82b30d5e38cd1a02ca7cfd60c26c0e3664cb31b2c4b661550a93c9281bee",
+      "special_tokens_map.json": "76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd",
+      "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "tokenizer_config.json": "253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    }
+  },
+  "scope": "Larger dedicated generic pretrained reranker; not the earlier4B chat model or a retrained0.6B. No new ship data or model training.",
+  "cases": "Exactly same48 difficult distinct-vessel cases as forward_kanana_v1; original top20 and actualv12 anchor; old fewshot exclusions and no baseline correctness filtering retained. Reused known diagnostic, not unseen Public data.",
+  "input": "Untruncated existing v11 evidence/PREFIX/SUFFIX with query-only cached Latin hints, official metadata and current candidate; yes/no next-token logit difference",
+  "scoring": {
+    "batch_size": 4,
+    "pad_length": 256,
+    "padding": "left",
+    "position_ids": "attention-mask cumulative, padding0",
+    "attention": "sdpa",
+    "dtype": "BF16",
+    "TF32": false,
+    "numeric_policy": "Prefer batch4; on numerical order/single failure only, retry batch1 before reading task correctness. Same weights/prompt/mix. Exact numerical checks required.",
+    "fixed_logits_to_keep": 1,
+    "truncation": false
+  },
+  "fixed_mix": {
+    "actual_v12_anchor": 0.7,
+    "new_reranker_probability": 0.3
+  },
+  "admission_gate": {
+    "net_correct_gain_min": 3,
+    "lost_correct_rows_max": 1,
+    "same48_required": true,
+    "exact_numeric_checks_required": true
+  },
+  "deployment": "BF16 weights8.04GB cannot be appended to current6.98GB ZIP under10GB. If admitted, require separate4bit numerical/performance/package/runtime validation before full release. No quantization library installed or validated yet.",
+  "preflight": {
+    "status": "PASS",
+    "official_nonprobe_pairs": 9,
+    "selected_batch": 4,
+    "exact_order_single": true,
+    "maximum_probe_tokens": 195
+  },
+  "source_hashes": {
+    "src/reranker4b_score.py": "44568e087e48903c373aa0fe3345ecaf16b765183c35e4f44dbed252cd774eda",
+    "tools/probe_reranker4b.py": "3f4bfb8cd7b3830e56b1c75f07a46e5b4560f97fa355847a1cfbaff6c1ceab9f",
+    "tools/download_reranker4b.py": "bb7b791cdc8a39390ce84d11fb60e41f858b014a4ee7705408467bf96a938694",
+    "src/neural_pair.py": "ba17461516c168713e54adc4e2975136980ee64ad9eca6dff2d7f4b8bafd357b",
+    "src/pair_evidence.py": "846c9b564933e9f96c2bf4ef441ed395d4a2562f0b74ecb75c8ec684f5cbf16d",
+    "src/expert_calibration.py": "0ba3431c600d33d67197296a40704989f5ba113b3040673c99db632c547e0d1d",
+    "src/ensemble.py": "19e7b51b3e26de3e9515214b1db9facdda4608dfe2e16e112c5db453b878b098",
+    "src/common.py": "3e3c0d96a2fdb4366d51500b8bc5c8a8def813b1000dc7c4faa37a854023a5be",
+    "src/llm_cache.py": "8e3a7c309a36ff5b51e5aec26486ef0ceb7a8df7099c2c1f0383a55ae7db07b1",
+    "experiments\\cache\\llm_kanana_73ef4cc1.json": "ad981215831ac736f23ab12c1bd375fc2f21d666424749146f043770dd55d47c",
+    "src/experiment.py": "65518ffc71f2799556ed2a4b2b7bed5e46476b2ff250443a3a389236b4a521c0",
+    "src/augment.py": "bea2fe2e56208bfc7972bd8f4d94251e444deae0afde4fdb8cd272cff49ccbb2",
+    "src/validate.py": "e5b9900d5a922c906b761ae7936dc002cd4009e80a466b869614aecd23cb2b9e",
+    "src/llm_translit.py": "6b82a58245bfefe91c28dece1f5a718f5609fe41ac6318f40964b559bcccd835",
+    "tools/blend_matching.py": "86f9040b160045e8161c936b12b9096729821a096dff5731f3869eb30e27a8de",
+    "tools/calibration_experiment.py": "8a7a6f608bae756d3ee53d62599ae6b3a4046eed284fb2fdd9064fe901fd146c",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+    "experiments/folds.csv": "99bc9010ca3c8f0fc518110fb059ce705f130146f8b8b9e625f483bd7df58c9d",
+    "experiments/encoder_bge_phonetic_predictions.joblib": "35a03f0be323cf565279c8951a020c3eb93767860080ca364e3def03e3aea174",
+    "experiments/artifacts/forward_kanana_v1/probe_cases.joblib": "887c0f40e3630ba12a425be10cbe285566f4ffb4cd71c6f2fdac174b074625df",
+    "experiments/forward_kanana_v1_probe_protocol.json": "390e884464863b4f9e9294ce3113e8f62d67016789391563ca188c3efe7f76e7",
+    "experiments\\artifacts\\dedicated_reranker4b_v1\\probe_cases.joblib": "4624ac5ebe34b2beee82aa608f531726063d4cf44fd0fff6cc92bf9357a5bbed"
+  },
+  "actual_competition_submission": false,
+  "callsign_or_identity_lookup": false,
+  "no_prompt_weight_temperature_or_case_search_after_results": true,
+  "research_sources": [
+    "https://huggingface.co/Qwen/Qwen3-Reranker-4B",
+    "https://huggingface.co/docs/bitsandbytes/main/en/installation"
+  ]
+}

@@ -1,0 +1,2 @@
+{'oof': 12222, 'hard': 5382, 'testlike': 3573}
+{"name": "cat_yeti400_prior_a8", "testlike": 0.9048, "testlike_hangul": 0.8648, "tl_gt": 0.9706, "tl_dw": 0.8086, "tl_both": 0.5516, "oof": 0.9965, "oof_hangul": 0.9958, "oof_non_hangul": 0.9981, "hard": 0.8475, "hard_hangul": 0.8442, "hard_non_hangul": 0.855, "minutes": 57.5}

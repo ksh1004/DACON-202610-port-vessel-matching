@@ -1,0 +1,36 @@
+{
+  "client_date": "2026-10-29",
+  "task": "Continue performance improvement toward0.97 using properly nested learned Qwen/BGE combination",
+  "main_command": ".venv/Scripts/python.exe -m tools.nested_combiner_experiment --stage all",
+  "parallel_completed_scope": "outer2 inner0, both BGE/Qwen training+meta scores complete",
+  "active_parallel_scope": null,
+  "warning_for_resume": "All planned jobs have completed. Do not restart completed training or family selection. Read final artifacts first.",
+  "current_progress": "All 8 inner neural models and all 4 family screens complete; no qualifier",
+  "source_lock": "experiments/nested_combiner_lock.json",
+  "family_protocol": "experiments/nested_family_protocol_20261029.json",
+  "after_main": "Completed; four families rejected under locked gates.",
+  "family_order": [
+    "nested_combiner_v1",
+    "nested_raw78_fallback_v1",
+    "nested_combiner_reverse_v1",
+    "nested_combiner_token_prior_v1"
+  ],
+  "if_no_screen_qualifier": "All rejected; verify saved trees/cache/source hashes, update docs and portfolio40; no final model/ZIP/upload.",
+  "if_screen_qualifies": "Proceed strict fresh fold3guard then full5foldgates then all-train head/runtime package checks; these later stages still need implementing. No new family after locked candidate fails guard/full.",
+  "invariants": {
+    "v12_public": 0.9065951735,
+    "v12_server_seconds": 591,
+    "actual_submissions": 9,
+    "callsign_or_identity_lookup": false,
+    "do_not_modify_frozen_v12_source_modules": true,
+    "no_actual_DACON_submission": true
+  },
+  "baseline_precision": "Outer0 active BGE292exact; Qwen5single-logit deltas max0.125 vsold archive, current repeat/reverse exact and all1398v12 winners preserved. Run_outer now records precision and enforces winner identity; reporting amendment saved, no training/gate change.",
+  "notes": "Head persistence and row/candidate invariance checks PASS for all families. Source/input 24 files, frozen v12 13 modules, and complete v12 ZIP SHA256 verified.",
+  "data_preparation_ahead": "Fold1/3/4 inner data ready only; no candidate validation, inner NN fitting, fresh guard or full five-fold validation performed on those folds",
+  "comparison_bug_fixed": "Skip old Qwen neural logits on augmentation names that are actually non-Hangul; v12 routes those tobase. Only run_outerchanged, AST verified; training cached and unchanged.",
+  "status": "completed_rejected",
+  "selection": "experiments/nested_family_selection_20261029.json",
+  "final_audit": "experiments/nested_iteration_20261029.json",
+  "report": "docs/nested_combiner_20261029.md"
+}

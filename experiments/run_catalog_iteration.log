@@ -1,0 +1,29 @@
+Starting warmup: D:\KSH\pjt\DACON202610\experiments\run_catalog_warmup.log
+Completed warmup
+Starting f0: D:\KSH\pjt\DACON202610\experiments\run_catalog_f0.log
+Completed f0
+Starting f2: D:\KSH\pjt\DACON202610\experiments\run_catalog_f2.log
+Completed f2
+Starting screen: D:\KSH\pjt\DACON202610\experiments\run_catalog_screen.log
+Completed screen
+{
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "selected": null,
+  "trials": [
+    {
+      "tag": "encoder_catalog_warm_v1",
+      "passed": false,
+      "stage": "screen",
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": true,
+        "hard_hangul": true,
+        "drop_word": true,
+        "clean_lost": true
+      }
+    }
+  ],
+  "actual_competition_submission": false
+}

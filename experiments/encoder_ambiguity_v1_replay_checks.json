@@ -1,0 +1,10 @@
+{
+  "fold1": {
+    "fold": 1,
+    "rows": 1368,
+    "active_hangul": 249,
+    "bitwise_logits_equal": 0,
+    "v12_winners_preserved": 1353,
+    "max_logit_delta": 5.984375
+  }
+}

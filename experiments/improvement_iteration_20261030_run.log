@@ -1,0 +1,12 @@
+{
+  "artifact": "D:\\KSH\\pjt\\DACON202610\\experiments\\improvement_iteration_20261030.json",
+  "selected": null,
+  "calibrator_fits": 4,
+  "new_neural_models": 4,
+  "optimizer_updates": 2400,
+  "source_counts": {
+    "calibration": 38,
+    "list20": 44
+  },
+  "baseline_v12_preserved": true
+}

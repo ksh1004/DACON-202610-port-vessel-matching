@@ -1,0 +1,127 @@
+Starting fold1: D:\KSH\pjt\DACON202610\experiments\byte_names_v1_fold1_run.log
+Completed fold1
+Starting fold4: D:\KSH\pjt\DACON202610\experiments\byte_names_v1_fold4_run.log
+Completed fold4
+{
+  "tag": "byte_names_v1",
+  "complete_folds": [
+    1,
+    4
+  ],
+  "reference_v12": {
+    "testlike": 0.9087787707227457,
+    "testlike_hangul": 0.8702574257425743,
+    "hard": 0.8475056283134426,
+    "hard_hangul": 0.8485148514851485,
+    "oof": 0.996826295475221,
+    "scenarios": {
+      "clean": 0.996039603960396,
+      "gt_missing": 0.9702970297029703,
+      "drop_word": 0.8198019801980198,
+      "both": 0.5663366336633663
+    }
+  },
+  "contenders": {
+    "residual30": {
+      "candidate": {
+        "testlike": 0.9044124340890823,
+        "testlike_hangul": 0.864019801980198,
+        "hard": 0.8412680045510663,
+        "hard_hangul": 0.8396039603960396,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9623762376237623,
+          "drop_word": 0.8138613861386138,
+          "both": 0.5465346534653466
+        }
+      },
+      "matched_control": {
+        "testlike": 0.8959431271583893,
+        "testlike_hangul": 0.851920792079208,
+        "hard": 0.8350303807886901,
+        "hard_hangul": 0.8306930693069307,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9524752475247524,
+          "drop_word": 0.8,
+          "both": 0.5069306930693069
+        }
+      },
+      "matched_control_recipe": "Same fixed0.7*v12_actual_top20 +0.3*name probability, public untuned ByT5 with no task training; not selectable",
+      "delta_vs_v12": -0.00436633663366337,
+      "delta_vs_matched_control": 0.008469306930693032,
+      "bootstrap_95_vs_v12": [
+        -0.009658710478181341,
+        -0.0005104113021594007
+      ],
+      "delta_by_fold_vs_v12": {
+        "1": -0.0023333333333334094,
+        "4": -0.006039711191335728
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": false,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": true
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9095147281221666,
+          "testlike_hangul": 0.8713087934560327,
+          "hard": 0.8461832690836545,
+          "hard_hangul": 0.8466257668711656,
+          "oof": 0.9967355870178721,
+          "scenarios": {
+            "clean": 0.9959100204498977,
+            "gt_missing": 0.9693251533742331,
+            "drop_word": 0.820040899795501,
+            "both": 0.5725971370143149
+          }
+        },
+        "candidate": {
+          "testlike": 0.9050055256681789,
+          "testlike_hangul": 0.8648670756646217,
+          "hard": 0.8397415512922435,
+          "hard_hangul": 0.8374233128834356,
+          "oof": 0.9967355870178721,
+          "scenarios": {
+            "clean": 0.9959100204498977,
+            "gt_missing": 0.9611451942740287,
+            "drop_word": 0.8139059304703476,
+            "both": 0.5521472392638037
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 1,
+          "lost": 10
+        },
+        "testlike": {
+          "gained": 4,
+          "lost": 21
+        }
+      }
+    }
+  },
+  "selected": null,
+  "truth_outside_top20": {
+    "oof": 0,
+    "hard": 50,
+    "testlike": 51
+  },
+  "actual_competition_submission": false,
+  "caveat": "Repeated exploratory synthetic CV and historical v8 outer retrieval mapper exception. Forward frozen beams have original fewshots; report no-shot sensitivity. Weak fragment supervision can be wrong despite exact spelling. Label-aware oracle used for pretraining architecture analysis, not performance forecast."
+}
+{"selected": null, "stage": "screen"}

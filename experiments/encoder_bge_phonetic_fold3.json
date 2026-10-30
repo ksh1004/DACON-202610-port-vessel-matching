@@ -1,0 +1,68 @@
+{
+  "protocol": {
+    "fold": 3,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "input_recipe": "phonetic",
+    "source_revision": {
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    },
+    "training_groups": 2400,
+    "max_tokens": 256,
+    "seed": 42,
+    "epochs": 1,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": 0.0001,
+    "groups_per_batch": 2,
+    "negative_mode": "five train-only LGB hard plus two lexical",
+    "vessel_overlap": 0,
+    "train_cache": "strict_han_f3_train_0e27b7ba964c.joblib",
+    "training_at_cap": 0,
+    "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+  },
+  "metrics": {
+    "baseline": {
+      "testlike_hangul": 0.8611522633744857,
+      "hard_hangul": 0.8580246913580247,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9876543209876543,
+        "drop_word": 0.7777777777777778,
+        "both": 0.5473251028806584
+      }
+    },
+    "reference_v11": {
+      "testlike_hangul": 0.8616460905349794,
+      "hard_hangul": 0.8580246913580247,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9876543209876543,
+        "drop_word": 0.7901234567901234,
+        "both": 0.5349794238683128
+      }
+    },
+    "encoder25": {
+      "testlike_hangul": 0.8708641975308642,
+      "hard_hangul": 0.8703703703703703,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 1.0,
+        "drop_word": 0.7818930041152263,
+        "both": 0.5843621399176955
+      }
+    },
+    "equal_ensemble": {
+      "testlike_hangul": 0.8679423868312758,
+      "hard_hangul": 0.8744855967078189,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9958847736625515,
+        "drop_word": 0.7818930041152263,
+        "both": 0.5720164609053497
+      }
+    }
+  },
+  "train_eval_minutes": 4.259507469999759,
+  "deployment_precision": "merged, cast to BF16, saved and reloaded before evaluation"
+}

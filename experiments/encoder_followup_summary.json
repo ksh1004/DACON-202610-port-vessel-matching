@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-28",
+  "status": "no candidate passed",
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "reference_server_seconds": 591,
+  "methods": [
+    {
+      "tag": "encoder_bge_full_v1",
+      "folds": [
+        1,
+        2
+      ],
+      "reference_testlike": 0.9105929770632316,
+      "candidate_testlike": 0.9102253971545557,
+      "delta_testlike": -0.00036757990867586354,
+      "delta_hard": -0.0007990867579907857,
+      "bootstrap_95": [
+        -0.0034462241828857676,
+        0.0029759936944967137
+      ],
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": true,
+        "hard_hangul": true,
+        "drop_word": true,
+        "clean_lost": true
+      },
+      "audit_sha256": "0c81db07e01d55836681f1fa56efa54dc7e9680777f2c7577bdc809d88b31745"
+    },
+    {
+      "tag": "encoder_confidence40_v1",
+      "folds": [
+        0,
+        3
+      ],
+      "reference_testlike": 0.9131857916979075,
+      "candidate_testlike": 0.9124652034626133,
+      "delta_testlike": -0.000720588235294195,
+      "delta_hard": -0.0007352941176470562,
+      "bootstrap_95": [
+        -0.004420331389183456,
+        0.0029156021158482253
+      ],
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": true,
+        "hard_hangul": true,
+        "drop_word": true,
+        "clean_lost": true
+      },
+      "audit_sha256": "baf9a4471522c6fd8316e883188fe622d69bd52626828a5c515339ca7c706f82"
+    },
+    {
+      "tag": "encoder_seed_average_v1",
+      "folds": [
+        1,
+        2
+      ],
+      "reference_testlike": 0.9105929770632316,
+      "candidate_testlike": 0.9104171779764736,
+      "delta_testlike": -0.0001757990867580217,
+      "delta_hard": 0.002397260273972801,
+      "bootstrap_95": [
+        -0.0026192998329621375,
+        0.0027758765749336866
+      ],
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": true,
+        "hard_hangul": true,
+        "drop_word": true,
+        "clean_lost": true
+      },
+      "audit_sha256": "679ac7b52fb7922c8dbf32fb3ac75ab4cb028bb0c9bd1f8233735f9293ccb712"
+    },
+    {
+      "tag": "encoder_seed_probability_v1",
+      "folds": [
+        1,
+        2
+      ],
+      "reference_testlike": 0.9105929770632316,
+      "candidate_testlike": 0.9089468583417704,
+      "delta_testlike": -0.0016461187214612538,
+      "delta_hard": -0.0007990867579907857,
+      "bootstrap_95": [
+        -0.003544491128535873,
+        -0.00032918180310818375
+      ],
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": true,
+        "drop_word": false,
+        "clean_lost": true
+      },
+      "audit_sha256": "01d60a9f8946340c7825dec3c24523a91e0a284c90560076b639ca56e26d262c"
+    }
+  ],
+  "new_zip_created": false,
+  "new_competition_submission": false,
+  "fresh_fold4": {
+    "prepared_rows": 1827,
+    "new_candidate_evaluated": false
+  },
+  "caveat": "All comparisons are two-fold screens of reused exploratory validation, not new five-fold or Public scores."
+}

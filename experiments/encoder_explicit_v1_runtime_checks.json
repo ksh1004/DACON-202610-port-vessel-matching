@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "fingerprint": "85af0433a2be7c3a0c017bfff853222580e5d6aa906d1b063b1866e6425c6203",
+  "checks": [
+    {
+      "fold": 1,
+      "mode": "characters",
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "final_predictions_equal": true,
+      "query_reverse_subset_single_exact": true,
+      "candidate_order_exact": true,
+      "identity_inputs_ignored": true
+    },
+    {
+      "fold": 1,
+      "mode": "compact",
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "final_predictions_equal": true,
+      "query_reverse_subset_single_exact": true,
+      "candidate_order_exact": true,
+      "identity_inputs_ignored": true
+    },
+    {
+      "fold": 4,
+      "mode": "characters",
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "final_predictions_equal": true,
+      "query_reverse_subset_single_exact": true,
+      "candidate_order_exact": true,
+      "identity_inputs_ignored": true
+    },
+    {
+      "fold": 4,
+      "mode": "compact",
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "final_predictions_equal": true,
+      "query_reverse_subset_single_exact": true,
+      "candidate_order_exact": true,
+      "identity_inputs_ignored": true
+    }
+  ],
+  "scope": "Four actual saved BGE models with new formatting, frozen candidates/beams and oldQwen/base; not a full new ZIP execution"
+}

@@ -1,0 +1,135 @@
+{
+  "fold": 1,
+  "tag": "encoder_bge_v1",
+  "rows": 1596,
+  "neural_rows": 306,
+  "source": "998f2fb026bb01703feb81fe0d3844c0279518915561a115e4d7a5a943d46fe1",
+  "mean_accuracy": {
+    "baseline": 0.8026315789473685,
+    "reference_v11": 0.8051378446115288,
+    "candidate": 0.8038847117794486,
+    "ensemble": 0.8057644110275689
+  },
+  "scenarios": {
+    "gt_only_missing": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.9912280701754386,
+        "reference_v11": 0.9912280701754386,
+        "candidate": 0.9912280701754386,
+        "ensemble": 0.9912280701754386
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "igt_only_missing": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.9912280701754386,
+        "reference_v11": 0.9912280701754386,
+        "candidate": 0.9912280701754386,
+        "ensemble": 0.9912280701754386
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "conflicting_gt": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.9912280701754386,
+        "reference_v11": 0.9912280701754386,
+        "candidate": 0.9912280701754386,
+        "ensemble": 0.9912280701754386
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "first_with_gt": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.6578947368421053,
+        "reference_v11": 0.7017543859649122,
+        "candidate": 0.6228070175438597,
+        "ensemble": 0.6710526315789473
+      },
+      "changed_rows": 158,
+      "changed_only": {
+        "baseline": 0.5189873417721519,
+        "reference_v11": 0.5822784810126582,
+        "candidate": 0.46835443037974683,
+        "ensemble": 0.5379746835443038
+      }
+    },
+    "last_with_gt": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.8859649122807017,
+        "reference_v11": 0.8947368421052632,
+        "candidate": 0.8991228070175439,
+        "ensemble": 0.8947368421052632
+      },
+      "changed_rows": 158,
+      "changed_only": {
+        "baseline": 0.8481012658227848,
+        "reference_v11": 0.8607594936708861,
+        "candidate": 0.8670886075949367,
+        "ensemble": 0.8607594936708861
+      }
+    },
+    "first_both_missing": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.4342105263157895,
+        "reference_v11": 0.4517543859649123,
+        "candidate": 0.4692982456140351,
+        "ensemble": 0.45614035087719296
+      },
+      "changed_rows": 158,
+      "changed_only": {
+        "baseline": 0.22784810126582278,
+        "reference_v11": 0.27848101265822783,
+        "candidate": 0.2468354430379747,
+        "ensemble": 0.25316455696202533
+      }
+    },
+    "last_both_missing": {
+      "rows": 228,
+      "accuracy": {
+        "baseline": 0.6666666666666666,
+        "reference_v11": 0.6140350877192983,
+        "candidate": 0.6622807017543859,
+        "ensemble": 0.6447368421052632
+      },
+      "changed_rows": 158,
+      "changed_only": {
+        "baseline": 0.5632911392405063,
+        "reference_v11": 0.5126582278481012,
+        "candidate": 0.5253164556962026,
+        "ensemble": 0.5253164556962026
+      }
+    }
+  },
+  "comparisons": {
+    "candidate": {
+      "delta": -0.0012531328320802004,
+      "bootstrap_95": [
+        -0.019950776568423628,
+        0.019321290510620454
+      ],
+      "gains": 37,
+      "losses": 39
+    },
+    "ensemble": {
+      "delta": 0.0006265664160401002,
+      "bootstrap_95": [
+        -0.014167650531286895,
+        0.01692705193484262
+      ],
+      "gains": 22,
+      "losses": 21
+    }
+  },
+  "candidate_delta_vs_v11": -0.0012531328320802004,
+  "ensemble_delta_vs_v11": 0.0006265664160401002,
+  "caveat": "Diagnostic equal scenario mix with train-fold-only retrieval and LGB; not official score or historical testlike."
+}

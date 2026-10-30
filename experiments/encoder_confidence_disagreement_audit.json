@@ -1,0 +1,12 @@
+{
+  "disagreement_prior_active": {
+    "gained": 6,
+    "lost": 8,
+    "scenario_mass_net": -0.3400000000000001
+  },
+  "agreement_prior_active": {
+    "gained": 2,
+    "lost": 3,
+    "scenario_mass_net": -0.14999999999999997
+  }
+}

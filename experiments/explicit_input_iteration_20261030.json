@@ -1,0 +1,670 @@
+{
+  "client_date": "2026-10-30",
+  "completed_utc": "2026-10-30T01:33:08.990515+00:00",
+  "selected": null,
+  "protocol_fingerprint": "85af0433a2be7c3a0c017bfff853222580e5d6aa906d1b063b1866e6425c6203",
+  "selection": {
+    "selected": null,
+    "stage": "screen",
+    "fingerprint": "85af0433a2be7c3a0c017bfff853222580e5d6aa906d1b063b1866e6425c6203",
+    "actual_competition_submission": false
+  },
+  "audit": {
+    "tag": "encoder_explicit_v1",
+    "complete_folds": [
+      1,
+      4
+    ],
+    "reference_v12": {
+      "testlike": 0.9087787707227457,
+      "testlike_hangul": 0.8702574257425743,
+      "hard": 0.8475056283134426,
+      "hard_hangul": 0.8485148514851485,
+      "oof": 0.996826295475221,
+      "scenarios": {
+        "clean": 0.996039603960396,
+        "gt_missing": 0.9702970297029703,
+        "drop_word": 0.8198019801980198,
+        "both": 0.5663366336633663
+      }
+    },
+    "contenders": {
+      "characters": {
+        "candidate": {
+          "testlike": 0.9072124340890824,
+          "testlike_hangul": 0.868019801980198,
+          "hard": 0.8468125590065119,
+          "hard_hangul": 0.8475247524752475,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9623762376237623,
+            "drop_word": 0.8198019801980198,
+            "both": 0.5603960396039604
+          }
+        },
+        "matched_control": {
+          "testlike": 0.9070876816138348,
+          "testlike_hangul": 0.8678415841584158,
+          "hard": 0.8475056283134426,
+          "hard_hangul": 0.8485148514851485,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9702970297029703,
+            "drop_word": 0.8158415841584158,
+            "both": 0.5584158415841585
+          }
+        },
+        "matched_control_recipe": "Previously reported original JSON/phonetic8-way BGE control from encoder_list20_v1; exact same1200queries, candidates, seed, public starting weights, microbatch1/accum2 and600updates. Control performance known before this registration, not a new prospective control fit.",
+        "delta_vs_v12": -0.0015663366336633455,
+        "delta_vs_matched_control": 0.00012475247524756927,
+        "bootstrap_95_vs_v12": [
+          -0.007227460595074559,
+          0.0031349594155844094
+        ],
+        "delta_by_fold_vs_v12": {
+          "1": 0.0007061403508771269,
+          "4": -0.0034368231046930653
+        },
+        "clean_lost_rows": 0,
+        "screen_checks": {
+          "folds": true,
+          "testlike": false,
+          "worst_fold": false,
+          "hard_hangul": true,
+          "drop_word": true,
+          "clean_lost": true,
+          "matched_control": false,
+          "bootstrap_lower_positive": false
+        },
+        "screen_gate_pass": false,
+        "without_shots": {
+          "reference_v12": {
+            "testlike": 0.9095147281221666,
+            "testlike_hangul": 0.8713087934560327,
+            "hard": 0.8461832690836545,
+            "hard_hangul": 0.8466257668711656,
+            "oof": 0.9967355870178721,
+            "scenarios": {
+              "clean": 0.9959100204498977,
+              "gt_missing": 0.9693251533742331,
+              "drop_word": 0.820040899795501,
+              "both": 0.5725971370143149
+            }
+          },
+          "candidate": {
+            "testlike": 0.9078971412101011,
+            "testlike_hangul": 0.8689979550102249,
+            "hard": 0.8454675226623867,
+            "hard_hangul": 0.84560327198364,
+            "oof": 0.9967355870178721,
+            "scenarios": {
+              "clean": 0.9959100204498977,
+              "gt_missing": 0.9611451942740287,
+              "drop_word": 0.820040899795501,
+              "both": 0.5664621676891616
+            }
+          }
+        },
+        "changes": {
+          "oof": {
+            "gained": 0,
+            "lost": 0
+          },
+          "hard": {
+            "gained": 1,
+            "lost": 2
+          },
+          "testlike": {
+            "gained": 10,
+            "lost": 17
+          }
+        }
+      },
+      "compact": {
+        "candidate": {
+          "testlike": 0.9072124340890824,
+          "testlike_hangul": 0.868019801980198,
+          "hard": 0.8461194896995812,
+          "hard_hangul": 0.8465346534653465,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9623762376237623,
+            "drop_word": 0.8198019801980198,
+            "both": 0.5603960396039604
+          }
+        },
+        "matched_control": {
+          "testlike": 0.9070876816138348,
+          "testlike_hangul": 0.8678415841584158,
+          "hard": 0.8475056283134426,
+          "hard_hangul": 0.8485148514851485,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9702970297029703,
+            "drop_word": 0.8158415841584158,
+            "both": 0.5584158415841585
+          }
+        },
+        "matched_control_recipe": "Previously reported original JSON/phonetic8-way BGE control from encoder_list20_v1; exact same1200queries, candidates, seed, public starting weights, microbatch1/accum2 and600updates. Control performance known before this registration, not a new prospective control fit.",
+        "delta_vs_v12": -0.0015663366336633455,
+        "delta_vs_matched_control": 0.00012475247524756927,
+        "bootstrap_95_vs_v12": [
+          -0.007606800546448085,
+          0.003431525735294116
+        ],
+        "delta_by_fold_vs_v12": {
+          "1": -0.0007061403508772379,
+          "4": -0.002274368231046875
+        },
+        "clean_lost_rows": 0,
+        "screen_checks": {
+          "folds": true,
+          "testlike": false,
+          "worst_fold": false,
+          "hard_hangul": false,
+          "drop_word": true,
+          "clean_lost": true,
+          "matched_control": false,
+          "bootstrap_lower_positive": false
+        },
+        "screen_gate_pass": false,
+        "without_shots": {
+          "reference_v12": {
+            "testlike": 0.9095147281221666,
+            "testlike_hangul": 0.8713087934560327,
+            "hard": 0.8461832690836545,
+            "hard_hangul": 0.8466257668711656,
+            "oof": 0.9967355870178721,
+            "scenarios": {
+              "clean": 0.9959100204498977,
+              "gt_missing": 0.9693251533742331,
+              "drop_word": 0.820040899795501,
+              "both": 0.5725971370143149
+            }
+          },
+          "candidate": {
+            "testlike": 0.9078971412101011,
+            "testlike_hangul": 0.8689979550102249,
+            "hard": 0.8447517762411187,
+            "hard_hangul": 0.8445807770961146,
+            "oof": 0.9967355870178721,
+            "scenarios": {
+              "clean": 0.9959100204498977,
+              "gt_missing": 0.9611451942740287,
+              "drop_word": 0.820040899795501,
+              "both": 0.5664621676891616
+            }
+          }
+        },
+        "changes": {
+          "oof": {
+            "gained": 0,
+            "lost": 0
+          },
+          "hard": {
+            "gained": 3,
+            "lost": 5
+          },
+          "testlike": {
+            "gained": 11,
+            "lost": 18
+          }
+        }
+      }
+    },
+    "selected": null,
+    "truth_outside_top20": {
+      "oof": 0,
+      "hard": 50,
+      "testlike": 51
+    },
+    "actual_competition_submission": false,
+    "caveat": "Repeated exploratory synthetic CV and historical reference retrieval mapper exception. Reused known8-control. Compact is a joint serialization/numeric-evidence intervention, not an isolated one-factor compression ablation. Variable token counts differ between modes; equal queries and updates, not equal token compute. BGE12.5% replacement alone is not a proof of a Public0.97 path.",
+    "selection_note": "Includes prospectively frozen positive-bootstrap-lower-bound requirement in addition to the common auditor checks"
+  },
+  "runtime_checks": {
+    "status": "PASS",
+    "fingerprint": "85af0433a2be7c3a0c017bfff853222580e5d6aa906d1b063b1866e6425c6203",
+    "checks": [
+      {
+        "fold": 1,
+        "mode": "characters",
+        "actual_queries": 3,
+        "saved_scores_exact": true,
+        "final_predictions_equal": true,
+        "query_reverse_subset_single_exact": true,
+        "candidate_order_exact": true,
+        "identity_inputs_ignored": true
+      },
+      {
+        "fold": 1,
+        "mode": "compact",
+        "actual_queries": 3,
+        "saved_scores_exact": true,
+        "final_predictions_equal": true,
+        "query_reverse_subset_single_exact": true,
+        "candidate_order_exact": true,
+        "identity_inputs_ignored": true
+      },
+      {
+        "fold": 4,
+        "mode": "characters",
+        "actual_queries": 3,
+        "saved_scores_exact": true,
+        "final_predictions_equal": true,
+        "query_reverse_subset_single_exact": true,
+        "candidate_order_exact": true,
+        "identity_inputs_ignored": true
+      },
+      {
+        "fold": 4,
+        "mode": "compact",
+        "actual_queries": 3,
+        "saved_scores_exact": true,
+        "final_predictions_equal": true,
+        "query_reverse_subset_single_exact": true,
+        "candidate_order_exact": true,
+        "identity_inputs_ignored": true
+      }
+    ],
+    "scope": "Four actual saved BGE models with new formatting, frozen candidates/beams and oldQwen/base; not a full new ZIP execution"
+  },
+  "processes": {
+    "process": {
+      "returncode": 0,
+      "stdout_and_stderr_log": "experiments\\encoder_explicit_v1_run.log",
+      "python_executable": "D:\\KSH\\pjt\\DACON202610\\.venv\\Scripts\\python.exe"
+    },
+    "runtime_process": {
+      "returncode": 0,
+      "log": "experiments\\encoder_explicit_v1_runtime_run.log"
+    }
+  },
+  "input_only_audit": {
+    "client_date": "2026-10-30",
+    "role": "Input-only diagnostic; no new model, accuracy or Public claim",
+    "max_length": 256,
+    "qwen_prefix_tokens": 26,
+    "qwen_suffix_tokens": 9,
+    "qwen_body_budget": 221,
+    "query_groups": "First256 seeded training groups per fold plus all previously neural-active heldout groups; no error filtering",
+    "reports": {
+      "fold1_training_sample": {
+        "groups": 256,
+        "pairs": 2048,
+        "qwen_full_lengths": {
+          "min": 161,
+          "median": 189.0,
+          "p95": 216.0,
+          "max": 231
+        },
+        "qwen_truncated_pairs": 0,
+        "qwen_candidate_field_incomplete": {},
+        "bge_full_lengths": {
+          "min": 158,
+          "median": 188.0,
+          "p95": 205.0,
+          "max": 225
+        },
+        "bge_truncated_pairs": 0
+      },
+      "fold1_hard": {
+        "groups": 72,
+        "pairs": 1440,
+        "qwen_full_lengths": {
+          "min": 157,
+          "median": 175.0,
+          "p95": 210.0,
+          "max": 244
+        },
+        "qwen_truncated_pairs": 0,
+        "qwen_candidate_field_incomplete": {},
+        "bge_full_lengths": {
+          "min": 157,
+          "median": 178.0,
+          "p95": 206.0,
+          "max": 235
+        },
+        "bge_truncated_pairs": 0
+      },
+      "fold1_testlike": {
+        "groups": 177,
+        "pairs": 3540,
+        "qwen_full_lengths": {
+          "min": 160,
+          "median": 173.0,
+          "p95": 190.0,
+          "max": 200
+        },
+        "qwen_truncated_pairs": 0,
+        "qwen_candidate_field_incomplete": {},
+        "bge_full_lengths": {
+          "min": 155,
+          "median": 173.0,
+          "p95": 189.0,
+          "max": 222
+        },
+        "bge_truncated_pairs": 0
+      },
+      "fold4_training_sample": {
+        "groups": 256,
+        "pairs": 2048,
+        "qwen_full_lengths": {
+          "min": 158,
+          "median": 191.0,
+          "p95": 218.64999999999986,
+          "max": 229
+        },
+        "qwen_truncated_pairs": 0,
+        "qwen_candidate_field_incomplete": {},
+        "bge_full_lengths": {
+          "min": 151,
+          "median": 189.0,
+          "p95": 212.0,
+          "max": 237
+        },
+        "bge_truncated_pairs": 0
+      },
+      "fold4_oof": {
+        "groups": 4,
+        "pairs": 80,
+        "qwen_full_lengths": {
+          "min": 188,
+          "median": 191.0,
+          "p95": 196.05,
+          "max": 197
+        },
+        "qwen_truncated_pairs": 0,
+        "qwen_candidate_field_incomplete": {},
+        "bge_full_lengths": {
+          "min": 185,
+          "median": 195.0,
+          "p95": 204.0,
+          "max": 204
+        },
+        "bge_truncated_pairs": 0
+      },
+      "fold4_hard": {
+        "groups": 108,
+        "pairs": 2160,
+        "qwen_full_lengths": {
+          "min": 160,
+          "median": 180.0,
+          "p95": 213.0,
+          "max": 235
+        },
+        "qwen_truncated_pairs": 0,
+        "qwen_candidate_field_incomplete": {},
+        "bge_full_lengths": {
+          "min": 160,
+          "median": 180.0,
+          "p95": 200.0,
+          "max": 219
+        },
+        "bge_truncated_pairs": 0
+      },
+      "fold4_testlike": {
+        "groups": 222,
+        "pairs": 4440,
+        "qwen_full_lengths": {
+          "min": 158,
+          "median": 174.0,
+          "p95": 189.0,
+          "max": 198
+        },
+        "qwen_truncated_pairs": 0,
+        "qwen_candidate_field_incomplete": {},
+        "bge_full_lengths": {
+          "min": 160,
+          "median": 175.0,
+          "p95": 189.0,
+          "max": 204
+        },
+        "bge_truncated_pairs": 0
+      }
+    },
+    "source_hashes": {
+      "experiments\\artifacts\\encoder_ambiguity_v1\\fold1_data.joblib": "eed69a4ca80f4e1466d9163497759ada89800051e2c377b40ef359bbbaa05f5d",
+      "experiments\\artifacts\\encoder_ambiguity_v1\\fold4_data.joblib": "e70217a49126034e2d2b47ac933b3d2e34ecec0835dea87aeefff55fd72a8d11"
+    },
+    "script_sha256": "e0704e7a408484d2c4c558c6efec8c34eca081f65f8609f017421924f8396e70"
+  },
+  "paired_training_input_lengths": {
+    "1": {
+      "legacy": {
+        "min": 156,
+        "median": 187.0,
+        "max": 237
+      },
+      "new": {
+        "characters": {
+          "min": 100,
+          "median": 150.0,
+          "max": 228
+        },
+        "compact": {
+          "min": 82,
+          "median": 116.0,
+          "max": 174
+        }
+      }
+    },
+    "4": {
+      "legacy": {
+        "min": 145,
+        "median": 187.0,
+        "max": 237
+      },
+      "new": {
+        "characters": {
+          "min": 92,
+          "median": 150.0,
+          "max": 228
+        },
+        "compact": {
+          "min": 78,
+          "median": 116.0,
+          "max": 174
+        }
+      }
+    }
+  },
+  "training": [
+    {
+      "fingerprint": "85af0433a2be7c3a0c017bfff853222580e5d6aa906d1b063b1866e6425c6203",
+      "fold": 1,
+      "width": 8,
+      "groups": 1200,
+      "steps": 600,
+      "pairs": 9600,
+      "initial_trainable_sha256": "4e1adae1f4a1790254b06f796e9a3ba06279716f9d35fabd8114b85950c10ee1",
+      "token_sha256": "62144b3529c790637f098dc37eaaa780692b50d9f9e03682f8c35282f34039f3",
+      "finite_losses_and_gradients": true,
+      "resumed_after_step": 0,
+      "seconds_this_segment": 116.89190559997223,
+      "mean_training_loss": 0.5534413345734635,
+      "max_training_loss": 7.124309912323952,
+      "experiment": "encoder_explicit_v1",
+      "mode": "characters"
+    },
+    {
+      "fingerprint": "85af0433a2be7c3a0c017bfff853222580e5d6aa906d1b063b1866e6425c6203",
+      "fold": 1,
+      "width": 8,
+      "groups": 1200,
+      "steps": 600,
+      "pairs": 9600,
+      "initial_trainable_sha256": "4e1adae1f4a1790254b06f796e9a3ba06279716f9d35fabd8114b85950c10ee1",
+      "token_sha256": "6b33591052a986f1d32dc08c8f02804535fc96fbb093e8cbf021346f8417a982",
+      "finite_losses_and_gradients": true,
+      "resumed_after_step": 0,
+      "seconds_this_segment": 118.56827209994663,
+      "mean_training_loss": 0.5411959794673553,
+      "max_training_loss": 7.528404474258423,
+      "experiment": "encoder_explicit_v1",
+      "mode": "compact"
+    },
+    {
+      "fingerprint": "85af0433a2be7c3a0c017bfff853222580e5d6aa906d1b063b1866e6425c6203",
+      "fold": 4,
+      "width": 8,
+      "groups": 1200,
+      "steps": 600,
+      "pairs": 9600,
+      "initial_trainable_sha256": "4e1adae1f4a1790254b06f796e9a3ba06279716f9d35fabd8114b85950c10ee1",
+      "token_sha256": "fbcf1901ebe18787b5614ac54205d471866dd4d8dddd13852d67b61b1af35db6",
+      "finite_losses_and_gradients": true,
+      "resumed_after_step": 0,
+      "seconds_this_segment": 119.10084049997386,
+      "mean_training_loss": 0.5011582146062926,
+      "max_training_loss": 5.356600821018219,
+      "experiment": "encoder_explicit_v1",
+      "mode": "characters"
+    },
+    {
+      "fingerprint": "85af0433a2be7c3a0c017bfff853222580e5d6aa906d1b063b1866e6425c6203",
+      "fold": 4,
+      "width": 8,
+      "groups": 1200,
+      "steps": 600,
+      "pairs": 9600,
+      "initial_trainable_sha256": "4e1adae1f4a1790254b06f796e9a3ba06279716f9d35fabd8114b85950c10ee1",
+      "token_sha256": "eb36d9f34c75f405cc7c41b7899f2e08eac98e08e8842dcca2f5950641e1ac31",
+      "finite_losses_and_gradients": true,
+      "resumed_after_step": 0,
+      "seconds_this_segment": 114.48607059998903,
+      "mean_training_loss": 0.48117103862136806,
+      "max_training_loss": 7.300768136978149,
+      "experiment": "encoder_explicit_v1",
+      "mode": "compact"
+    }
+  ],
+  "checkpoint_checks": [
+    {
+      "fold": 1,
+      "mode": "characters",
+      "slot": 0,
+      "step": 400,
+      "cpu_optimizer_and_rng_state_read": true,
+      "optimizer_values_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 1,
+      "mode": "characters",
+      "slot": 1,
+      "step": 600,
+      "cpu_optimizer_and_rng_state_read": true,
+      "optimizer_values_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 1,
+      "mode": "compact",
+      "slot": 0,
+      "step": 400,
+      "cpu_optimizer_and_rng_state_read": true,
+      "optimizer_values_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 1,
+      "mode": "compact",
+      "slot": 1,
+      "step": 600,
+      "cpu_optimizer_and_rng_state_read": true,
+      "optimizer_values_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 4,
+      "mode": "characters",
+      "slot": 0,
+      "step": 400,
+      "cpu_optimizer_and_rng_state_read": true,
+      "optimizer_values_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 4,
+      "mode": "characters",
+      "slot": 1,
+      "step": 600,
+      "cpu_optimizer_and_rng_state_read": true,
+      "optimizer_values_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 4,
+      "mode": "compact",
+      "slot": 0,
+      "step": 400,
+      "cpu_optimizer_and_rng_state_read": true,
+      "optimizer_values_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 4,
+      "mode": "compact",
+      "slot": 1,
+      "step": 600,
+      "cpu_optimizer_and_rng_state_read": true,
+      "optimizer_values_finite": true,
+      "gpu_resume_replay_tested": false
+    }
+  ],
+  "saved_model_files_sha256": {
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold1_merged\\config.json": "b7dbf2e6c503555332aab40af941d2e6984aa0d78936b5aba7610e99b48f0f81",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold1_merged\\model.safetensors": "9ddf12dee2cb6ff361967008b020150ebe4bb2dfea8e015cf3791beff5f30b01",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold1_merged\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold1_merged\\special_tokens_map.json": "66715ae6a0dd4aff4fe228bcaaccac6e52c83fd0ba80992c2be7d0e43b362307",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold1_merged\\tokenizer.json": "8bf8afbfd11306bd872018c53bfdf2e160a56f8edbcf49933324404791c148d3",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold1_merged\\tokenizer_config.json": "124082a942c10b169eea63ed64de329912393e3ea679e909a98c2b3efaaee6f1",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold1_merged\\config.json": "b7dbf2e6c503555332aab40af941d2e6984aa0d78936b5aba7610e99b48f0f81",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold1_merged\\model.safetensors": "68971d742c14ffcd9559f7d0504e2a845554b71c6ac1df1ba27845f769641588",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold1_merged\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold1_merged\\special_tokens_map.json": "66715ae6a0dd4aff4fe228bcaaccac6e52c83fd0ba80992c2be7d0e43b362307",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold1_merged\\tokenizer.json": "8bf8afbfd11306bd872018c53bfdf2e160a56f8edbcf49933324404791c148d3",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold1_merged\\tokenizer_config.json": "124082a942c10b169eea63ed64de329912393e3ea679e909a98c2b3efaaee6f1",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold4_merged\\config.json": "b7dbf2e6c503555332aab40af941d2e6984aa0d78936b5aba7610e99b48f0f81",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold4_merged\\model.safetensors": "408e16fbb66d35f82c6554684d4a3d3238a61c904f05b6cb91aae943d2eed05a",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold4_merged\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold4_merged\\special_tokens_map.json": "66715ae6a0dd4aff4fe228bcaaccac6e52c83fd0ba80992c2be7d0e43b362307",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold4_merged\\tokenizer.json": "8bf8afbfd11306bd872018c53bfdf2e160a56f8edbcf49933324404791c148d3",
+    "experiments\\artifacts\\encoder_explicit_v1\\characters\\width8\\fold4_merged\\tokenizer_config.json": "124082a942c10b169eea63ed64de329912393e3ea679e909a98c2b3efaaee6f1",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold4_merged\\config.json": "b7dbf2e6c503555332aab40af941d2e6984aa0d78936b5aba7610e99b48f0f81",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold4_merged\\model.safetensors": "ab352f9eedc71bbb9ab08c6b7ca97ec6ac0bf07cbc9bd502a5fca598e262e7f5",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold4_merged\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold4_merged\\special_tokens_map.json": "66715ae6a0dd4aff4fe228bcaaccac6e52c83fd0ba80992c2be7d0e43b362307",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold4_merged\\tokenizer.json": "8bf8afbfd11306bd872018c53bfdf2e160a56f8edbcf49933324404791c148d3",
+    "experiments\\artifacts\\encoder_explicit_v1\\compact\\width8\\fold4_merged\\tokenizer_config.json": "124082a942c10b169eea63ed64de329912393e3ea679e909a98c2b3efaaee6f1"
+  },
+  "source_count": 50,
+  "reused_known_control": true,
+  "new_control_fit": false,
+  "initial_screen_criteria_fixed_before_new_fit": true,
+  "frozen_v12_source_modules_verified": 13,
+  "v12_zip_sha256_verified": "d1ee05642102d018efaac732f2e735419904d9f0bb84ec64d646903300ae9fb3",
+  "old_research_snapshot_preserved": true,
+  "actual_best_public": 0.9065951735,
+  "actual_server_seconds": 591,
+  "actual_submissions": 9,
+  "target_public": 0.97,
+  "new_final_model": false,
+  "new_zip": false,
+  "actual_competition_submission": false,
+  "callsign_or_identity_lookup": false,
+  "fresh_candidate_validation": false,
+  "full_five_fold_candidate_validation": false,
+  "caveats": [
+    "No truncation found in the inspected pairs; the new representation is not a proven repair of missing input.",
+    "Reused synthetic CV, known earlier control and historical reference retrieval mapper exception remain.",
+    "Upfront smaller-gain screen adds both-fold consistency, zero clean loss and positive bootstrap lower bound; does not relax Public0.97 target.",
+    "Checkpoint CPU validation is not a completed GPU resume/retraining reproducibility test.",
+    "Saved-model query checks do not constitute an end-to-end new submission ZIP execution."
+  ]
+}

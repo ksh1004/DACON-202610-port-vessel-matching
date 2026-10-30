@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "step": 200,
+  "trainable_parameters": 148,
+  "adapter_restore_exact": true,
+  "optimizer_restore_finite": true,
+  "random_states_present": true,
+  "scope": "Actual checkpoint load on CPU; not a second full training or exact CUDA continuation comparison"
+}

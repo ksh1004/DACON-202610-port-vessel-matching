@@ -1,0 +1,20 @@
+Registered D:\KSH\pjt\DACON202610\experiments\forward_kanana_v1_probe_protocol.json
+Forward probe pairs256/2395 seconds16.0
+Forward probe pairs1280/2395 seconds80.3
+Forward probe pairs2304/2395 seconds144.6
+Forward probe pairs2395/2395 seconds150.7
+{
+  "tag": "forward_kanana_v1",
+  "rows": 48,
+  "distinct_vessels": 48,
+  "reference_correct": 17,
+  "candidate_correct": 15,
+  "gained": 0,
+  "lost": 2,
+  "net_gain": -2,
+  "admitted": false,
+  "seconds": 150.7066468000412,
+  "exact_pair_order_and_single_checks": true,
+  "actual_competition_submission": false,
+  "diagnostic_not_competition_score": true
+}

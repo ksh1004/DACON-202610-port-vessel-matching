@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "fingerprint": "f95dd38dd6337ac5d0965bcdcae2aaeb9374ac05e74b3eef748b36efb1355a43",
+  "checks": [
+    {
+      "fold": 1,
+      "arm": "none",
+      "actual_queries": 3,
+      "save_reload_exact": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true,
+      "id_and_callsign_ignored": true
+    },
+    {
+      "fold": 1,
+      "arm": "targeted",
+      "actual_queries": 3,
+      "save_reload_exact": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true,
+      "id_and_callsign_ignored": true
+    },
+    {
+      "fold": 1,
+      "arm": "random",
+      "actual_queries": 3,
+      "save_reload_exact": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true,
+      "id_and_callsign_ignored": true
+    },
+    {
+      "fold": 4,
+      "arm": "none",
+      "actual_queries": 3,
+      "save_reload_exact": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true,
+      "id_and_callsign_ignored": true
+    },
+    {
+      "fold": 4,
+      "arm": "targeted",
+      "actual_queries": 3,
+      "save_reload_exact": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true,
+      "id_and_callsign_ignored": true
+    },
+    {
+      "fold": 4,
+      "arm": "random",
+      "actual_queries": 3,
+      "save_reload_exact": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true,
+      "id_and_callsign_ignored": true
+    }
+  ],
+  "scope": "Actual saved BGE scorer and immutable per-query candidate lists; not a complete submission ZIP execution"
+}

@@ -1,0 +1,19 @@
+# DACON 평가 서버(Python 3.11.17 / CUDA 12.8)에 사전 설치된 패키지 버전과 동일하게 고정
+# 제출용 requirements.txt에는 이 목록을 넣지 않는다 (서버에 이미 설치됨)
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.7.1+cu128
+pandas==2.0.3
+numpy==1.26.4
+scipy==1.15.3
+scikit-learn==1.5.2
+joblib==1.5.2
+threadpoolctl==3.7.0
+lightgbm==4.6.0
+catboost==1.2.8
+rapidfuzz==3.14.3
+Unidecode==1.4.0
+transformers==4.57.6
+accelerate==1.9.0
+safetensors==0.6.2
+sentencepiece==0.2.0
+tqdm==4.66.5

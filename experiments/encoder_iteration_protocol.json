@@ -1,0 +1,71 @@
+{
+  "tag": "encoder_bge_v1",
+  "reference": "v11",
+  "model": {
+    "repo": "BAAI/bge-reranker-v2-m3",
+    "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+  },
+  "training_groups": 2400,
+  "epochs": 1,
+  "seed": 42,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "learning_rate": 0.0001,
+  "targets": [
+    "query",
+    "key",
+    "value"
+  ],
+  "classifier_trainable": true,
+  "groups_per_batch": 2,
+  "max_tokens": 256,
+  "negatives": "five train-fold LGB hard and two lexical",
+  "variants": {
+    "encoder_only": {
+      "v8": 0.75,
+      "encoder": 0.25
+    },
+    "equal_ensemble": {
+      "v8": 0.75,
+      "qwen_v11": 0.125,
+      "encoder": 0.125
+    }
+  },
+  "screen_folds": [
+    1,
+    2
+  ],
+  "screen_gate": {
+    "testlike_gain_min": 0.001,
+    "minimum_fold_delta": -0.002,
+    "hard_hangul_delta_min": -0.002,
+    "clean_lost_rows_max": 1
+  },
+  "fresh_guard": {
+    "fold": 1,
+    "minimum_mean_accuracy_delta": -0.002,
+    "few_shot_vessels_excluded": true
+  },
+  "full_gate": {
+    "testlike_gain_min": 0.001,
+    "hard_hangul_delta_min": -0.002,
+    "oof_delta_min": -0.0006,
+    "positive_folds_min": 3,
+    "all_5_folds_required": true
+  },
+  "priority": [
+    "encoder_only",
+    "equal_ensemble"
+  ],
+  "source_hashes": {
+    "src\\encoder_pair.py": "687764251db138cae140e80b2c7a676c6215020680734202ed5364f6e39cd7e0",
+    "src\\encoder_experiment.py": "29c94c9fe475b14bd973beabd8187587430d518254428bf6cbfbf2b99c3aa15c",
+    "src\\neural_pair.py": "ba17461516c168713e54adc4e2975136980ee64ad9eca6dff2d7f4b8bafd357b",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9"
+  },
+  "caveat": "Reused exploratory validation; historical v8 candidate mapper exception. No Public inference/submission in this task.",
+  "registered_before_first_result_inspection": true,
+  "first_score_file_present_now": true
+}

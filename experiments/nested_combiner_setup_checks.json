@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "feature_candidate_permutation_exact": true,
+  "expert_shift_invariance": true,
+  "uniform_confidence_statistics": true,
+  "input_ids_and_callsign_excluded": true,
+  "prepared_splits": [
+    {
+      "outer": 0,
+      "inner": 0,
+      "overlap": 0,
+      "nn_groups": 2400,
+      "meta_groups": 3335
+    },
+    {
+      "outer": 0,
+      "inner": 1,
+      "overlap": 0,
+      "nn_groups": 2094,
+      "meta_groups": 4101
+    },
+    {
+      "outer": 2,
+      "inner": 0,
+      "overlap": 0,
+      "nn_groups": 2400,
+      "meta_groups": 3756
+    },
+    {
+      "outer": 2,
+      "inner": 1,
+      "overlap": 0,
+      "nn_groups": 2360,
+      "meta_groups": 3839
+    }
+  ]
+}

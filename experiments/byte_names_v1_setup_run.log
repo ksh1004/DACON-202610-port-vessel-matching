@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "fingerprint": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+  "only_name_strings_in_neural_examples": true,
+  "fragment_prior_normalised": true,
+  "folds": [
+    {
+      "fold": 1,
+      "pairs": 877,
+      "inner_fit": 670,
+      "inner_valid": 207,
+      "vessel_overlap": 0,
+      "inner_pair_overlap": 0,
+      "old_v12_winners_all_reproduced": true,
+      "byte_active_queries": 263,
+      "proven_winner_preserving_skips": 1093
+    },
+    {
+      "fold": 4,
+      "pairs": 852,
+      "inner_fit": 648,
+      "inner_valid": 204,
+      "vessel_overlap": 0,
+      "inner_pair_overlap": 0,
+      "old_v12_winners_all_reproduced": true,
+      "byte_active_queries": 327,
+      "proven_winner_preserving_skips": 1335
+    }
+  ]
+}

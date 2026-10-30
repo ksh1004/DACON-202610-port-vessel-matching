@@ -1,0 +1,44 @@
+{
+  "caveat": "Optimistic truth-aware selector, not a model. Non-Hangul input predictions stay v8. Historical candidates shared.",
+  "weights": {
+    "0.25": {
+      "testlike": 0.9736,
+      "testlike_hangul": 0.963,
+      "tl_gt": 0.9874,
+      "tl_dw": 0.9404,
+      "tl_both": 0.8925,
+      "oof": 0.9977,
+      "oof_hangul": 0.9975,
+      "oof_non_hangul": 0.9982,
+      "hard": 0.907,
+      "hard_hangul": 0.9307,
+      "hard_non_hangul": 0.8517
+    },
+    "0.5": {
+      "testlike": 0.9888,
+      "testlike_hangul": 0.9848,
+      "tl_gt": 0.9933,
+      "tl_dw": 0.9941,
+      "tl_both": 0.932,
+      "oof": 0.9995,
+      "oof_hangul": 1.0,
+      "oof_non_hangul": 0.9982,
+      "hard": 0.927,
+      "hard_hangul": 0.9593,
+      "hard_non_hangul": 0.8517
+    },
+    "1.0": {
+      "testlike": 0.9888,
+      "testlike_hangul": 0.9848,
+      "tl_gt": 0.9933,
+      "tl_dw": 0.9941,
+      "tl_both": 0.932,
+      "oof": 0.9995,
+      "oof_hangul": 1.0,
+      "oof_non_hangul": 0.9982,
+      "hard": 0.927,
+      "hard_hangul": 0.9593,
+      "hard_non_hangul": 0.8517
+    }
+  }
+}

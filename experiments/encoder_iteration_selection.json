@@ -1,0 +1,58 @@
+{
+  "tag": "encoder_bge_phonetic",
+  "selected_variant": "equal_ensemble",
+  "decisions": {
+    "encoder_only": {
+      "passed": false,
+      "checks": {
+        "screen": false,
+        "fresh": true,
+        "testlike": true,
+        "hard_hangul": true,
+        "oof": true,
+        "positive_folds": true
+      },
+      "metrics": {
+        "testlike": 0.9108011664859303,
+        "testlike_hangul": 0.8733501259445845,
+        "hard": 0.8558778337531485,
+        "hard_hangul": 0.8576826196473551,
+        "oof": 0.997692854143361,
+        "scenarios": {
+          "clean": 0.9974811083123426,
+          "gt_missing": 0.984047019311503,
+          "drop_word": 0.8127623845507976,
+          "both": 0.5776658270361041
+        }
+      }
+    },
+    "equal_ensemble": {
+      "passed": true,
+      "checks": {
+        "screen": true,
+        "fresh": true,
+        "testlike": true,
+        "hard_hangul": true,
+        "oof": true,
+        "positive_folds": true
+      },
+      "metrics": {
+        "testlike": 0.9118708558226221,
+        "testlike_hangul": 0.8748782535684299,
+        "hard": 0.8579349286314022,
+        "hard_hangul": 0.8606213266162889,
+        "oof": 0.997692854143361,
+        "scenarios": {
+          "clean": 0.9974811083123426,
+          "gt_missing": 0.9832073887489504,
+          "drop_word": 0.8219983207388749,
+          "both": 0.5751469353484466
+        }
+      }
+    }
+  },
+  "cv_audit_sha256": "862d30224c4d6b770ac7d6996a52ee3fd041125dc69971fb371640c844846ecf",
+  "reference_public_v11": 0.9039635945,
+  "actual_competition_submission": false,
+  "caveat": "Exploratory reused validation; operational criteria do not establish Public improvement."
+}

@@ -1,0 +1,14 @@
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+{
+  "repo": "Qwen/Qwen3-Reranker-4B",
+  "revision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+  "license": "apache-2.0",
+  "source": "Official generic pretrained reranker only; no external ship data",
+  "weight_bytes": 8043614960,
+  "download_and_hash_seconds": 139.72196640004404,
+  "trust_remote_code": false,
+  "new_training": false,
+  "actual_competition_submission": false
+}

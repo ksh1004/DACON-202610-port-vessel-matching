@@ -1,0 +1,215 @@
+{
+  "tag": "encoder_extension_selfcheck",
+  "reference": "v12",
+  "complete_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "complete": true,
+  "reference_v12": {
+    "testlike": 0.9118708558226221,
+    "testlike_hangul": 0.8748782535684299,
+    "hard": 0.8579349286314022,
+    "hard_hangul": 0.8606213266162889,
+    "oof": 0.997692854143361,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8219983207388749,
+      "both": 0.5751469353484466
+    }
+  },
+  "candidate": {
+    "testlike": 0.9118708558226221,
+    "testlike_hangul": 0.8748782535684299,
+    "hard": 0.8579349286314022,
+    "hard_hangul": 0.8606213266162889,
+    "oof": 0.997692854143361,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8219983207388749,
+      "both": 0.5751469353484466
+    }
+  },
+  "delta_vs_v12": 0.0,
+  "bootstrap_95_vs_v12": [
+    0.0,
+    0.0
+  ],
+  "delta_by_fold_vs_v12": {
+    "0": 0.0,
+    "1": 0.0,
+    "2": 0.0,
+    "3": 0.0,
+    "4": 0.0
+  },
+  "clean_lost_rows_vs_v12": 0,
+  "screen_checks": {
+    "folds": false,
+    "testlike": false,
+    "worst_fold": true,
+    "hard_hangul": true,
+    "drop_word": true,
+    "clean_lost": true
+  },
+  "screen_gate_pass": false,
+  "without_shots": {
+    "reference_v12": {
+      "testlike": 0.9121137906297472,
+      "testlike_hangul": 0.8752253032928943,
+      "hard": 0.8566265164644713,
+      "hard_hangul": 0.8587521663778163,
+      "oof": 0.9976363209590366,
+      "scenarios": {
+        "clean": 0.9974003466204506,
+        "gt_missing": 0.9826689774696707,
+        "drop_word": 0.8223570190641247,
+        "both": 0.5771230502599654
+      }
+    },
+    "candidate": {
+      "testlike": 0.9121137906297472,
+      "testlike_hangul": 0.8752253032928943,
+      "hard": 0.8566265164644713,
+      "hard_hangul": 0.8587521663778163,
+      "oof": 0.9976363209590366,
+      "scenarios": {
+        "clean": 0.9974003466204506,
+        "gt_missing": 0.9826689774696707,
+        "drop_word": 0.8223570190641247,
+        "both": 0.5771230502599654
+      }
+    }
+  },
+  "changes": {
+    "oof": {
+      "gained": 0,
+      "lost": 0
+    },
+    "hard": {
+      "gained": 0,
+      "lost": 0
+    },
+    "testlike": {
+      "gained": 0,
+      "lost": 0
+    }
+  },
+  "protocols": {
+    "0": {
+      "fold": 0,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f0_train_cd185bcf8e28.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    },
+    "1": {
+      "fold": 1,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    },
+    "2": {
+      "fold": 2,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f2_train_5b13f22dba22.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    },
+    "3": {
+      "fold": 3,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f3_train_0e27b7ba964c.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    },
+    "4": {
+      "fold": 4,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f4_train_b2bd476d9d4f.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    }
+  },
+  "caveat": "Reused exploratory validation; historical v8 shared retrieval mapper exception remains."
+}

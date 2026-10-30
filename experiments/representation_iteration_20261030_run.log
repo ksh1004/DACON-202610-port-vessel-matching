@@ -1,0 +1,12 @@
+{
+  "artifact": "D:\\KSH\\pjt\\DACON202610\\experiments\\representation_iteration_20261030.json",
+  "selected": null,
+  "source_counts": {
+    "explicit": 50,
+    "dedicated4b": 23
+  },
+  "actual_best_public": 0.9065951735,
+  "new_trainable_models": 4,
+  "dedicated4b_correct": 15,
+  "actual_submission": false
+}

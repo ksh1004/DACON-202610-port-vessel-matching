@@ -1,0 +1,89 @@
+{
+  "registered_utc": "2026-10-28T06:55:25.343284+00:00",
+  "source_hashes": {
+    "experiments/reverse_ranker_protocol.json": "676dd3962c68f1ee8049b3c46eae6dcf646053c6d361aec812f45a20f4a5e02c",
+    "src/reverse_name_likelihood.py": "902942c15a0345db968ff133195b4b697bf9fa275167ea04ed17594ab7aae95e",
+    "tools/reverse_ranker_experiment.py": "1c184f7095b7fe6c528adee912bdb8c0daf47f0c2383e9a027263eecd4afc7cc",
+    "tools/audit_reverse_ranker.py": "cfd30508ec5785283bc500ca01e538926333af62e2d3aa161e4989cc01c15a47",
+    "src/train_ranker.py": "1b9b9c40a9328002b84af97eb44cb00be3fdee604f97cf1bf7473660ed4f5618",
+    "src/features.py": "1df5899912dbc5bb3366cce769efb17268ac0c0c72ae4693f8081cda4737d75d",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9"
+  },
+  "correctness_smoke": {
+    "status": "PASS",
+    "protocol": {
+      "model_dir": "D:\\KSH\\hf_models\\kakaocorp__kanana-1.5-2.1b-instruct-2505",
+      "prompt": "Transliterate the entire Latin-alphabet ship name phonetically into Korean Hangul. Render every name word and preserve all digits. Do not translate the meaning or add information. Output only the Korean transliteration.",
+      "few_shot_examples": 0,
+      "input_fields": [
+        "observed_name",
+        "candidate_name"
+      ],
+      "batch_size": 32,
+      "pad_length": 128,
+      "padding_side": "left",
+      "padded_last_batch": "repeat last candidate",
+      "candidate_order": "sorted unique raw name strings",
+      "position_ids": "attention-mask cumulative positions, padded positions zero",
+      "dtype": "torch.bfloat16",
+      "attention": "sdpa",
+      "target_tokenization": "separate target encode, add_special_tokens=False",
+      "fixed_logits_to_keep": 33,
+      "maximum_target_tokens": 32,
+      "score": "observed target tokens only; EOS reported separately",
+      "prompt_sha256": "073325bf22954b7a536307791e6e2fe21c4df584461af52f6d2be2e1d4a9ceb1",
+      "source_sha256": "902942c15a0345db968ff133195b4b697bf9fa275167ea04ed17594ab7aae95e",
+      "model_config_sha256": "8064bf2423445240e73247a03631b53dd839a880a26908e4747c0fc679d46031",
+      "tokenizer_sha256": "31d17e500c82ff116fc14d4dd0106a08e49bd3512d8a81473047121ef8ea09f9"
+    },
+    "load_seconds": 2.3690031999722123,
+    "unique_candidates": 7,
+    "batch_call_seconds": 0.8810804999666288,
+    "batch1_eight_calls_seconds": 0.40795989998150617,
+    "target_tokens": 6,
+    "scores": {
+      "Blue Ocean 7": -0.03579139709472656,
+      "Blue Ocean 8": -2.9558703104654946,
+      "Red Ocean 7": -1.7957955996195476,
+      "Blue River 7": -2.642661730448405,
+      "Ocean Blue 7": -2.0508421262105307,
+      "Ocean 7": -2.703301429748535,
+      "Blue Ocean": -5.321191787719727
+    },
+    "exact_repeat": true,
+    "exact_candidate_reverse": true,
+    "exact_pair_slot_companion_invariance": true,
+    "full_forward_shifted_loss_max_sum_delta": 2.3692846298217773e-06,
+    "fixed_batch_single_candidate_max_mean_delta": 0.0,
+    "batch1_max_mean_delta": 0.06894699732462595,
+    "top1_batch_equals_single": true,
+    "peak_allocated_gib": 8.798544883728027,
+    "caveat": "Different batch protocols are not interchangeable; exact per-pair caching requires its own invariance evidence."
+  },
+  "performance_optimization_before_validation": {
+    "previous_batch": 8,
+    "previous_pad": 256,
+    "new_batch": 32,
+    "new_pad": 128,
+    "max_target_tokens": 32,
+    "full_score_pair_max_target_tokens": 13,
+    "full_score_pair_max_combined_tokens": 84,
+    "previous_scores_not_reused": true,
+    "no_new_model_validation_outcome_observed": true
+  },
+  "auditor_interface_amendment": {
+    "registered_utc": "2026-10-28T06:59:32.910855+00:00",
+    "old_sha256": "0fb11a27e01a649d34faa31f428b86d4b7cf7d0aeb97babb223fe840cd168d16",
+    "reason": "Optional folder/protocol inputs and tag-based output paths only, enabling independent partial-name report without overwriting complete-name outcomes; no metrics/checks changed; before any new head evaluation"
+  },
+  "conditional_partial_source_hashes": {
+    "tools/reverse_partial_experiment.py": "1e583742b83ac9160b1831c63809a46848071de2318877613837b68b250b85e2",
+    "experiments/reverse_kanana_partial_v1_protocol.json": "c54da3c18895bf5f7e003cf84a368417bd6da410aa9902d71ecb5137c846baac"
+  },
+  "control_report_label_correction": {
+    "utc": "2026-10-28T08:34:02.097222+00:00",
+    "previous_sha256": "f22552dc9b3f01fb6f4e8d2c21337db70eff976dc9de8531823420b00a783842",
+    "reason": "Neutral matched_control label plus protocol recipe; partial experiment control has84 rather than78 features. Reporting fields only; no predictions, metrics or gates changed. Full-name result already known, partial outcome not seen."
+  }
+}

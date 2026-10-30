@@ -1,0 +1,3 @@
+[aug_h4_e1_s7_d0.3] 후보·특징 생성 284.9초 (15795행)
+hard 세트 5382행 (한글 원본 2382행)
+{"name": "lgb_tok_feat", "oof": 0.9953, "oof_hangul": 0.9941, "oof_non_hangul": 0.9979, "hard": 0.8388, "hard_hangul": 0.8333, "hard_non_hangul": 0.8517, "minutes": 3.0}

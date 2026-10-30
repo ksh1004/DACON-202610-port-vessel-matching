@@ -1,0 +1,114 @@
+{
+ "lgb_base_normal": {
+  "plain": {
+   "testlike": 0.8954,
+   "testlike_hangul": 0.8513,
+   "tl_gt": 0.9681,
+   "tl_dw": 0.7926,
+   "tl_both": 0.5097,
+   "oof": 0.9941,
+   "oof_hangul": 0.9924,
+   "oof_non_hangul": 0.9981,
+   "hard": 0.8405,
+   "hard_hangul": 0.8367,
+   "hard_non_hangul": 0.8493
+  },
+  "excluded": {
+   "testlike": 0.9154,
+   "testlike_hangul": 0.88,
+   "tl_gt": 0.9681,
+   "tl_dw": 0.8556,
+   "tl_both": 0.5844,
+   "oof": 0.9941,
+   "oof_hangul": 0.9924,
+   "oof_non_hangul": 0.9981,
+   "hard": 0.8617,
+   "hard_hangul": 0.8619,
+   "hard_non_hangul": 0.8613
+  }
+ },
+ "lgb_base_filtered": {
+  "plain": {
+   "testlike": 0.8958,
+   "testlike_hangul": 0.8519,
+   "tl_gt": 0.9706,
+   "tl_dw": 0.7842,
+   "tl_both": 0.5231,
+   "oof": 0.9936,
+   "oof_hangul": 0.9916,
+   "oof_non_hangul": 0.9981,
+   "hard": 0.8405,
+   "hard_hangul": 0.8354,
+   "hard_non_hangul": 0.8523
+  },
+  "excluded": {
+   "testlike": 0.9178,
+   "testlike_hangul": 0.8834,
+   "tl_gt": 0.9706,
+   "tl_dw": 0.8589,
+   "tl_both": 0.5961,
+   "oof": 0.9942,
+   "oof_hangul": 0.9924,
+   "oof_non_hangul": 0.9982,
+   "hard": 0.8626,
+   "hard_hangul": 0.8627,
+   "hard_non_hangul": 0.8623
+  }
+ },
+ "catg_400_normal": {
+  "plain": {
+   "testlike": 0.8883,
+   "testlike_hangul": 0.8416,
+   "tl_gt": 0.9563,
+   "tl_dw": 0.7809,
+   "tl_both": 0.4929,
+   "oof": 0.9903,
+   "oof_hangul": 0.9874,
+   "oof_non_hangul": 0.9972,
+   "hard": 0.7978,
+   "hard_hangul": 0.7859,
+   "hard_non_hangul": 0.8257
+  },
+  "excluded": {
+   "testlike": 0.8993,
+   "testlike_hangul": 0.8573,
+   "tl_gt": 0.9597,
+   "tl_dw": 0.8237,
+   "tl_both": 0.5214,
+   "oof": 0.9904,
+   "oof_hangul": 0.9874,
+   "oof_non_hangul": 0.9973,
+   "hard": 0.8133,
+   "hard_hangul": 0.8044,
+   "hard_non_hangul": 0.834
+  }
+ },
+ "catg_400_filtered": {
+  "plain": {
+   "testlike": 0.8895,
+   "testlike_hangul": 0.8433,
+   "tl_gt": 0.9563,
+   "tl_dw": 0.7893,
+   "tl_both": 0.4954,
+   "oof": 0.9892,
+   "oof_hangul": 0.9857,
+   "oof_non_hangul": 0.9973,
+   "hard": 0.8018,
+   "hard_hangul": 0.7922,
+   "hard_non_hangul": 0.8243
+  },
+  "excluded": {
+   "testlike": 0.8999,
+   "testlike_hangul": 0.8582,
+   "tl_gt": 0.9597,
+   "tl_dw": 0.8279,
+   "tl_both": 0.5248,
+   "oof": 0.9892,
+   "oof_hangul": 0.9857,
+   "oof_non_hangul": 0.9974,
+   "hard": 0.8185,
+   "hard_hangul": 0.8123,
+   "hard_non_hangul": 0.833
+  }
+ }
+}

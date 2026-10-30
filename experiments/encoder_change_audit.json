@@ -1,0 +1,43 @@
+{
+  "oof": {
+    "rows": 12222,
+    "gained": 0,
+    "lost": 0,
+    "net": 0
+  },
+  "hard": {
+    "rows": 5382,
+    "gained": 22,
+    "lost": 9,
+    "net": 13
+  },
+  "testlike": {
+    "rows": 3573,
+    "gained": 60,
+    "lost": 28,
+    "net": 32,
+    "scenarios": {
+      "gt_missing": {
+        "rows": 1191,
+        "gained": 11,
+        "lost": 0,
+        "net": 11
+      },
+      "drop_word": {
+        "rows": 1191,
+        "gained": 8,
+        "lost": 14,
+        "net": -6
+      },
+      "both": {
+        "rows": 1191,
+        "gained": 41,
+        "lost": 14,
+        "net": 27
+      }
+    }
+  },
+  "reference": "v11",
+  "candidate": "v12 equal_ensemble",
+  "caveat": "Raw row counts; testlike score weights scenarios and scripts rather than averaging these counts."
+}

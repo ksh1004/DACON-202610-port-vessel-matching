@@ -1,0 +1,357 @@
+{
+  "purpose": "Post-screen diagnosis, no new candidate selection or tuning",
+  "complete_folds": [
+    0,
+    2
+  ],
+  "summaries": {
+    "strict_all_group_tree": {
+      "scenarios": {
+        "clean": 0.9841986455981941,
+        "gt_missing": 0.9683972911963883,
+        "drop_word": 0.7878103837471784,
+        "both": 0.47404063205417607
+      },
+      "testlike": 0.8870332172207067,
+      "hard_all_hangul_origin_rows": 0.8363431151241535
+    },
+    "reverse_name_only": {
+      "scenarios": {
+        "clean": 0.9367945823927766,
+        "gt_missing": 0.9322799097065463,
+        "drop_word": 0.3340857787810384,
+        "both": 0.30248306997742663
+      },
+      "testlike": 0.7730264452116774,
+      "hard_all_hangul_origin_rows": 0.654627539503386
+    },
+    "new_head": {
+      "scenarios": {
+        "clean": 0.9977426636568849,
+        "gt_missing": 0.981941309255079,
+        "drop_word": 0.8194130925507901,
+        "both": 0.5214446952595937
+      },
+      "testlike": 0.9039248650762373,
+      "hard_all_hangul_origin_rows": 0.8589164785553047
+    },
+    "v12": {
+      "scenarios": {
+        "clean": 0.9977426636568849,
+        "gt_missing": 0.9909706546275395,
+        "drop_word": 0.8465011286681715,
+        "both": 0.5869074492099323
+      },
+      "testlike": 0.9178774610130318,
+      "hard_all_hangul_origin_rows": 0.8668171557562077
+    }
+  },
+  "feature_importance": {
+    "0": {
+      "reverse_total_gain_fraction": 0.5789810361655094,
+      "top_features": [
+        [
+          "reverse_gap_to_best",
+          70314.24898860604
+        ],
+        [
+          "reverse_dense_rank",
+          11736.890154771507
+        ],
+        [
+          "llm_ratio_gap_to_best",
+          10489.584455318749
+        ],
+        [
+          "rank_tok",
+          5629.545819945633
+        ],
+        [
+          "llm_tok_cover_q",
+          5431.207627058029
+        ],
+        [
+          "log_ratio",
+          4253.20296709612
+        ],
+        [
+          "llm_tset_max",
+          3466.560794055462
+        ],
+        [
+          "sim_llm",
+          3268.512465301901
+        ],
+        [
+          "llm_ratio_rank_in_group",
+          2666.964258087799
+        ],
+        [
+          "type_logp",
+          2530.798854328692
+        ],
+        [
+          "igt_gap",
+          2504.816981598735
+        ],
+        [
+          "flag_logp",
+          2235.51051479578
+        ],
+        [
+          "key_rank_in_group",
+          1804.3553386330605
+        ],
+        [
+          "flag_prior",
+          1507.0818808116019
+        ],
+        [
+          "key_tok_cover_q",
+          1419.6290378272533
+        ]
+      ]
+    },
+    "2": {
+      "reverse_total_gain_fraction": 0.5829575738237536,
+      "top_features": [
+        [
+          "reverse_gap_to_best",
+          80143.83660212532
+        ],
+        [
+          "llm_ratio_gap_to_best",
+          8629.986370898783
+        ],
+        [
+          "llm_tset_max",
+          5677.697580773383
+        ],
+        [
+          "log_ratio",
+          3994.082817669958
+        ],
+        [
+          "rank_tok",
+          3911.914528783411
+        ],
+        [
+          "llm_ratio_rank_in_group",
+          2862.592765364796
+        ],
+        [
+          "flag_logp",
+          2817.9872962869704
+        ],
+        [
+          "reverse_dense_rank",
+          2797.210386838764
+        ],
+        [
+          "llm_tok_cover_q",
+          2678.479040876031
+        ],
+        [
+          "flag_prior",
+          2533.1514131464064
+        ],
+        [
+          "igt_gap",
+          2533.0507605448365
+        ],
+        [
+          "sim_llm",
+          2408.822137830779
+        ],
+        [
+          "type_logp",
+          2215.6051859147847
+        ],
+        [
+          "key_tok_cover_q",
+          2048.0518698096275
+        ],
+        [
+          "key_rank_in_group",
+          1617.2766026295722
+        ]
+      ]
+    }
+  },
+  "cases": {
+    "gains": [
+      {
+        "observed": "파이오니어",
+        "scenario": "drop_word",
+        "truth": "Busan Pioneer",
+        "v12": "Kobe Pioneer",
+        "new_head": "Busan Pioneer"
+      },
+      {
+        "observed": "삼부",
+        "scenario": "drop_word",
+        "truth": "Giant Sambu",
+        "v12": "Lotus Sambu",
+        "new_head": "Giant Sambu"
+      },
+      {
+        "observed": "삼부",
+        "scenario": "both",
+        "truth": "Giant Sambu",
+        "v12": "Sunrise Sambu",
+        "new_head": "Giant Sambu"
+      },
+      {
+        "observed": "시앤시",
+        "scenario": "both",
+        "truth": "CNC Dream",
+        "v12": "Shan Shi",
+        "new_head": "CNC Dream"
+      },
+      {
+        "observed": "파이오니어호",
+        "scenario": "drop_word",
+        "truth": "Heung-A Pioneer",
+        "v12": "No.2 Heung-A Pioneer",
+        "new_head": "Heung-A Pioneer"
+      },
+      {
+        "observed": "파이오니어호",
+        "scenario": "both",
+        "truth": "Heung-A Pioneer",
+        "v12": "No.3 Ocean Pioneer",
+        "new_head": "Heung-A Pioneer"
+      },
+      {
+        "observed": "트레이더",
+        "scenario": "drop_word",
+        "truth": "Yokohama Trader",
+        "v12": "Kobe Trader",
+        "new_head": "Yokohama Trader"
+      },
+      {
+        "observed": "디에스",
+        "scenario": "both",
+        "truth": "DS Rosa",
+        "v12": "DS Ocean",
+        "new_head": "DS Rosa"
+      },
+      {
+        "observed": "파이오니아호",
+        "scenario": "both",
+        "truth": "Mega Pioneer",
+        "v12": "Global Pioneer",
+        "new_head": "Mega Pioneer"
+      },
+      {
+        "observed": "메가",
+        "scenario": "both",
+        "truth": "Mega Pioneer",
+        "v12": "Mega Trust",
+        "new_head": "Mega Pioneer"
+      },
+      {
+        "observed": "파이오니아호",
+        "scenario": "both",
+        "truth": "Mega Pioneer",
+        "v12": "Global Pioneer",
+        "new_head": "Mega Pioneer"
+      },
+      {
+        "observed": "프린세스",
+        "scenario": "drop_word",
+        "truth": "Princess Haru",
+        "v12": "Princess Pacific",
+        "new_head": "Princess Haru"
+      }
+    ],
+    "losses": [
+      {
+        "observed": "윈호",
+        "scenario": "both",
+        "truth": "Jangho Win",
+        "v12": "Jangho Win",
+        "new_head": "Yin Hao"
+      },
+      {
+        "observed": "에이스",
+        "scenario": "drop_word",
+        "truth": "Mercury Ace",
+        "v12": "Mercury Ace",
+        "new_head": "Wisdom Ace"
+      },
+      {
+        "observed": "챔피언",
+        "scenario": "drop_word",
+        "truth": "Glovis Champion",
+        "v12": "Glovis Champion",
+        "new_head": "Grand Champion"
+      },
+      {
+        "observed": "챔피언",
+        "scenario": "both",
+        "truth": "Glovis Champion",
+        "v12": "Glovis Champion",
+        "new_head": "Grand Champion"
+      },
+      {
+        "observed": "자카르타",
+        "scenario": "both",
+        "truth": "Jakarta Voyager",
+        "v12": "Jakarta Voyager",
+        "new_head": "Hyundai Jakarta"
+      },
+      {
+        "observed": "에이스",
+        "scenario": "drop_word",
+        "truth": "Mercury Ace",
+        "v12": "Mercury Ace",
+        "new_head": "Wisdom Ace"
+      },
+      {
+        "observed": "요코하마",
+        "scenario": "both",
+        "truth": "Yokohama Trader",
+        "v12": "Yokohama Trader",
+        "new_head": "POS Yokohama"
+      },
+      {
+        "observed": "챔피언",
+        "scenario": "drop_word",
+        "truth": "Glovis Champion",
+        "v12": "Glovis Champion",
+        "new_head": "Grand Champion"
+      },
+      {
+        "observed": "챔피언",
+        "scenario": "both",
+        "truth": "Glovis Champion",
+        "v12": "Glovis Champion",
+        "new_head": "Grand Champion"
+      },
+      {
+        "observed": "이글",
+        "scenario": "both",
+        "truth": "Equinox Eagle",
+        "v12": "Equinox Eagle",
+        "new_head": "Eagle I"
+      },
+      {
+        "observed": "케이에스",
+        "scenario": "drop_word",
+        "truth": "KS Sunglory",
+        "v12": "KS Sunglory",
+        "new_head": "KS Sunrise"
+      },
+      {
+        "observed": "센젠",
+        "scenario": "both",
+        "truth": "Pacific Shenzhen",
+        "v12": "Pacific Shenzhen",
+        "new_head": "Shenzhen"
+      }
+    ]
+  },
+  "strict_all_group_tree_caveat": "Existing strict miner scored on historical shared-mapper top20 and full-pool raw78; no new training. Different training pool/sampler from2400 head. Diagnostic only.",
+  "actual_competition_submission": false
+}

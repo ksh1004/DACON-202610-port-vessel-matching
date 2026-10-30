@@ -1,0 +1,119 @@
+{
+  "diagnostic_only_uses_labels": true,
+  "reference_v12": {
+    "testlike": 0.9118708558226221,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8219983207388749,
+      "both": 0.5751469353484466
+    },
+    "non_hangul": 0.9981869277490708
+  },
+  "arbitrary_reranker_oracle_by_neural_weight": {
+    "0.0": {
+      "testlike": 0.9049590170316901,
+      "scenarios": {
+        "clean": 0.9958018471872376,
+        "gt_missing": 0.9739714525608733,
+        "drop_word": 0.8094038623005877,
+        "both": 0.5491183879093199
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.125": {
+      "testlike": 0.9458834502810604,
+      "scenarios": {
+        "clean": 0.9958018471872376,
+        "gt_missing": 0.984047019311503,
+        "drop_word": 0.8757346767422334,
+        "both": 0.7691015952980689
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.25": {
+      "testlike": 0.9735543151005398,
+      "scenarios": {
+        "clean": 0.9974811083123426,
+        "gt_missing": 0.9874055415617129,
+        "drop_word": 0.9403862300587741,
+        "both": 0.892527287993283
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.4": {
+      "testlike": 0.9869489414649394,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9899244332493703,
+        "drop_word": 0.9874055415617129,
+        "both": 0.9286314021830394
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.5": {
+      "testlike": 0.9888062042693057,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9932829554995802,
+        "drop_word": 0.9941225860621327,
+        "both": 0.9319899244332494
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.75": {
+      "testlike": 0.9888062042693057,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9932829554995802,
+        "drop_word": 0.9941225860621327,
+        "both": 0.9319899244332494
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "1.0": {
+      "testlike": 0.9888062042693057,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9932829554995802,
+        "drop_word": 0.9941225860621327,
+        "both": 0.9319899244332494
+      },
+      "non_hangul": 0.9981869277490708
+    }
+  },
+  "replace_only_bge_12_5pct_oracle": {
+    "testlike": 0.9471999910031427,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8832913518052057,
+      "both": 0.7665827036104114
+    },
+    "non_hangul": 0.9981869277490708
+  },
+  "reachability_failures": {
+    "top20_true_but_25pct_cannot_win": 121,
+    "active": 34,
+    "pruned": 87
+  },
+  "source_sha256": "99ab68ed1f95e12ad9ce84f67bed45ffa0d27a4ed11da32cf7ef8bd3a8b42863",
+  "data_sha256": {
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+    "experiments/encoder_bge_phonetic_predictions.joblib": "35a03f0be323cf565279c8951a020c3eb93767860080ca364e3def03e3aea174"
+  },
+  "checks": {
+    "v12_and_v8_reproduced": true,
+    "candidate_order_identical": true,
+    "v12_dominated_by_encoder_oracle": true,
+    "oracle_monotonicity": true
+  },
+  "caveats": [
+    "These are label-aware local diagnostics, not achievable scores or Public forecasts.",
+    "The weight oracles assume an arbitrary perfect distribution over fixed top20; changed weights require revised pruning.",
+    "Other neural scores stay frozen only for the BGE-only oracle; old pruning remains there.",
+    "Collision bound concerns exact observations in this reused synthetic evaluation only."
+  ]
+}
+{"columns": ["vessel_name", "gross_tonnage", "international_gross_tonnage", "vessel_type", "flag_name", "arrival_year"], "ambiguous_inputs": 37, "empirical_weighted_ceiling": 0.995439126784215}

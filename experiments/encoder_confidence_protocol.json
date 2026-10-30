@@ -1,0 +1,58 @@
+{
+  "tag": "encoder_confidence40_v1",
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "recipe": "unchanged v12 models, single fixed neural weight 0.40 instead of 0.25",
+  "seed": 42,
+  "epochs": 1,
+  "learning_rate": 0.0001,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "groups_per_batch": 2,
+  "group_size": 8,
+  "max_tokens": 256,
+  "negative_mode": "five strict training-fold LGB hard plus two lexical",
+  "fixed_mix": {
+    "v8": 0.6,
+    "qwen_v11": 0.2,
+    "encoder_v12": 0.2
+  },
+  "screen_folds": [
+    0,
+    3
+  ],
+  "screen_gate": {
+    "testlike_gain_min": 0.001,
+    "minimum_fold_delta": -0.002,
+    "hard_hangul_delta_min": -0.002,
+    "drop_word_delta_min": -0.003,
+    "clean_lost_rows_max": 1
+  },
+  "fresh_guard": {
+    "fold": 4,
+    "minimum_mean_accuracy_delta": -0.002,
+    "few_shot_vessels_excluded": true,
+    "training_only_retrieval": true
+  },
+  "full_gate": {
+    "all_5_folds_required": true,
+    "testlike_gain_min": 0.001,
+    "hard_hangul_delta_min": -0.001,
+    "oof_delta_min": -0.0006,
+    "positive_folds_min": 3,
+    "drop_word_delta_min": -0.003
+  },
+  "source_hashes": {
+    "tools\\score_encoder_confidence.py": "b512d349a3b434a2e720c9fa3770c588c4531a39518cd8384f4cf7a8f09d56ff",
+    "tools\\audit_encoder_confidence.py": "bae7b8f6e5782d02d6725cc29202e5f42d40ea185338645163832e44971d1eeb",
+    "tools\\fresh_encoder_confidence.py": "cd3bde7464bb748ed27ea5a7284754419eeef0757e7942fe84dbf310ff7911ec",
+    "src\\encoder_views.py": "162e5e24a4fd89e9fc102546002173fd222652614dd1ec8d3d869c109629ab59",
+    "src\\pair_views.py": "850907ff855ac9540fa818c5f6d93ebae778d901e47ba721b3eeca4f2de564e4"
+  },
+  "caveat": "Reused exploratory validation. Historical v8 retrieval mapper exception. No callsign/identity lookup or test distribution use.",
+  "registered_before_scoring": true,
+  "execution_condition": "fallback only if all-groups experiment fails any preregistered gate",
+  "weight_search": false,
+  "model_training": false
+}

@@ -1,0 +1,8 @@
+== 패키지: D:\KSH\pjt\DACON202610\submit\v11_pairviews
+[OK  ] 구조 확인: 파일 43개
+[OK  ] zip 생성: dist\v11_pairviews.zip (5563.34 MB)
+[INFO] 가짜 test: train.csv 에서 3000행
+[OK  ] 형식 확인, 실행 245.7초 (81.91 ms/행)
+[INFO] 로컬 점수 0.9994  (한글 1.0000 / 293행, 비한글 0.9982 / 2707행)
+[OK  ] 행 독립성 확인: 셔플 부분집합 300행 + 단독 행 3회
+== 제출 준비 완료: D:\KSH\pjt\DACON202610\dist\v11_pairviews.zip

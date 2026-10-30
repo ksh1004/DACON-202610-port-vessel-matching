@@ -1,0 +1,40 @@
+{
+  "selected_family": null,
+  "selected_contender": null,
+  "families": {
+    "nested_combiner_v1": {
+      "selected": null,
+      "report": "experiments\\nested_combiner_v1_audit.json",
+      "delta_by_contender": {
+        "anchor50": -0.003966139954853398,
+        "direct": -0.011724604966139918
+      }
+    },
+    "nested_raw78_fallback_v1": {
+      "selected": null,
+      "report": "experiments\\nested_raw78_fallback_v1_audit.json",
+      "delta_by_contender": {
+        "anchor50": -0.00801128668171569,
+        "direct": -0.0197990970654629
+      }
+    },
+    "nested_combiner_reverse_v1": {
+      "selected": null,
+      "report": "experiments\\nested_combiner_reverse_v1_audit.json",
+      "delta_by_contender": {
+        "anchor50": -0.004234762979683948,
+        "direct": -0.013573363431151453
+      }
+    },
+    "nested_combiner_token_prior_v1": {
+      "selected": null,
+      "report": "experiments\\nested_combiner_token_prior_v1_audit.json",
+      "delta_by_contender": {
+        "anchor50": -0.0009480812641085024,
+        "direct": -0.004645598194130907
+      }
+    }
+  },
+  "actual_competition_submission": false,
+  "next_stage": "All screen families rejected; no new final model or ZIP"
+}

@@ -1,0 +1,78 @@
+{
+  "protocol": {
+    "fold": 1,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "input_recipe": "phonetic",
+    "source_revision": {
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    },
+    "training_groups": 4680,
+    "max_tokens": 256,
+    "seed": 42,
+    "epochs": 1,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": 0.0001,
+    "groups_per_batch": 2,
+    "negative_mode": "five train-only LGB hard plus two lexical",
+    "vessel_overlap": 0,
+    "train_cache": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+    "training_at_cap": 0,
+    "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+    "reference": "v12",
+    "training_recipe": "all eligible original plus four seed7 augmentations, one epoch",
+    "trainer_sha256": "b0adb11954ba52486256f434cbf18b392c3ba95bd9516b061197e313a2629198"
+  },
+  "training": {
+    "training_seconds": 440.83690499991644,
+    "training_groups": 4680,
+    "updates": 2340,
+    "loss_first100": 0.8483345031899444,
+    "loss_last100": 0.3830168153275411,
+    "precision": "merged BF16, saved then reloaded before evaluation"
+  },
+  "diagnostic_metrics_vs_v11": {
+    "baseline": {
+      "testlike_hangul": 0.8599122807017544,
+      "hard_hangul": 0.8486842105263158,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9692982456140351,
+        "drop_word": 0.7850877192982456,
+        "both": 0.5657894736842105
+      }
+    },
+    "reference_v11": {
+      "testlike_hangul": 0.8576754385964913,
+      "hard_hangul": 0.8552631578947368,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9517543859649122,
+        "drop_word": 0.8114035087719298,
+        "both": 0.5350877192982456
+      }
+    },
+    "encoder25": {
+      "testlike_hangul": 0.860701754385965,
+      "hard_hangul": 0.8530701754385965,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9736842105263158,
+        "drop_word": 0.7894736842105263,
+        "both": 0.5614035087719298
+      }
+    },
+    "equal_ensemble": {
+      "testlike_hangul": 0.8662280701754386,
+      "hard_hangul": 0.8530701754385965,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9736842105263158,
+        "drop_word": 0.8026315789473685,
+        "both": 0.5745614035087719
+      }
+    }
+  },
+  "note": "Decision must use audit_encoder_extension against v12, not these v11 diagnostics."
+}

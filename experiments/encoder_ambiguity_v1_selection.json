@@ -1,0 +1,149 @@
+{
+  "tag": "encoder_ambiguity_v1",
+  "selected": null,
+  "stage": "screen",
+  "screen": {
+    "tag": "encoder_ambiguity_v1",
+    "stage": "screen",
+    "complete_folds": [
+      1,
+      4
+    ],
+    "reference_v12": {
+      "testlike": 0.9087787707227457,
+      "testlike_hangul": 0.8702574257425743,
+      "hard": 0.8475056283134426,
+      "hard_hangul": 0.8485148514851485,
+      "oof": 0.996826295475221,
+      "scenarios": {
+        "clean": 0.996039603960396,
+        "gt_missing": 0.9702970297029703,
+        "drop_word": 0.8198019801980198,
+        "both": 0.5663366336633663
+      }
+    },
+    "arms": {
+      "none": {
+        "metrics": {
+          "testlike": 0.9076144142871021,
+          "testlike_hangul": 0.8685940594059406,
+          "hard": 0.8495848362342346,
+          "hard_hangul": 0.8514851485148515,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9702970297029703,
+            "drop_word": 0.8158415841584158,
+            "both": 0.5623762376237624
+          }
+        },
+        "delta_vs_v12": -0.0011643564356436098,
+        "changes": {
+          "oof": {
+            "gained": 0,
+            "lost": 0
+          },
+          "hard": {
+            "gained": 3,
+            "lost": 0
+          },
+          "testlike": {
+            "gained": 1,
+            "lost": 5
+          }
+        },
+        "bootstrap_95_vs_v12": [
+          -0.003038792609920887,
+          0.00024407046616337696
+        ]
+      },
+      "targeted": {
+        "metrics": {
+          "testlike": 0.9077391667623497,
+          "testlike_hangul": 0.8687722772277228,
+          "hard": 0.8461194896995812,
+          "hard_hangul": 0.8465346534653465,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9623762376237623,
+            "drop_word": 0.8198019801980198,
+            "both": 0.5643564356435643
+          }
+        },
+        "delta_vs_v12": -0.0010396039603960405,
+        "changes": {
+          "oof": {
+            "gained": 0,
+            "lost": 0
+          },
+          "hard": {
+            "gained": 0,
+            "lost": 2
+          },
+          "testlike": {
+            "gained": 6,
+            "lost": 11
+          }
+        },
+        "bootstrap_95_vs_v12": [
+          -0.005861488699639698,
+          0.0023044558323375296
+        ]
+      },
+      "random": {
+        "metrics": {
+          "testlike": 0.9063114439900725,
+          "testlike_hangul": 0.8667326732673267,
+          "hard": 0.848891766927304,
+          "hard_hangul": 0.8504950495049505,
+          "oof": 0.996826295475221,
+          "scenarios": {
+            "clean": 0.996039603960396,
+            "gt_missing": 0.9623762376237623,
+            "drop_word": 0.8158415841584158,
+            "both": 0.5584158415841585
+          }
+        },
+        "delta_vs_v12": -0.0024673267326732473,
+        "changes": {
+          "oof": {
+            "gained": 0,
+            "lost": 0
+          },
+          "hard": {
+            "gained": 3,
+            "lost": 1
+          },
+          "testlike": {
+            "gained": 2,
+            "lost": 12
+          }
+        },
+        "bootstrap_95_vs_v12": [
+          -0.0068741058191252764,
+          0.0002812137820210696
+        ]
+      }
+    },
+    "delta_vs_unmasked": 0.00012475247524756927,
+    "delta_vs_random": 0.0014277227722772068,
+    "checks": {
+      "folds": true,
+      "testlike": false,
+      "worst_fold": false,
+      "hard_hangul": true,
+      "drop_word": true,
+      "clean_lost": true,
+      "gain_vs_unmasked": false,
+      "gain_vs_random": true,
+      "paired_initial_parameters": true,
+      "paired_training_tokens": true
+    },
+    "passed": false,
+    "selected": null,
+    "actual_competition_submission": false,
+    "caveat": "Exploratory reused synthetic validation; historical v8 outer retrieval mapper exception remains. This tests a loss hypothesis, not Public0.97."
+  },
+  "actual_competition_submission": false
+}

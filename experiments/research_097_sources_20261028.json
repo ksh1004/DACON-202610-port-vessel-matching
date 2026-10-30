@@ -1,0 +1,61 @@
+{
+  "retrieved_date": "2026-10-28",
+  "jina_v35": {
+    "revision": "e8a93f33f0b22108f8c2364f8484ce3422552fbc",
+    "license": "cc-by-nc-4.0",
+    "parameters": 596836352,
+    "bf16_raw_bytes": 1193672704,
+    "config_transformers_version": "4.57.3",
+    "custom_code_sha256": "ec6612461b4307eb3bab089e6916c00881b7e6b2e8edfbd56a9ace4560244837",
+    "referenced_qwen3_symbols_in_local_4_57_6": {
+      "Qwen3ForCausalLM": true
+    },
+    "weights_downloaded": false,
+    "runtime_load_tested": false
+  },
+  "qwen3_reranker_4b": {
+    "revision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+    "license": "apache-2.0",
+    "parameters": 4021784576,
+    "bf16_raw_bytes": 8043569152,
+    "config_transformers_version": "4.51.3",
+    "weights_downloaded": false
+  },
+  "sources": [
+    {
+      "name": "Jina v3.5",
+      "date": "2026-07-20",
+      "url": "https://arxiv.org/abs/2607.18152"
+    },
+    {
+      "name": "Jina v3.5 release",
+      "date": "2026-08-03",
+      "url": "https://jina.ai/news/jina-reranker-v3-5-faster-listwise-reranking-hybrid-attention-self-distillation/"
+    },
+    {
+      "name": "Set-Encoder",
+      "date": "ECIR 2025",
+      "url": "https://arxiv.org/abs/2404.06912"
+    },
+    {
+      "name": "Rank-DistiLLM",
+      "date": "ECIR 2025; revision 2025-04-05",
+      "url": "https://arxiv.org/abs/2405.07920"
+    },
+    {
+      "name": "Match Compare Select",
+      "date": "COLING 2025",
+      "url": "https://aclanthology.org/2025.coling-main.8/"
+    },
+    {
+      "name": "UPR",
+      "date": "EMNLP 2022",
+      "url": "https://aclanthology.org/2022.emnlp-main.249/"
+    },
+    {
+      "name": "Rethinking Reasoning",
+      "date": "arXiv 2025; ICLR 2026",
+      "url": "https://arxiv.org/abs/2510.08985"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "tag": "encoder_restore_v1",
+  "reference": "v12",
+  "complete_folds": [
+    0,
+    2
+  ],
+  "complete": false,
+  "reference_v12": {
+    "testlike": 0.9178774610130318,
+    "testlike_hangul": 0.8839503386004516,
+    "hard": 0.8660027782601145,
+    "hard_hangul": 0.8668171557562077,
+    "oof": 0.9975320885525352,
+    "scenarios": {
+      "clean": 0.9977426636568849,
+      "gt_missing": 0.9909706546275395,
+      "drop_word": 0.8465011286681715,
+      "both": 0.5869074492099323
+    }
+  },
+  "candidate": {
+    "testlike": 0.9190309598843636,
+    "testlike_hangul": 0.8855981941309257,
+    "hard": 0.8667928459802048,
+    "hard_hangul": 0.8679458239277652,
+    "oof": 0.9975320885525352,
+    "scenarios": {
+      "clean": 0.9977426636568849,
+      "gt_missing": 0.9909706546275395,
+      "drop_word": 0.8555304740406321,
+      "both": 0.5846501128668171
+    }
+  },
+  "delta_vs_v12": 0.0011534988713317595,
+  "bootstrap_95_vs_v12": [
+    -0.0012883000895686917,
+    0.004055871081807137
+  ],
+  "delta_by_fold_vs_v12": {
+    "0": 0.0012618025751073292,
+    "2": 0.0010333333333334416
+  },
+  "clean_lost_rows_vs_v12": 0,
+  "screen_checks": {
+    "folds": true,
+    "testlike": false,
+    "worst_fold": true,
+    "hard_hangul": true,
+    "drop_word": true,
+    "clean_lost": true
+  },
+  "screen_gate_pass": false,
+  "without_shots": {
+    "reference_v12": {
+      "testlike": 0.9177819914345762,
+      "testlike_hangul": 0.8838139534883721,
+      "hard": 0.8639982110912343,
+      "hard_hangul": 0.8639534883720931,
+      "oof": 0.9974843170159715,
+      "scenarios": {
+        "clean": 0.9976744186046511,
+        "gt_missing": 0.9906976744186047,
+        "drop_word": 0.8488372093023255,
+        "both": 0.5837209302325581
+      }
+    },
+    "candidate": {
+      "testlike": 0.9178471077136459,
+      "testlike_hangul": 0.8839069767441861,
+      "hard": 0.8648121645796063,
+      "hard_hangul": 0.8651162790697674,
+      "oof": 0.9974843170159715,
+      "scenarios": {
+        "clean": 0.9976744186046511,
+        "gt_missing": 0.9906976744186047,
+        "drop_word": 0.8511627906976744,
+        "both": 0.5813953488372093
+      }
+    }
+  },
+  "changes": {
+    "oof": {
+      "gained": 0,
+      "lost": 0
+    },
+    "hard": {
+      "gained": 3,
+      "lost": 2
+    },
+    "testlike": {
+      "gained": 5,
+      "lost": 2
+    }
+  },
+  "protocols": {
+    "0": {
+      "fold": 0,
+      "mode": "restore",
+      "input_recipe": "phonetic",
+      "training_groups": 2400,
+      "epochs": 1,
+      "seed": 42,
+      "max_tokens": 256,
+      "reference": "v12",
+      "vessel_overlap": 0,
+      "old_target_groups": 92,
+      "final_target_groups": 94,
+      "replacement_groups": 108,
+      "new_unique_cases": 108,
+      "training_at_cap": 0,
+      "baseline_fingerprint": "306d87c9204b40fa596e78c7b94266b0e0d601cb00e1689f48d4bdb9ee2ca970",
+      "source": {
+        "matrix": "strict_han_f0_train_cd185bcf8e28.joblib",
+        "miner_sha256": "cde56255e6b5a1199e29970ea5d9938fcb9517b8d3daaf636092249fe240b1ee"
+      },
+      "trainer_sha256": "f562530e14fe7dc3db90c17c6b26d616fed3c7f2d4b42ec03403d46d66a0c072",
+      "caveat": "Training retrieval/mappers strictly outer-fold only. Historical v8 validation candidate mapper exception remains."
+    },
+    "2": {
+      "fold": 2,
+      "mode": "restore",
+      "input_recipe": "phonetic",
+      "training_groups": 2400,
+      "epochs": 1,
+      "seed": 42,
+      "max_tokens": 256,
+      "reference": "v12",
+      "vessel_overlap": 0,
+      "old_target_groups": 87,
+      "final_target_groups": 90,
+      "replacement_groups": 124,
+      "new_unique_cases": 124,
+      "training_at_cap": 0,
+      "baseline_fingerprint": "2432325b4196c157020438a97110618872b42cc2a16572e398ecc97ccbd5ea0a",
+      "source": {
+        "matrix": "strict_han_f2_train_5b13f22dba22.joblib",
+        "miner_sha256": "a7b61d6b117969dfb18022adfbc573766b019a2fd6b297c8a8324cfad56560cd"
+      },
+      "trainer_sha256": "f562530e14fe7dc3db90c17c6b26d616fed3c7f2d4b42ec03403d46d66a0c072",
+      "caveat": "Training retrieval/mappers strictly outer-fold only. Historical v8 validation candidate mapper exception remains."
+    }
+  },
+  "caveat": "Reused exploratory validation; historical v8 shared retrieval mapper exception remains."
+}

@@ -1,0 +1,3 @@
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\neural_evidence_v1\fold3_runtime_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+PASS: evidence_only; merged/reloaded logits equal OOF, mixing agrees, grouped/shuffled/single scores equal

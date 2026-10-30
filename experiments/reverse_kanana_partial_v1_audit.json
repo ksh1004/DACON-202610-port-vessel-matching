@@ -1,0 +1,214 @@
+{
+  "tag": "reverse_kanana_partial_v1",
+  "complete_folds": [
+    0,
+    2
+  ],
+  "reference_v12": {
+    "testlike": 0.9178774610130318,
+    "testlike_hangul": 0.8839503386004516,
+    "hard": 0.8660027782601145,
+    "hard_hangul": 0.8668171557562077,
+    "oof": 0.9975320885525352,
+    "scenarios": {
+      "clean": 0.9977426636568849,
+      "gt_missing": 0.9909706546275395,
+      "drop_word": 0.8465011286681715,
+      "both": 0.5869074492099323
+    }
+  },
+  "contenders": {
+    "direct": {
+      "candidate": {
+        "testlike": 0.9029925851665306,
+        "testlike_hangul": 0.8626862302483072,
+        "hard": 0.8557318978989408,
+        "hard_hangul": 0.8521444695259593,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.981941309255079,
+          "drop_word": 0.7968397291196389,
+          "both": 0.5417607223476298
+        }
+      },
+      "matched_control": {
+        "testlike": 0.9039248650762373,
+        "testlike_hangul": 0.864018058690745,
+        "hard": 0.8604723042194824,
+        "hard_hangul": 0.8589164785553047,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.981941309255079,
+          "drop_word": 0.8194130925507901,
+          "both": 0.5214446952595937
+        }
+      },
+      "matched_control_recipe": "same groups/raw78 with complete-name reverse features; tests incremental omission marginal",
+      "delta_vs_v12": -0.014884875846501222,
+      "delta_vs_matched_control": -0.0009322799097066792,
+      "bootstrap_95_vs_v12": [
+        -0.02547551823695579,
+        -0.004999772209567199
+      ],
+      "delta_by_fold_vs_v12": {
+        "0": -0.026107296137338976,
+        "2": -0.0024333333333332874
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": false,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": false
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9177819914345762,
+          "testlike_hangul": 0.8838139534883721,
+          "hard": 0.8639982110912343,
+          "hard_hangul": 0.8639534883720931,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.9906976744186047,
+            "drop_word": 0.8488372093023255,
+            "both": 0.5837209302325581
+          }
+        },
+        "candidate": {
+          "testlike": 0.9010145495741109,
+          "testlike_hangul": 0.859860465116279,
+          "hard": 0.8534168157423971,
+          "hard_hangul": 0.8488372093023255,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.9813953488372092,
+            "drop_word": 0.7906976744186046,
+            "both": 0.5348837209302325
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 17,
+          "lost": 30
+        },
+        "testlike": {
+          "gained": 28,
+          "lost": 74
+        }
+      }
+    },
+    "base25_head75": {
+      "candidate": {
+        "testlike": 0.9044937138347022,
+        "testlike_hangul": 0.8648306997742664,
+        "hard": 0.8588921687793019,
+        "hard_hangul": 0.8566591422121896,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.981941309255079,
+          "drop_word": 0.7968397291196389,
+          "both": 0.5530474040632054
+        }
+      },
+      "matched_control": {
+        "testlike": 0.9052995829091943,
+        "testlike_hangul": 0.8659819413092551,
+        "hard": 0.8636325750998437,
+        "hard_hangul": 0.863431151241535,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.981941309255079,
+          "drop_word": 0.8148984198645598,
+          "both": 0.5372460496613995
+        }
+      },
+      "matched_control_recipe": "same groups/raw78 with complete-name reverse features; tests incremental omission marginal",
+      "delta_vs_v12": -0.013383747178329575,
+      "delta_vs_matched_control": -0.0008058690744920938,
+      "bootstrap_95_vs_v12": [
+        -0.02391783207343412,
+        -0.0038465891372141386
+      ],
+      "delta_by_fold_vs_v12": {
+        "0": -0.02553648068669523,
+        "2": 0.00010000000000021103
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": false,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": false
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9177819914345762,
+          "testlike_hangul": 0.8838139534883721,
+          "hard": 0.8639982110912343,
+          "hard_hangul": 0.8639534883720931,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.9906976744186047,
+            "drop_word": 0.8488372093023255,
+            "both": 0.5837209302325581
+          }
+        },
+        "candidate": {
+          "testlike": 0.9025610612020178,
+          "testlike_hangul": 0.8620697674418604,
+          "hard": 0.8566726296958855,
+          "hard_hangul": 0.8534883720930233,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.9813953488372092,
+            "drop_word": 0.7906976744186046,
+            "both": 0.5465116279069767
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 16,
+          "lost": 25
+        },
+        "testlike": {
+          "gained": 31,
+          "lost": 72
+        }
+      }
+    }
+  },
+  "selected": null,
+  "truth_outside_top20": {
+    "oof": 0,
+    "hard": 33,
+    "testlike": 32
+  },
+  "actual_competition_submission": false,
+  "caveat": "Exploratory reused validation and historical v8 fulltrain retrieval mapper exception; Public improvement is unverified."
+}

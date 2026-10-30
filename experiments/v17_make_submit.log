@@ -1,0 +1,8 @@
+== 패키지: D:\KSH\pjt\DACON202610\submit\v17_fuzzy200
+[OK  ] 구조 확인: 파일 56개
+[OK  ] zip 생성: dist\v17_fuzzy200.zip (6652.62 MB)
+[INFO] 가짜 test: train.csv 에서 3000행
+[OK  ] 형식 확인, 실행 241.1초 (80.38 ms/행)
+[INFO] 로컬 점수 0.0000  (한글 0.0000 / 293행, 비한글 0.0000 / 2707행)
+[OK  ] 행 독립성 확인: 셔플 부분집합 300행 + 단독 행 3회
+== 제출 준비 완료: D:\KSH\pjt\DACON202610\dist\v17_fuzzy200.zip

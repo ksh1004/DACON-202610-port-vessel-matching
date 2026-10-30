@@ -1,0 +1,319 @@
+{
+  "reference": "v11",
+  "candidate": "v12",
+  "scenario": "drop_word",
+  "lost_rows": 14,
+  "lost_unique_vessels": 7,
+  "same_candidate_metadata_rows": 12,
+  "cases": [
+    {
+      "query": {
+        "vessel_name": "흥아",
+        "gross_tonnage": 9551.0,
+        "international_gross_tonnage": 9551.0,
+        "vessel_type": "풀컨테이너선",
+        "flag_name": "파나마"
+      },
+      "truth": {
+        "vessel_name": "Heung-A Sarah",
+        "gross_tonnage": 9551.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "chosen_v12": {
+        "vessel_name": "Heung-A Young",
+        "gross_tonnage": 9551.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "유니크",
+        "gross_tonnage": 29479.0,
+        "international_gross_tonnage": 29479.0,
+        "vessel_type": "케미칼 운반선",
+        "flag_name": "홍콩"
+      },
+      "truth": {
+        "vessel_name": "Unique Infinity",
+        "gross_tonnage": 29479.0,
+        "vessel_type": "Chem & Oil",
+        "flag_name": "Hong Kong"
+      },
+      "chosen_v12": {
+        "vessel_name": "Unique Guardian",
+        "gross_tonnage": 29479.0,
+        "vessel_type": "Chem & Oil",
+        "flag_name": "Hong Kong"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "스파",
+        "gross_tonnage": 32837.0,
+        "international_gross_tonnage": 32837.0,
+        "vessel_type": "일반화물선",
+        "flag_name": "노르웨이"
+      },
+      "truth": {
+        "vessel_name": "Spar Rigel",
+        "gross_tonnage": 32837.0,
+        "vessel_type": "Bulk",
+        "flag_name": "Norwegian Int'l Register"
+      },
+      "chosen_v12": {
+        "vessel_name": "Spar Ursa",
+        "gross_tonnage": 32837.0,
+        "vessel_type": "Bulk",
+        "flag_name": "Norwegian Int'l Register"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "와이엔",
+        "gross_tonnage": 5002.0,
+        "international_gross_tonnage": 5002.0,
+        "vessel_type": "석유제품 운반선",
+        "flag_name": "대한민국"
+      },
+      "truth": {
+        "vessel_name": "YN Busan",
+        "gross_tonnage": 5002.0,
+        "vessel_type": "Chemical Unknown",
+        "flag_name": "South Korea"
+      },
+      "chosen_v12": {
+        "vessel_name": "YN Yeosu",
+        "gross_tonnage": 5002.0,
+        "vessel_type": "Chemical Unknown",
+        "flag_name": "South Korea"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "와이엔",
+        "gross_tonnage": 5002.0,
+        "international_gross_tonnage": 5002.0,
+        "vessel_type": "석유제품 운반선",
+        "flag_name": "대한민국"
+      },
+      "truth": {
+        "vessel_name": "YN Busan",
+        "gross_tonnage": 5002.0,
+        "vessel_type": "Chemical Unknown",
+        "flag_name": "South Korea"
+      },
+      "chosen_v12": {
+        "vessel_name": "YN Yeosu",
+        "gross_tonnage": 5002.0,
+        "vessel_type": "Chemical Unknown",
+        "flag_name": "South Korea"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "유니크",
+        "gross_tonnage": 29479.0,
+        "international_gross_tonnage": 29479.0,
+        "vessel_type": "케미칼 운반선",
+        "flag_name": "홍콩"
+      },
+      "truth": {
+        "vessel_name": "Unique Infinity",
+        "gross_tonnage": 29479.0,
+        "vessel_type": "Chem & Oil",
+        "flag_name": "Hong Kong"
+      },
+      "chosen_v12": {
+        "vessel_name": "Unique Guardian",
+        "gross_tonnage": 29479.0,
+        "vessel_type": "Chem & Oil",
+        "flag_name": "Hong Kong"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "케이프",
+        "gross_tonnage": 44336.0,
+        "international_gross_tonnage": 44336.0,
+        "vessel_type": "일반화물선",
+        "flag_name": null
+      },
+      "truth": {
+        "vessel_name": "Cape Kasos",
+        "gross_tonnage": 44336.0,
+        "vessel_type": "Bulk",
+        "flag_name": "Cyprus"
+      },
+      "chosen_v12": {
+        "vessel_name": "Cape Race",
+        "gross_tonnage": 44336.0,
+        "vessel_type": "Bulk",
+        "flag_name": "Cyprus"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "흥아",
+        "gross_tonnage": 9551.0,
+        "international_gross_tonnage": 9551.0,
+        "vessel_type": "풀컨테이너선",
+        "flag_name": "파나마"
+      },
+      "truth": {
+        "vessel_name": "Heung-A Sarah",
+        "gross_tonnage": 9551.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "chosen_v12": {
+        "vessel_name": "Heung-A Young",
+        "gross_tonnage": 9551.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "와이엔",
+        "gross_tonnage": 5002.0,
+        "international_gross_tonnage": 5002.0,
+        "vessel_type": "케미칼 운반선",
+        "flag_name": "대한민국"
+      },
+      "truth": {
+        "vessel_name": "YN Busan",
+        "gross_tonnage": 5002.0,
+        "vessel_type": "Chemical Unknown",
+        "flag_name": "South Korea"
+      },
+      "chosen_v12": {
+        "vessel_name": "YN Yeosu",
+        "gross_tonnage": 5002.0,
+        "vessel_type": "Chemical Unknown",
+        "flag_name": "South Korea"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "뉴",
+        "gross_tonnage": 34912.0,
+        "international_gross_tonnage": 34912.0,
+        "vessel_type": "산물선(벌크선)",
+        "flag_name": "라이베리아"
+      },
+      "truth": {
+        "vessel_name": "New Enrich",
+        "gross_tonnage": 34912.0,
+        "vessel_type": "Bulk",
+        "flag_name": "Liberia"
+      },
+      "chosen_v12": {
+        "vessel_name": "New Drive",
+        "gross_tonnage": 34912.0,
+        "vessel_type": "Bulk",
+        "flag_name": "Liberia"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "유니크",
+        "gross_tonnage": 29479.0,
+        "international_gross_tonnage": 29479.0,
+        "vessel_type": "케미칼 운반선",
+        "flag_name": "홍콩"
+      },
+      "truth": {
+        "vessel_name": "Unique Infinity",
+        "gross_tonnage": 29479.0,
+        "vessel_type": "Chem & Oil",
+        "flag_name": "Hong Kong"
+      },
+      "chosen_v12": {
+        "vessel_name": "Unique Guardian",
+        "gross_tonnage": 29479.0,
+        "vessel_type": "Chem & Oil",
+        "flag_name": "Hong Kong"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "트레이더",
+        "gross_tonnage": 9524.0,
+        "international_gross_tonnage": 9524.0,
+        "vessel_type": "풀컨테이너선",
+        "flag_name": "대한민국"
+      },
+      "truth": {
+        "vessel_name": "Nagoya Trader",
+        "gross_tonnage": 9517.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "chosen_v12": {
+        "vessel_name": "Yokohama Trader",
+        "gross_tonnage": 9944.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "same_candidate_tonnage_type_flag": false
+    },
+    {
+      "query": {
+        "vessel_name": "흥아",
+        "gross_tonnage": 9551.0,
+        "international_gross_tonnage": 9551.0,
+        "vessel_type": "풀컨테이너선",
+        "flag_name": "파나마"
+      },
+      "truth": {
+        "vessel_name": "Heung-A Sarah",
+        "gross_tonnage": 9551.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "chosen_v12": {
+        "vessel_name": "Heung-A Young",
+        "gross_tonnage": 9551.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "same_candidate_tonnage_type_flag": true
+    },
+    {
+      "query": {
+        "vessel_name": "트레이더",
+        "gross_tonnage": 9524.0,
+        "international_gross_tonnage": 9524.0,
+        "vessel_type": "풀컨테이너선",
+        "flag_name": "대한민국"
+      },
+      "truth": {
+        "vessel_name": "Nagoya Trader",
+        "gross_tonnage": 9517.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "chosen_v12": {
+        "vessel_name": "Yokohama Trader",
+        "gross_tonnage": 9944.0,
+        "vessel_type": "Container",
+        "flag_name": "South Korea"
+      },
+      "same_candidate_tonnage_type_flag": false
+    }
+  ],
+  "caveat": "Repeated rows are not independent vessels. Equal candidate metadata alone does not establish an accuracy ceiling."
+}

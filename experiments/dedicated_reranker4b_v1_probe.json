@@ -1,0 +1,309 @@
+{
+  "tag": "dedicated_reranker4b_v1",
+  "rows": 48,
+  "distinct_vessels": 48,
+  "reference_correct": 17,
+  "candidate_correct": 15,
+  "gained": 3,
+  "lost": 5,
+  "net_gain": -2,
+  "admitted": false,
+  "seconds": 62.917666899971664,
+  "actual_batch": 4,
+  "exact_order_single_checks": true,
+  "details": [
+    {
+      "sample_id": "TRAIN_09046_both",
+      "before": 2022,
+      "after": 2022,
+      "truth": 15399
+    },
+    {
+      "sample_id": "TRAIN_01033_drop_word",
+      "before": 36320,
+      "after": 36320,
+      "truth": 36320
+    },
+    {
+      "sample_id": "TRAIN_11519_both",
+      "before": 59215,
+      "after": 59211,
+      "truth": 59215
+    },
+    {
+      "sample_id": "TRAIN_09939_drop_word",
+      "before": 15421,
+      "after": 15330,
+      "truth": 15421
+    },
+    {
+      "sample_id": "TRAIN_01802_both",
+      "before": 33947,
+      "after": 33947,
+      "truth": 36637
+    },
+    {
+      "sample_id": "TRAIN_02934_both",
+      "before": 34393,
+      "after": 34393,
+      "truth": 34392
+    },
+    {
+      "sample_id": "TRAIN_04938_both",
+      "before": 37272,
+      "after": 37272,
+      "truth": 37278
+    },
+    {
+      "sample_id": "TRAIN_04241_both",
+      "before": 20952,
+      "after": 21732,
+      "truth": 45641
+    },
+    {
+      "sample_id": "TRAIN_08446_both",
+      "before": 2359,
+      "after": 2359,
+      "truth": 2359
+    },
+    {
+      "sample_id": "TRAIN_06750_both",
+      "before": 8378,
+      "after": 5962,
+      "truth": 4413
+    },
+    {
+      "sample_id": "TRAIN_08220_both",
+      "before": 41643,
+      "after": 41643,
+      "truth": 42898
+    },
+    {
+      "sample_id": "TRAIN_05558_drop_word",
+      "before": 27638,
+      "after": 27638,
+      "truth": 27638
+    },
+    {
+      "sample_id": "TRAIN_09229_both",
+      "before": 29159,
+      "after": 29159,
+      "truth": 41476
+    },
+    {
+      "sample_id": "TRAIN_08873_drop_word",
+      "before": 28839,
+      "after": 28839,
+      "truth": 28839
+    },
+    {
+      "sample_id": "TRAIN_01491_both",
+      "before": 35113,
+      "after": 35113,
+      "truth": 34281
+    },
+    {
+      "sample_id": "TRAIN_04613_both",
+      "before": 15458,
+      "after": 15458,
+      "truth": 15458
+    },
+    {
+      "sample_id": "TRAIN_06135_both",
+      "before": 7794,
+      "after": 6854,
+      "truth": 7292
+    },
+    {
+      "sample_id": "TRAIN_10067_both",
+      "before": 36586,
+      "after": 33950,
+      "truth": 36588
+    },
+    {
+      "sample_id": "TRAIN_01862_both",
+      "before": 7179,
+      "after": 491,
+      "truth": 8230
+    },
+    {
+      "sample_id": "TRAIN_04925_both",
+      "before": 15470,
+      "after": 2848,
+      "truth": 15470
+    },
+    {
+      "sample_id": "TRAIN_05610_drop_word",
+      "before": 28727,
+      "after": 28727,
+      "truth": 28727
+    },
+    {
+      "sample_id": "TRAIN_03266_both",
+      "before": 23228,
+      "after": 23228,
+      "truth": 23228
+    },
+    {
+      "sample_id": "TRAIN_04839_both",
+      "before": 59489,
+      "after": 59489,
+      "truth": 59492
+    },
+    {
+      "sample_id": "TRAIN_04684_both",
+      "before": 15470,
+      "after": 15470,
+      "truth": 15322
+    },
+    {
+      "sample_id": "TRAIN_01111_both",
+      "before": 7326,
+      "after": 15404,
+      "truth": 15404
+    },
+    {
+      "sample_id": "TRAIN_01130_both",
+      "before": 24732,
+      "after": 24732,
+      "truth": 24732
+    },
+    {
+      "sample_id": "TRAIN_09629_both",
+      "before": 15484,
+      "after": 15493,
+      "truth": 14449
+    },
+    {
+      "sample_id": "TRAIN_09114_both",
+      "before": 35652,
+      "after": 36627,
+      "truth": 36627
+    },
+    {
+      "sample_id": "TRAIN_08651_both",
+      "before": 24715,
+      "after": 24715,
+      "truth": 27731
+    },
+    {
+      "sample_id": "TRAIN_10440_both",
+      "before": 35276,
+      "after": 35276,
+      "truth": 33355
+    },
+    {
+      "sample_id": "TRAIN_04448_both",
+      "before": 77766,
+      "after": 77766,
+      "truth": 60311
+    },
+    {
+      "sample_id": "TRAIN_08721_both",
+      "before": 6828,
+      "after": 274,
+      "truth": 6804
+    },
+    {
+      "sample_id": "TRAIN_06395_both",
+      "before": 4456,
+      "after": 4456,
+      "truth": 4456
+    },
+    {
+      "sample_id": "TRAIN_00620_both",
+      "before": 22940,
+      "after": 22940,
+      "truth": 27028
+    },
+    {
+      "sample_id": "TRAIN_11226_both",
+      "before": 8882,
+      "after": 9261,
+      "truth": 9314
+    },
+    {
+      "sample_id": "TRAIN_10171_both",
+      "before": 33825,
+      "after": 33825,
+      "truth": 34516
+    },
+    {
+      "sample_id": "TRAIN_11907_both",
+      "before": 41162,
+      "after": 41162,
+      "truth": 27988
+    },
+    {
+      "sample_id": "TRAIN_07154_both",
+      "before": 34938,
+      "after": 34938,
+      "truth": 34938
+    },
+    {
+      "sample_id": "TRAIN_04857_both",
+      "before": 7124,
+      "after": 7124,
+      "truth": 3403
+    },
+    {
+      "sample_id": "TRAIN_00978_both",
+      "before": 42666,
+      "after": 42137,
+      "truth": 42666
+    },
+    {
+      "sample_id": "TRAIN_07199_drop_word",
+      "before": 8392,
+      "after": 8392,
+      "truth": 8440
+    },
+    {
+      "sample_id": "TRAIN_02420_both",
+      "before": 78222,
+      "after": 78400,
+      "truth": 78017
+    },
+    {
+      "sample_id": "TRAIN_03751_both",
+      "before": 15778,
+      "after": 2209,
+      "truth": 15778
+    },
+    {
+      "sample_id": "TRAIN_07818_both",
+      "before": 59063,
+      "after": 59063,
+      "truth": 59063
+    },
+    {
+      "sample_id": "TRAIN_00495_both",
+      "before": 1775,
+      "after": 1775,
+      "truth": 2725
+    },
+    {
+      "sample_id": "TRAIN_02940_both",
+      "before": 42563,
+      "after": 42561,
+      "truth": 42561
+    },
+    {
+      "sample_id": "TRAIN_07215_both",
+      "before": 58973,
+      "after": 58973,
+      "truth": 58972
+    },
+    {
+      "sample_id": "TRAIN_00170_both",
+      "before": 77981,
+      "after": 77981,
+      "truth": 77981
+    }
+  ],
+  "max_cuda_allocated_bytes": 8139622912,
+  "model_revision": "22e683669bc0f0bd69640a1354a6d0aebcfeede5",
+  "actual_competition_submission": false,
+  "new_model_training": false,
+  "diagnostic_not_competition_score": true
+}

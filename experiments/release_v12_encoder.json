@@ -1,0 +1,72 @@
+{
+  "zip": "dist\\v12_encoder.zip",
+  "bytes": 6975754790,
+  "files": 55,
+  "sha256": "d1ee05642102d018efaac732f2e735419904d9f0bb84ec64d646903300ae9fb3",
+  "zip_crc": "PASS",
+  "variant": "equal_ensemble",
+  "cv": {
+    "testlike": 0.9118708558226221,
+    "testlike_hangul": 0.8748782535684299,
+    "hard": 0.8579349286314022,
+    "hard_hangul": 0.8606213266162889,
+    "oof": 0.997692854143361,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8219983207388749,
+      "both": 0.5751469353484466
+    }
+  },
+  "reference_v11": {
+    "testlike": 0.9087617038494902,
+    "testlike_hangul": 0.8704366078925272,
+    "hard": 0.8541146095717884,
+    "hard_hangul": 0.8551637279596978,
+    "oof": 0.997692854143361,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9739714525608733,
+      "drop_word": 0.8270361041141897,
+      "both": 0.5524769101595298
+    }
+  },
+  "bootstrap_95_vs_v11": [
+    -0.0004390525806690554,
+    0.00700014216084484
+  ],
+  "package_execution": {
+    "status": "PASS",
+    "rows": 3000,
+    "seconds": 177.0,
+    "subset_rows": 300,
+    "single_rows": 3,
+    "sample_kind": "train-derived execution smoke test"
+  },
+  "neural_branch_execution": {
+    "status": "PASS",
+    "neural_calls_full": 62,
+    "active_neural_rows_full": 31,
+    "view_calls_full": {
+      "qwen:evidence": 31,
+      "encoder:phonetic": 31
+    },
+    "targeted_neural_singles": 2,
+    "shuffled_rows": 50,
+    "view_calls_all_runs": {
+      "qwen:evidence": 64,
+      "encoder:phonetic": 64
+    }
+  },
+  "lookup_map": false,
+  "training_adapter_packaged": false,
+  "actual_competition_submission": true,
+  "public_score": 0.9065951735,
+  "reference_public_v11": 0.9039635945,
+  "target_score": 0.97,
+  "caveat": "Exploratory reused CV; historical v8 retrieval mapper remains shared. Public score and server time are user-reported.",
+  "server_seconds": 591,
+  "submitted_by": "user",
+  "result_source": "user report",
+  "reported_date": "2026-10-28"
+}

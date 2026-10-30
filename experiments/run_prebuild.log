@@ -1,0 +1,8 @@
+[train] 후보·특징 생성 318.7초 (12222행)
+built train
+[aug_h4_e1_s7_d0.3] 후보·특징 생성 608.0초 (15795행)
+built aug_h4_e1_s7_d0.3
+[hard_s2026] 후보·특징 생성 243.1초 (5382행)
+built hard_s2026
+[testlike_s3031] 후보·특징 생성 225.5초 (3573행)
+built testlike_s3031

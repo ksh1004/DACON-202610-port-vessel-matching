@@ -1,0 +1,75 @@
+{
+  "protocol": {
+    "fold": 0,
+    "mode": "focused",
+    "input_recipe": "phonetic",
+    "training_groups": 2400,
+    "epochs": 1,
+    "seed": 42,
+    "max_tokens": 256,
+    "reference": "v12",
+    "vessel_overlap": 0,
+    "old_target_groups": 92,
+    "final_target_groups": 480,
+    "replacement_groups": 388,
+    "new_unique_cases": 388,
+    "training_at_cap": 0,
+    "baseline_fingerprint": "306d87c9204b40fa596e78c7b94266b0e0d601cb00e1689f48d4bdb9ee2ca970",
+    "source": {
+      "matrix": "strict_han_f0_train_cd185bcf8e28.joblib",
+      "miner_sha256": "cde56255e6b5a1199e29970ea5d9938fcb9517b8d3daaf636092249fe240b1ee"
+    },
+    "trainer_sha256": "f562530e14fe7dc3db90c17c6b26d616fed3c7f2d4b42ec03403d46d66a0c072",
+    "caveat": "Training retrieval/mappers strictly outer-fold only. Historical v8 validation candidate mapper exception remains."
+  },
+  "training": {
+    "training_seconds": 220.108191599953,
+    "training_groups": 2400,
+    "updates": 1200,
+    "loss_first100": 1.2006703003216534,
+    "loss_last100": 0.6892709163709972,
+    "precision": "merged BF16, saved then reloaded before evaluation"
+  },
+  "diagnostic_vs_v11": {
+    "baseline": {
+      "testlike_hangul": 0.8632188841201717,
+      "hard_hangul": 0.8412017167381974,
+      "scenarios": {
+        "clean": 0.9871244635193133,
+        "gt_missing": 0.9699570815450643,
+        "drop_word": 0.8240343347639485,
+        "both": 0.5450643776824035
+      }
+    },
+    "reference_v11": {
+      "testlike_hangul": 0.882145922746781,
+      "hard_hangul": 0.869098712446352,
+      "scenarios": {
+        "clean": 0.9957081545064378,
+        "gt_missing": 0.9871244635193133,
+        "drop_word": 0.8369098712446352,
+        "both": 0.5965665236051502
+      }
+    },
+    "encoder25": {
+      "testlike_hangul": 0.8900858369098713,
+      "hard_hangul": 0.8669527896995708,
+      "scenarios": {
+        "clean": 0.9957081545064378,
+        "gt_missing": 0.9785407725321889,
+        "drop_word": 0.8412017167381974,
+        "both": 0.6394849785407726
+      }
+    },
+    "equal_ensemble": {
+      "testlike_hangul": 0.892274678111588,
+      "hard_hangul": 0.871244635193133,
+      "scenarios": {
+        "clean": 0.9957081545064378,
+        "gt_missing": 0.9871244635193133,
+        "drop_word": 0.8454935622317596,
+        "both": 0.6394849785407726
+      }
+    }
+  }
+}

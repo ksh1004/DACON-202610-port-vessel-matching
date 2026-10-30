@@ -1,0 +1,122 @@
+{
+  "tag": "encoder_list20_v1",
+  "complete_folds": [
+    1,
+    4
+  ],
+  "reference_v12": {
+    "testlike": 0.9087787707227457,
+    "testlike_hangul": 0.8702574257425743,
+    "hard": 0.8475056283134426,
+    "hard_hangul": 0.8485148514851485,
+    "oof": 0.996826295475221,
+    "scenarios": {
+      "clean": 0.996039603960396,
+      "gt_missing": 0.9702970297029703,
+      "drop_word": 0.8198019801980198,
+      "both": 0.5663366336633663
+    }
+  },
+  "contenders": {
+    "list20": {
+      "candidate": {
+        "testlike": 0.9067134241880923,
+        "testlike_hangul": 0.8673069306930694,
+        "hard": 0.8468125590065119,
+        "hard_hangul": 0.8475247524752475,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9702970297029703,
+          "drop_word": 0.8118811881188119,
+          "both": 0.5603960396039604
+        }
+      },
+      "matched_control": {
+        "testlike": 0.9070876816138348,
+        "testlike_hangul": 0.8678415841584158,
+        "hard": 0.8475056283134426,
+        "hard_hangul": 0.8485148514851485,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9702970297029703,
+          "drop_word": 0.8158415841584158,
+          "both": 0.5584158415841585
+        }
+      },
+      "matched_control_recipe": "New BGE trained on exactly the same1200 queries, initial weights, query order, optimizer updates, microbatch and effective batch, but original8-candidate groups; fixed v12 composition with this control replacing BGE. Not selectable.",
+      "delta_vs_v12": -0.0020653465346534006,
+      "delta_vs_matched_control": -0.00037425742574248577,
+      "bootstrap_95_vs_v12": [
+        -0.0042838900005482145,
+        -0.00024922748768004097
+      ],
+      "delta_by_fold_vs_v12": {
+        "1": -0.0018728070175439981,
+        "4": -0.002223826714801369
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": true,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": false
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9095147281221666,
+          "testlike_hangul": 0.8713087934560327,
+          "hard": 0.8461832690836545,
+          "hard_hangul": 0.8466257668711656,
+          "oof": 0.9967355870178721,
+          "scenarios": {
+            "clean": 0.9959100204498977,
+            "gt_missing": 0.9693251533742331,
+            "drop_word": 0.820040899795501,
+            "both": 0.5725971370143149
+          }
+        },
+        "candidate": {
+          "testlike": 0.9073818037867883,
+          "testlike_hangul": 0.8682617586912066,
+          "hard": 0.8454675226623867,
+          "hard_hangul": 0.84560327198364,
+          "oof": 0.9967355870178721,
+          "scenarios": {
+            "clean": 0.9959100204498977,
+            "gt_missing": 0.9693251533742331,
+            "drop_word": 0.8118609406952966,
+            "both": 0.5664621676891616
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 1,
+          "lost": 2
+        },
+        "testlike": {
+          "gained": 1,
+          "lost": 8
+        }
+      }
+    }
+  },
+  "selected": null,
+  "truth_outside_top20": {
+    "oof": 0,
+    "hard": 50,
+    "testlike": 51
+  },
+  "actual_competition_submission": false,
+  "caveat": "Repeated exploratory synthetic CV, historical base retrieval mapper exception. Candidate20 sees2.5x as many pairs as control8 at equal query/update count; this is part of the intervention, not equal-compute training. Original8 grouping was already listwise CE; the change is group width, not first introduction of listwise learning. Changing group width may worsen ambiguous-negative pressure."
+}

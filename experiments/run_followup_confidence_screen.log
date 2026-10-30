@@ -1,0 +1,151 @@
+{
+  "tag": "encoder_confidence40_v1",
+  "reference": "v12",
+  "complete_folds": [
+    0,
+    3
+  ],
+  "complete": false,
+  "reference_v12": {
+    "testlike": 0.9131857916979075,
+    "testlike_hangul": 0.876575630252101,
+    "hard": 0.8634191176470587,
+    "hard_hangul": 0.8718487394957983,
+    "oof": 0.9981122622861427,
+    "scenarios": {
+      "clean": 0.9978991596638656,
+      "gt_missing": 0.9915966386554622,
+      "drop_word": 0.8109243697478992,
+      "both": 0.5903361344537815
+    }
+  },
+  "candidate": {
+    "testlike": 0.9124652034626133,
+    "testlike_hangul": 0.875546218487395,
+    "hard": 0.8626838235294116,
+    "hard_hangul": 0.8707983193277311,
+    "oof": 0.9981122622861427,
+    "scenarios": {
+      "clean": 0.9978991596638656,
+      "gt_missing": 0.9915966386554622,
+      "drop_word": 0.8151260504201681,
+      "both": 0.5798319327731093
+    }
+  },
+  "delta_vs_v12": -0.000720588235294195,
+  "bootstrap_95_vs_v12": [
+    -0.004420331389183456,
+    0.0029156021158482253
+  ],
+  "delta_by_fold_vs_v12": {
+    "0": 0.00012017167381983551,
+    "3": -0.0015267489711934257
+  },
+  "clean_lost_rows_vs_v12": 0,
+  "screen_checks": {
+    "folds": true,
+    "testlike": false,
+    "worst_fold": true,
+    "hard_hangul": true,
+    "drop_word": true,
+    "clean_lost": true
+  },
+  "screen_gate_pass": false,
+  "without_shots": {
+    "reference_v12": {
+      "testlike": 0.9131896881282744,
+      "testlike_hangul": 0.8765811965811966,
+      "hard": 0.8633814102564101,
+      "hard_hangul": 0.8717948717948718,
+      "oof": 0.9980871240257103,
+      "scenarios": {
+        "clean": 0.9978632478632479,
+        "gt_missing": 0.9914529914529915,
+        "drop_word": 0.8098290598290598,
+        "both": 0.5918803418803419
+      }
+    },
+    "candidate": {
+      "testlike": 0.9124567821453684,
+      "testlike_hangul": 0.875534188034188,
+      "hard": 0.8626335470085469,
+      "hard_hangul": 0.8707264957264957,
+      "oof": 0.9980871240257103,
+      "scenarios": {
+        "clean": 0.9978632478632479,
+        "gt_missing": 0.9914529914529915,
+        "drop_word": 0.8141025641025641,
+        "both": 0.5811965811965812
+      }
+    }
+  },
+  "changes": {
+    "oof": {
+      "gained": 0,
+      "lost": 0
+    },
+    "hard": {
+      "gained": 2,
+      "lost": 3
+    },
+    "testlike": {
+      "gained": 8,
+      "lost": 11
+    }
+  },
+  "protocols": {
+    "0": {
+      "fold": 0,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f0_train_cd185bcf8e28.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+      "reference": "v12",
+      "fusion_weight": 0.4,
+      "training_change": false,
+      "additional_scored_rows": 93
+    },
+    "3": {
+      "fold": 3,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f3_train_0e27b7ba964c.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+      "reference": "v12",
+      "fusion_weight": 0.4,
+      "training_change": false,
+      "additional_scored_rows": 72
+    }
+  },
+  "caveat": "Reused exploratory validation; historical v8 shared retrieval mapper exception remains."
+}

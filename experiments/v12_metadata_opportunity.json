@@ -1,0 +1,432 @@
+{
+  "drop_word": {
+    "counts": {
+      "wrong_rows": 212,
+      "same_catalog_type": 208,
+      "same_catalog_flag": 178,
+      "same_catalog_type_and_flag": 176,
+      "base_top1_was_correct": 15
+    },
+    "examples": [
+      {
+        "query": {
+          "vessel_name": "펭슈하이",
+          "vessel_type": "산물선(벌크선)",
+          "flag_name": "홍콩"
+        },
+        "truth": {
+          "name": "Feng Xiu Hai",
+          "type": "Bulk",
+          "flag": "Hong Kong"
+        },
+        "chosen": {
+          "name": "Feng Shou Hai",
+          "type": "Bulk",
+          "flag": "Hong Kong"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "케이엠티씨",
+          "vessel_type": "풀컨테이너선",
+          "flag_name": "라이베리아"
+        },
+        "truth": {
+          "name": "KMTC Seoul",
+          "type": "Container",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "KMTC Yokohama",
+          "type": "Container",
+          "flag": "Liberia"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "글로비스",
+          "vessel_type": "자동차운반선",
+          "flag_name": "마샬 제도"
+        },
+        "truth": {
+          "name": "Glovis Sirius",
+          "type": "PCC",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "Glovis Silver",
+          "type": "PCC",
+          "flag": "South Korea"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "익스플러어",
+          "vessel_type": "LPG 운반선",
+          "flag_name": "싱가포르"
+        },
+        "truth": {
+          "name": "Dom Explorer",
+          "type": "LPG",
+          "flag": "Liberia"
+        },
+        "chosen": {
+          "name": "Crystal Explorer",
+          "type": "LPG",
+          "flag": "Singapore"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "흥아",
+          "vessel_type": "풀컨테이너선",
+          "flag_name": "마샬 제도"
+        },
+        "truth": {
+          "name": "Heung-A Janice",
+          "type": "Container",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "Heung-A Haiphong",
+          "type": "Container",
+          "flag": "South Korea"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "레이",
+          "vessel_type": "자동차운반선",
+          "flag_name": "바하마"
+        },
+        "truth": {
+          "name": "Argus Ray",
+          "type": "PCC",
+          "flag": "Bahamas"
+        },
+        "chosen": {
+          "name": "Helios Ray",
+          "type": "PCC",
+          "flag": "Bahamas"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "글로비스",
+          "vessel_type": "자동차운반선",
+          "flag_name": "마샬 제도"
+        },
+        "truth": {
+          "name": "Glovis Cosmos",
+          "type": "PCC",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "Glovis Captain",
+          "type": "PCC",
+          "flag": "South Korea"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "익스프레스",
+          "vessel_type": "석유제품 운반선",
+          "flag_name": "마샬 제도"
+        },
+        "truth": {
+          "name": "Aspen Express",
+          "type": "Chem & Oil",
+          "flag": "Marshall Islands"
+        },
+        "chosen": {
+          "name": "Alder Express",
+          "type": "Chem & Oil",
+          "flag": "Marshall Islands"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "골든",
+          "vessel_type": "케미칼 운반선",
+          "flag_name": "파나마"
+        },
+        "truth": {
+          "name": "Golden Chie",
+          "type": "Chemical Parcel",
+          "flag": "Panama"
+        },
+        "chosen": {
+          "name": "Golden Sirius",
+          "type": "Chemical Parcel",
+          "flag": "Panama"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "제이비유",
+          "vessel_type": "석유제품 운반선",
+          "flag_name": "대한민국"
+        },
+        "truth": {
+          "name": "JBU Opal",
+          "type": "Chemical Parcel",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "JBU Sapphire",
+          "type": "Chemical Parcel",
+          "flag": "South Korea"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "파이오니어호",
+          "vessel_type": "케미칼 운반선",
+          "flag_name": "파나마"
+        },
+        "truth": {
+          "name": "No.2 Heung-A Pioneer",
+          "type": "Chemical Parcel",
+          "flag": "Panama"
+        },
+        "chosen": {
+          "name": "Heung-A Pioneer",
+          "type": "Chemical Parcel",
+          "flag": "Panama"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "글로비스",
+          "vessel_type": "자동차운반선",
+          "flag_name": "대한민국"
+        },
+        "truth": {
+          "name": "Glovis Spirit",
+          "type": "PCC",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "Glovis Supreme",
+          "type": "PCC",
+          "flag": "South Korea"
+        }
+      }
+    ]
+  },
+  "both": {
+    "counts": {
+      "wrong_rows": 506,
+      "same_catalog_type": 379,
+      "same_catalog_flag": 332,
+      "same_catalog_type_and_flag": 274,
+      "base_top1_was_correct": 17
+    },
+    "examples": [
+      {
+        "query": {
+          "vessel_name": "다리야",
+          "vessel_type": "산물선(벌크선)",
+          "flag_name": "키프로스"
+        },
+        "truth": {
+          "name": "Darya Shaan",
+          "type": "Bulk",
+          "flag": "India"
+        },
+        "chosen": {
+          "name": "Darya Diya",
+          "type": "Bulk",
+          "flag": "Marshall Islands"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "가스오너",
+          "vessel_type": "LPG 운반선",
+          "flag_name": null
+        },
+        "truth": {
+          "name": "Gas Honour",
+          "type": "Ethy/LPG",
+          "flag": "Malta"
+        },
+        "chosen": {
+          "name": "Gas One",
+          "type": "LPG",
+          "flag": "Panama"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "펭슈하이",
+          "vessel_type": "산물선(벌크선)",
+          "flag_name": "홍콩"
+        },
+        "truth": {
+          "name": "Feng Xiu Hai",
+          "type": "Bulk",
+          "flag": "Hong Kong"
+        },
+        "chosen": {
+          "name": "Feng Shou Hai",
+          "type": "Bulk",
+          "flag": "Hong Kong"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "케이엠티씨",
+          "vessel_type": "풀컨테이너선",
+          "flag_name": "라이베리아"
+        },
+        "truth": {
+          "name": "KMTC Seoul",
+          "type": "Container",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "KMTC Yokohama",
+          "type": "Container",
+          "flag": "Liberia"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "골든",
+          "vessel_type": "케미칼 운반선",
+          "flag_name": "파나마"
+        },
+        "truth": {
+          "name": "Golden Hachi",
+          "type": "Chemical Parcel",
+          "flag": "Panama"
+        },
+        "chosen": {
+          "name": "Golden Chie",
+          "type": "Chemical Parcel",
+          "flag": "Panama"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "글로비스",
+          "vessel_type": "자동차운반선",
+          "flag_name": "마샬 제도"
+        },
+        "truth": {
+          "name": "Glovis Sirius",
+          "type": "PCC",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "Glovis Captain",
+          "type": "PCC",
+          "flag": "South Korea"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "익스플러어",
+          "vessel_type": "LPG 운반선",
+          "flag_name": "싱가포르"
+        },
+        "truth": {
+          "name": "Dom Explorer",
+          "type": "LPG",
+          "flag": "Liberia"
+        },
+        "chosen": {
+          "name": "Crystal Explorer",
+          "type": "LPG",
+          "flag": "Singapore"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "그레이트",
+          "vessel_type": "산물선(벌크선)",
+          "flag_name": "홍콩"
+        },
+        "truth": {
+          "name": "Great Hope",
+          "type": "Bulk",
+          "flag": "Hong Kong"
+        },
+        "chosen": {
+          "name": "Great Sui",
+          "type": "Bulk",
+          "flag": "Hong Kong"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "흥아",
+          "vessel_type": "풀컨테이너선",
+          "flag_name": "마샬 제도"
+        },
+        "truth": {
+          "name": "Heung-A Janice",
+          "type": "Container",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "Heung-A Haiphong",
+          "type": "Container",
+          "flag": "South Korea"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "루니",
+          "vessel_type": "산물선(벌크선)",
+          "flag_name": "대한민국"
+        },
+        "truth": {
+          "name": "Luni",
+          "type": "Bulk",
+          "flag": "St. Kitts & Nevis"
+        },
+        "chosen": {
+          "name": "SS Luna",
+          "type": "GCargo",
+          "flag": "South Korea"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "크리스탈",
+          "vessel_type": "케미칼 운반선",
+          "flag_name": "파나마"
+        },
+        "truth": {
+          "name": "Princess Crystal",
+          "type": "Chemical Parcel",
+          "flag": "South Korea"
+        },
+        "chosen": {
+          "name": "Ocean Crystal",
+          "type": "Chem & Oil",
+          "flag": "Panama"
+        }
+      },
+      {
+        "query": {
+          "vessel_name": "레이",
+          "vessel_type": "자동차운반선",
+          "flag_name": "바하마"
+        },
+        "truth": {
+          "name": "Argus Ray",
+          "type": "PCC",
+          "flag": "Bahamas"
+        },
+        "chosen": {
+          "name": "Nestor Ray",
+          "type": "PCC",
+          "flag": "Bahamas"
+        }
+      }
+    ]
+  }
+}

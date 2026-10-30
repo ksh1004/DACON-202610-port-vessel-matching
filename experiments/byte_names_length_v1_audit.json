@@ -1,0 +1,122 @@
+{
+  "tag": "byte_names_length_v1",
+  "complete_folds": [
+    1,
+    4
+  ],
+  "reference_v12": {
+    "testlike": 0.9087787707227457,
+    "testlike_hangul": 0.8702574257425743,
+    "hard": 0.8475056283134426,
+    "hard_hangul": 0.8485148514851485,
+    "oof": 0.996826295475221,
+    "scenarios": {
+      "clean": 0.996039603960396,
+      "gt_missing": 0.9702970297029703,
+      "drop_word": 0.8198019801980198,
+      "both": 0.5663366336633663
+    }
+  },
+  "contenders": {
+    "residual30": {
+      "candidate": {
+        "testlike": 0.8986045132970032,
+        "testlike_hangul": 0.8557227722772278,
+        "hard": 0.8357234500956208,
+        "hard_hangul": 0.8316831683168316,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9603960396039604,
+          "drop_word": 0.7920792079207921,
+          "both": 0.5306930693069307
+        }
+      },
+      "matched_control": {
+        "testlike": 0.8973154043861121,
+        "testlike_hangul": 0.853881188118812,
+        "hard": 0.8294858263332445,
+        "hard_hangul": 0.8227722772277227,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9524752475247524,
+          "drop_word": 0.801980198019802,
+          "both": 0.5148514851485149
+        }
+      },
+      "matched_control_recipe": "Identical length normalisation and fixed residual0.3 applied to the same public untuned ByT5 checkpoint; no alternate coefficient",
+      "delta_vs_v12": -0.010174257425742517,
+      "delta_vs_matched_control": 0.001289108910891068,
+      "bootstrap_95_vs_v12": [
+        -0.01696833576477098,
+        -0.004531403878687351
+      ],
+      "delta_by_fold_vs_v12": {
+        "1": -0.012741228070175525,
+        "4": -0.008061371841155185
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": false,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": true
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9095147281221666,
+          "testlike_hangul": 0.8713087934560327,
+          "hard": 0.8461832690836545,
+          "hard_hangul": 0.8466257668711656,
+          "oof": 0.9967355870178721,
+          "scenarios": {
+            "clean": 0.9959100204498977,
+            "gt_missing": 0.9693251533742331,
+            "drop_word": 0.820040899795501,
+            "both": 0.5725971370143149
+          }
+        },
+        "candidate": {
+          "testlike": 0.8990075706579539,
+          "testlike_hangul": 0.8562985685071574,
+          "hard": 0.8340155799221004,
+          "hard_hangul": 0.8292433537832311,
+          "oof": 0.9967355870178721,
+          "scenarios": {
+            "clean": 0.9959100204498977,
+            "gt_missing": 0.9591002044989775,
+            "drop_word": 0.7914110429447853,
+            "both": 0.5357873210633947
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 2,
+          "lost": 19
+        },
+        "testlike": {
+          "gained": 7,
+          "lost": 44
+        }
+      }
+    }
+  },
+  "selected": null,
+  "truth_outside_top20": {
+    "oof": 0,
+    "hard": 50,
+    "testlike": 51
+  },
+  "actual_competition_submission": false,
+  "caveat": "Repeated exploratory synthetic CV and historical v8 outer retrieval mapper exception. Forward frozen beams have original fewshots; report no-shot sensitivity. Weak fragment supervision can be wrong despite exact spelling. Label-aware oracle used for pretraining architecture analysis, not performance forecast."
+}

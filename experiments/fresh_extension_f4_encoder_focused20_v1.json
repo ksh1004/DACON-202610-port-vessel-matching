@@ -1,0 +1,96 @@
+{
+  "tag": "encoder_focused20_v1",
+  "fold": 4,
+  "rows": 1827,
+  "neural_rows": 403,
+  "source": "3e882022d2d7be9ec80b3579ed75fda77f15e1eb2a0063cf06c5c72238cc6af8",
+  "mean_accuracy": {
+    "reference_v12": 0.7909140667761357,
+    "candidate": 0.7870826491516146
+  },
+  "delta_vs_v12": -0.0038314176245210726,
+  "bootstrap_95": [
+    -0.011858883869753435,
+    0.0036643653744025417
+  ],
+  "gained": 6,
+  "lost": 13,
+  "scenarios": {
+    "gt_only_missing": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 1.0,
+        "candidate": 1.0
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "igt_only_missing": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 1.0,
+        "candidate": 1.0
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "conflicting_gt": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.9961685823754789,
+        "candidate": 0.9961685823754789
+      },
+      "changed_rows": 0,
+      "changed_only": null
+    },
+    "first_with_gt": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.685823754789272,
+        "candidate": 0.6704980842911877
+      },
+      "changed_rows": 194,
+      "changed_only": {
+        "reference_v12": 0.5773195876288659,
+        "candidate": 0.5567010309278351
+      }
+    },
+    "last_with_gt": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.8582375478927203,
+        "candidate": 0.8735632183908046
+      },
+      "changed_rows": 194,
+      "changed_only": {
+        "reference_v12": 0.8092783505154639,
+        "candidate": 0.8298969072164949
+      }
+    },
+    "first_both_missing": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.3486590038314176,
+        "candidate": 0.3333333333333333
+      },
+      "changed_rows": 194,
+      "changed_only": {
+        "reference_v12": 0.17010309278350516,
+        "candidate": 0.14948453608247422
+      }
+    },
+    "last_both_missing": {
+      "rows": 261,
+      "accuracy": {
+        "reference_v12": 0.6475095785440613,
+        "candidate": 0.6360153256704981
+      },
+      "changed_rows": 194,
+      "changed_only": {
+        "reference_v12": 0.5721649484536082,
+        "candidate": 0.5567010309278351
+      }
+    }
+  },
+  "caveat": "Diagnostic equal scenario mix, not official/testlike metric. Train-only retrieval; few-shot vessels excluded."
+}

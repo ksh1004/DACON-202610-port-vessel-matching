@@ -1,0 +1,316 @@
+{
+  "diagnostic_only_uses_labels": true,
+  "reference_v12": {
+    "testlike": 0.9118708558226221,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8219983207388749,
+      "both": 0.5751469353484466
+    },
+    "non_hangul": 0.9981869277490708
+  },
+  "arbitrary_reranker_oracle_by_neural_weight": {
+    "0.0": {
+      "testlike": 0.9049590170316901,
+      "scenarios": {
+        "clean": 0.9958018471872376,
+        "gt_missing": 0.9739714525608733,
+        "drop_word": 0.8094038623005877,
+        "both": 0.5491183879093199
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.125": {
+      "testlike": 0.9458834502810604,
+      "scenarios": {
+        "clean": 0.9958018471872376,
+        "gt_missing": 0.984047019311503,
+        "drop_word": 0.8757346767422334,
+        "both": 0.7691015952980689
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.25": {
+      "testlike": 0.9735543151005398,
+      "scenarios": {
+        "clean": 0.9974811083123426,
+        "gt_missing": 0.9874055415617129,
+        "drop_word": 0.9403862300587741,
+        "both": 0.892527287993283
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.4": {
+      "testlike": 0.9869489414649394,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9899244332493703,
+        "drop_word": 0.9874055415617129,
+        "both": 0.9286314021830394
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.5": {
+      "testlike": 0.9888062042693057,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9932829554995802,
+        "drop_word": 0.9941225860621327,
+        "both": 0.9319899244332494
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "0.75": {
+      "testlike": 0.9888062042693057,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9932829554995802,
+        "drop_word": 0.9941225860621327,
+        "both": 0.9319899244332494
+      },
+      "non_hangul": 0.9981869277490708
+    },
+    "1.0": {
+      "testlike": 0.9888062042693057,
+      "scenarios": {
+        "clean": 1.0,
+        "gt_missing": 0.9932829554995802,
+        "drop_word": 0.9941225860621327,
+        "both": 0.9319899244332494
+      },
+      "non_hangul": 0.9981869277490708
+    }
+  },
+  "replace_only_bge_12_5pct_oracle": {
+    "testlike": 0.9471999910031427,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8832913518052057,
+      "both": 0.7665827036104114
+    },
+    "non_hangul": 0.9981869277490708
+  },
+  "reachability_failures": {
+    "top20_true_but_25pct_cannot_win": 121,
+    "active": 34,
+    "pruned": 87
+  },
+  "exact_input_collision": {
+    "columns": [
+      "vessel_name",
+      "gross_tonnage",
+      "international_gross_tonnage",
+      "vessel_type",
+      "flag_name",
+      "arrival_year"
+    ],
+    "ambiguous_inputs": 37,
+    "empirical_weighted_ceiling": 0.995439126784215,
+    "examples": [
+      {
+        "weighted_loss": 0.00022334172963895885,
+        "input": {
+          "vessel_name": "글로비스",
+          "gross_tonnage": null,
+          "international_gross_tonnage": null,
+          "vessel_type": "자동차운반선",
+          "flag_name": "마샬 제도",
+          "arrival_year": 2017
+        },
+        "labels": [
+          {
+            "name": "Glovis Cosmos",
+            "weight": 0.00011167086481947941
+          },
+          {
+            "name": "Glovis Captain",
+            "weight": 0.00011167086481947941
+          },
+          {
+            "name": "Glovis Sirius",
+            "weight": 0.00011167086481947941
+          }
+        ],
+        "rows": 3
+      },
+      {
+        "weighted_loss": 0.00022334172963895885,
+        "input": {
+          "vessel_name": "모닝",
+          "gross_tonnage": null,
+          "international_gross_tonnage": null,
+          "vessel_type": "자동차운반선",
+          "flag_name": "파나마",
+          "arrival_year": 2019
+        },
+        "labels": [
+          {
+            "name": "Morning Composer",
+            "weight": 0.00011167086481947941
+          },
+          {
+            "name": "Morning Catherine",
+            "weight": 0.00011167086481947941
+          },
+          {
+            "name": "Morning Lena",
+            "weight": 0.00011167086481947941
+          }
+        ],
+        "rows": 3
+      },
+      {
+        "weighted_loss": 0.00022334172963895882,
+        "input": {
+          "vessel_name": "보이져",
+          "gross_tonnage": null,
+          "international_gross_tonnage": null,
+          "vessel_type": "풀컨테이너선",
+          "flag_name": "라이베리아",
+          "arrival_year": 2026
+        },
+        "labels": [
+          {
+            "name": "Ningbo Voyager",
+            "weight": 0.00022334172963895882
+          },
+          {
+            "name": "Tianjin Voyager",
+            "weight": 0.00022334172963895882
+          }
+        ],
+        "rows": 4
+      },
+      {
+        "weighted_loss": 0.00013518052057094878,
+        "input": {
+          "vessel_name": "파이오니어",
+          "gross_tonnage": 2344.0,
+          "international_gross_tonnage": 2696.0,
+          "vessel_type": "석유제품 운반선",
+          "flag_name": "대한민국",
+          "arrival_year": 2025
+        },
+        "labels": [
+          {
+            "name": "Busan Pioneer",
+            "weight": 0.00013518052057094878
+          },
+          {
+            "name": "Kobe Pioneer",
+            "weight": 0.00013518052057094878
+          }
+        ],
+        "rows": 2
+      },
+      {
+        "weighted_loss": 0.00013518052057094878,
+        "input": {
+          "vessel_name": "퍼시픽",
+          "gross_tonnage": 9940.0,
+          "international_gross_tonnage": 9940.0,
+          "vessel_type": "풀컨테이너선",
+          "flag_name": "라이베리아",
+          "arrival_year": 2021
+        },
+        "labels": [
+          {
+            "name": "Pacific Beijing",
+            "weight": 0.00013518052057094878
+          },
+          {
+            "name": "Pacific Shenzhen",
+            "weight": 0.00013518052057094878
+          }
+        ],
+        "rows": 2
+      },
+      {
+        "weighted_loss": 0.00013518052057094878,
+        "input": {
+          "vessel_name": "스타",
+          "gross_tonnage": 9520.0,
+          "international_gross_tonnage": 9520.0,
+          "vessel_type": "풀컨테이너선",
+          "flag_name": "마샬 제도",
+          "arrival_year": 2019
+        },
+        "labels": [
+          {
+            "name": "Star Express",
+            "weight": 0.00013518052057094878
+          },
+          {
+            "name": "Star Pioneer",
+            "weight": 0.00013518052057094878
+          }
+        ],
+        "rows": 2
+      },
+      {
+        "weighted_loss": 0.00013518052057094875,
+        "input": {
+          "vessel_name": "에스",
+          "gross_tonnage": 4594.0,
+          "international_gross_tonnage": 4594.0,
+          "vessel_type": "일반화물선",
+          "flag_name": "대한민국",
+          "arrival_year": 2022
+        },
+        "labels": [
+          {
+            "name": "S Mercury",
+            "weight": 0.00027036104114189756
+          },
+          {
+            "name": "S Freddie",
+            "weight": 0.00013518052057094878
+          }
+        ],
+        "rows": 3
+      },
+      {
+        "weighted_loss": 0.00011167086481947942,
+        "input": {
+          "vessel_name": "팬콘",
+          "gross_tonnage": null,
+          "international_gross_tonnage": null,
+          "vessel_type": "풀컨테이너선",
+          "flag_name": "대한민국",
+          "arrival_year": 2022
+        },
+        "labels": [
+          {
+            "name": "Pancon Success",
+            "weight": 0.00011167086481947941
+          },
+          {
+            "name": "Pancon Harmony",
+            "weight": 0.00022334172963895882
+          }
+        ],
+        "rows": 3
+      }
+    ]
+  },
+  "source_sha256": "99ab68ed1f95e12ad9ce84f67bed45ffa0d27a4ed11da32cf7ef8bd3a8b42863",
+  "data_sha256": {
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+    "experiments/encoder_bge_phonetic_predictions.joblib": "35a03f0be323cf565279c8951a020c3eb93767860080ca364e3def03e3aea174"
+  },
+  "checks": {
+    "v12_and_v8_reproduced": true,
+    "candidate_order_identical": true,
+    "v12_dominated_by_encoder_oracle": true,
+    "oracle_monotonicity": true
+  },
+  "caveats": [
+    "These are label-aware local diagnostics, not achievable scores or Public forecasts.",
+    "The weight oracles assume an arbitrary perfect distribution over fixed top20; changed weights require revised pruning.",
+    "Other neural scores stay frozen only for the BGE-only oracle; old pruning remains there.",
+    "Collision bound concerns exact observations in this reused synthetic evaluation only."
+  ]
+}

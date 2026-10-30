@@ -1,0 +1,149 @@
+{
+  "tag": "encoder_bge_full_v1",
+  "reference": "v12",
+  "complete_folds": [
+    1,
+    2
+  ],
+  "complete": false,
+  "reference_v12": {
+    "testlike": 0.9105929770632316,
+    "testlike_hangul": 0.8735159817351598,
+    "hard": 0.8581680249696548,
+    "hard_hangul": 0.8595890410958904,
+    "oof": 0.9959354428166562,
+    "scenarios": {
+      "clean": 0.9954337899543378,
+      "gt_missing": 0.9840182648401826,
+      "drop_word": 0.8287671232876712,
+      "both": 0.5639269406392694
+    }
+  },
+  "candidate": {
+    "testlike": 0.9102253971545557,
+    "testlike_hangul": 0.8729908675799086,
+    "hard": 0.857368938211664,
+    "hard_hangul": 0.8584474885844748,
+    "oof": 0.9959354428166562,
+    "scenarios": {
+      "clean": 0.9954337899543378,
+      "gt_missing": 0.9840182648401826,
+      "drop_word": 0.8264840182648402,
+      "both": 0.5639269406392694
+    }
+  },
+  "delta_vs_v12": -0.00036757990867586354,
+  "bootstrap_95_vs_v12": [
+    -0.0034462241828857676,
+    0.0029759936944967137
+  ],
+  "delta_by_fold_vs_v12": {
+    "1": 0.00046052631578930026,
+    "2": -0.0012666666666665272
+  },
+  "clean_lost_rows_vs_v12": 0,
+  "screen_checks": {
+    "folds": true,
+    "testlike": false,
+    "worst_fold": true,
+    "hard_hangul": true,
+    "drop_word": true,
+    "clean_lost": true
+  },
+  "screen_gate_pass": false,
+  "without_shots": {
+    "reference_v12": {
+      "testlike": 0.910272966319208,
+      "testlike_hangul": 0.8730588235294118,
+      "hard": 0.8559851079672376,
+      "hard_hangul": 0.8564705882352941,
+      "oof": 0.9958376722015608,
+      "scenarios": {
+        "clean": 0.9952941176470588,
+        "gt_missing": 0.9835294117647059,
+        "drop_word": 0.8305882352941176,
+        "both": 0.56
+      }
+    },
+    "candidate": {
+      "testlike": 0.9098941427897962,
+      "testlike_hangul": 0.8725176470588235,
+      "hard": 0.8551615785554729,
+      "hard_hangul": 0.8552941176470589,
+      "oof": 0.9958376722015608,
+      "scenarios": {
+        "clean": 0.9952941176470588,
+        "gt_missing": 0.9835294117647059,
+        "drop_word": 0.8282352941176471,
+        "both": 0.56
+      }
+    }
+  },
+  "changes": {
+    "oof": {
+      "gained": 0,
+      "lost": 0
+    },
+    "hard": {
+      "gained": 2,
+      "lost": 3
+    },
+    "testlike": {
+      "gained": 5,
+      "lost": 6
+    }
+  },
+  "protocols": {
+    "1": {
+      "fold": 1,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 4680,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+      "reference": "v12",
+      "training_recipe": "all eligible original plus four seed7 augmentations, one epoch",
+      "trainer_sha256": "b0adb11954ba52486256f434cbf18b392c3ba95bd9516b061197e313a2629198"
+    },
+    "2": {
+      "fold": 2,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 4778,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f2_train_5b13f22dba22.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+      "reference": "v12",
+      "training_recipe": "all eligible original plus four seed7 augmentations, one epoch",
+      "trainer_sha256": "b0adb11954ba52486256f434cbf18b392c3ba95bd9516b061197e313a2629198"
+    }
+  },
+  "caveat": "Reused exploratory validation; historical v8 shared retrieval mapper exception remains."
+}

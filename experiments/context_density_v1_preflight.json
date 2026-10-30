@@ -1,0 +1,15 @@
+{
+  "vessels": 4680,
+  "pairs": 249662,
+  "contexts": 7343,
+  "positive_weight": 4680.0,
+  "negative_weight": 4680.0,
+  "noise_truth_collisions": 2,
+  "permutation_fixed_vessel_donors": 0,
+  "status": "PASS",
+  "source_order_invariant": true,
+  "metadata_input_identity_invariant": true,
+  "coarse_bucket_check": true,
+  "posterior_permutation_exact": true,
+  "identity_maps_absent": true
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "fingerprint": "f95dd38dd6337ac5d0965bcdcae2aaeb9374ac05e74b3eef748b36efb1355a43",
+  "unmasked_loss_and_gradient_exact": true,
+  "manual_weighted_loss_equal": true,
+  "positive_mask_rejected": true,
+  "folds": [
+    {
+      "fold": 1,
+      "groups": 2400,
+      "all_tokens_equal_legacy": true,
+      "per_query_relaxed_counts_equal": true,
+      "id_and_callsign_ignored": true,
+      "positive_preserved": true,
+      "target_mask_permutation_exact": true
+    },
+    {
+      "fold": 4,
+      "groups": 2400,
+      "all_tokens_equal_legacy": true,
+      "per_query_relaxed_counts_equal": true,
+      "id_and_callsign_ignored": true,
+      "positive_preserved": true,
+      "target_mask_permutation_exact": true
+    }
+  ]
+}

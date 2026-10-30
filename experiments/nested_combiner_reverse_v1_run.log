@@ -1,0 +1,235 @@
+Nested reverse missing37904, total requested102302
+Nested reverse 256/37904 seconds11.5
+Nested reverse 2304/37904 seconds51.2
+Nested reverse 4352/37904 seconds91.0
+Nested reverse 6400/37904 seconds129.8
+Nested reverse 8448/37904 seconds169.8
+Nested reverse 10496/37904 seconds208.4
+Nested reverse 12544/37904 seconds247.5
+Nested reverse 14592/37904 seconds286.4
+Nested reverse 16640/37904 seconds325.7
+Nested reverse 18688/37904 seconds365.6
+Nested reverse 20736/37904 seconds405.0
+Nested reverse 22784/37904 seconds444.7
+Nested reverse 24832/37904 seconds484.4
+Nested reverse 26880/37904 seconds524.0
+Nested reverse 28928/37904 seconds564.6
+Nested reverse 30976/37904 seconds605.6
+Nested reverse 33024/37904 seconds646.8
+Nested reverse 35072/37904 seconds686.4
+Nested reverse 37120/37904 seconds726.8
+Nested reverse 37904/37904 seconds747.5
+{
+  "tag": "nested_combiner_reverse_v1",
+  "complete_folds": [
+    0,
+    2
+  ],
+  "reference_v12": {
+    "testlike": 0.9178774610130318,
+    "testlike_hangul": 0.8839503386004516,
+    "hard": 0.8660027782601145,
+    "hard_hangul": 0.8668171557562077,
+    "oof": 0.9975320885525352,
+    "scenarios": {
+      "clean": 0.9977426636568849,
+      "gt_missing": 0.9909706546275395,
+      "drop_word": 0.8465011286681715,
+      "both": 0.5869074492099323
+    }
+  },
+  "contenders": {
+    "anchor50": {
+      "candidate": {
+        "testlike": 0.9136426980333479,
+        "testlike_hangul": 0.8779006772009031,
+        "hard": 0.867582913700295,
+        "hard_hangul": 0.8690744920993227,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.9864559819413092,
+          "drop_word": 0.8397291196388262,
+          "both": 0.5665914221218962
+        }
+      },
+      "matched_control": {
+        "testlike": 0.9139113210581784,
+        "testlike_hangul": 0.8782844243792326,
+        "hard": 0.8660027782601145,
+        "hard_hangul": 0.8668171557562077,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.981941309255079,
+          "drop_word": 0.8329571106094809,
+          "both": 0.5801354401805869
+        }
+      },
+      "matched_control_recipe": "Previously frozen105-feature nested head, same out-of-sample groups/weights and anchor",
+      "delta_vs_v12": -0.004234762979683948,
+      "delta_vs_matched_control": -0.0002686230248305499,
+      "bootstrap_95_vs_v12": [
+        -0.010729916654053285,
+        0.0015873846153846114
+      ],
+      "delta_by_fold_vs_v12": {
+        "0": -0.0025236051502146584,
+        "2": -0.006133333333333102
+      },
+      "clean_lost_rows": 0,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": true,
+        "drop_word": false,
+        "clean_lost": true,
+        "matched_control": false
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9177819914345762,
+          "testlike_hangul": 0.8838139534883721,
+          "hard": 0.8639982110912343,
+          "hard_hangul": 0.8639534883720931,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.9906976744186047,
+            "drop_word": 0.8488372093023255,
+            "both": 0.5837209302325581
+          }
+        },
+        "candidate": {
+          "testlike": 0.9122959449229482,
+          "testlike_hangul": 0.8759767441860464,
+          "hard": 0.8656261180679785,
+          "hard_hangul": 0.8662790697674418,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.986046511627907,
+            "drop_word": 0.8348837209302326,
+            "both": 0.5627906976744186
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 0
+        },
+        "hard": {
+          "gained": 9,
+          "lost": 7
+        },
+        "testlike": {
+          "gained": 13,
+          "lost": 27
+        }
+      }
+    },
+    "direct": {
+      "candidate": {
+        "testlike": 0.9043040975818804,
+        "testlike_hangul": 0.8645598194130926,
+        "hard": 0.8636325750998437,
+        "hard_hangul": 0.863431151241535,
+        "oof": 0.9912115467918128,
+        "scenarios": {
+          "clean": 0.9887133182844243,
+          "gt_missing": 0.9774266365688488,
+          "drop_word": 0.8194130925507901,
+          "both": 0.5485327313769752
+        }
+      },
+      "matched_control": {
+        "testlike": 0.9061528560468919,
+        "testlike_hangul": 0.8672009029345373,
+        "hard": 0.8604723042194824,
+        "hard_hangul": 0.8589164785553047,
+        "oof": 0.9912115467918128,
+        "scenarios": {
+          "clean": 0.9887133182844243,
+          "gt_missing": 0.9729119638826185,
+          "drop_word": 0.8261851015801355,
+          "both": 0.5575620767494357
+        }
+      },
+      "matched_control_recipe": "Previously frozen105-feature nested head, same out-of-sample groups/weights and anchor",
+      "delta_vs_v12": -0.013573363431151453,
+      "delta_vs_matched_control": -0.0018487584650115352,
+      "bootstrap_95_vs_v12": [
+        -0.029906559859716242,
+        -0.0014390828426901093
+      ],
+      "delta_by_fold_vs_v12": {
+        "0": -0.021751072961373463,
+        "2": -0.0044999999999997264
+      },
+      "clean_lost_rows": 4,
+      "screen_checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": false,
+        "hard_hangul": false,
+        "drop_word": false,
+        "clean_lost": false,
+        "matched_control": false
+      },
+      "screen_gate_pass": false,
+      "without_shots": {
+        "reference_v12": {
+          "testlike": 0.9177819914345762,
+          "testlike_hangul": 0.8838139534883721,
+          "hard": 0.8639982110912343,
+          "hard_hangul": 0.8639534883720931,
+          "oof": 0.9974843170159715,
+          "scenarios": {
+            "clean": 0.9976744186046511,
+            "gt_missing": 0.9906976744186047,
+            "drop_word": 0.8488372093023255,
+            "both": 0.5837209302325581
+          }
+        },
+        "candidate": {
+          "testlike": 0.9026750146903901,
+          "testlike_hangul": 0.8622325581395349,
+          "hard": 0.8615563506261179,
+          "hard_hangul": 0.8604651162790697,
+          "oof": 0.9909726891089947,
+          "scenarios": {
+            "clean": 0.9883720930232558,
+            "gt_missing": 0.9767441860465116,
+            "drop_word": 0.813953488372093,
+            "both": 0.5441860465116279
+          }
+        }
+      },
+      "changes": {
+        "oof": {
+          "gained": 0,
+          "lost": 4
+        },
+        "hard": {
+          "gained": 14,
+          "lost": 17
+        },
+        "testlike": {
+          "gained": 22,
+          "lost": 57
+        }
+      }
+    }
+  },
+  "selected": null,
+  "truth_outside_top20": {
+    "oof": 0,
+    "hard": 33,
+    "testlike": 32
+  },
+  "actual_competition_submission": false,
+  "caveat": "Reused exploratory validation; historical v8 outer candidate retrieval mapper exception. Inner retrieval/mappers strictly separated. Forward Kanana has original fixed fewshots, so report no-fewshot-vessel sensitivity. Inner proxy is strict Han-origin LGB rather than v8 ensemble; v12 is a fixed inference anchor only."
+}

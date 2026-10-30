@@ -1,0 +1,2 @@
+{'oof': 12222, 'hard': 5382, 'testlike': 3573}
+{"name": "cat_d8_prior", "testlike": 0.901, "testlike_hangul": 0.8594, "tl_gt": 0.9706, "tl_dw": 0.8128, "tl_both": 0.5181, "oof": 0.9965, "oof_hangul": 0.9958, "oof_non_hangul": 0.9981, "hard": 0.8415, "hard_hangul": 0.8371, "hard_non_hangul": 0.8517, "minutes": 55.2}

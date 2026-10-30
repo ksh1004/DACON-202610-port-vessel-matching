@@ -1,0 +1,31 @@
+{
+  "training": {
+    "training_seconds": 88.13542839989532,
+    "training_groups": 1200,
+    "updates": 600,
+    "learning_rate": 5e-05,
+    "loss_first100": 0.22452314324196776,
+    "loss_last100": 0.1975479636346992,
+    "precision": "BF16 merge, save and reload",
+    "initial_model": "D:\\KSH\\hf_models\\BAAI__bge-reranker-v2-m3"
+  },
+  "data_fingerprint": "fa335914118c3a07c9d92f1220695d85567f663b7ab438b1c90b21bae8846cde",
+  "data": {
+    "groups": 1200,
+    "distinct_catalog_entities": 1048,
+    "source_limit": 1536,
+    "minimum_consonant_similarity": 0.9,
+    "all_official_train_ids_and_full_names_excluded": true,
+    "query_and_document_metadata": "all null",
+    "latin_beams": [],
+    "word_deletion": false,
+    "weak_labels_not_verified_pronunciations": true,
+    "builder_sha256": "a5b2f8a334f106223db016f49039ca3153008b43d43d5b282c20061494ef4e60",
+    "generator_manifest_sha256": "551c5f119188240c7c2c1c16d3d064b8bf4556c8bed8d0310956153289dc57b4",
+    "generated_prefix_sha256": "c7568b7eb7d42384a4c31666b89292f7a222eb4a0e24e59bd8d2d48dde4f8daa",
+    "data_hashes": {
+      "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+      "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9"
+    }
+  }
+}

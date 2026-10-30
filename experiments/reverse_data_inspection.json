@@ -1,0 +1,251 @@
+{
+  "purpose": "Cache identities and inference budgets only; no new model performance inspected",
+  "features": {
+    "names_count": 78,
+    "category_columns": [
+      67,
+      68,
+      69,
+      70,
+      72,
+      73
+    ]
+  },
+  "folds": {
+    "0": {
+      "train_cache": "experiments\\cache\\strict_han_f0_train_cd185bcf8e28.joblib",
+      "file_bytes": 500643209,
+      "groups": 4790,
+      "eligible_positive_present_groups": 4679,
+      "positive_absent_groups": 111,
+      "actual_nonhangul_train_groups": 7,
+      "all_candidate_pairs": 1168175,
+      "block_shape_example": [
+        247,
+        106
+      ],
+      "block_dtype": "float32",
+      "mmap_block": true,
+      "sample_identity_verified": true,
+      "heldout_vessel_overlap": 0,
+      "caps": {
+        "240": {
+          "groups": 240,
+          "pairs": 4800,
+          "unique_name_pairs": 4622,
+          "actual_hangul_unique_pairs": 4582
+        },
+        "600": {
+          "groups": 600,
+          "pairs": 12000,
+          "unique_name_pairs": 10608,
+          "actual_hangul_unique_pairs": 10568
+        },
+        "2400": {
+          "groups": 2400,
+          "pairs": 48000,
+          "unique_name_pairs": 34434,
+          "actual_hangul_unique_pairs": 34376
+        },
+        "-1": {
+          "groups": 4679,
+          "pairs": 93580,
+          "unique_name_pairs": 57134,
+          "actual_hangul_unique_pairs": 57039
+        }
+      },
+      "validation": {
+        "oof": {
+          "all_groups": 233,
+          "actual_hangul_groups": 233,
+          "previously_pruned_hangul_groups": 226,
+          "pairs": 4660,
+          "unique_name_pairs": 1567
+        },
+        "hard": {
+          "all_groups": 466,
+          "actual_hangul_groups": 465,
+          "previously_pruned_hangul_groups": 384,
+          "pairs": 9300,
+          "unique_name_pairs": 8129
+        },
+        "testlike": {
+          "all_groups": 699,
+          "actual_hangul_groups": 695,
+          "previously_pruned_hangul_groups": 491,
+          "pairs": 13900,
+          "unique_name_pairs": 4726
+        }
+      }
+    },
+    "2": {
+      "train_cache": "experiments\\cache\\strict_han_f2_train_5b13f22dba22.joblib",
+      "file_bytes": 509344359,
+      "groups": 4905,
+      "eligible_positive_present_groups": 4778,
+      "positive_absent_groups": 127,
+      "actual_nonhangul_train_groups": 11,
+      "all_candidate_pairs": 1188469,
+      "block_shape_example": [
+        247,
+        106
+      ],
+      "block_dtype": "float32",
+      "mmap_block": true,
+      "sample_identity_verified": true,
+      "heldout_vessel_overlap": 0,
+      "caps": {
+        "240": {
+          "groups": 240,
+          "pairs": 4800,
+          "unique_name_pairs": 4614,
+          "actual_hangul_unique_pairs": 4614
+        },
+        "600": {
+          "groups": 600,
+          "pairs": 12000,
+          "unique_name_pairs": 10850,
+          "actual_hangul_unique_pairs": 10830
+        },
+        "2400": {
+          "groups": 2400,
+          "pairs": 48000,
+          "unique_name_pairs": 34988,
+          "actual_hangul_unique_pairs": 34888
+        },
+        "-1": {
+          "groups": 4778,
+          "pairs": 95560,
+          "unique_name_pairs": 59894,
+          "actual_hangul_unique_pairs": 59763
+        }
+      },
+      "validation": {
+        "oof": {
+          "all_groups": 210,
+          "actual_hangul_groups": 210,
+          "previously_pruned_hangul_groups": 210,
+          "pairs": 4200,
+          "unique_name_pairs": 1412
+        },
+        "hard": {
+          "all_groups": 420,
+          "actual_hangul_groups": 420,
+          "previously_pruned_hangul_groups": 342,
+          "pairs": 8400,
+          "unique_name_pairs": 7279
+        },
+        "testlike": {
+          "all_groups": 630,
+          "actual_hangul_groups": 628,
+          "previously_pruned_hangul_groups": 463,
+          "pairs": 12560,
+          "unique_name_pairs": 4186
+        }
+      }
+    }
+  },
+  "historical_validation": {
+    "oof": {
+      "path": "experiments\\cache\\train_features_186152be.joblib",
+      "file_bytes": 689003339,
+      "groups": 12222,
+      "frame_groups": 12222,
+      "block_shape_example": [
+        201,
+        78
+      ],
+      "block_dtype": "float32",
+      "mmap_block": true,
+      "folds": {
+        "0": {
+          "compared": 233,
+          "exact_candidate_matches": 233
+        },
+        "2": {
+          "compared": 210,
+          "exact_candidate_matches": 210
+        }
+      }
+    },
+    "hard": {
+      "path": "experiments\\cache\\hard_s2026_features_186152be.joblib",
+      "file_bytes": 337170635,
+      "groups": 5382,
+      "frame_groups": 5382,
+      "block_shape_example": [
+        145,
+        78
+      ],
+      "block_dtype": "float32",
+      "mmap_block": true,
+      "folds": {
+        "0": {
+          "compared": 466,
+          "exact_candidate_matches": 466
+        },
+        "2": {
+          "compared": 420,
+          "exact_candidate_matches": 420
+        }
+      }
+    },
+    "testlike": {
+      "path": "experiments\\cache\\testlike_s3031_features_186152be.joblib",
+      "file_bytes": 260739491,
+      "groups": 3573,
+      "frame_groups": 3573,
+      "block_shape_example": [
+        219,
+        78
+      ],
+      "block_dtype": "float32",
+      "mmap_block": true,
+      "folds": {
+        "0": {
+          "compared": 699,
+          "exact_candidate_matches": 699
+        },
+        "2": {
+          "compared": 630,
+          "exact_candidate_matches": 630
+        }
+      }
+    }
+  },
+  "pair_budgets_across_folds_0_2": {
+    "full_evaluation_unique_pairs": 21618,
+    "pilot_first32_actual_hangul_rows_per_set_per_fold_unique_pairs": 2669,
+    "train_caps": {
+      "240": {
+        "unique_train_pairs": 8782,
+        "unique_train_and_full_evaluation_pairs": 29480,
+        "unique_train_and_pilot_evaluation_pairs": 11182
+      },
+      "600": {
+        "unique_train_pairs": 19544,
+        "unique_train_and_full_evaluation_pairs": 38876,
+        "unique_train_and_pilot_evaluation_pairs": 21643
+      },
+      "2400": {
+        "unique_train_pairs": 55623,
+        "unique_train_and_full_evaluation_pairs": 71830,
+        "unique_train_and_pilot_evaluation_pairs": 57208
+      },
+      "-1": {
+        "unique_train_pairs": 80679,
+        "unique_train_and_full_evaluation_pairs": 95141,
+        "unique_train_and_pilot_evaluation_pairs": 82036
+      }
+    }
+  },
+  "recipe": {
+    "training_groups": "First 2400 eligible RNG(42) permutation groups from each strict train cache; same eligibility/order as original BGE",
+    "training_candidates": "Positive plus first19 stable strict-base-miner negatives, feature block first78 columns",
+    "validation_candidates": "Exact archived v12 candidates[keep], every actual Hangul row including previously pruned",
+    "validation_features": "Read one historical78 cache at a time with mmap_mode=r; map sample_id to original reconstructed frame; copy blocks[row][keep]; refresh CATEGORY_COLUMNS with fit_mappers(train[fold != heldout], catalog)",
+    "selection": "Predeclare direct ranker plus fixed 50:50 v12/new score blend; paired78-only ablation on identical groups; screen folds0,2 once, fresh qualification fold3 before full5fold acceptance",
+    "leakage_caveat": "Archived v12 retrieval used historical fulltrain category mapper; new feature category columns must be outer-train only; no claim of strict heldout retrieval",
+    "score_inputs": "Raw78 and frozen pretrained name likelihood only; no fitted-neural or fitted-base scores as learned inputs"
+  }
+}

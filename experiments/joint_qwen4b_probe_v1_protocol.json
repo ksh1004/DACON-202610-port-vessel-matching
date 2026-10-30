@@ -1,0 +1,39 @@
+{
+  "tag": "joint_qwen4b_probe_v1",
+  "registered_utc": "2026-10-28T08:45:54.522512+00:00",
+  "conditional_execution": "Only if reverse full-name and omission-marginal screens both fail",
+  "model": "D:\\KSH\\hf_models\\Qwen__Qwen3-4B-Instruct-2507",
+  "model_config_sha256": "5beea1a4a34c62782bfb2f911c606741a3bab8f92d80a118fa053c28af12e8ba",
+  "model_index_sha256": "d6c42883a895dfef5b0080ed2116a1bcd764f558406b98923d675978a1abf29c",
+  "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+  "source_sha256": "24c60996d5d811fb9b9b8198a6fccf4fa68320fceac9987a80486dc75362d922",
+  "system_prompt": "Match one noisy port-arrival record to a ship in the supplied candidate list. The Korean name is a phonetic rendering and may omit name words or contain typos. Latin restoration hints are uncertain, not additional candidates. Compare pronunciation, numbers, flag, ship type and tonnage jointly. Korean and English categories may express the same meaning. Both arrival GT and IGT are possible estimates of catalog GT; missing values are unknown, not mismatches. Use only the supplied record and candidates. Reply with exactly one uppercase candidate letter, with no explanation.",
+  "few_shots": 0,
+  "folds": [
+    1,
+    4
+  ],
+  "rows": 60,
+  "unique_vessels": 60,
+  "selection": "30 per fold RNG20261028+fold, actual Hangul drop/both and previously active v12, excluding fewshot vessels; first row per vessel; no truth-based eligibility",
+  "counts": {
+    "1": {
+      "eligible_rows": 168,
+      "selected_vessels": 30
+    },
+    "4": {
+      "eligible_rows": 200,
+      "selected_vessels": 30
+    }
+  },
+  "maximum_input_tokens": 1310,
+  "max_tokens": 2048,
+  "candidate_orders": "canonical catalog-index ascending and descending; average letter-conditional probabilities",
+  "inference": "BF16 SDPA, batch1, final-token logits, letters A-T each one token; no generation or fine-tuning",
+  "qualification": {
+    "minimum_accuracy_gain_vs_v12": 0.05,
+    "minimum_correct_rows_gain": 3
+  },
+  "actual_competition_submission": false,
+  "caveat": "Small selected hard-case diagnostic, reused CV data; not official-weighted score, not full CV, no student/distillation or release"
+}

@@ -1,0 +1,73 @@
+{
+  "tag": "encoder_seed_probability_v1",
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "registered_before_training": true,
+  "recipe": "fallback fixed probability mean of Qwen and two already trained BGE seeds, model weights 2/1/1",
+  "seed": 42,
+  "epochs": 1,
+  "learning_rate": 0.0001,
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.05,
+  "groups_per_batch": 2,
+  "group_size": 8,
+  "max_tokens": 256,
+  "negative_mode": "five strict training-fold LGB hard plus two lexical",
+  "fixed_mix": {
+    "v8": 0.75,
+    "qwen_v11": 0.125,
+    "encoder_seed42": 0.0625,
+    "encoder_seed2026": 0.0625
+  },
+  "screen_folds": [
+    1,
+    2
+  ],
+  "screen_gate": {
+    "testlike_gain_min": 0.001,
+    "minimum_fold_delta": -0.002,
+    "hard_hangul_delta_min": -0.002,
+    "drop_word_delta_min": -0.003,
+    "clean_lost_rows_max": 1
+  },
+  "fresh_guard": {
+    "fold": 4,
+    "minimum_mean_accuracy_delta": -0.002,
+    "few_shot_vessels_excluded": true,
+    "training_only_retrieval": true
+  },
+  "full_gate": {
+    "all_5_folds_required": true,
+    "testlike_gain_min": 0.001,
+    "hard_hangul_delta_min": -0.001,
+    "oof_delta_min": -0.0006,
+    "positive_folds_min": 3,
+    "drop_word_delta_min": -0.003
+  },
+  "source_hashes": {
+    "src/encoder_seed_average.py": "8d79a0438e047e3dd53ab38cac2d7206f3e425ba1b18ec1cef57cf68759f1a26",
+    "tools/audit_encoder_extension.py": "025210bff213145082d61befcac98d81d182fce2b7b2f06ad11bdbbac313ca8d",
+    "src/encoder_phonetic_experiment.py": "3de675e84a56e466afe1f85821a51e3b11cab353ee247e39b93a0f547be2b857",
+    "src/encoder_phonetics.py": "4ba7adb40ce087990c671dbf7d35c0fc4655f318d979f777248aee07fcf6cc1b",
+    "src/encoder_views.py": "162e5e24a4fd89e9fc102546002173fd222652614dd1ec8d3d869c109629ab59",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9"
+  },
+  "caveat": "Reused exploratory validation. Historical v8 retrieval mapper exception. No callsign/identity lookup or test distribution use.",
+  "training_groups": 2400,
+  "data_selection_seed": 42,
+  "training_seed": 2026,
+  "averaging_weights": null,
+  "reason": "all-groups and fixed40 trials failed; assess seed variance without more inference models",
+  "checkpoint_search": false,
+  "seed_search": false,
+  "execution_condition": "only if parameter averaging fails a predeclared gate",
+  "registered_before_any_seed_result_inspection": true,
+  "evaluation_source_hashes": {
+    "tools/score_seed_probability.py": "7361fa7c68b895d75bc2d5077c16e1392732a74084a1c7607fd89fda15fe07af",
+    "tools/audit_seed_probability.py": "c44d5b1432035bab19bcd6012f970c4e882a9848154cb7f52847b61448831d70",
+    "tools/fresh_seed_probability.py": "06561da188ace7f768416333d677fa63537f1eb96c479958be224619f0c166d3",
+    "tools/check_seed_probability_runtime.py": "b9c8575d019219435521952042da757b67277ba8439041ec301282ef358bb214"
+  }
+}

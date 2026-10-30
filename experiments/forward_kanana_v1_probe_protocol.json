@@ -1,0 +1,37 @@
+{
+  "tag": "forward_kanana_v1",
+  "registered_utc": "2026-10-29T05:34:16.240880+00:00",
+  "registered_before_new_teacher_scores": true,
+  "scope": "Separate pretrained forward-conditional teacher; no new training or weight download; not a retuned ByT5 score",
+  "probe_vessels": 48,
+  "folds": [
+    0,
+    2
+  ],
+  "few_shot_vessels_excluded": true,
+  "sampling": "One seeded random eligible drop_word/both case per distinct truth vessel; actual v12 residual0.3 confidence region and truth in original top20; no baseline correctness filter; no truth injection",
+  "fixed_mix": {
+    "actual_v12_top20": 0.7,
+    "new_name_probability": 0.3
+  },
+  "name_score": "Whole name0.5, other distinct contiguous fragments uniform0.5, raw full target+turn-end logP; no length/weight/prompt search",
+  "admission_gate": {
+    "net_correct_gain_min": 3,
+    "same48cases_required": true
+  },
+  "source_hashes": {
+    "src/forward_name_likelihood.py": "b4c6eb46574b3f5ca55f4799a44f77d6b6a5bd92e9216680fbcd5dc4bafde744",
+    "tools/probe_forward_names.py": "cff31316fdec399a5203f02baf2dcce7816a06ca86dc64c6ca6c151933143f68",
+    "src/reverse_name_likelihood.py": "902942c15a0345db968ff133195b4b697bf9fa275167ea04ed17594ab7aae95e",
+    "src/llm_translit.py": "6b82a58245bfefe91c28dece1f5a718f5609fe41ac6318f40964b559bcccd835",
+    "src/byte_name_model.py": "d643e53eead9f3a09f71489a1ec3ace8bf6b47e7631026a6f27b1351ab72a5a5",
+    "tools/byte_names_experiment.py": "310b8d22791071d4b0478c672cd7557ee09ba2b881861e9300171ba3760a8c4d",
+    "experiments/byte_names_v1_protocol.json": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+    "experiments\\artifacts\\forward_kanana_v1\\probe_cases.joblib": "887c0f40e3630ba12a425be10cbe285566f4ffb4cd71c6f2fdac174b074625df"
+  },
+  "actual_competition_submission": false,
+  "lookup_used": false,
+  "caveat": "Difficult48vessel diagnostic, not official metric or Public prediction; repeated known vessels. Probe excludes fixed fewshot vessels. Full twofold and strict guard required if admitted."
+}

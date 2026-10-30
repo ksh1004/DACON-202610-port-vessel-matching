@@ -1,0 +1,68 @@
+Learned alignment iteration 1/4, pairs 308
+Learned alignment iteration 2/4, pairs 308
+Learned alignment iteration 3/4, pairs 308
+Learned alignment iteration 4/4, pairs 308
+Alignment fold0 oof scored, memo CacheInfo(hits=80, misses=60, maxsize=200000, currsize=60)
+Alignment fold0 hard scored, memo CacheInfo(hits=230, misses=1530, maxsize=200000, currsize=1530)
+Alignment fold0 testlike scored, memo CacheInfo(hits=3085, misses=2755, maxsize=200000, currsize=2755)
+{
+  "fold": 0,
+  "unique_pairs": 308,
+  "training_entities": 308,
+  "validation_entity_overlap": 0,
+  "synthetic_catalog_pairs": 0,
+  "pair_sha256": "b23939b31479b28b259aa8a6b57eb0e98087e0950c6cb997b280432b419cbc5e",
+  "seconds": 6.4298067999770865,
+  "active_rows": 292,
+  "registered": {
+    "reference": "v12",
+    "reference_public": 0.9065951735,
+    "reference_server_seconds": 591,
+    "registered_before_training": true,
+    "fixed_mix": {
+      "v8": 0.75,
+      "qwen_v11": 0.1,
+      "bge_v12": 0.1,
+      "learned_alignment": 0.05
+    },
+    "screen_folds": [
+      0,
+      2
+    ],
+    "screen_gate": {
+      "testlike_gain_min": 0.002,
+      "minimum_fold_delta": -0.002,
+      "hard_hangul_delta_min": -0.002,
+      "drop_word_delta_min": -0.002,
+      "clean_lost_rows_max": 1
+    },
+    "fresh_guard": {
+      "fold": 3,
+      "minimum_mean_accuracy_delta": -0.002,
+      "few_shot_vessels_excluded": true,
+      "training_only_retrieval": true
+    },
+    "full_gate": {
+      "all_5_folds_required": true,
+      "testlike_gain_min": 0.003,
+      "hard_hangul_delta_min": -0.001,
+      "drop_word_delta_min": -0.002,
+      "oof_delta_min": -0.0006,
+      "positive_folds_min": 4
+    },
+    "actual_competition_submission": false,
+    "caveat": "Exploratory reused synthetic CV, historical v8 evaluation retrieval mapper exception. No callsign or same-vessel lookup.",
+    "source_hashes": {
+      "src/learned_alignment.py": "c0c7bb46da52523a4c9e3398177d1955f4be762eb80abb5cd045c2ce33850e69",
+      "tools/score_learned_alignment.py": "b47d2284d209fcfba5f6ceb7f9992731cd1e8f39510aaad222f8ba3c01f84116",
+      "tools/audit_learned_alignment.py": "37e2fce1532fa5802a8434b5aceb3f11b6623bec9e1237f087f3cb80c4ec2713",
+      "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+      "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9"
+    },
+    "tag": "learned_alignment_v1",
+    "recipe": "train-fold-only hard alignment of vowel-preserving Hangul spelling and Latin characters",
+    "iterations": 4,
+    "prior_strength": 10,
+    "score": "-10 * minimum alignment cost / observation length"
+  }
+}

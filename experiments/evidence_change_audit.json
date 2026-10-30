@@ -1,0 +1,50 @@
+{
+  "oof": {
+    "all": {
+      "gained_rows": 0,
+      "lost_rows": 0,
+      "net_rows": 0,
+      "gained_vessels": 0,
+      "lost_vessels": 0
+    }
+  },
+  "hard": {
+    "all": {
+      "gained_rows": 47,
+      "lost_rows": 34,
+      "net_rows": 13,
+      "gained_vessels": 42,
+      "lost_vessels": 27
+    }
+  },
+  "testlike": {
+    "all": {
+      "gained_rows": 84,
+      "lost_rows": 77,
+      "net_rows": 7,
+      "gained_vessels": 42,
+      "lost_vessels": 38
+    },
+    "gt_missing": {
+      "gained_rows": 4,
+      "lost_rows": 11,
+      "net_rows": -7,
+      "gained_vessels": 2,
+      "lost_vessels": 4
+    },
+    "drop_word": {
+      "gained_rows": 34,
+      "lost_rows": 17,
+      "net_rows": 17,
+      "gained_vessels": 20,
+      "lost_vessels": 12
+    },
+    "both": {
+      "gained_rows": 46,
+      "lost_rows": 49,
+      "net_rows": -3,
+      "gained_vessels": 25,
+      "lost_vessels": 28
+    }
+  }
+}

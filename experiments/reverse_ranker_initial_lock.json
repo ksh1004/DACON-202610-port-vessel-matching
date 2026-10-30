@@ -1,0 +1,25 @@
+{
+  "registered_utc": "2026-10-28T06:51:06.666409+00:00",
+  "source_hashes": {
+    "experiments/reverse_ranker_protocol.json": "676dd3962c68f1ee8049b3c46eae6dcf646053c6d361aec812f45a20f4a5e02c",
+    "src/reverse_name_likelihood.py": "4285dcc546d249f57a1584dd8104f27ac0e22f7c7ca7e44af9625630f1740f6d",
+    "tools/reverse_ranker_experiment.py": "1c184f7095b7fe6c528adee912bdb8c0daf47f0c2383e9a027263eecd4afc7cc",
+    "tools/audit_reverse_ranker.py": "0fb11a27e01a649d34faa31f428b86d4b7cf7d0aeb97babb223fe840cd168d16",
+    "src/train_ranker.py": "1b9b9c40a9328002b84af97eb44cb00be3fdee604f97cf1bf7473660ed4f5618",
+    "src/features.py": "1df5899912dbc5bb3366cce769efb17268ac0c0c72ae4693f8081cda4737d75d",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9"
+  },
+  "correctness_smoke": {
+    "status": "PASS",
+    "exact_repeat": true,
+    "exact_candidate_reverse": true,
+    "exact_pair_slot_companion_invariance": true,
+    "fixed_batch_single_delta": 0.0,
+    "manual_sum_max_delta": 2.3692846298217773e-06,
+    "batch1_mean_max_delta": 0.029191970825195312,
+    "fixed_batch_size": 8,
+    "fixed_pad_length": 256,
+    "fixed_logits_to_keep": 65
+  }
+}

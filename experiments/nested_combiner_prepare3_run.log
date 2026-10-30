@@ -1,0 +1,13 @@
+nested 3/0 train: 960/2495
+nested 3/0 train: 1920/2495
+nested 3/0 meta: 960/3590
+nested 3/0 meta: 1920/3590
+nested 3/0 meta: 2880/3590
+Prepared nested 3/0: NN2400 meta3455
+nested 3/1 train: 960/2245
+nested 3/1 train: 1920/2245
+nested 3/1 meta: 960/3967
+nested 3/1 meta: 1920/3967
+nested 3/1 meta: 2880/3967
+nested 3/1 meta: 3840/3967
+Prepared nested 3/1: NN2164 meta3845

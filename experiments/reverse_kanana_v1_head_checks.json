@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "partial": false,
+  "folds": [
+    {
+      "fold": 0,
+      "candidate_rows": 27860,
+      "exact_save_reload": true,
+      "exact_reordered_groups": true,
+      "exact_single": true,
+      "candidate_permutation_groups": 32
+    },
+    {
+      "fold": 2,
+      "candidate_rows": 25160,
+      "exact_save_reload": true,
+      "exact_reordered_groups": true,
+      "exact_single": true,
+      "candidate_permutation_groups": 32
+    }
+  ],
+  "scope": "Frozen likelihood cache plus final trees; not an end-to-end submission/package test"
+}

@@ -1,0 +1,23 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+fold 0 완료
+fold 1 완료
+fold 2 완료
+fold 3 완료
+fold 4 완료
+
+== 대상: hangul (400행), 증강 한글 4 / 영문 1
+                      recall  accuracy  drop_vs_original
+original              1.0000    0.9950            0.0000
+gt_missing            0.9925    0.9575           -0.0375
+gt_noise_5pct         0.9925    0.9875           -0.0075
+flag_missing          1.0000    0.9950            0.0000
+no_space              1.0000    0.9950            0.0000
+typo_vowel            1.0000    0.9975            0.0025
+typo_drop             0.9925    0.9550           -0.0400
+typo_double           1.0000    0.9925           -0.0025
+drop_word             0.9950    0.7700           -0.2250
+gt_missing+drop_word  0.9675    0.4925           -0.5025
+keep_first            0.9925    0.7075           -0.2875
+keep_last             1.0000    0.8425           -0.1525
+truncate              0.9850    0.7950           -0.2000
+gt_missing+keep_last  0.9750    0.5950           -0.4000

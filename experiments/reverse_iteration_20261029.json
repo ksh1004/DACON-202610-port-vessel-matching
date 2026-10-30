@@ -1,0 +1,185 @@
+{
+  "completed_client_date": "2026-10-29",
+  "reference_version": "v12",
+  "reference_public_score": 0.9065951735,
+  "reference_server_seconds": 591,
+  "reference_submission_count": 9,
+  "reference_subset_testlike": 0.9178774610130318,
+  "contenders": {
+    "reverse_kanana_v1": {
+      "direct": {
+        "testlike": 0.9039248650762373,
+        "delta_vs_v12": -0.013952595936794543,
+        "delta_vs_matched_control": 0.002954853273137825,
+        "pass": false
+      },
+      "base25_head75": {
+        "testlike": 0.9052995829091943,
+        "delta_vs_v12": -0.012577878103837481,
+        "delta_vs_matched_control": 0.0012641083521445218,
+        "pass": false
+      }
+    },
+    "reverse_kanana_partial_v1": {
+      "direct": {
+        "testlike": 0.9029925851665306,
+        "delta_vs_v12": -0.014884875846501222,
+        "delta_vs_matched_control": -0.0009322799097066792,
+        "pass": false
+      },
+      "base25_head75": {
+        "testlike": 0.9044937138347022,
+        "delta_vs_v12": -0.013383747178329575,
+        "delta_vs_matched_control": -0.0008058690744920938,
+        "pass": false
+      }
+    }
+  },
+  "teacher_probe": {
+    "tag": "joint_qwen4b_probe_v1",
+    "rows": 60,
+    "unique_vessels": 60,
+    "reference_v12_accuracy": 0.35,
+    "teacher_accuracy": 0.2833333333333333,
+    "correct_rows_gain": -4,
+    "gained": 7,
+    "lost": 11,
+    "qualifies_for_larger_teacher_test": false,
+    "accuracy_by_fold": {
+      "1": {
+        "v12": 0.36666666666666664,
+        "teacher": 0.4
+      },
+      "4": {
+        "v12": 0.3333333333333333,
+        "teacher": 0.16666666666666666
+      }
+    },
+    "seconds": 71.56810090004001,
+    "exact_repeat": true,
+    "minimum_letter_probability_mass": 0.9997406005859375,
+    "actual_competition_submission": false,
+    "caveat": "Small selected hard-case diagnostic, reused CV data; not official-weighted score, not full CV, no student/distillation or release"
+  },
+  "teacher_truth_in_top20_rows": 52,
+  "selected": null,
+  "new_model_public_score": null,
+  "actual_competition_submission": false,
+  "new_zip_created": false,
+  "further_full_cv_not_run_reason": "All four reverse heads failed screen; teacher failed small quality gate",
+  "verification": {
+    "registered_sources_unchanged": {
+      "experiments/reverse_ranker_protocol.json": true,
+      "src/reverse_name_likelihood.py": true,
+      "tools/reverse_ranker_experiment.py": true,
+      "tools/audit_reverse_ranker.py": true,
+      "src/train_ranker.py": true,
+      "src/features.py": true,
+      "train.csv": true,
+      "vessel_catalog.csv": true,
+      "tools/reverse_partial_experiment.py": true,
+      "experiments/reverse_kanana_partial_v1_protocol.json": true
+    },
+    "v12_sources_unchanged": {
+      "common.py": true,
+      "features.py": true,
+      "retrieval.py": true,
+      "hangul.py": true,
+      "ensemble.py": true,
+      "llm_cache.py": true,
+      "llm_translit.py": true,
+      "neural_pair.py": true,
+      "pair_evidence.py": true,
+      "pair_views.py": true,
+      "encoder_pair.py": true,
+      "encoder_phonetics.py": true,
+      "encoder_views.py": true
+    },
+    "teacher_prompt_id_fields_absent": true,
+    "teacher_probabilities_finite_normalized": true,
+    "teacher_labels_aligned": true,
+    "full_head_checks": {
+      "status": "PASS",
+      "partial": false,
+      "folds": [
+        {
+          "fold": 0,
+          "candidate_rows": 27860,
+          "exact_save_reload": true,
+          "exact_reordered_groups": true,
+          "exact_single": true,
+          "candidate_permutation_groups": 32
+        },
+        {
+          "fold": 2,
+          "candidate_rows": 25160,
+          "exact_save_reload": true,
+          "exact_reordered_groups": true,
+          "exact_single": true,
+          "candidate_permutation_groups": 32
+        }
+      ],
+      "scope": "Frozen likelihood cache plus final trees; not an end-to-end submission/package test"
+    },
+    "partial_head_checks": {
+      "status": "PASS",
+      "partial": true,
+      "folds": [
+        {
+          "fold": 0,
+          "candidate_rows": 27860,
+          "exact_save_reload": true,
+          "exact_reordered_groups": true,
+          "exact_single": true,
+          "candidate_permutation_groups": 32
+        },
+        {
+          "fold": 2,
+          "candidate_rows": 25160,
+          "exact_save_reload": true,
+          "exact_reordered_groups": true,
+          "exact_single": true,
+          "candidate_permutation_groups": 32
+        }
+      ],
+      "scope": "Frozen likelihood cache plus final trees; not an end-to-end submission/package test"
+    },
+    "real_pair_checks": {
+      "status": "PASS",
+      "partial_cache": true,
+      "random_official_pairs": 96,
+      "exact_cached_vs_fresh": true,
+      "exact_reverse": true,
+      "exact_singles": 3,
+      "exact_query_api_with_duplicates": true,
+      "query_api_candidates": 22,
+      "protocol": {
+        "model_dir": "D:\\KSH\\hf_models\\kakaocorp__kanana-1.5-2.1b-instruct-2505",
+        "prompt": "Transliterate the entire Latin-alphabet ship name phonetically into Korean Hangul. Render every name word and preserve all digits. Do not translate the meaning or add information. Output only the Korean transliteration.",
+        "few_shot_examples": 0,
+        "input_fields": [
+          "observed_name",
+          "candidate_name"
+        ],
+        "batch_size": 32,
+        "pad_length": 128,
+        "padding_side": "left",
+        "padded_last_batch": "repeat last candidate",
+        "candidate_order": "sorted unique raw name strings",
+        "position_ids": "attention-mask cumulative positions, padded positions zero",
+        "dtype": "torch.bfloat16",
+        "attention": "sdpa",
+        "target_tokenization": "separate target encode, add_special_tokens=False",
+        "fixed_logits_to_keep": 33,
+        "maximum_target_tokens": 32,
+        "score": "observed target tokens only; EOS reported separately",
+        "prompt_sha256": "073325bf22954b7a536307791e6e2fe21c4df584461af52f6d2be2e1d4a9ceb1",
+        "source_sha256": "902942c15a0345db968ff133195b4b697bf9fa275167ea04ed17594ab7aae95e",
+        "model_config_sha256": "8064bf2423445240e73247a03631b53dd839a880a26908e4747c0fc679d46031",
+        "tokenizer_sha256": "31d17e500c82ff116fc14d4dd0106a08e49bd3512d8a81473047121ef8ea09f9"
+      },
+      "scope": "Scorer/pair cache on current GPU and frozen settings; not a submission/package execution"
+    }
+  },
+  "caveat": "Exploratory reused validation, historical v8 shared retrieval mapper; teacher probe is60 selected unique vessels, not the official metric."
+}

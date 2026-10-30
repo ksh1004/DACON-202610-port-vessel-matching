@@ -1,0 +1,48 @@
+# --- 대회 데이터 (재배포 금지: DACON에서 직접 내려받기) ---
+/train.csv
+/vessel_catalog.csv
+/sample_submission.csv
+/open.zip
+/open_data.zip
+/baseline_submit.zip
+/data/
+
+# --- 학습 산출물·모델 가중치 (수 GB) ---
+/dist/
+/catboost_info/
+/model/*.pkl
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.cbm
+*.joblib
+*.npy
+/experiments/artifacts/
+/experiments/cache/
+/experiments/scores/
+/experiments/catalog_synthetic_v1/
+
+# 데이터 행(이름·톤수)이 들어 있는 분석용 CSV는 제외하고 fold 배정만 남긴다
+/experiments/*.csv
+!/experiments/folds.csv
+
+# --- 제출 패키지: 코드와 설정만 올리고 가중치·모델 사본·train 파생 조회표는 제외 ---
+/submit/*/model/*
+!/submit/*/model/*.json
+/submit/*/model/train_vessels.json
+/submit/*/model/callsign_map.json
+/submit/*/model/mappers.joblib
+
+# --- 환경 ---
+/.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.DS_Store
+
+# --- DACON 공식 베이스라인 코드 (주최 측 제공물) ---
+/script.py
+/model/
+/submit/baseline/

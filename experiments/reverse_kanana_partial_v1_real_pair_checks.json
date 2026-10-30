@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "partial_cache": true,
+  "random_official_pairs": 96,
+  "exact_cached_vs_fresh": true,
+  "exact_reverse": true,
+  "exact_singles": 3,
+  "exact_query_api_with_duplicates": true,
+  "query_api_candidates": 22,
+  "protocol": {
+    "model_dir": "D:\\KSH\\hf_models\\kakaocorp__kanana-1.5-2.1b-instruct-2505",
+    "prompt": "Transliterate the entire Latin-alphabet ship name phonetically into Korean Hangul. Render every name word and preserve all digits. Do not translate the meaning or add information. Output only the Korean transliteration.",
+    "few_shot_examples": 0,
+    "input_fields": [
+      "observed_name",
+      "candidate_name"
+    ],
+    "batch_size": 32,
+    "pad_length": 128,
+    "padding_side": "left",
+    "padded_last_batch": "repeat last candidate",
+    "candidate_order": "sorted unique raw name strings",
+    "position_ids": "attention-mask cumulative positions, padded positions zero",
+    "dtype": "torch.bfloat16",
+    "attention": "sdpa",
+    "target_tokenization": "separate target encode, add_special_tokens=False",
+    "fixed_logits_to_keep": 33,
+    "maximum_target_tokens": 32,
+    "score": "observed target tokens only; EOS reported separately",
+    "prompt_sha256": "073325bf22954b7a536307791e6e2fe21c4df584461af52f6d2be2e1d4a9ceb1",
+    "source_sha256": "902942c15a0345db968ff133195b4b697bf9fa275167ea04ed17594ab7aae95e",
+    "model_config_sha256": "8064bf2423445240e73247a03631b53dd839a880a26908e4747c0fc679d46031",
+    "tokenizer_sha256": "31d17e500c82ff116fc14d4dd0106a08e49bd3512d8a81473047121ef8ea09f9"
+  },
+  "scope": "Scorer/pair cache on current GPU and frozen settings; not a submission/package execution"
+}

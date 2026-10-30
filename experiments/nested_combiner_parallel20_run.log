@@ -1,0 +1,68 @@
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+nested 2/0 bge step100 loss0.9055 seconds39.6
+nested 2/0 bge step200 loss0.5336 seconds79.6
+nested 2/0 bge step300 loss0.5024 seconds120.0
+nested 2/0 bge step400 loss0.5208 seconds159.2
+nested 2/0 bge step500 loss0.3185 seconds199.0
+nested 2/0 bge step600 loss0.6037 seconds238.5
+nested 2/0 bge step700 loss0.4069 seconds278.9
+nested 2/0 bge step800 loss0.5572 seconds318.2
+nested 2/0 bge step900 loss0.2833 seconds358.0
+nested 2/0 bge step1000 loss0.3703 seconds396.8
+nested 2/0 bge step1100 loss0.3715 seconds436.4
+nested 2/0 bge step1200 loss0.3881 seconds476.0
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\nested_combiner_v1\outer2_inner0\bge\merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+meta_bge_scores 200/3756 seconds18.7
+meta_bge_scores 400/3756 seconds27.9
+meta_bge_scores 600/3756 seconds43.6
+meta_bge_scores 800/3756 seconds68.3
+meta_bge_scores 1000/3756 seconds93.1
+meta_bge_scores 1200/3756 seconds118.4
+meta_bge_scores 1400/3756 seconds143.6
+meta_bge_scores 1600/3756 seconds168.6
+meta_bge_scores 1800/3756 seconds193.7
+meta_bge_scores 2000/3756 seconds219.6
+meta_bge_scores 2200/3756 seconds243.3
+meta_bge_scores 2400/3756 seconds263.6
+meta_bge_scores 2600/3756 seconds276.3
+meta_bge_scores 2800/3756 seconds285.5
+meta_bge_scores 3000/3756 seconds293.2
+meta_bge_scores 3200/3756 seconds301.8
+meta_bge_scores 3400/3756 seconds309.1
+meta_bge_scores 3600/3756 seconds316.5
+meta_bge_scores 3756/3756 seconds321.6
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+nested 2/0 qwen step100 loss0.6212 seconds125.5
+nested 2/0 qwen step200 loss0.5788 seconds253.4
+nested 2/0 qwen step300 loss0.4443 seconds377.6
+nested 2/0 qwen step400 loss0.4510 seconds509.2
+nested 2/0 qwen step500 loss0.2924 seconds643.2
+nested 2/0 qwen step600 loss0.5282 seconds775.5
+nested 2/0 qwen step700 loss0.4292 seconds907.9
+nested 2/0 qwen step800 loss0.4564 seconds1024.4
+nested 2/0 qwen step900 loss0.3558 seconds1145.6
+nested 2/0 qwen step1000 loss0.2713 seconds1268.4
+nested 2/0 qwen step1100 loss0.2617 seconds1389.9
+nested 2/0 qwen step1200 loss0.3021 seconds1508.1
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\nested_combiner_v1\outer2_inner0\qwen\merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+meta_qwen_scores 200/3756 seconds43.9
+meta_qwen_scores 400/3756 seconds65.7
+meta_qwen_scores 600/3756 seconds103.5
+meta_qwen_scores 800/3756 seconds163.9
+meta_qwen_scores 1000/3756 seconds224.6
+meta_qwen_scores 1200/3756 seconds279.5
+meta_qwen_scores 1400/3756 seconds337.2
+meta_qwen_scores 1600/3756 seconds397.1
+meta_qwen_scores 1800/3756 seconds456.6
+meta_qwen_scores 2000/3756 seconds517.3
+meta_qwen_scores 2200/3756 seconds572.4
+meta_qwen_scores 2400/3756 seconds619.7
+meta_qwen_scores 2600/3756 seconds649.6
+meta_qwen_scores 2800/3756 seconds670.1
+meta_qwen_scores 3000/3756 seconds687.3
+meta_qwen_scores 3200/3756 seconds707.2
+meta_qwen_scores 3400/3756 seconds723.3
+meta_qwen_scores 3600/3756 seconds739.7
+meta_qwen_scores 3756/3756 seconds750.2

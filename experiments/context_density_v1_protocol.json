@@ -1,0 +1,132 @@
+{
+  "tag": "context_density_v1",
+  "registered_utc": "2026-10-29T06:06:26.585563+00:00",
+  "registered_before_classifier_training_and_outer_performance": true,
+  "pre_registration_preparation": "Training-only codec/support, example-weight and permutation checks completed; no classifier fit or new outer predictions",
+  "software": {
+    "lightgbm": "4.6.0",
+    "numpy": "1.26.4"
+  },
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "fitting": "Outer-training official original rows only, Han and English. Unique metadata contexts, one total positive/noise mass per vessel; 16 uniform official catalog negatives; paired observed/missing size. No artificial Korean labels.",
+  "features": [
+    "q_flag",
+    "q_type",
+    "q_year",
+    "q_size",
+    "c_flag",
+    "c_type",
+    "c_unit",
+    "c_gt",
+    "c_dwt",
+    "c_size",
+    "c_ratio"
+  ],
+  "query": "Flag/type, three-year bucket, coarse GT-or-IGT bucket; no names, IDs, callsigns, exact tonnage or train-test lookup",
+  "support": "Category or fixed numeric bucket needs >=10 distinct outer-training vessels; other values map to unknown0. No stored vessel profiles/identity map.",
+  "learner": {
+    "params": {
+      "objective": "binary",
+      "learning_rate": 0.05,
+      "num_leaves": 15,
+      "max_depth": 4,
+      "min_data_in_leaf": 100,
+      "min_sum_hessian_in_leaf": 10.0,
+      "lambda_l2": 10.0,
+      "max_cat_to_onehot": 4,
+      "cat_smooth": 20.0,
+      "cat_l2": 10.0,
+      "max_cat_threshold": 32,
+      "feature_fraction": 1.0,
+      "bagging_fraction": 1.0,
+      "verbosity": -1,
+      "num_threads": 6,
+      "deterministic": true,
+      "force_col_wise": true,
+      "seed": 20261029
+    },
+    "rounds": 200
+  },
+  "density_interpretation": "data-vs-uniform-catalog classifier logits; conditional minus candidate-only logits estimates association P(c|q)/P(c), not calibrated ship posterior",
+  "contenders": [
+    "association"
+  ],
+  "matched_control": "Identical model/data/weights, query context family deranged between fitting vessels, minus same candidate-only classifier; same fixed posterior correction. Not selectable.",
+  "combination": {
+    "formula": "log(actual v12 anchor)+temper*clip(conditional_logit-marginal_logit,-clip,clip)",
+    "temper": 0.5,
+    "clip": 1.3862943611198906,
+    "maximum_per_candidate_multiplier": 2.0,
+    "minimum_per_candidate_multiplier": 0.5,
+    "candidates": "Frozen actual base top20, actual v12 old-pruned fallback preserved",
+    "runtime": "All Han rows scored; no old or new neural pruning applied to metadata adjustment"
+  },
+  "screen_folds": [
+    1,
+    4
+  ],
+  "screen_gate": {
+    "testlike_gain_min": 0.003,
+    "minimum_fold_delta": -0.002,
+    "hard_hangul_delta_min": -0.002,
+    "drop_word_delta_min": -0.002,
+    "clean_lost_rows_max": 1,
+    "gain_vs_matched_control_min": 0.001
+  },
+  "fresh_guard": {
+    "fold": 3,
+    "seed": 2026102901,
+    "minimum_mean_accuracy_delta": -0.002,
+    "training_only_retrieval": true,
+    "few_shot_vessels_excluded": true,
+    "previously_used_vessels_not_pristine": true
+  },
+  "full_gate": {
+    "all_5_folds_required": true,
+    "testlike_gain_min": 0.005,
+    "positive_folds_min": 4,
+    "hard_hangul_delta_min": -0.001,
+    "drop_word_delta_min": -0.002,
+    "oof_delta_min": -0.0006,
+    "gain_vs_matched_control_min": 0.001
+  },
+  "no_hyperparameter_or_coefficient_search_after_results": true,
+  "no_automatic_other_method_after_failure": true,
+  "source_hashes": {
+    "src/context_density.py": "62093a8dd0d042b71108b05aab05de140c28511da5a40eaa89f3e02f3d1629fc",
+    "tools/context_density_experiment.py": "63868e78872b338cf2df9c507e1051a4c90e10d054a1ec1cfaa32122ae9e4716",
+    "tools/audit_reverse_ranker.py": "cfd30508ec5785283bc500ca01e538926333af62e2d3aa161e4989cc01c15a47",
+    "tools/blend_matching.py": "86f9040b160045e8161c936b12b9096729821a096dff5731f3869eb30e27a8de",
+    "src/common.py": "3e3c0d96a2fdb4366d51500b8bc5c8a8def813b1000dc7c4faa37a854023a5be",
+    "src/validate.py": "e5b9900d5a922c906b761ae7936dc002cd4009e80a466b869614aecd23cb2b9e",
+    "src/experiment.py": "65518ffc71f2799556ed2a4b2b7bed5e46476b2ff250443a3a389236b4a521c0",
+    "src/augment.py": "bea2fe2e56208bfc7972bd8f4d94251e444deae0afde4fdb8cd272cff49ccbb2",
+    "src/pair_views.py": "850907ff855ac9540fa818c5f6d93ebae778d901e47ba721b3eeca4f2de564e4",
+    "src/byte_name_model.py": "d643e53eead9f3a09f71489a1ec3ace8bf6b47e7631026a6f27b1351ab72a5a5",
+    "src/ensemble.py": "19e7b51b3e26de3e9515214b1db9facdda4608dfe2e16e112c5db453b878b098",
+    "src/llm_translit.py": "6b82a58245bfefe91c28dece1f5a718f5609fe41ac6318f40964b559bcccd835",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+    "experiments/folds.csv": "99bc9010ca3c8f0fc518110fb059ce705f130146f8b8b9e625f483bd7df58c9d",
+    "experiments/encoder_bge_phonetic_predictions.joblib": "35a03f0be323cf565279c8951a020c3eb93767860080ca364e3def03e3aea174",
+    "experiments/context_density_v1_preflight.json": "686de9e51569724ea6b8b053ffb42ac6e126c2ca6a134ebfbdf9adccac37de96",
+    "experiments/artifacts/encoder_bge_phonetic/fold0_epoch1_scores.joblib": "3f5130a300a23d1b998e7b085245520bab3f2a1efc84babba992cadc004274d3",
+    "experiments/artifacts/neural_evidence_v1/fold0_epoch1_scores.joblib": "e239456748da830ea403178494470c0e47d60de2c14ec210a68e37b641ab1ab5",
+    "experiments/artifacts/encoder_bge_phonetic/fold1_epoch1_scores.joblib": "515c5af6920cc6d2c42f19484f203aacb3153883538a983802721556ecd9b143",
+    "experiments/artifacts/neural_evidence_v1/fold1_epoch1_scores.joblib": "eab37eda85eea9872fc9d48a27f12402d0591fb3ce32a156b49adfa240d6ab11",
+    "experiments/artifacts/encoder_bge_phonetic/fold2_epoch1_scores.joblib": "06d25a3917dfc190068c8c89f6005d80087e82f52d244b04d6b05be4cbf3e445",
+    "experiments/artifacts/neural_evidence_v1/fold2_epoch1_scores.joblib": "3aefca8435127548fa3b8c29df048d8af8ff05e974f58c7bd04677d1041d3a63",
+    "experiments/artifacts/encoder_bge_phonetic/fold3_epoch1_scores.joblib": "18d39244185910cbdb035e078b156e26ae42f416b49b0c87877b65f223ed0314",
+    "experiments/artifacts/neural_evidence_v1/fold3_epoch1_scores.joblib": "a92f6d3cc8b20da2269a92c7fc5714d2c75e245c6db81d042a63377b0056f34c",
+    "experiments/artifacts/encoder_bge_phonetic/fold4_epoch1_scores.joblib": "0ad6645362eb6f3a243743a5cc5f1454c91b765829267b48cb1a824fb9625208",
+    "experiments/artifacts/neural_evidence_v1/fold4_epoch1_scores.joblib": "aa2451845812f80140ff276bb690f3f0d1f5cb3cf8c39f13ece70be59b71f9a0"
+  },
+  "actual_competition_submission": false,
+  "lookup_used": false,
+  "caveat": "Repeated exploratory synthetic CV, not confirmed test distribution. Historical v8 outer retrieval mapper exception remains in reference comparison. Metadata likelihood may duplicate existing base evidence; fixed small trial tests net benefit. No guarantee of Public0.97.",
+  "research_sources": [
+    "https://www.jmlr.org/papers/v13/gutmann12a.html",
+    "https://dacon.io/competitions/official/236771/overview/rules"
+  ]
+}

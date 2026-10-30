@@ -1,0 +1,75 @@
+{
+  "tag": "reverse_kanana_partial_v1",
+  "registered_before_new_model_validation": true,
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "screen_folds": [
+    0,
+    2
+  ],
+  "training_groups_per_fold": 2400,
+  "selection_seed": 42,
+  "training_candidates": "positive plus first19 stable strict-LGB negatives; canonical catalog-index order",
+  "training_source": "original outer-training Hangul-origin rows plus four seed7 augmentations; same eligible permutation as v12",
+  "rounds": 150,
+  "parameters": "src.train_ranker.PARAMS, without hyperparameter search",
+  "new_features": [
+    "reverse_sum_logp",
+    "reverse_mean_logp",
+    "reverse_eos_logp",
+    "reverse_gap_to_best",
+    "reverse_dense_rank",
+    "reverse_target_tokens",
+    "partial_sum_logp",
+    "partial_mean_logp",
+    "partial_sum_with_eos",
+    "partial_gap_to_best",
+    "partial_dense_rank",
+    "partial_full_posterior"
+  ],
+  "model_inputs": "raw78 plus frozen pretrained candidate-name to observed-name likelihood; no trained neural predictions",
+  "validation": "exact archived top20, all actual Hangul including previously pruned; full-pool raw78 with outer-train-only category refresh; non-Hangul preserves v12 winner",
+  "contenders": [
+    "direct",
+    "base25_head75"
+  ],
+  "contender_priority": "direct before base25_head75 among qualifying contenders; no validation coefficient search",
+  "base25_head75": "0.25 normalized v8 base probabilities plus 0.75 softmax(new head); no v12-distribution approximation",
+  "matched_control": "same groups/raw78 with complete-name reverse features; tests incremental omission marginal",
+  "screen_gate": {
+    "testlike_gain_min": 0.003,
+    "minimum_fold_delta": -0.002,
+    "hard_hangul_delta_min": -0.002,
+    "drop_word_delta_min": -0.002,
+    "clean_lost_rows_max": 1,
+    "gain_vs_matched_control_min": 0.001
+  },
+  "fresh_guard": {
+    "fold": 3,
+    "minimum_mean_accuracy_delta": -0.002,
+    "few_shot_vessels_excluded": true,
+    "training_only_retrieval": true,
+    "previously_used_diagnostic_not_pristine": true
+  },
+  "full_gate": {
+    "all_5_folds_required": true,
+    "testlike_gain_min": 0.005,
+    "positive_folds_min": 4,
+    "hard_hangul_delta_min": -0.001,
+    "drop_word_delta_min": -0.002,
+    "oof_delta_min": -0.0006
+  },
+  "excluded": [
+    "call_sign lookup",
+    "same-vessel identity lookup",
+    "external ship facts",
+    "test input distribution",
+    "validation truth injection"
+  ],
+  "actual_competition_submission": false,
+  "caveat": "Exploratory reused validation and historical v8 fulltrain retrieval mapper exception; Public improvement is unverified.",
+  "registered_utc": "2026-10-28T06:57:51.250312+00:00",
+  "conditional_execution": "Only if complete-name screen has no qualifying contender",
+  "partial_recipe": "All nonempty contiguous word spans; full-name prior0.5; proper spans collectively0.5 weighted exp(-omitted_words), normalized within candidate",
+  "partial_score": "logsumexp(log prior + observed-token sum logp); separately with EOS; no max and no validation parameter search"
+}

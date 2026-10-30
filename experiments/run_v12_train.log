@@ -1,0 +1,15 @@
+Final encoder groups: 2400; D:\KSH\pjt\DACON202610\experiments\cache\final_encoder_groups_e0c97ee269b9.joblib
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+final encoder step 100, loss 0.7742, elapsed 0.3m
+final encoder step 200, loss 0.6303, elapsed 0.7m
+final encoder step 300, loss 0.5100, elapsed 1.0m
+final encoder step 400, loss 0.4882, elapsed 1.4m
+final encoder step 500, loss 0.3343, elapsed 1.7m
+final encoder step 600, loss 0.3453, elapsed 2.1m
+final encoder step 700, loss 0.5579, elapsed 2.4m
+final encoder step 800, loss 0.2598, elapsed 2.8m
+final encoder step 900, loss 0.3938, elapsed 3.1m
+final encoder step 1000, loss 0.5754, elapsed 3.5m
+final encoder step 1100, loss 0.4209, elapsed 3.8m
+final encoder step 1200, loss 0.4515, elapsed 4.2m
+Saved final encoder views: D:\KSH\pjt\DACON202610\experiments\artifacts\ranker_v12_encoder

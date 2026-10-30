@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "saved_costs_reload_rows": 3,
+  "candidate_scores": 60,
+  "reverse_order": "exact",
+  "trace_consumes_full_observation": true
+}

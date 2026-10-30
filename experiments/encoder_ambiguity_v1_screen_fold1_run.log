@@ -1,0 +1,63 @@
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+ambiguity fold1 none 100/1200 loss0.8558 seconds19.2
+ambiguity fold1 none 200/1200 loss0.6418 seconds38.2
+ambiguity fold1 none 300/1200 loss0.4287 seconds57.3
+ambiguity fold1 none 400/1200 loss0.3961 seconds76.2
+ambiguity fold1 none 500/1200 loss0.5595 seconds94.9
+ambiguity fold1 none 600/1200 loss0.3769 seconds113.7
+ambiguity fold1 none 700/1200 loss0.5436 seconds132.3
+ambiguity fold1 none 800/1200 loss0.3627 seconds150.8
+ambiguity fold1 none 900/1200 loss0.5359 seconds169.6
+ambiguity fold1 none 1000/1200 loss0.5679 seconds188.4
+ambiguity fold1 none 1100/1200 loss0.3347 seconds207.3
+ambiguity fold1 none 1200/1200 loss0.3918 seconds226.1
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_ambiguity_v1_none\fold1_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+encoder eval oof: 200/228
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+encoder eval hard: 200/456
+encoder eval hard: 400/456
+encoder eval testlike: 200/684
+encoder eval testlike: 400/684
+encoder eval testlike: 600/684
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+ambiguity fold1 targeted 100/1200 loss0.8410 seconds18.6
+ambiguity fold1 targeted 200/1200 loss0.6380 seconds37.4
+ambiguity fold1 targeted 300/1200 loss0.4062 seconds56.4
+ambiguity fold1 targeted 400/1200 loss0.3986 seconds75.2
+ambiguity fold1 targeted 500/1200 loss0.5599 seconds94.0
+ambiguity fold1 targeted 600/1200 loss0.3293 seconds113.0
+ambiguity fold1 targeted 700/1200 loss0.4862 seconds131.5
+ambiguity fold1 targeted 800/1200 loss0.2816 seconds150.3
+ambiguity fold1 targeted 900/1200 loss0.5760 seconds169.3
+ambiguity fold1 targeted 1000/1200 loss0.6297 seconds188.0
+ambiguity fold1 targeted 1100/1200 loss0.3148 seconds206.9
+ambiguity fold1 targeted 1200/1200 loss0.3866 seconds225.9
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_ambiguity_v1_targeted\fold1_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+encoder eval oof: 200/228
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+encoder eval hard: 200/456
+encoder eval hard: 400/456
+encoder eval testlike: 200/684
+encoder eval testlike: 400/684
+encoder eval testlike: 600/684
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+ambiguity fold1 random 100/1200 loss0.8275 seconds18.7
+ambiguity fold1 random 200/1200 loss0.6239 seconds37.5
+ambiguity fold1 random 300/1200 loss0.4186 seconds56.5
+ambiguity fold1 random 400/1200 loss0.4087 seconds75.2
+ambiguity fold1 random 500/1200 loss0.5643 seconds93.8
+ambiguity fold1 random 600/1200 loss0.3519 seconds112.6
+ambiguity fold1 random 700/1200 loss0.4914 seconds131.0
+ambiguity fold1 random 800/1200 loss0.3141 seconds149.6
+ambiguity fold1 random 900/1200 loss0.6016 seconds168.3
+ambiguity fold1 random 1000/1200 loss0.5391 seconds186.9
+ambiguity fold1 random 1100/1200 loss0.3350 seconds205.7
+ambiguity fold1 random 1200/1200 loss0.4042 seconds224.4
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_ambiguity_v1_random\fold1_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+encoder eval oof: 200/228
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+encoder eval hard: 200/456
+encoder eval hard: 400/456
+encoder eval testlike: 200/684
+encoder eval testlike: 400/684
+encoder eval testlike: 600/684

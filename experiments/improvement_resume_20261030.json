@@ -1,0 +1,9 @@
+{
+  "client_date": "2026-10-30",
+  "status": "completed_rejected",
+  "active_jobs": [],
+  "final_audit": "experiments\\improvement_iteration_20261030.json",
+  "selected": null,
+  "actual_submission": false,
+  "do_not_restart_completed_frozen_screens": true
+}

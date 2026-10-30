@@ -1,0 +1,951 @@
+{
+  "client_date": "2026-10-30",
+  "completed_utc": "2026-10-30T00:33:53.237049+00:00",
+  "selected": null,
+  "selections": {
+    "expert_calibration_v1": {
+      "selected": null,
+      "stage": "screen",
+      "fingerprint": "2c87cc9154390ec4bce81cecaebb6ba957ee2d83417da4bb0098713bcbfef551",
+      "actual_competition_submission": false
+    },
+    "encoder_list20_v1": {
+      "selected": null,
+      "stage": "screen",
+      "fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8",
+      "actual_competition_submission": false
+    }
+  },
+  "audits": {
+    "expert_calibration_v1": {
+      "tag": "expert_calibration_v1",
+      "complete_folds": [
+        0,
+        2
+      ],
+      "reference_v12": {
+        "testlike": 0.9178774610130318,
+        "testlike_hangul": 0.8839503386004516,
+        "hard": 0.8660027782601145,
+        "hard_hangul": 0.8668171557562077,
+        "oof": 0.9975320885525352,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.9909706546275395,
+          "drop_word": 0.8465011286681715,
+          "both": 0.5869074492099323
+        }
+      },
+      "contenders": {
+        "conditional6": {
+          "candidate": {
+            "testlike": 0.9133266709453116,
+            "testlike_hangul": 0.8774492099322799,
+            "hard": 0.8636325750998437,
+            "hard_hangul": 0.863431151241535,
+            "oof": 0.9975320885525352,
+            "scenarios": {
+              "clean": 0.9977426636568849,
+              "gt_missing": 0.9864559819413092,
+              "drop_word": 0.8284424379232506,
+              "both": 0.5778781038374717
+            }
+          },
+          "matched_control": {
+            "testlike": 0.9178774610130318,
+            "testlike_hangul": 0.8839503386004516,
+            "hard": 0.8660027782601145,
+            "hard_hangul": 0.8668171557562077,
+            "oof": 0.9975320885525352,
+            "scenarios": {
+              "clean": 0.9977426636568849,
+              "gt_missing": 0.9909706546275395,
+              "drop_word": 0.8465011286681715,
+              "both": 0.5869074492099323
+            }
+          },
+          "matched_control_recipe": "Unchanged actual v12, exactly zero correction. pooled3 and conditional6 are both prospectively selectable in that fixed priority order conditional6 then pooled3; no later coefficient search.",
+          "delta_vs_v12": -0.00455079006772019,
+          "delta_vs_matched_control": -0.00455079006772019,
+          "bootstrap_95_vs_v12": [
+            -0.01000078451882845,
+            0.0
+          ],
+          "delta_by_fold_vs_v12": {
+            "0": -0.004296137339055761,
+            "2": -0.004833333333333245
+          },
+          "clean_lost_rows": 0,
+          "screen_checks": {
+            "folds": true,
+            "testlike": false,
+            "worst_fold": false,
+            "hard_hangul": false,
+            "drop_word": false,
+            "clean_lost": true,
+            "matched_control": false
+          },
+          "screen_gate_pass": false,
+          "without_shots": {
+            "reference_v12": {
+              "testlike": 0.9177819914345762,
+              "testlike_hangul": 0.8838139534883721,
+              "hard": 0.8639982110912343,
+              "hard_hangul": 0.8639534883720931,
+              "oof": 0.9974843170159715,
+              "scenarios": {
+                "clean": 0.9976744186046511,
+                "gt_missing": 0.9906976744186047,
+                "drop_word": 0.8488372093023255,
+                "both": 0.5837209302325581
+              }
+            },
+            "candidate": {
+              "testlike": 0.9130936193415529,
+              "testlike_hangul": 0.8771162790697674,
+              "hard": 0.8615563506261179,
+              "hard_hangul": 0.8604651162790697,
+              "oof": 0.9974843170159715,
+              "scenarios": {
+                "clean": 0.9976744186046511,
+                "gt_missing": 0.986046511627907,
+                "drop_word": 0.8302325581395349,
+                "both": 0.5744186046511628
+              }
+            }
+          },
+          "changes": {
+            "oof": {
+              "gained": 0,
+              "lost": 0
+            },
+            "hard": {
+              "gained": 5,
+              "lost": 8
+            },
+            "testlike": {
+              "gained": 7,
+              "lost": 21
+            }
+          }
+        },
+        "pooled3": {
+          "candidate": {
+            "testlike": 0.9129632397940701,
+            "testlike_hangul": 0.8769300225733636,
+            "hard": 0.8628425073797534,
+            "hard_hangul": 0.8623024830699775,
+            "oof": 0.9975320885525352,
+            "scenarios": {
+              "clean": 0.9977426636568849,
+              "gt_missing": 0.9864559819413092,
+              "drop_word": 0.8261851015801355,
+              "both": 0.5778781038374717
+            }
+          },
+          "matched_control": {
+            "testlike": 0.9178774610130318,
+            "testlike_hangul": 0.8839503386004516,
+            "hard": 0.8660027782601145,
+            "hard_hangul": 0.8668171557562077,
+            "oof": 0.9975320885525352,
+            "scenarios": {
+              "clean": 0.9977426636568849,
+              "gt_missing": 0.9909706546275395,
+              "drop_word": 0.8465011286681715,
+              "both": 0.5869074492099323
+            }
+          },
+          "matched_control_recipe": "Unchanged actual v12, exactly zero correction. pooled3 and conditional6 are both prospectively selectable in that fixed priority order conditional6 then pooled3; no later coefficient search.",
+          "delta_vs_v12": -0.0049142212189616785,
+          "delta_vs_matched_control": -0.0049142212189616785,
+          "bootstrap_95_vs_v12": [
+            -0.010484765624999998,
+            -0.00038883771929824624
+          ],
+          "delta_by_fold_vs_v12": {
+            "0": -0.004296137339055761,
+            "2": -0.005600000000000049
+          },
+          "clean_lost_rows": 0,
+          "screen_checks": {
+            "folds": true,
+            "testlike": false,
+            "worst_fold": false,
+            "hard_hangul": false,
+            "drop_word": false,
+            "clean_lost": true,
+            "matched_control": false
+          },
+          "screen_gate_pass": false,
+          "without_shots": {
+            "reference_v12": {
+              "testlike": 0.9177819914345762,
+              "testlike_hangul": 0.8838139534883721,
+              "hard": 0.8639982110912343,
+              "hard_hangul": 0.8639534883720931,
+              "oof": 0.9974843170159715,
+              "scenarios": {
+                "clean": 0.9976744186046511,
+                "gt_missing": 0.9906976744186047,
+                "drop_word": 0.8488372093023255,
+                "both": 0.5837209302325581
+              }
+            },
+            "candidate": {
+              "testlike": 0.9127192007369016,
+              "testlike_hangul": 0.8765813953488372,
+              "hard": 0.8607423971377459,
+              "hard_hangul": 0.8593023255813953,
+              "oof": 0.9974843170159715,
+              "scenarios": {
+                "clean": 0.9976744186046511,
+                "gt_missing": 0.986046511627907,
+                "drop_word": 0.827906976744186,
+                "both": 0.5744186046511628
+              }
+            }
+          },
+          "changes": {
+            "oof": {
+              "gained": 0,
+              "lost": 0
+            },
+            "hard": {
+              "gained": 5,
+              "lost": 9
+            },
+            "testlike": {
+              "gained": 7,
+              "lost": 22
+            }
+          }
+        }
+      },
+      "selected": null,
+      "truth_outside_top20": {
+        "oof": 0,
+        "hard": 33,
+        "testlike": 32
+      },
+      "actual_competition_submission": false,
+      "caveat": "Reused exploratory synthetic CV with historical v8 retrieval mapper exception. Single proxy anchor for fitting differs from actual v8 ensemble at inference. Log-loss improvement does not prove accuracy gain. No Public0.97 guarantee."
+    },
+    "encoder_list20_v1": {
+      "tag": "encoder_list20_v1",
+      "complete_folds": [
+        1,
+        4
+      ],
+      "reference_v12": {
+        "testlike": 0.9087787707227457,
+        "testlike_hangul": 0.8702574257425743,
+        "hard": 0.8475056283134426,
+        "hard_hangul": 0.8485148514851485,
+        "oof": 0.996826295475221,
+        "scenarios": {
+          "clean": 0.996039603960396,
+          "gt_missing": 0.9702970297029703,
+          "drop_word": 0.8198019801980198,
+          "both": 0.5663366336633663
+        }
+      },
+      "contenders": {
+        "list20": {
+          "candidate": {
+            "testlike": 0.9067134241880923,
+            "testlike_hangul": 0.8673069306930694,
+            "hard": 0.8468125590065119,
+            "hard_hangul": 0.8475247524752475,
+            "oof": 0.996826295475221,
+            "scenarios": {
+              "clean": 0.996039603960396,
+              "gt_missing": 0.9702970297029703,
+              "drop_word": 0.8118811881188119,
+              "both": 0.5603960396039604
+            }
+          },
+          "matched_control": {
+            "testlike": 0.9070876816138348,
+            "testlike_hangul": 0.8678415841584158,
+            "hard": 0.8475056283134426,
+            "hard_hangul": 0.8485148514851485,
+            "oof": 0.996826295475221,
+            "scenarios": {
+              "clean": 0.996039603960396,
+              "gt_missing": 0.9702970297029703,
+              "drop_word": 0.8158415841584158,
+              "both": 0.5584158415841585
+            }
+          },
+          "matched_control_recipe": "New BGE trained on exactly the same1200 queries, initial weights, query order, optimizer updates, microbatch and effective batch, but original8-candidate groups; fixed v12 composition with this control replacing BGE. Not selectable.",
+          "delta_vs_v12": -0.0020653465346534006,
+          "delta_vs_matched_control": -0.00037425742574248577,
+          "bootstrap_95_vs_v12": [
+            -0.0042838900005482145,
+            -0.00024922748768004097
+          ],
+          "delta_by_fold_vs_v12": {
+            "1": -0.0018728070175439981,
+            "4": -0.002223826714801369
+          },
+          "clean_lost_rows": 0,
+          "screen_checks": {
+            "folds": true,
+            "testlike": false,
+            "worst_fold": false,
+            "hard_hangul": true,
+            "drop_word": false,
+            "clean_lost": true,
+            "matched_control": false
+          },
+          "screen_gate_pass": false,
+          "without_shots": {
+            "reference_v12": {
+              "testlike": 0.9095147281221666,
+              "testlike_hangul": 0.8713087934560327,
+              "hard": 0.8461832690836545,
+              "hard_hangul": 0.8466257668711656,
+              "oof": 0.9967355870178721,
+              "scenarios": {
+                "clean": 0.9959100204498977,
+                "gt_missing": 0.9693251533742331,
+                "drop_word": 0.820040899795501,
+                "both": 0.5725971370143149
+              }
+            },
+            "candidate": {
+              "testlike": 0.9073818037867883,
+              "testlike_hangul": 0.8682617586912066,
+              "hard": 0.8454675226623867,
+              "hard_hangul": 0.84560327198364,
+              "oof": 0.9967355870178721,
+              "scenarios": {
+                "clean": 0.9959100204498977,
+                "gt_missing": 0.9693251533742331,
+                "drop_word": 0.8118609406952966,
+                "both": 0.5664621676891616
+              }
+            }
+          },
+          "changes": {
+            "oof": {
+              "gained": 0,
+              "lost": 0
+            },
+            "hard": {
+              "gained": 1,
+              "lost": 2
+            },
+            "testlike": {
+              "gained": 1,
+              "lost": 8
+            }
+          }
+        }
+      },
+      "selected": null,
+      "truth_outside_top20": {
+        "oof": 0,
+        "hard": 50,
+        "testlike": 51
+      },
+      "actual_competition_submission": false,
+      "caveat": "Repeated exploratory synthetic CV, historical base retrieval mapper exception. Candidate20 sees2.5x as many pairs as control8 at equal query/update count; this is part of the intervention, not equal-compute training. Original8 grouping was already listwise CE; the change is group width, not first introduction of listwise learning. Changing group width may worsen ambiguous-negative pressure."
+    }
+  },
+  "runtime_checks": {
+    "expert_calibration_v1": {
+      "status": "PASS",
+      "checks": [
+        {
+          "fold": 0,
+          "actual_queries": 3,
+          "calibrators": 2,
+          "saved_scores_and_predictions_exact": true,
+          "query_order_and_subset_exact": true,
+          "candidate_order_exact": true,
+          "pointwise_arithmetic_exact": true
+        },
+        {
+          "fold": 2,
+          "actual_queries": 3,
+          "calibrators": 2,
+          "saved_scores_and_predictions_exact": true,
+          "query_order_and_subset_exact": true,
+          "candidate_order_exact": true,
+          "pointwise_arithmetic_exact": true
+        }
+      ],
+      "fingerprint": "2c87cc9154390ec4bce81cecaebb6ba957ee2d83417da4bb0098713bcbfef551",
+      "scope": "Reloaded calibrator coefficients plus frozen expert distributions, not a new full neural pipeline/ZIP"
+    },
+    "encoder_list20_v1": {
+      "status": "PASS",
+      "fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8",
+      "checks": [
+        {
+          "fold": 1,
+          "width": 8,
+          "actual_queries": 3,
+          "saved_scores_exact": true,
+          "query_reverse_subset_single_exact": true,
+          "candidate_order_exact": true,
+          "identity_fields_ignored_in_tokens": true
+        },
+        {
+          "fold": 1,
+          "width": 20,
+          "actual_queries": 3,
+          "saved_scores_exact": true,
+          "query_reverse_subset_single_exact": true,
+          "candidate_order_exact": true,
+          "identity_fields_ignored_in_tokens": true
+        },
+        {
+          "fold": 4,
+          "width": 8,
+          "actual_queries": 3,
+          "saved_scores_exact": true,
+          "query_reverse_subset_single_exact": true,
+          "candidate_order_exact": true,
+          "identity_fields_ignored_in_tokens": true
+        },
+        {
+          "fold": 4,
+          "width": 20,
+          "actual_queries": 3,
+          "saved_scores_exact": true,
+          "query_reverse_subset_single_exact": true,
+          "candidate_order_exact": true,
+          "identity_fields_ignored_in_tokens": true
+        }
+      ],
+      "scope": "Four actual saved BGE models, frozen candidates and row-local beams. No new submission ZIP executed."
+    }
+  },
+  "calibration_fits": [
+    {
+      "fold": 0,
+      "training": {
+        "splits": [
+          {
+            "inner": 0,
+            "meta_groups": 3335,
+            "active_training_groups": 511,
+            "fit_vessels": 2340,
+            "meta_vessels": 2341,
+            "outer_vessels": 1170,
+            "overlap": 0
+          },
+          {
+            "inner": 1,
+            "meta_groups": 4101,
+            "active_training_groups": 676,
+            "fit_vessels": 2341,
+            "meta_vessels": 2340,
+            "outer_vessels": 1170,
+            "overlap": 0
+          }
+        ],
+        "groups": 1187,
+        "vessels": 245,
+        "missing_size_groups": 667,
+        "fitting_weight_sum": 245.0,
+        "outer_vessel_overlap": 0
+      },
+      "models": {
+        "conditional6": {
+          "coefficients": [
+            0.3771784557589326,
+            0.044139241736013024,
+            0.24029442092853692,
+            0.29937613980301414,
+            0.05006117140729285,
+            0.2463907713555735
+          ],
+          "objective_before": 1.6579185177430333,
+          "objective_after": 1.50497302755449,
+          "iterations": 18,
+          "converged": true,
+          "projected_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        "pooled3": {
+          "coefficients": [
+            0.4358446303583217,
+            0.055033311958002123,
+            0.25751030822781285
+          ],
+          "objective_before": 1.6579185177430333,
+          "objective_after": 1.5001727836207366,
+          "iterations": 14,
+          "converged": true,
+          "projected_optimizer_message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+        }
+      },
+      "seconds": 0.22847590001765639,
+      "fingerprint": "2c87cc9154390ec4bce81cecaebb6ba957ee2d83417da4bb0098713bcbfef551"
+    },
+    {
+      "fold": 2,
+      "training": {
+        "splits": [
+          {
+            "inner": 0,
+            "meta_groups": 3756,
+            "active_training_groups": 602,
+            "fit_vessels": 2339,
+            "meta_vessels": 2343,
+            "outer_vessels": 1169,
+            "overlap": 0
+          },
+          {
+            "inner": 1,
+            "meta_groups": 3839,
+            "active_training_groups": 556,
+            "fit_vessels": 2343,
+            "meta_vessels": 2339,
+            "outer_vessels": 1169,
+            "overlap": 0
+          }
+        ],
+        "groups": 1158,
+        "vessels": 244,
+        "missing_size_groups": 646,
+        "fitting_weight_sum": 244.0,
+        "outer_vessel_overlap": 0
+      },
+      "models": {
+        "conditional6": {
+          "coefficients": [
+            0.259843278294939,
+            0.058230502688472505,
+            0.17115721813771162,
+            0.225955355315598,
+            0.032616831103948266,
+            0.3461397321830325
+          ],
+          "objective_before": 1.6751520892735456,
+          "objective_after": 1.506213548298359,
+          "iterations": 18,
+          "converged": true,
+          "projected_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        },
+        "pooled3": {
+          "coefficients": [
+            0.30679622828525704,
+            0.04326018562246812,
+            0.2755216463581209
+          ],
+          "objective_before": 1.6751520892735456,
+          "objective_after": 1.514666894926391,
+          "iterations": 13,
+          "converged": true,
+          "projected_optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+        }
+      },
+      "seconds": 0.16725619998760521,
+      "fingerprint": "2c87cc9154390ec4bce81cecaebb6ba957ee2d83417da4bb0098713bcbfef551"
+    }
+  ],
+  "neural_training": [
+    {
+      "fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8",
+      "fold": 1,
+      "width": 8,
+      "groups": 1200,
+      "steps": 600,
+      "pairs": 9600,
+      "initial_trainable_sha256": "4e1adae1f4a1790254b06f796e9a3ba06279716f9d35fabd8114b85950c10ee1",
+      "token_sha256": "4ef878513be282eeb81e2261ab261a9bb1cb9903c78e1f27a0449ae4b622aeb5",
+      "finite_losses_and_gradients": true,
+      "resumed_after_step": 0,
+      "seconds_this_segment": 133.3950785000343,
+      "mean_training_loss": 0.5551826453719726,
+      "max_training_loss": 5.988135576248169
+    },
+    {
+      "fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8",
+      "fold": 1,
+      "width": 20,
+      "groups": 1200,
+      "steps": 600,
+      "pairs": 24000,
+      "initial_trainable_sha256": "4e1adae1f4a1790254b06f796e9a3ba06279716f9d35fabd8114b85950c10ee1",
+      "token_sha256": "9b7aa54828efcf448571e44776808b66118491c10b26f7509742cb8e7f171f07",
+      "finite_losses_and_gradients": true,
+      "resumed_after_step": 0,
+      "seconds_this_segment": 281.3274035999784,
+      "mean_training_loss": 0.7265099863746293,
+      "max_training_loss": 10.892310619354248
+    },
+    {
+      "fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8",
+      "fold": 4,
+      "width": 8,
+      "groups": 1200,
+      "steps": 600,
+      "pairs": 9600,
+      "initial_trainable_sha256": "4e1adae1f4a1790254b06f796e9a3ba06279716f9d35fabd8114b85950c10ee1",
+      "token_sha256": "ea22e4772cd1c1710841c53a2bb2d6865c14ef7022ca2c97b6eede9a5e1276c2",
+      "finite_losses_and_gradients": true,
+      "resumed_after_step": 0,
+      "seconds_this_segment": 125.86835309991147,
+      "mean_training_loss": 0.4985349272479929,
+      "max_training_loss": 5.23620088948519
+    },
+    {
+      "fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8",
+      "fold": 4,
+      "width": 20,
+      "groups": 1200,
+      "steps": 600,
+      "pairs": 24000,
+      "initial_trainable_sha256": "4e1adae1f4a1790254b06f796e9a3ba06279716f9d35fabd8114b85950c10ee1",
+      "token_sha256": "0c32ca6d677256397913a3a0a2a0d74997473c6fd716c7b9f4110bf26ccee734",
+      "finite_losses_and_gradients": true,
+      "resumed_after_step": 0,
+      "seconds_this_segment": 280.9112180999946,
+      "mean_training_loss": 0.6299660539926659,
+      "max_training_loss": 5.475678861139272
+    }
+  ],
+  "checkpoint_checks": [
+    {
+      "fold": 1,
+      "width": 8,
+      "slot": 0,
+      "step": 400,
+      "cpu_state_read_and_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 1,
+      "width": 8,
+      "slot": 1,
+      "step": 600,
+      "cpu_state_read_and_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 1,
+      "width": 20,
+      "slot": 0,
+      "step": 400,
+      "cpu_state_read_and_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 1,
+      "width": 20,
+      "slot": 1,
+      "step": 600,
+      "cpu_state_read_and_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 4,
+      "width": 8,
+      "slot": 0,
+      "step": 400,
+      "cpu_state_read_and_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 4,
+      "width": 8,
+      "slot": 1,
+      "step": 600,
+      "cpu_state_read_and_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 4,
+      "width": 20,
+      "slot": 0,
+      "step": 400,
+      "cpu_state_read_and_finite": true,
+      "gpu_resume_replay_tested": false
+    },
+    {
+      "fold": 4,
+      "width": 20,
+      "slot": 1,
+      "step": 600,
+      "cpu_state_read_and_finite": true,
+      "gpu_resume_replay_tested": false
+    }
+  ],
+  "actual_saved_model_files_sha256": {
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold1_merged\\config.json": "b7dbf2e6c503555332aab40af941d2e6984aa0d78936b5aba7610e99b48f0f81",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold1_merged\\model.safetensors": "f101f06f7537e8b035322df8efa7f3db2ff3c73d416d88a7e6682848fa35a940",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold1_merged\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold1_merged\\special_tokens_map.json": "66715ae6a0dd4aff4fe228bcaaccac6e52c83fd0ba80992c2be7d0e43b362307",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold1_merged\\tokenizer.json": "8bf8afbfd11306bd872018c53bfdf2e160a56f8edbcf49933324404791c148d3",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold1_merged\\tokenizer_config.json": "124082a942c10b169eea63ed64de329912393e3ea679e909a98c2b3efaaee6f1",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold1_merged\\config.json": "b7dbf2e6c503555332aab40af941d2e6984aa0d78936b5aba7610e99b48f0f81",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold1_merged\\model.safetensors": "7f640dc87bc43c8e453883170c5fdfb9b6fc2baa7cc6dfc116fd9cccce85503f",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold1_merged\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold1_merged\\special_tokens_map.json": "66715ae6a0dd4aff4fe228bcaaccac6e52c83fd0ba80992c2be7d0e43b362307",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold1_merged\\tokenizer.json": "8bf8afbfd11306bd872018c53bfdf2e160a56f8edbcf49933324404791c148d3",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold1_merged\\tokenizer_config.json": "124082a942c10b169eea63ed64de329912393e3ea679e909a98c2b3efaaee6f1",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold4_merged\\config.json": "b7dbf2e6c503555332aab40af941d2e6984aa0d78936b5aba7610e99b48f0f81",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold4_merged\\model.safetensors": "123b0ac2d240c902fc2a74342d39168556d079b4350f3a6fcc83b455a3d3e805",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold4_merged\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold4_merged\\special_tokens_map.json": "66715ae6a0dd4aff4fe228bcaaccac6e52c83fd0ba80992c2be7d0e43b362307",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold4_merged\\tokenizer.json": "8bf8afbfd11306bd872018c53bfdf2e160a56f8edbcf49933324404791c148d3",
+    "experiments\\artifacts\\encoder_list20_v1\\width8\\fold4_merged\\tokenizer_config.json": "124082a942c10b169eea63ed64de329912393e3ea679e909a98c2b3efaaee6f1",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold4_merged\\config.json": "b7dbf2e6c503555332aab40af941d2e6984aa0d78936b5aba7610e99b48f0f81",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold4_merged\\model.safetensors": "82c5bbf6beeb9bad5e525092e008b88e8c0d142d33ff42a5c31fe11a8a19d2e0",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold4_merged\\sentencepiece.bpe.model": "cfc8146abe2a0488e9e2a0c56de7952f7c11ab059eca145a0a727afce0db2865",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold4_merged\\special_tokens_map.json": "66715ae6a0dd4aff4fe228bcaaccac6e52c83fd0ba80992c2be7d0e43b362307",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold4_merged\\tokenizer.json": "8bf8afbfd11306bd872018c53bfdf2e160a56f8edbcf49933324404791c148d3",
+    "experiments\\artifacts\\encoder_list20_v1\\width20\\fold4_merged\\tokenizer_config.json": "124082a942c10b169eea63ed64de329912393e3ea679e909a98c2b3efaaee6f1"
+  },
+  "post_result_calibration_diagnostic": {
+    "tag": "expert_calibration_v1",
+    "client_date": "2026-10-30",
+    "post_result_diagnostic": true,
+    "source_sha256": "93f2e1c5dc52466e9b41b226fa72187d23e7e0c7944c7ab68be81b1f298c1993",
+    "protocol_sha256": "2c87cc9154390ec4bce81cecaebb6ba957ee2d83417da4bb0098713bcbfef551",
+    "reference": {
+      "testlike": 0.9178774610130318,
+      "scenarios": {
+        "clean": 0.9977426636568849,
+        "gt_missing": 0.9909706546275395,
+        "drop_word": 0.8465011286681715,
+        "both": 0.5869074492099323
+      }
+    },
+    "label_aware_expert_choice_oracles": {
+      "union_top1": {
+        "testlike": 0.9340264452116773,
+        "scenarios": {
+          "clean": 0.9977426636568849,
+          "gt_missing": 0.9909706546275395,
+          "drop_word": 0.8871331828442438,
+          "both": 0.6591422121896162
+        }
+      },
+      "union_top3": {
+        "testlike": 0.9641912307647247,
+        "scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9932279909706546,
+          "drop_word": 0.9345372460496614,
+          "both": 0.8216704288939052
+        }
+      },
+      "union_top5": {
+        "testlike": 0.9720603052568242,
+        "scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9932279909706546,
+          "drop_word": 0.9367945823927766,
+          "both": 0.8781038374717833
+        }
+      }
+    },
+    "counts": {
+      "oof": {
+        "baseline_error_rows": 1,
+        "baseline_errors_on_old_pruned_rows": 0,
+        "active_rows": 7,
+        "active_truth_in_top20": 7,
+        "baseline_error_recoverable_expert_top1": 0,
+        "baseline_error_recoverable_expert_top3": 1,
+        "baseline_error_recoverable_expert_top5": 1
+      },
+      "hard": {
+        "baseline_error_rows": 118,
+        "baseline_errors_on_old_pruned_rows": 28,
+        "active_rows": 159,
+        "active_truth_outside_top20": 24,
+        "active_truth_in_top20": 135,
+        "baseline_error_recoverable_expert_top1": 24,
+        "baseline_error_recoverable_expert_top3": 50,
+        "baseline_error_recoverable_expert_top5": 57
+      },
+      "testlike": {
+        "baseline_error_rows": 254,
+        "baseline_errors_on_old_pruned_rows": 29,
+        "active_rows": 369,
+        "active_truth_in_top20": 344,
+        "baseline_error_recoverable_expert_top1": 50,
+        "baseline_error_recoverable_expert_top3": 144,
+        "baseline_error_recoverable_expert_top5": 170,
+        "active_truth_outside_top20": 25
+      }
+    },
+    "training_objective": [
+      {
+        "fold": 0,
+        "mode": "conditional6",
+        "objective_before": 1.6579185177430333,
+        "objective_after": 1.50497302755449,
+        "nll_after_without_regularizer": 1.4961031806781317
+      },
+      {
+        "fold": 0,
+        "mode": "pooled3",
+        "objective_before": 1.6579185177430333,
+        "objective_after": 1.5001727836207366,
+        "nll_after_without_regularizer": 1.4936902644687158
+      },
+      {
+        "fold": 2,
+        "mode": "conditional6",
+        "objective_before": 1.6751520892735456,
+        "objective_after": 1.506213548298359,
+        "nll_after_without_regularizer": 1.4994101355858125
+      },
+      {
+        "fold": 2,
+        "mode": "pooled3",
+        "objective_before": 1.6751520892735456,
+        "objective_after": 1.514666894926391,
+        "nll_after_without_regularizer": 1.5103692062523402
+      }
+    ],
+    "outer_conditional_nll": {
+      "oof": {
+        "conditional6": {
+          "rows": 7,
+          "reference_nll": 0.7100001452060882,
+          "candidate_nll": 0.48698807350449913,
+          "nll_delta": -0.223012071701589
+        },
+        "pooled3": {
+          "rows": 7,
+          "reference_nll": 0.7100001452060882,
+          "candidate_nll": 0.46912032727764297,
+          "nll_delta": -0.24087981792844512
+        }
+      },
+      "hard": {
+        "conditional6": {
+          "rows": 135,
+          "reference_nll": 1.5055953974649048,
+          "candidate_nll": 1.2933162043792326,
+          "nll_delta": -0.2122791930856726
+        },
+        "pooled3": {
+          "rows": 135,
+          "reference_nll": 1.5055953974649048,
+          "candidate_nll": 1.3004871107974698,
+          "nll_delta": -0.20510828666743494
+        }
+      },
+      "testlike": {
+        "conditional6": {
+          "rows": 344,
+          "reference_nll": 1.745678511282127,
+          "candidate_nll": 1.6716352282631641,
+          "nll_delta": -0.07404328301896243
+        },
+        "pooled3": {
+          "rows": 344,
+          "reference_nll": 1.745678511282127,
+          "candidate_nll": 1.6567224944341497,
+          "nll_delta": -0.08895601684797748
+        }
+      }
+    },
+    "scope": "Only original v12 neural-active rows can be changed; oracle may keep actual v12 winner or choose any top-k base/Qwen/BGE candidate using true labels. Other rows unchanged.",
+    "caveat": "Oracles are not learned scores, Public forecasts or bounds for more general reranking. NLL excludes inactive or truth-outside-top20 rows, so is conditional and cannot be read as full-population loss. Fitting uses a half-training single proxy and neural models; outer evaluation uses the full-training v8 ensemble and neural models. A distribution shift is a plausible limitation, not a proven unique cause."
+  },
+  "score_protocol_reporting": [
+    {
+      "fold": 1,
+      "width": 8,
+      "raw_inherited_experiment": "encoder_ambiguity_v1",
+      "raw_inherited_training_token_groups_exactly_legacy": true,
+      "canonical": {
+        "experiment": "encoder_list20_v1",
+        "training_groups": 1200,
+        "candidates_per_training_group": 8,
+        "original8_token_prefix_exact": true,
+        "whole_legacy2400_group_dataset_replayed": false,
+        "list20_fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8"
+      },
+      "metadata_note": "The score saver retained two descriptors from the earlier preparation dataset. Canonical fields correct reporting only; raw score files, actual tokens, trained models and decisions are unchanged."
+    },
+    {
+      "fold": 1,
+      "width": 20,
+      "raw_inherited_experiment": "encoder_ambiguity_v1",
+      "raw_inherited_training_token_groups_exactly_legacy": true,
+      "canonical": {
+        "experiment": "encoder_list20_v1",
+        "training_groups": 1200,
+        "candidates_per_training_group": 20,
+        "original8_token_prefix_exact": true,
+        "whole_legacy2400_group_dataset_replayed": false,
+        "list20_fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8"
+      },
+      "metadata_note": "The score saver retained two descriptors from the earlier preparation dataset. Canonical fields correct reporting only; raw score files, actual tokens, trained models and decisions are unchanged."
+    },
+    {
+      "fold": 4,
+      "width": 8,
+      "raw_inherited_experiment": "encoder_ambiguity_v1",
+      "raw_inherited_training_token_groups_exactly_legacy": true,
+      "canonical": {
+        "experiment": "encoder_list20_v1",
+        "training_groups": 1200,
+        "candidates_per_training_group": 8,
+        "original8_token_prefix_exact": true,
+        "whole_legacy2400_group_dataset_replayed": false,
+        "list20_fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8"
+      },
+      "metadata_note": "The score saver retained two descriptors from the earlier preparation dataset. Canonical fields correct reporting only; raw score files, actual tokens, trained models and decisions are unchanged."
+    },
+    {
+      "fold": 4,
+      "width": 20,
+      "raw_inherited_experiment": "encoder_ambiguity_v1",
+      "raw_inherited_training_token_groups_exactly_legacy": true,
+      "canonical": {
+        "experiment": "encoder_list20_v1",
+        "training_groups": 1200,
+        "candidates_per_training_group": 20,
+        "original8_token_prefix_exact": true,
+        "whole_legacy2400_group_dataset_replayed": false,
+        "list20_fingerprint": "eb000b1b913e543955de753217d2dbfec542ed6597c51d245453165ddf816bd8"
+      },
+      "metadata_note": "The score saver retained two descriptors from the earlier preparation dataset. Canonical fields correct reporting only; raw score files, actual tokens, trained models and decisions are unchanged."
+    }
+  ],
+  "main_launcher": {
+    "tool_reported_exit_code": 1,
+    "python_exit_code_not_separately_captured": true,
+    "native_command_warning_present": true,
+    "all_training_score_and_selection_artifacts_complete": true,
+    "independent_saved_model_runtime_process_exit_code": 0,
+    "note": "The PowerShell launcher recorded the fast-tokenizer padding advisory as a native-command warning. Do not claim the main Python exit code was measured as zero; independent checks and all required artifacts confirm completion."
+  },
+  "verified_source_counts": {
+    "calibration": 38,
+    "list20": 44
+  },
+  "frozen_v12_source_modules_verified": 13,
+  "v12_zip_sha256_verified": "d1ee05642102d018efaac732f2e735419904d9f0bb84ec64d646903300ae9fb3",
+  "old_research_snapshot_preserved": true,
+  "actual_best_public": 0.9065951735,
+  "actual_server_seconds": 591,
+  "actual_submissions": 9,
+  "target_public": 0.97,
+  "new_final_model": false,
+  "new_zip": false,
+  "actual_competition_submission": false,
+  "callsign_or_identity_lookup": false,
+  "fresh_candidate_validation": false,
+  "full_five_fold_candidate_validation": false,
+  "caveats": [
+    "Two separate fixed experimental families, with reused synthetic CV and historical base retrieval mapper exception.",
+    "Lower conditional log loss and label-aware choice oracles do not establish improved competition accuracy.",
+    "List20 uses2.5x training pairs relative to its8-control, at equal queries/updates.",
+    "CPU checkpoint-state validation is not a completed GPU resume/retrain reproducibility test.",
+    "New saved-model checks are not a new end-to-end submission ZIP run."
+  ]
+}

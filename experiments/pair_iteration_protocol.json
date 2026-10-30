@@ -1,0 +1,56 @@
+{
+  "recipes": {
+    "raw": "v10 reference; original Korean record only",
+    "evidence": "raw fields plus 4 query-local Kanana spellings; shorter instruction"
+  },
+  "negative_mode": "five highest strictly training-fold-fitted LGB scores plus two lexical hard negatives",
+  "groups": 2400,
+  "seed": 42,
+  "epochs": 1,
+  "blend_weight": 0.25,
+  "screen_folds": [
+    3,
+    0
+  ],
+  "screen_gate": {
+    "weighted_testlike_gain_over_v10_min": 0.001,
+    "minimum_fold_testlike_delta": -0.002,
+    "hard_hangul_average_delta_min": -0.002,
+    "clean_lost_rows_max": 1
+  },
+  "caveat": "Exploratory reused validation. Screen gates are not statistical proof. All 5 folds required for a promoted candidate.",
+  "source_sha256": {
+    "src\\neural_reranker.py": "54c3255c67b0655d173116582ce4dcdafe156b6335b3d7253023fa02864d43cd",
+    "src\\pair_evidence.py": "846c9b564933e9f96c2bf4ef441ed395d4a2562f0b74ecb75c8ec684f5cbf16d",
+    "src\\neural_pair.py": "ba17461516c168713e54adc4e2975136980ee64ad9eca6dff2d7f4b8bafd357b",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9"
+  },
+  "fresh_stress_gate": {
+    "fold": 3,
+    "minimum_mean_accuracy_delta_vs_v10": -0.002,
+    "few_shot_vessels_excluded": true
+  },
+  "predeclared_variants": [
+    "evidence_only",
+    "equal_neural_ensemble"
+  ],
+  "equal_neural_ensemble": "0.75*v8 probability + 0.125*v10 neural probability + 0.125*evidence neural probability; fixed weights, no search",
+  "variant_policy": "Prefer evidence-only if all gates pass, otherwise consider the fixed equal-neural ensemble under the same gates. Both are exploratory comparisons.",
+  "declared_before_first_fold_scores": true,
+  "full_promotion_gate": {
+    "testlike_gain_vs_v10_min": 0.001,
+    "hard_hangul_delta_min": -0.002,
+    "oof_delta_min": -0.0006,
+    "positive_testlike_folds_min": 3,
+    "fresh_stress_mean_delta_min": -0.002,
+    "all_5_folds_required": true
+  },
+  "mining_model_sha256": {
+    "0": "cde56255e6b5a1199e29970ea5d9938fcb9517b8d3daaf636092249fe240b1ee",
+    "1": "8bf3bc6707aff16effaa6c1d19dae22c4bc6665686f40c691a5b339741e3d665",
+    "2": "a7b61d6b117969dfb18022adfbc573766b019a2fd6b297c8a8324cfad56560cd",
+    "3": "3f5dfd80ec6da53248475b837d2d54c352db0fb9b8a6d9dc2c95340de55a6664",
+    "4": "fd2baa6bb71fdd2a0fdc8d8765937c391d27188a700f090c9f44a6753c0e23de"
+  }
+}

@@ -1,0 +1,25 @@
+nested 1/0 train: 960/2260
+nested 1/0 train: 1920/2260
+nested 1/0 meta: 960/4085
+nested 1/0 meta: 1920/4085
+nested 1/0 meta: 2880/4085
+nested 1/0 meta: 3840/4085
+Prepared nested 1/0: NN2199 meta3943
+nested 1/1 train: 960/2555
+nested 1/1 train: 1920/2555
+nested 1/1 meta: 960/3605
+nested 1/1 meta: 1920/3605
+nested 1/1 meta: 2880/3605
+Prepared nested 1/1: NN2400 meta3494
+nested 4/0 train: 960/2365
+nested 4/0 train: 1920/2365
+nested 4/0 meta: 960/3512
+nested 4/0 meta: 1920/3512
+nested 4/0 meta: 2880/3512
+Prepared nested 4/0: NN2306 meta3400
+nested 4/1 train: 960/2205
+nested 4/1 train: 1920/2205
+nested 4/1 meta: 960/3773
+nested 4/1 meta: 1920/3773
+nested 4/1 meta: 2880/3773
+Prepared nested 4/1: NN2150 meta3677

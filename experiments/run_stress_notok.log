@@ -1,0 +1,24 @@
+[train] 후보·특징 생성 135.9초 (12222행)
+[aug_h4_e1_s7_d0.3] 후보·특징 생성 291.1초 (15795행)
+fold 0 완료
+fold 1 완료
+fold 2 완료
+fold 3 완료
+fold 4 완료
+
+== 대상: hangul (400행), 증강 한글 4 / 영문 1
+                      recall  accuracy  drop_vs_original
+original              1.0000    0.9975            0.0000
+gt_missing            0.9925    0.9675           -0.0300
+gt_noise_5pct         0.9925    0.9875           -0.0100
+flag_missing          1.0000    0.9975            0.0000
+no_space              1.0000    0.9975            0.0000
+typo_vowel            1.0000    0.9950           -0.0025
+typo_drop             0.9875    0.9600           -0.0375
+typo_double           1.0000    0.9900           -0.0075
+drop_word             0.9525    0.7600           -0.2375
+gt_missing+drop_word  0.7875    0.4800           -0.5175
+keep_first            0.9700    0.7050           -0.2925
+keep_last             0.9450    0.8500           -0.1475
+truncate              0.9775    0.7625           -0.2350
+gt_missing+keep_last  0.7650    0.5675           -0.4300

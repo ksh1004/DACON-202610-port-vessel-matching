@@ -1,0 +1,38 @@
+{
+  "fold": 1,
+  "recipe": "evidence",
+  "negative_mode": "hard",
+  "training_groups": 2400,
+  "max_tokens": 256,
+  "seed": 42,
+  "vessel_overlap": 0,
+  "source": "6a0d6fcccc6b",
+  "training_at_token_cap": 0,
+  "negative_count": 7,
+  "training_vessels_overlap": 0,
+  "baseline_kind": "v8_saved_oof_probability",
+  "epoch1": {
+    "baseline": {
+      "testlike_hangul": 0.8599122807017544,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9692982456140351,
+        "drop_word": 0.7850877192982456,
+        "both": 0.5657894736842105
+      },
+      "hard_hangul": 0.8486842105263158
+    },
+    "blend25": {
+      "testlike_hangul": 0.856842105263158,
+      "scenarios": {
+        "clean": 0.9912280701754386,
+        "gt_missing": 0.9517543859649122,
+        "drop_word": 0.8114035087719298,
+        "both": 0.5307017543859649
+      },
+      "hard_hangul": 0.8552631578947368
+    }
+  },
+  "training_minutes": 10.482094913333034,
+  "fit_and_eval_minutes": 11.188917053333716
+}

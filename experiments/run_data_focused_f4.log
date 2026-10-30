@@ -1,0 +1,26 @@
+focused fold 4: baseline target 85, fresh unique pool 505, replacements 395
+focused fold 4: 478 eligible fresh cases
+Saved D:\KSH\pjt\DACON202610\experiments\cache\focused_groups_4_focused_db52e479ccc9.joblib
+{"fold": 4, "mode": "focused", "input_recipe": "phonetic", "training_groups": 2400, "epochs": 1, "seed": 42, "max_tokens": 256, "reference": "v12", "vessel_overlap": 0, "old_target_groups": 85, "final_target_groups": 480, "replacement_groups": 395, "new_unique_cases": 395, "training_at_cap": 0, "baseline_fingerprint": "d18f93966f25548980cae06d68d38d9f98d4ed62d986bcc19869adecb62fb638", "source": {"matrix": "strict_han_f4_train_b2bd476d9d4f.joblib", "miner_sha256": "fd2baa6bb71fdd2a0fdc8d8765937c391d27188a700f090c9f44a6753c0e23de"}, "trainer_sha256": "f562530e14fe7dc3db90c17c6b26d616fed3c7f2d4b42ec03403d46d66a0c072", "caveat": "Training retrieval/mappers strictly outer-fold only. Historical v8 validation candidate mapper exception remains."}
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+extended encoder step 100/1200, loss 1.0391, elapsed 0.3m
+extended encoder step 200/1200, loss 0.8450, elapsed 0.6m
+extended encoder step 300/1200, loss 0.7931, elapsed 0.9m
+extended encoder step 400/1200, loss 0.7422, elapsed 1.2m
+extended encoder step 500/1200, loss 0.6605, elapsed 1.5m
+extended encoder step 600/1200, loss 0.6232, elapsed 1.8m
+extended encoder step 700/1200, loss 0.6026, elapsed 2.1m
+extended encoder step 800/1200, loss 0.6307, elapsed 2.4m
+extended encoder step 900/1200, loss 0.2921, elapsed 2.7m
+extended encoder step 1000/1200, loss 0.6749, elapsed 3.0m
+extended encoder step 1100/1200, loss 0.4895, elapsed 3.3m
+extended encoder step 1200/1200, loss 0.6335, elapsed 3.6m
+The tokenizer you are loading from 'D:\KSH\pjt\DACON202610\experiments\artifacts\encoder_focused20_v1\fold4_merged' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+encoder eval oof: 200/277
+encoder eval hard: 200/554
+encoder eval hard: 400/554
+encoder eval testlike: 200/831
+encoder eval testlike: 400/831
+encoder eval testlike: 600/831
+encoder eval testlike: 800/831

@@ -1,0 +1,68 @@
+{
+  "protocol": {
+    "fold": 0,
+    "model": "BAAI/bge-reranker-v2-m3",
+    "input_recipe": "phonetic",
+    "source_revision": {
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+    },
+    "training_groups": 2400,
+    "max_tokens": 256,
+    "seed": 42,
+    "epochs": 1,
+    "lora_rank": 8,
+    "lora_alpha": 16,
+    "learning_rate": 0.0001,
+    "groups_per_batch": 2,
+    "negative_mode": "five train-only LGB hard plus two lexical",
+    "vessel_overlap": 0,
+    "train_cache": "strict_han_f0_train_cd185bcf8e28.joblib",
+    "training_at_cap": 0,
+    "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+  },
+  "metrics": {
+    "baseline": {
+      "testlike_hangul": 0.8632188841201717,
+      "hard_hangul": 0.8412017167381974,
+      "scenarios": {
+        "clean": 0.9871244635193133,
+        "gt_missing": 0.9699570815450643,
+        "drop_word": 0.8240343347639485,
+        "both": 0.5450643776824035
+      }
+    },
+    "reference_v11": {
+      "testlike_hangul": 0.882145922746781,
+      "hard_hangul": 0.869098712446352,
+      "scenarios": {
+        "clean": 0.9957081545064378,
+        "gt_missing": 0.9871244635193133,
+        "drop_word": 0.8369098712446352,
+        "both": 0.5965665236051502
+      }
+    },
+    "encoder25": {
+      "testlike_hangul": 0.8787982832618026,
+      "hard_hangul": 0.8583690987124464,
+      "scenarios": {
+        "clean": 0.9957081545064378,
+        "gt_missing": 0.9785407725321889,
+        "drop_word": 0.8240343347639485,
+        "both": 0.6008583690987125
+      }
+    },
+    "equal_ensemble": {
+      "testlike_hangul": 0.8855793991416309,
+      "hard_hangul": 0.869098712446352,
+      "scenarios": {
+        "clean": 0.9957081545064378,
+        "gt_missing": 0.9871244635193133,
+        "drop_word": 0.8412017167381974,
+        "both": 0.6094420600858369
+      }
+    }
+  },
+  "train_eval_minutes": 4.194484949998635,
+  "deployment_precision": "merged, cast to BF16, saved and reloaded before evaluation"
+}

@@ -1,0 +1,20 @@
+{
+  "bge": {
+    "status": "PASS",
+    "step": 200,
+    "trainable_parameters_count": 148,
+    "exact_adapter_restore": true,
+    "optimizer_state_restored": true,
+    "random_states_present": true,
+    "scope": "Actual checkpoint reload compatibility on CPU; not a second full training or exact CUDA continuation comparison"
+  },
+  "qwen": {
+    "status": "PASS",
+    "step": 200,
+    "trainable_parameters_count": 224,
+    "exact_adapter_restore": true,
+    "optimizer_state_restored": true,
+    "random_states_present": true,
+    "scope": "Actual checkpoint reload compatibility on CPU; not a second full training or exact CUDA continuation comparison"
+  }
+}

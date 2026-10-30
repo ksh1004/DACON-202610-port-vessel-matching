@@ -1,0 +1,1 @@
+{"status": "PASS", "dtype": "float32", "attention": "eager", "batch": 16, "encoder_minimum": 128, "decoder_minimum": 96, "reversed_pair_order_exact": true, "single_pair_companions_exact": true, "manual_teacher_forcing_cross_entropy_difference": 0.0, "checks_are_numerical_not_task_accuracy": true}

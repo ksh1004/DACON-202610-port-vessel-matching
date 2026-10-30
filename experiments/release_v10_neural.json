@@ -1,0 +1,70 @@
+{
+  "zip": "dist\\v10_neural.zip",
+  "files": 41,
+  "bytes": 5833583258,
+  "sha256": "7feecf770e4c2296d41b88a03246732e90e21639e729e6cb602e9e03790c498e",
+  "zip_crc": "PASS",
+  "inference_entries_unchanged_after_license_append": true,
+  "license_entries_added": [
+    "model/reranker/LICENSE",
+    "model/reranker/MODEL_CARD.md",
+    "model/reranker/NOTICE"
+  ],
+  "lookup_map": false,
+  "training_adapter_packaged": false,
+  "package_execution": {
+    "status": "PASS",
+    "rows": 3000,
+    "seconds": 179.6,
+    "subset_rows": 300,
+    "single_rows": 3
+  },
+  "neural_branch_execution": {
+    "status": "PASS",
+    "neural_calls_full": 31,
+    "targeted_neural_singles": 2,
+    "shuffled_rows": 50
+  },
+  "cv": {
+    "baseline": {
+      "testlike": 0.9049590170316901,
+      "testlike_hangul": 0.8650041981528128,
+      "oof": 0.9965173713557876,
+      "oof_hangul": 0.9958018471872376,
+      "oof_non_hangul": 0.9981869277490708,
+      "hard": 0.8461801007556675,
+      "hard_hangul": 0.8438287153652393,
+      "hard_non_hangul": 0.8516666666666667,
+      "scenarios": {
+        "clean": 0.9958018471872376,
+        "gt_missing": 0.9739714525608733,
+        "drop_word": 0.8094038623005877,
+        "both": 0.5491183879093199
+      }
+    },
+    "candidate": {
+      "testlike": 0.9073746341601536,
+      "testlike_hangul": 0.8684550797649034,
+      "oof": 0.997692854143361,
+      "oof_hangul": 0.9974811083123426,
+      "oof_non_hangul": 0.9981869277490708,
+      "hard": 0.8502942905121746,
+      "hard_hangul": 0.8497061293031066,
+      "hard_non_hangul": 0.8516666666666667,
+      "scenarios": {
+        "clean": 0.9974811083123426,
+        "gt_missing": 0.9798488664987406,
+        "drop_word": 0.8127623845507976,
+        "both": 0.5549958018471872
+      }
+    },
+    "testlike_delta": 0.0024156171284634986,
+    "paired_bootstrap_95": [
+      -0.0030292071817429123,
+      0.0078955481390239
+    ]
+  },
+  "actual_competition_submission": false,
+  "public_score": null,
+  "target_score": 0.97
+}

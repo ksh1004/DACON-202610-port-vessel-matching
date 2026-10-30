@@ -1,0 +1,159 @@
+{
+  "tag": "encoder_ambiguity_v1_none",
+  "reference": "v12",
+  "complete_folds": [
+    1,
+    4
+  ],
+  "complete": false,
+  "reference_v12": {
+    "testlike": 0.9087787707227457,
+    "testlike_hangul": 0.8702574257425743,
+    "hard": 0.8475056283134426,
+    "hard_hangul": 0.8485148514851485,
+    "oof": 0.996826295475221,
+    "scenarios": {
+      "clean": 0.996039603960396,
+      "gt_missing": 0.9702970297029703,
+      "drop_word": 0.8198019801980198,
+      "both": 0.5663366336633663
+    }
+  },
+  "candidate": {
+    "testlike": 0.9076144142871021,
+    "testlike_hangul": 0.8685940594059406,
+    "hard": 0.8495848362342346,
+    "hard_hangul": 0.8514851485148515,
+    "oof": 0.996826295475221,
+    "scenarios": {
+      "clean": 0.996039603960396,
+      "gt_missing": 0.9702970297029703,
+      "drop_word": 0.8158415841584158,
+      "both": 0.5623762376237624
+    }
+  },
+  "delta_vs_v12": -0.0011643564356436098,
+  "bootstrap_95_vs_v12": [
+    -0.003038792609920887,
+    0.00024407046616337696
+  ],
+  "delta_by_fold_vs_v12": {
+    "1": -0.0011666666666667602,
+    "4": -0.0011624548736461904
+  },
+  "clean_lost_rows_vs_v12": 0,
+  "screen_checks": {
+    "folds": true,
+    "testlike": false,
+    "worst_fold": true,
+    "hard_hangul": true,
+    "drop_word": false,
+    "clean_lost": true
+  },
+  "screen_gate_pass": false,
+  "without_shots": {
+    "reference_v12": {
+      "testlike": 0.9095147281221666,
+      "testlike_hangul": 0.8713087934560327,
+      "hard": 0.8461832690836545,
+      "hard_hangul": 0.8466257668711656,
+      "oof": 0.9967355870178721,
+      "scenarios": {
+        "clean": 0.9959100204498977,
+        "gt_missing": 0.9693251533742331,
+        "drop_word": 0.820040899795501,
+        "both": 0.5725971370143149
+      }
+    },
+    "candidate": {
+      "testlike": 0.9083122741344365,
+      "testlike_hangul": 0.8695910020449897,
+      "hard": 0.8483305083474582,
+      "hard_hangul": 0.8496932515337423,
+      "oof": 0.9967355870178721,
+      "scenarios": {
+        "clean": 0.9959100204498977,
+        "gt_missing": 0.9693251533742331,
+        "drop_word": 0.8159509202453987,
+        "both": 0.5685071574642127
+      }
+    }
+  },
+  "changes": {
+    "oof": {
+      "gained": 0,
+      "lost": 0
+    },
+    "hard": {
+      "gained": 3,
+      "lost": 0
+    },
+    "testlike": {
+      "gained": 1,
+      "lost": 5
+    }
+  },
+  "protocols": {
+    "1": {
+      "fold": 1,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+      "experiment": "encoder_ambiguity_v1",
+      "source": {
+        "matrix": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+        "miner_sha256": "8bf3bc6707aff16effaa6c1d19dae22c4bc6665686f40c691a5b339741e3d665"
+      },
+      "training_token_groups_exactly_legacy": true,
+      "ambiguity_arm": "none",
+      "ambiguity_fingerprint": "f95dd38dd6337ac5d0965bcdcae2aaeb9374ac05e74b3eef748b36efb1355a43"
+    },
+    "4": {
+      "fold": 4,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f4_train_b2bd476d9d4f.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly.",
+      "experiment": "encoder_ambiguity_v1",
+      "source": {
+        "matrix": "strict_han_f4_train_b2bd476d9d4f.joblib",
+        "miner_sha256": "fd2baa6bb71fdd2a0fdc8d8765937c391d27188a700f090c9f44a6753c0e23de"
+      },
+      "training_token_groups_exactly_legacy": true,
+      "ambiguity_arm": "none",
+      "ambiguity_fingerprint": "f95dd38dd6337ac5d0965bcdcae2aaeb9374ac05e74b3eef748b36efb1355a43"
+    }
+  },
+  "caveat": "Reused exploratory validation; historical v8 shared retrieval mapper exception remains."
+}

@@ -1,0 +1,29 @@
+{
+  "oof": {
+    "score": 0.9952874964006863,
+    "hangul": 0.9941225860621327,
+    "non_hangul": 0.9980056205239779,
+    "n_hangul": 1191,
+    "n_non_hangul": 11031
+  },
+  "n_rounds": 150,
+  "aug_hangul": 4,
+  "aug_english": 1,
+  "top_features": {
+    "dl_rank_in_group": 2107235.7,
+    "key_rank_in_group": 662336.4,
+    "type_logp": 288460.0,
+    "log_ratio": 140543.8,
+    "llm_ratio_rank_in_group": 133898.2,
+    "key_tok_cover_q": 119936.6,
+    "sim_word_gap_to_best": 81834.3,
+    "llm_tset_max": 65410.1,
+    "name_tok_fuzzy_cover_q": 64734.9,
+    "llm_jw_max": 45413.7,
+    "key_lev_gap_to_best": 40532.2,
+    "igt_gap": 40156.9,
+    "flag_logp": 33042.6,
+    "llm_ratio_gap_to_best": 27573.1,
+    "llm_ratio_max": 21111.1
+  }
+}

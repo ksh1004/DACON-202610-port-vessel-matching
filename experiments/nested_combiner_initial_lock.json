@@ -1,0 +1,27 @@
+{
+  "registered_utc": "2026-10-28T23:47:39.547593+00:00",
+  "registered_client_date": "2026-10-29",
+  "data_fingerprint": "69ac713de1d6200ddeb057a901fa5c2568b810e45a0fe1bd58ef4143337fd7b7",
+  "before_inner_neural_training_and_new_head_validation": true,
+  "source_and_input_hashes": {
+    "experiments/nested_combiner_v1_protocol.json": "5f84486a8cd402d207938acd190004ceaf7ec47d20ad62c076c78d0c132b44db",
+    "experiments/nested_combiner_reverse_v1_protocol.json": "d7ac440dd7cab68f53e1897059fc2953d5bc6add72c0f80cddfc9879fdfe63e2",
+    "tools/nested_combiner_experiment.py": "b7773696fc6754de921575a3ecbb5386b1918ee9e63aa8e0b8e5e2c0e55b80db",
+    "tools/nested_reverse_extension.py": "c496302e5228e8ec42556d2905291e44e4dfffd8274d146bc988cf6fea44b12b",
+    "src/nested_features.py": "156c5d8bf313e1792305aabb1e5ddd62fed7bcdadc779a71a04a8609be78d791",
+    "tools/audit_reverse_ranker.py": "cfd30508ec5785283bc500ca01e538926333af62e2d3aa161e4989cc01c15a47",
+    "src/neural_pair.py": "ba17461516c168713e54adc4e2975136980ee64ad9eca6dff2d7f4b8bafd357b",
+    "src/pair_evidence.py": "846c9b564933e9f96c2bf4ef441ed395d4a2562f0b74ecb75c8ec684f5cbf16d",
+    "src/encoder_phonetics.py": "4ba7adb40ce087990c671dbf7d35c0fc4655f318d979f777248aee07fcf6cc1b",
+    "src/features.py": "1df5899912dbc5bb3366cce769efb17268ac0c0c72ae4693f8081cda4737d75d",
+    "src/retrieval.py": "59c4216c9a8be48fce4b1ada93b2a17747888ed2bab3e68bb8de42a5b8ea49c9",
+    "src/augment.py": "bea2fe2e56208bfc7972bd8f4d94251e444deae0afde4fdb8cd272cff49ccbb2",
+    "src/train_ranker.py": "1b9b9c40a9328002b84af97eb44cb00be3fdee604f97cf1bf7473660ed4f5618",
+    "src/llm_cache.py": "8e3a7c309a36ff5b51e5aec26486ef0ceb7a8df7099c2c1f0383a55ae7db07b1",
+    "src/llm_translit.py": "6b82a58245bfefe91c28dece1f5a718f5609fe41ac6318f40964b559bcccd835",
+    "train.csv": "61bfd199c827c9f7486fc8c9febb419c87ff0611a62d60cfbd7c6d177fa0648c",
+    "vessel_catalog.csv": "d3ad65c262ac9ee237d9fb86d36f0866b194cfc17bee58d948f23c97acff81f9",
+    "experiments/folds.csv": "99bc9010ca3c8f0fc518110fb059ce705f130146f8b8b9e625f483bd7df58c9d",
+    "experiments\\cache\\llm_kanana_73ef4cc1.json": "ad981215831ac736f23ab12c1bd375fc2f21d666424749146f043770dd55d47c"
+  }
+}

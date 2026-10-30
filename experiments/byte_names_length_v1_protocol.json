@@ -1,0 +1,105 @@
+{
+  "tag": "byte_names_length_v1",
+  "registered_utc": "2026-10-29T05:12:45.076162+00:00",
+  "registered_before_any_new_training_or_outer_model_scores": false,
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "model": {
+    "repo": "google/byt5-small",
+    "revision": "68377bdc18a2ffec8a0533fef03b1c513a4dd49d",
+    "license": "Apache-2.0",
+    "parameters": 299637760,
+    "weights_sha256": "5c5aaf56299d6f2d4eaadad550a40765198828ead4d74f0a15f91cbe0961931a"
+  },
+  "annotation": "Official original Han rows +four global seed7 augmentations; unique exact compact Latin-beam match to one contiguous canonical-name fragment; identical digit groups; exclude ambiguous/no exact match. No synthetic Korean labels. Deduplicate query/fragment pairs, equal query weight across alternate spellings.",
+  "inner_validation": "GroupShuffleSplit20% of outer-training Han vessels, seed20261029; purge exact query/fragment pairs shared with inner validation from fit. Select minimum validation tokenNLL among epochs1/3/6/12; refit all outer-training pairs from public checkpoint for selected epoch count. No outer-score checkpoint choice.",
+  "training": {
+    "all_parameters_trainable": true,
+    "epochs_horizon": 12,
+    "epoch_checks": [
+      1,
+      3,
+      6,
+      12
+    ],
+    "batch": 16,
+    "seed": 42,
+    "optimizer": "Adafactor constant baseLR0.001, relative_stepFalse, scale_parameterFalse, warmup_initFalse, weight_decay0.01",
+    "lr_schedule": "linear warmup10% then linear decay over12epoch horizon, including refits stopping earlier",
+    "global_gradient_clip": 1.0,
+    "parameter_dtype": "float32",
+    "forward_autocast": "bfloat16",
+    "attention": "eager",
+    "gradient_checkpointing": true
+  },
+  "scoring": {
+    "direction": "P(Latin fragment including EOS | observed Korean name)",
+    "prefix": "latin: ",
+    "dtype": "float32",
+    "TF32": false,
+    "attention": "eager",
+    "batch": 16,
+    "source_minimum": 128,
+    "source_bucket_step": 64,
+    "target_minimum": 96,
+    "target_bucket_step": 32,
+    "last_batch": "repeat last pair to16",
+    "truncation": false,
+    "name_marginal": "full canonical name0.5, remaining distinct contiguous fragments uniform0.5; single-word prior1",
+    "runtime": "Each query only; no cross-row pair cache. Offline cache only after exact companion/slot checks and weight hashes."
+  },
+  "contenders": [
+    "residual30"
+  ],
+  "matched_control": "Identical length normalisation and fixed residual0.3 applied to the same public untuned ByT5 checkpoint; no alternate coefficient",
+  "fixed_residual_weight": 0.3,
+  "anchor": "Actual v12 distribution restricted and normalised over its original base top20; on its original pruned rows use actual base fallback, not invented neural logits",
+  "byte_pruning": "Anchor top2 gap greater than3/7+1e-6 provably preserves winner; never apply old1/3 bound to the new expert",
+  "screen_folds": [
+    1,
+    4
+  ],
+  "screen_gate": {
+    "testlike_gain_min": 0.003,
+    "minimum_fold_delta": -0.002,
+    "hard_hangul_delta_min": -0.002,
+    "drop_word_delta_min": -0.002,
+    "clean_lost_rows_max": 1,
+    "gain_vs_matched_control_min": 0.001
+  },
+  "fresh_guard": {
+    "fold": 3,
+    "minimum_mean_accuracy_delta": -0.002,
+    "seed": 2026102901,
+    "few_shot_vessels_excluded": true,
+    "training_only_retrieval": true,
+    "previously_used_vessels_not_pristine": true
+  },
+  "full_gate": {
+    "all_5_folds_required": true,
+    "testlike_gain_min": 0.005,
+    "positive_folds_min": 4,
+    "hard_hangul_delta_min": -0.001,
+    "drop_word_delta_min": -0.002,
+    "oof_delta_min": -0.0006,
+    "gain_vs_matched_control_min": 0.001
+  },
+  "source_hashes": {
+    "src/byte_name_length.py": "2e295ee3876ebdcc48e656b826da118034520cec1139acceee74669ca1611e58",
+    "tools/byte_names_length_experiment.py": "5fc285bae5ccd99374da537d9fa51a0402fbb25f9609873da33620cdc84d43a1",
+    "experiments/byte_names_v1_protocol.json": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+    "src/byte_name_model.py": "d643e53eead9f3a09f71489a1ec3ace8bf6b47e7631026a6f27b1351ab72a5a5",
+    "tools/byte_names_experiment.py": "310b8d22791071d4b0478c672cd7557ee09ba2b881861e9300171ba3760a8c4d"
+  },
+  "lookup_used": false,
+  "actual_competition_submission": false,
+  "no_coefficient_search_after_results": true,
+  "no_automatic_context_prior_after_failure": true,
+  "caveat": "Repeated exploratory synthetic CV and historical v8 outer retrieval mapper exception. Forward frozen beams have original fewshots; report no-shot sensitivity. Weak fragment supervision can be wrong despite exact spelling. Label-aware oracle used for pretraining architecture analysis, not performance forecast.",
+  "registered_before_outer_performance_inspection": true,
+  "common_model_training_and_pair_scoring_already_active": true,
+  "common_primary_protocol_sha256": "dc7d3a717269edc0b41fd6c4e565e9ed93abb4e546c63152e99de47a5763e2d9",
+  "conditional_execution": "Only if raw sequence primary fails its initial two-fold screen; no fallback after a qualifying primary fails fresh/full",
+  "score": "Each fragment logP divided by its own UTF8byte+EOS length, multiplied by median target length in that outer-training full data, then same0.5/0.5fragment marginal; compatibility score, not proper sequence probability",
+  "registration_reason": "Unequal Latin target lengths and small-data inner tokenNLL motivated a single training-derived length correction; no outer performance or predictions inspected; primary unchanged"
+}

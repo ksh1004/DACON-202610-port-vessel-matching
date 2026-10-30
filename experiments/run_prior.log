@@ -1,0 +1,5 @@
+{'oof': 12222, 'hard': 5382, 'testlike': 3573}
+{"name": "lgb_base_prior", "testlike": 0.8954, "testlike_hangul": 0.8513, "tl_gt": 0.9681, "tl_dw": 0.7926, "tl_both": 0.5097, "oof": 0.9941, "oof_hangul": 0.9924, "oof_non_hangul": 0.9981, "hard": 0.8405, "hard_hangul": 0.8367, "hard_non_hangul": 0.8493, "minutes": 6.4}
+{"name": "lgb_small_prior", "testlike": 0.8958, "testlike_hangul": 0.852, "tl_gt": 0.9631, "tl_dw": 0.7876, "tl_both": 0.5189, "oof": 0.9953, "oof_hangul": 0.9941, "oof_non_hangul": 0.998, "hard": 0.8434, "hard_hangul": 0.8396, "hard_non_hangul": 0.8523, "minutes": 10.6}
+{"name": "lgb_s2_prior", "testlike": 0.8955, "testlike_hangul": 0.8515, "tl_gt": 0.9698, "tl_dw": 0.7859, "tl_both": 0.5172, "oof": 0.9942, "oof_hangul": 0.9924, "oof_non_hangul": 0.9982, "hard": 0.8408, "hard_hangul": 0.8359, "hard_non_hangul": 0.8523, "minutes": 5.9}
+{"name": "lgb_bin_prior", "testlike": 0.8946, "testlike_hangul": 0.8502, "tl_gt": 0.9647, "tl_dw": 0.7884, "tl_both": 0.513, "oof": 0.9936, "oof_hangul": 0.9916, "oof_non_hangul": 0.9983, "hard": 0.8358, "hard_hangul": 0.8325, "hard_non_hangul": 0.8437, "minutes": 8.7}

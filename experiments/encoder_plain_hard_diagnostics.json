@@ -1,0 +1,38 @@
+[
+  {
+    "name_changed": false,
+    "tonnage": "given",
+    "gain": 0,
+    "loss": 0
+  },
+  {
+    "name_changed": false,
+    "tonnage": "missing",
+    "gain": 1,
+    "loss": 2
+  },
+  {
+    "name_changed": false,
+    "tonnage": "perturbed",
+    "gain": 0,
+    "loss": 0
+  },
+  {
+    "name_changed": true,
+    "tonnage": "given",
+    "gain": 2,
+    "loss": 3
+  },
+  {
+    "name_changed": true,
+    "tonnage": "missing",
+    "gain": 2,
+    "loss": 10
+  },
+  {
+    "name_changed": true,
+    "tonnage": "perturbed",
+    "gain": 1,
+    "loss": 0
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "fingerprint": "5e29842212f21cc17a75b85fa77ab893519009251111e1dd686a7ebc0c712ba3",
+  "checks": [
+    {
+      "fold": 1,
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "final_predictions_equal": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true,
+      "identity_and_names_ignored": true
+    },
+    {
+      "fold": 4,
+      "actual_queries": 3,
+      "saved_scores_exact": true,
+      "final_predictions_equal": true,
+      "row_reverse_subset_single_exact": true,
+      "candidate_permutation_exact": true,
+      "identity_and_names_ignored": true
+    }
+  ],
+  "scope": "Actual reloaded metadata models plus frozen query anchor/candidates; not a complete new submission ZIP"
+}

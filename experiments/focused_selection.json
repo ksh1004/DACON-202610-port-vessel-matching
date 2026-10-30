@@ -1,0 +1,29 @@
+{
+  "reference": "v12",
+  "reference_public": 0.9065951735,
+  "selected": null,
+  "trials": [
+    {
+      "tag": "encoder_focused20_v1",
+      "mode": "focused",
+      "passed": false,
+      "stage": "fresh",
+      "delta": -0.0038314176245210726
+    },
+    {
+      "tag": "encoder_restore_v1",
+      "mode": "restore",
+      "passed": false,
+      "stage": "screen",
+      "checks": {
+        "folds": true,
+        "testlike": false,
+        "worst_fold": true,
+        "hard_hangul": true,
+        "drop_word": true,
+        "clean_lost": true
+      }
+    }
+  ],
+  "actual_competition_submission": false
+}

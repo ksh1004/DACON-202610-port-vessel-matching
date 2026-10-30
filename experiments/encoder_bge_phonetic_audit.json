@@ -1,0 +1,245 @@
+{
+  "tag": "encoder_bge_phonetic",
+  "complete_folds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "complete": true,
+  "baseline_v8": {
+    "testlike": 0.9049590170316901,
+    "testlike_hangul": 0.8650041981528128,
+    "hard": 0.8461801007556675,
+    "hard_hangul": 0.8438287153652393,
+    "oof": 0.9965173713557876,
+    "scenarios": {
+      "clean": 0.9958018471872376,
+      "gt_missing": 0.9739714525608733,
+      "drop_word": 0.8094038623005877,
+      "both": 0.5491183879093199
+    }
+  },
+  "reference_v11": {
+    "testlike": 0.9087617038494902,
+    "testlike_hangul": 0.8704366078925272,
+    "hard": 0.8541146095717884,
+    "hard_hangul": 0.8551637279596978,
+    "oof": 0.997692854143361,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9739714525608733,
+      "drop_word": 0.8270361041141897,
+      "both": 0.5524769101595298
+    }
+  },
+  "candidate": {
+    "testlike": 0.9108011664859303,
+    "testlike_hangul": 0.8733501259445845,
+    "hard": 0.8558778337531485,
+    "hard_hangul": 0.8576826196473551,
+    "oof": 0.997692854143361,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.984047019311503,
+      "drop_word": 0.8127623845507976,
+      "both": 0.5776658270361041
+    }
+  },
+  "delta_vs_v11": 0.0020394626364401702,
+  "bootstrap_95_vs_v11": [
+    -0.0029631043025706086,
+    0.007085091991907502
+  ],
+  "delta_by_fold_vs_v11": {
+    "0": -0.0023433476394848496,
+    "1": 0.01240350877192975,
+    "2": -0.008700000000000152,
+    "3": 0.006452674897119204,
+    "4": 0.0014657039711191144
+  },
+  "clean_lost_rows_vs_v11": 0,
+  "without_shots": {
+    "reference_v11": {
+      "testlike": 0.9084864076141492,
+      "testlike_hangul": 0.8700433275563259,
+      "hard": 0.8529870017331023,
+      "hard_hangul": 0.8535528596187175,
+      "oof": 0.9976363209590366,
+      "scenarios": {
+        "clean": 0.9974003466204506,
+        "gt_missing": 0.9731369150779896,
+        "drop_word": 0.8249566724436742,
+        "both": 0.5537261698440208
+      }
+    },
+    "candidate": {
+      "testlike": 0.9110098044945651,
+      "testlike_hangul": 0.8736481802426342,
+      "hard": 0.8545034662045061,
+      "hard_hangul": 0.8557192374350087,
+      "oof": 0.9976363209590366,
+      "scenarios": {
+        "clean": 0.9974003466204506,
+        "gt_missing": 0.9835355285961872,
+        "drop_word": 0.8128249566724437,
+        "both": 0.5797227036395147
+      }
+    },
+    "ensemble": {
+      "testlike": 0.9121137906297472,
+      "testlike_hangul": 0.8752253032928943,
+      "hard": 0.8566265164644713,
+      "hard_hangul": 0.8587521663778163,
+      "oof": 0.9976363209590366,
+      "scenarios": {
+        "clean": 0.9974003466204506,
+        "gt_missing": 0.9826689774696707,
+        "drop_word": 0.8223570190641247,
+        "both": 0.5771230502599654
+      }
+    }
+  },
+  "protocols": {
+    "0": {
+      "fold": 0,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f0_train_cd185bcf8e28.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    },
+    "1": {
+      "fold": 1,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f1_train_6a0d6fcccc6b.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    },
+    "2": {
+      "fold": 2,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f2_train_5b13f22dba22.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    },
+    "3": {
+      "fold": 3,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f3_train_0e27b7ba964c.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    },
+    "4": {
+      "fold": 4,
+      "model": "BAAI/bge-reranker-v2-m3",
+      "input_recipe": "phonetic",
+      "source_revision": {
+        "repo": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e"
+      },
+      "training_groups": 2400,
+      "max_tokens": 256,
+      "seed": 42,
+      "epochs": 1,
+      "lora_rank": 8,
+      "lora_alpha": 16,
+      "learning_rate": 0.0001,
+      "groups_per_batch": 2,
+      "negative_mode": "five train-only LGB hard plus two lexical",
+      "vessel_overlap": 0,
+      "train_cache": "strict_han_f4_train_b2bd476d9d4f.joblib",
+      "training_at_cap": 0,
+      "candidate_caveat": "Historical v8 shared retrieval mapper; training retrieval/mapper held out strictly."
+    }
+  },
+  "candidate_caveat": "Exploratory reused validation; historical v8 retrieval mapper remains shared.",
+  "screen_gate_pass": false,
+  "equal_neural_ensemble": {
+    "testlike": 0.9118708558226221,
+    "testlike_hangul": 0.8748782535684299,
+    "hard": 0.8579349286314022,
+    "hard_hangul": 0.8606213266162889,
+    "oof": 0.997692854143361,
+    "scenarios": {
+      "clean": 0.9974811083123426,
+      "gt_missing": 0.9832073887489504,
+      "drop_word": 0.8219983207388749,
+      "both": 0.5751469353484466
+    }
+  },
+  "ensemble_delta_vs_v11": 0.003109151973131885,
+  "ensemble_bootstrap_95_vs_v11": [
+    -0.0004390525806690554,
+    0.00700014216084484
+  ],
+  "ensemble_delta_by_fold_vs_v11": {
+    "0": 0.002403433476394934,
+    "1": 0.0055263157894737125,
+    "2": -0.0009000000000001229,
+    "3": 0.0044074074074074154,
+    "4": 0.0036137184115523358
+  },
+  "ensemble_clean_lost_rows_vs_v11": 0,
+  "ensemble_screen_gate_pass": false
+}

@@ -1,0 +1,5 @@
+# 로컬 실험 전용 (제출에는 포함하지 않음)
+ipykernel
+matplotlib
+seaborn
+peft==0.17.1  # LoRA 학습용 (로컬 전용, 제출 시 가중치를 병합하므로 서버에는 불필요)

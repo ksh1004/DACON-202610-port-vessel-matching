@@ -1,0 +1,550 @@
+{
+  "diagnostic_only": true,
+  "uses_ground_truth_to_describe_errors": true,
+  "new_model_or_score_evaluated": false,
+  "definition": "Truth and selected/negative candidates share an exact contiguous Latin span present in a cached query-only transliteration beam, and have identical catalog metadata on fields available in the query.",
+  "evaluation": {
+    "clean": {
+      "rows": 1191,
+      "v12_errors": 3,
+      "identical_available_candidate_metadata": 3,
+      "same_exact_latin_span_from_cached_beams": 0,
+      "both_conditions": 0
+    },
+    "gt_missing": {
+      "rows": 1191,
+      "v12_errors": 20,
+      "identical_available_candidate_metadata": 4,
+      "same_exact_latin_span_from_cached_beams": 0,
+      "both_conditions": 0
+    },
+    "drop_word": {
+      "rows": 1184,
+      "v12_errors": 212,
+      "identical_available_candidate_metadata": 125,
+      "same_exact_latin_span_from_cached_beams": 173,
+      "both_conditions": 102
+    },
+    "both": {
+      "rows": 1184,
+      "v12_errors": 504,
+      "identical_available_candidate_metadata": 294,
+      "same_exact_latin_span_from_cached_beams": 378,
+      "both_conditions": 247
+    }
+  },
+  "error_partitions": {
+    "clean": {
+      "shared_span_and_metadata_tie": 0,
+      "shared_span_only": 0,
+      "metadata_tie_only": 3,
+      "neither": 0
+    },
+    "gt_missing": {
+      "shared_span_and_metadata_tie": 0,
+      "shared_span_only": 0,
+      "metadata_tie_only": 4,
+      "neither": 16
+    },
+    "drop_word": {
+      "shared_span_and_metadata_tie": 102,
+      "shared_span_only": 71,
+      "metadata_tie_only": 23,
+      "neither": 16
+    },
+    "both": {
+      "shared_span_and_metadata_tie": 247,
+      "shared_span_only": 131,
+      "metadata_tie_only": 47,
+      "neither": 79
+    }
+  },
+  "training": [
+    {
+      "outer": 0,
+      "inner": 0,
+      "groups": 2400,
+      "actual_hangul_groups": 2396,
+      "groups_with_shared_exact_span": 247,
+      "groups_with_same_metadata_negative": 1161,
+      "groups_with_both_conditions_negative": 101,
+      "negative_pairs_with_both_conditions": 268,
+      "no_tonnage_groups_with_both": 58
+    },
+    {
+      "outer": 0,
+      "inner": 1,
+      "groups": 2094,
+      "actual_hangul_groups": 2091,
+      "groups_with_shared_exact_span": 177,
+      "groups_with_same_metadata_negative": 1131,
+      "groups_with_both_conditions_negative": 87,
+      "negative_pairs_with_both_conditions": 242,
+      "no_tonnage_groups_with_both": 53
+    },
+    {
+      "outer": 2,
+      "inner": 0,
+      "groups": 2400,
+      "actual_hangul_groups": 2395,
+      "groups_with_shared_exact_span": 224,
+      "groups_with_same_metadata_negative": 1276,
+      "groups_with_both_conditions_negative": 88,
+      "negative_pairs_with_both_conditions": 232,
+      "no_tonnage_groups_with_both": 48
+    },
+    {
+      "outer": 2,
+      "inner": 1,
+      "groups": 2360,
+      "actual_hangul_groups": 2355,
+      "groups_with_shared_exact_span": 245,
+      "groups_with_same_metadata_negative": 1163,
+      "groups_with_both_conditions_negative": 108,
+      "negative_pairs_with_both_conditions": 270,
+      "no_tonnage_groups_with_both": 64
+    }
+  ],
+  "training_total": {
+    "groups": 9254,
+    "actual_hangul_groups": 9237,
+    "groups_with_shared_exact_span": 893,
+    "groups_with_same_metadata_negative": 4731,
+    "groups_with_both_conditions_negative": 384,
+    "negative_pairs_with_both_conditions": 1012,
+    "no_tonnage_groups_with_both": 223
+  },
+  "examples": [
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00195_both",
+      "query": "골든",
+      "shared_beam_spans": [
+        "GOLDEN"
+      ],
+      "truth": "Golden Hachi",
+      "chosen": "Golden Chie",
+      "tonnage_available": false,
+      "truth_gt": 8050.0,
+      "chosen_gt": 7217.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00204_both",
+      "query": "글로비스",
+      "shared_beam_spans": [
+        "GLOVIS"
+      ],
+      "truth": "Glovis Sirius",
+      "chosen": "Glovis Captain",
+      "tonnage_available": false,
+      "truth_gt": 65697.0,
+      "chosen_gt": 59760.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00236_both",
+      "query": "그레이트",
+      "shared_beam_spans": [
+        "GREAT"
+      ],
+      "truth": "Great Hope",
+      "chosen": "Great Sui",
+      "tonnage_available": false,
+      "truth_gt": 40913.0,
+      "chosen_gt": 93186.0
+    },
+    {
+      "scenario": "drop_word",
+      "sample_id": "TRAIN_00263_drop_word",
+      "query": "흥아",
+      "shared_beam_spans": [
+        "HEUNGA"
+      ],
+      "truth": "Heung-A Janice",
+      "chosen": "Heung-A Haiphong",
+      "tonnage_available": true,
+      "truth_gt": 9960.0,
+      "chosen_gt": 9960.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00263_both",
+      "query": "흥아",
+      "shared_beam_spans": [
+        "HEUNGA"
+      ],
+      "truth": "Heung-A Janice",
+      "chosen": "Heung-A Haiphong",
+      "tonnage_available": false,
+      "truth_gt": 9960.0,
+      "chosen_gt": 9960.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00384_both",
+      "query": "레이",
+      "shared_beam_spans": [
+        "RAY"
+      ],
+      "truth": "Argus Ray",
+      "chosen": "Nestor Ray",
+      "tonnage_available": false,
+      "truth_gt": 75929.0,
+      "chosen_gt": 75929.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00492_both",
+      "query": "제2",
+      "shared_beam_spans": [
+        "2"
+      ],
+      "truth": "Ocean Pioneer No. 2",
+      "chosen": "Jay 2",
+      "tonnage_available": false,
+      "truth_gt": 11561.0,
+      "chosen_gt": 17712.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00495_both",
+      "query": "써니",
+      "shared_beam_spans": [
+        "SUNNY"
+      ],
+      "truth": "Sunny Queen",
+      "chosen": "Daeho Sunny",
+      "tonnage_available": false,
+      "truth_gt": 4175.0,
+      "chosen_gt": 5459.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00507_both",
+      "query": "케미",
+      "shared_beam_spans": [
+        "CHEMI"
+      ],
+      "truth": "Daesan Chemi",
+      "chosen": "Korea Chemi",
+      "tonnage_available": false,
+      "truth_gt": 7240.0,
+      "chosen_gt": 8270.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00508_both",
+      "query": "레오",
+      "shared_beam_spans": [
+        "LEO"
+      ],
+      "truth": "Leo Spirit",
+      "chosen": "Leo Leader",
+      "tonnage_available": false,
+      "truth_gt": 60825.0,
+      "chosen_gt": 57566.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00536_both",
+      "query": "글로비스",
+      "shared_beam_spans": [
+        "GLOVIS"
+      ],
+      "truth": "Glovis Cosmos",
+      "chosen": "Glovis Captain",
+      "tonnage_available": false,
+      "truth_gt": 59954.0,
+      "chosen_gt": 59760.0
+    },
+    {
+      "scenario": "drop_word",
+      "sample_id": "TRAIN_00542_drop_word",
+      "query": "익스프레스",
+      "shared_beam_spans": [
+        "EXPRESS"
+      ],
+      "truth": "Aspen Express",
+      "chosen": "Alder Express",
+      "tonnage_available": true,
+      "truth_gt": 29472.0,
+      "chosen_gt": 29472.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00574_both",
+      "query": "골든",
+      "shared_beam_spans": [
+        "GOLDEN"
+      ],
+      "truth": "Golden Resolution",
+      "chosen": "Golden Hana",
+      "tonnage_available": false,
+      "truth_gt": 8045.0,
+      "chosen_gt": 2846.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00591_both",
+      "query": "골든",
+      "shared_beam_spans": [
+        "GOLDEN"
+      ],
+      "truth": "Golden Chie",
+      "chosen": "Golden Creation",
+      "tonnage_available": false,
+      "truth_gt": 7217.0,
+      "chosen_gt": 9430.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00615_both",
+      "query": "써니",
+      "shared_beam_spans": [
+        "SUNNY"
+      ],
+      "truth": "Sunny Queen",
+      "chosen": "Daeho Sunny",
+      "tonnage_available": false,
+      "truth_gt": 4175.0,
+      "chosen_gt": 5459.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00659_both",
+      "query": "루비",
+      "shared_beam_spans": [
+        "RUBY"
+      ],
+      "truth": "Ruby Ace",
+      "chosen": "Grand Ruby",
+      "tonnage_available": false,
+      "truth_gt": 60105.0,
+      "chosen_gt": 59217.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00696_both",
+      "query": "에이스",
+      "shared_beam_spans": [
+        "ACE"
+      ],
+      "truth": "Walrus Ace",
+      "chosen": "Mercury Ace",
+      "tonnage_available": false,
+      "truth_gt": 63116.0,
+      "chosen_gt": 59409.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00714_both",
+      "query": "에이스",
+      "shared_beam_spans": [
+        "ACE"
+      ],
+      "truth": "Mercury Ace",
+      "chosen": "Walrus Ace",
+      "tonnage_available": false,
+      "truth_gt": 59409.0,
+      "chosen_gt": 63116.0
+    },
+    {
+      "scenario": "drop_word",
+      "sample_id": "TRAIN_00722_drop_word",
+      "query": "글로비스",
+      "shared_beam_spans": [
+        "GLOVIS"
+      ],
+      "truth": "Glovis Spirit",
+      "chosen": "Glovis Supreme",
+      "tonnage_available": true,
+      "truth_gt": 64650.0,
+      "chosen_gt": 64650.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00722_both",
+      "query": "글로비스",
+      "shared_beam_spans": [
+        "GLOVIS"
+      ],
+      "truth": "Glovis Spirit",
+      "chosen": "Glovis Sun",
+      "tonnage_available": false,
+      "truth_gt": 64650.0,
+      "chosen_gt": 65697.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00790_both",
+      "query": "케이엠티씨",
+      "shared_beam_spans": [
+        "KMTC"
+      ],
+      "truth": "KMTC Shanghai",
+      "chosen": "KMTC Hochiminh",
+      "tonnage_available": false,
+      "truth_gt": 20815.0,
+      "chosen_gt": 28927.0
+    },
+    {
+      "scenario": "drop_word",
+      "sample_id": "TRAIN_00857_drop_word",
+      "query": "폴라",
+      "shared_beam_spans": [
+        "POLAR"
+      ],
+      "truth": "Polar Bright",
+      "chosen": "Polar Ace",
+      "tonnage_available": true,
+      "truth_gt": 62632.0,
+      "chosen_gt": 62632.0
+    },
+    {
+      "scenario": "drop_word",
+      "sample_id": "TRAIN_00863_drop_word",
+      "query": "파이오니어",
+      "shared_beam_spans": [
+        "PIONEER"
+      ],
+      "truth": "Busan Pioneer",
+      "chosen": "Kobe Pioneer",
+      "tonnage_available": true,
+      "truth_gt": 2696.0,
+      "chosen_gt": 2696.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00863_both",
+      "query": "파이오니어",
+      "shared_beam_spans": [
+        "PIONEER"
+      ],
+      "truth": "Busan Pioneer",
+      "chosen": "Kobe Pioneer",
+      "tonnage_available": false,
+      "truth_gt": 2696.0,
+      "chosen_gt": 2696.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00869_both",
+      "query": "팬콘",
+      "shared_beam_spans": [
+        "PANCON"
+      ],
+      "truth": "Pancon Success",
+      "chosen": "Pancon Sunshine",
+      "tonnage_available": false,
+      "truth_gt": 9892.0,
+      "chosen_gt": 10000.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00919_both",
+      "query": "팬콘",
+      "shared_beam_spans": [
+        "PANCON"
+      ],
+      "truth": "Pancon Success",
+      "chosen": "Pancon Sunshine",
+      "tonnage_available": false,
+      "truth_gt": 9892.0,
+      "chosen_gt": 10000.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00940_both",
+      "query": "파이오니어",
+      "shared_beam_spans": [
+        "PIONEER"
+      ],
+      "truth": "Kobe Pioneer",
+      "chosen": "Woojin Pioneer",
+      "tonnage_available": false,
+      "truth_gt": 2696.0,
+      "chosen_gt": 2712.0
+    },
+    {
+      "scenario": "drop_word",
+      "sample_id": "TRAIN_00942_drop_word",
+      "query": "삼부",
+      "shared_beam_spans": [
+        "SAMBU"
+      ],
+      "truth": "Giant Sambu",
+      "chosen": "Lotus Sambu",
+      "tonnage_available": true,
+      "truth_gt": 5598.0,
+      "chosen_gt": 5598.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00942_both",
+      "query": "삼부",
+      "shared_beam_spans": [
+        "SAMBU"
+      ],
+      "truth": "Giant Sambu",
+      "chosen": "Sunrise Sambu",
+      "tonnage_available": false,
+      "truth_gt": 5598.0,
+      "chosen_gt": 2748.0
+    },
+    {
+      "scenario": "drop_word",
+      "sample_id": "TRAIN_00943_drop_word",
+      "query": "갤럭시",
+      "shared_beam_spans": [
+        "GALAXY"
+      ],
+      "truth": "Kamui Galaxy",
+      "chosen": "Benten Galaxy",
+      "tonnage_available": true,
+      "truth_gt": 18287.0,
+      "chosen_gt": 18287.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00943_both",
+      "query": "갤럭시",
+      "shared_beam_spans": [
+        "GALAXY"
+      ],
+      "truth": "Kamui Galaxy",
+      "chosen": "Tsurugi Galaxy",
+      "tonnage_available": false,
+      "truth_gt": 18287.0,
+      "chosen_gt": 16589.0
+    },
+    {
+      "scenario": "both",
+      "sample_id": "TRAIN_00990_both",
+      "query": "바우",
+      "shared_beam_spans": [
+        "BOW"
+      ],
+      "truth": "Bow Cecil",
+      "chosen": "Bow Sea",
+      "tonnage_available": false,
+      "truth_gt": 23206.0,
+      "chosen_gt": 29965.0
+    }
+  ],
+  "checks": {
+    "error_partitions_reconcile": true,
+    "training_positive_ids_verified": true,
+    "actual_hangul_scope": true,
+    "no_new_model_predictions": true
+  },
+  "limits": [
+    "This is a visible-evidence tie under one deliberately conservative diagnostic, not an information-theoretic ceiling.",
+    "Cached Latin beams can be incorrect or ambiguous; nonmatching spans do not imply disambiguation is possible.",
+    "Arrival year and learned population/name priors may still contain information; catalog has no arrival-year field.",
+    "Different vessel IDs remain true negatives for identity; this audit does not relabel them as the same entity.",
+    "Nested inner training data is not the exact original v12 training population; it diagnoses the repeated training recipe.",
+    "No test rows, call_sign lookup, or same-vessel identity lookup are used."
+  ],
+  "source_sha256": "68bf3f527b2a355fc93ceb8b19613faf51372a58deb81479fad9124a6c3da1ff"
+}

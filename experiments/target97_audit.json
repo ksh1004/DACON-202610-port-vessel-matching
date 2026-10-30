@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-27",
+  "target": 0.97,
+  "test_rows": "not disclosed by official data page",
+  "public_fraction": 0.5,
+  "required_hangul_if_non_hangul_0_9981": 0.957957142857143,
+  "fraction_of_public_v7_errors_to_fix": 0.7005988023952092,
+  "oracles": {
+    "v7": {
+      "1": {
+        "testlike": 0.9019578494953654,
+        "hangul_scenarios": {
+          "clean": 0.9958018471872376,
+          "gt_missing": 0.9756507136859782,
+          "drop_word": 0.801007556675063,
+          "both": 0.5356842989084802
+        }
+      },
+      "2": {
+        "testlike": 0.9333902592350799,
+        "hangul_scenarios": {
+          "clean": 0.9991603694374476,
+          "gt_missing": 0.9848866498740554,
+          "drop_word": 0.889168765743073,
+          "both": 0.6507136859781696
+        }
+      },
+      "5": {
+        "testlike": 0.9650930300159364,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9932829554995802,
+          "drop_word": 0.9697732997481109,
+          "both": 0.783375314861461
+        }
+      },
+      "10": {
+        "testlike": 0.9816732147346601,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9932829554995802,
+          "drop_word": 0.9916036943744753,
+          "both": 0.8816120906801007
+        }
+      },
+      "20": {
+        "testlike": 0.9904129292602688,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9932829554995802,
+          "drop_word": 0.9966414777497901,
+          "both": 0.9412258606213266
+        }
+      },
+      "50": {
+        "testlike": 0.9954792600747104,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9966414777497901,
+          "drop_word": 0.998320738874895,
+          "both": 0.9748110831234257
+        }
+      },
+      "all_candidates": {
+        "testlike": 0.9957026018043493,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9966414777497901,
+          "drop_word": 0.998320738874895,
+          "both": 0.9764903442485307
+        }
+      }
+    },
+    "v8": {
+      "1": {
+        "testlike": 0.9049590170316901,
+        "hangul_scenarios": {
+          "clean": 0.9958018471872376,
+          "gt_missing": 0.9739714525608733,
+          "drop_word": 0.8094038623005877,
+          "both": 0.5491183879093199
+        }
+      },
+      "2": {
+        "testlike": 0.9340580934380714,
+        "hangul_scenarios": {
+          "clean": 0.9991603694374476,
+          "gt_missing": 0.9815281276238456,
+          "drop_word": 0.8958858102434929,
+          "both": 0.6498740554156172
+        }
+      },
+      "5": {
+        "testlike": 0.9667717794162409,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9932829554995802,
+          "drop_word": 0.9689336691855583,
+          "both": 0.7968094038623006
+        }
+      },
+      "10": {
+        "testlike": 0.9813183789124625,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9932829554995802,
+          "drop_word": 0.9899244332493703,
+          "both": 0.8807724601175483
+        }
+      },
+      "20": {
+        "testlike": 0.9890295459989445,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9932829554995802,
+          "drop_word": 0.9941225860621327,
+          "both": 0.9336691855583543
+        }
+      },
+      "50": {
+        "testlike": 0.9957297978881132,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9966414777497901,
+          "drop_word": 0.998320738874895,
+          "both": 0.9764903442485307
+        }
+      },
+      "all_candidates": {
+        "testlike": 0.9957297978881132,
+        "hangul_scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9966414777497901,
+          "drop_word": 0.998320738874895,
+          "both": 0.9764903442485307
+        }
+      }
+    }
+  },
+  "note": "Oracles use validation truth and are unattainable selection rules, not predictions.",
+  "metrics": {
+    "v7": {
+      "testlike": 0.902,
+      "testlike_hangul": 0.8608,
+      "tl_gt": 0.9757,
+      "tl_dw": 0.801,
+      "tl_both": 0.5357,
+      "oof": 0.9965,
+      "oof_hangul": 0.9958,
+      "oof_non_hangul": 0.9981,
+      "hard": 0.844,
+      "hard_hangul": 0.8409,
+      "hard_non_hangul": 0.8513
+    },
+    "v8": {
+      "testlike": 0.905,
+      "testlike_hangul": 0.865,
+      "tl_gt": 0.974,
+      "tl_dw": 0.8094,
+      "tl_both": 0.5491,
+      "oof": 0.9965,
+      "oof_hangul": 0.9958,
+      "oof_non_hangul": 0.9982,
+      "hard": 0.8462,
+      "hard_hangul": 0.8438,
+      "hard_non_hangul": 0.8517
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "0": {
+    "rows": 1393,
+    "current_active": 292,
+    "weight40_active": 385,
+    "added_rows": 93
+  },
+  "1": {
+    "rows": 1356,
+    "current_active": 249,
+    "weight40_active": 345,
+    "added_rows": 96
+  },
+  "2": {
+    "rows": 1258,
+    "current_active": 243,
+    "weight40_active": 332,
+    "added_rows": 89
+  },
+  "3": {
+    "rows": 1457,
+    "current_active": 298,
+    "weight40_active": 370,
+    "added_rows": 72
+  },
+  "4": {
+    "rows": 1662,
+    "current_active": 334,
+    "weight40_active": 428,
+    "added_rows": 94
+  }
+}

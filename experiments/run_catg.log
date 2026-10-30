@@ -1,0 +1,39 @@
+{'oof': 12222, 'hard': 5382, 'testlike': 3573}
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+{"name": "catg_400_prior", "testlike": 0.8881, "testlike_hangul": 0.8414, "tl_gt": 0.9563, "tl_dw": 0.78, "tl_both": 0.4929, "oof": 0.9903, "oof_hangul": 0.9874, "oof_non_hangul": 0.9972, "hard": 0.7975, "hard_hangul": 0.7855, "hard_non_hangul": 0.8257, "minutes": 2.8}
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Metric PFound is not implemented on GPU. Will use CPU for metric computation, this could significantly affect learning time
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "D:\KSH\pjt\DACON202610\src\experiment.py", line 276, in <module>
+    main()
+  File "D:\KSH\pjt\DACON202610\src\experiment.py", line 272, in main
+    lab.run(name + args.tag, LEARNERS[name]())
+  File "D:\KSH\pjt\DACON202610\src\experiment.py", line 115, in run
+    predict = fit_fn(X, y)
+              ^^^^^^^^^^^^
+  File "D:\KSH\pjt\DACON202610\src\experiment.py", line 214, in fit
+    model.fit(Pool(Xs, ys, group_id=group_id))
+  File "D:\KSH\pjt\DACON202610\.venv\Lib\site-packages\catboost\core.py", line 6283, in fit
+    self._fit(X, y, cat_features, text_features, embedding_features, pairs, graph,
+  File "D:\KSH\pjt\DACON202610\.venv\Lib\site-packages\catboost\core.py", line 2410, in _fit
+    self._train(
+  File "D:\KSH\pjt\DACON202610\.venv\Lib\site-packages\catboost\core.py", line 1790, in _train
+    self._object._train(train_pool, test_pool, params, allow_clear_pool, init_model._object if init_model else None)
+  File "_catboost.pyx", line 5023, in _catboost._CatBoost._train
+  File "_catboost.pyx", line 5072, in _catboost._CatBoost._train
+_catboost.CatBoostError: bad allocation

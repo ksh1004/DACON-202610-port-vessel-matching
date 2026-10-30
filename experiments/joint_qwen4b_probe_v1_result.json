@@ -1,0 +1,26 @@
+{
+  "tag": "joint_qwen4b_probe_v1",
+  "rows": 60,
+  "unique_vessels": 60,
+  "reference_v12_accuracy": 0.35,
+  "teacher_accuracy": 0.2833333333333333,
+  "correct_rows_gain": -4,
+  "gained": 7,
+  "lost": 11,
+  "qualifies_for_larger_teacher_test": false,
+  "accuracy_by_fold": {
+    "1": {
+      "v12": 0.36666666666666664,
+      "teacher": 0.4
+    },
+    "4": {
+      "v12": 0.3333333333333333,
+      "teacher": 0.16666666666666666
+    }
+  },
+  "seconds": 71.56810090004001,
+  "exact_repeat": true,
+  "minimum_letter_probability_mass": 0.9997406005859375,
+  "actual_competition_submission": false,
+  "caveat": "Small selected hard-case diagnostic, reused CV data; not official-weighted score, not full CV, no student/distillation or release"
+}

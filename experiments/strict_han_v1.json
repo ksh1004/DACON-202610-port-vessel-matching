@@ -1,0 +1,106 @@
+{
+  "folds": {
+    "4": {
+      "base": {
+        "testlike_hangul": 0.8565342960288809,
+        "scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9530685920577617,
+          "drop_word": 0.8014440433212996,
+          "both": 0.51985559566787
+        },
+        "hard_hangul": 0.8158844765342961,
+        "recall": {
+          "oof": 1.0,
+          "hard": 0.9548736462093863,
+          "testlike": 0.98676293622142
+        }
+      },
+      "rich": {
+        "testlike_hangul": 0.8472924187725632,
+        "scenarios": {
+          "clean": 0.9855595667870036,
+          "gt_missing": 0.9530685920577617,
+          "drop_word": 0.7978339350180506,
+          "both": 0.5090252707581228
+        },
+        "hard_hangul": 0.8086642599277978,
+        "recall": {
+          "oof": 1.0,
+          "hard": 0.9548736462093863,
+          "testlike": 0.98676293622142
+        }
+      }
+    },
+    "0": {
+      "base": {
+        "testlike_hangul": 0.8227467811158797,
+        "scenarios": {
+          "clean": 0.9699570815450643,
+          "gt_missing": 0.944206008583691,
+          "drop_word": 0.7639484978540773,
+          "both": 0.463519313304721
+        },
+        "hard_hangul": 0.8369098712446352,
+        "recall": {
+          "oof": 1.0,
+          "hard": 0.9678111587982833,
+          "testlike": 0.9799713876967096
+        }
+      }
+    },
+    "1": {
+      "base": {
+        "testlike_hangul": 0.8568859649122808,
+        "scenarios": {
+          "clean": 0.9912280701754386,
+          "gt_missing": 0.9692982456140351,
+          "drop_word": 0.7719298245614035,
+          "both": 0.5657894736842105
+        },
+        "hard_hangul": 0.8442982456140351,
+        "recall": {
+          "oof": 1.0,
+          "hard": 0.9627192982456141,
+          "testlike": 0.9956140350877193
+        }
+      }
+    },
+    "2": {
+      "base": {
+        "testlike_hangul": 0.8607142857142858,
+        "scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9952380952380953,
+          "drop_word": 0.8142857142857143,
+          "both": 0.49523809523809526
+        },
+        "hard_hangul": 0.8380952380952381,
+        "recall": {
+          "oof": 1.0,
+          "hard": 0.9714285714285714,
+          "testlike": 0.9888888888888889
+        }
+      }
+    },
+    "3": {
+      "base": {
+        "testlike_hangul": 0.8460493827160495,
+        "scenarios": {
+          "clean": 1.0,
+          "gt_missing": 0.9670781893004116,
+          "drop_word": 0.7654320987654321,
+          "both": 0.49794238683127573
+        },
+        "hard_hangul": 0.8436213991769548,
+        "recall": {
+          "oof": 1.0,
+          "hard": 0.9753086419753086,
+          "testlike": 0.9917695473251029
+        }
+      }
+    }
+  },
+  "retrieval": "training-fold-only category mappers",
+  "ranker_population": "Korean origin only"
+}

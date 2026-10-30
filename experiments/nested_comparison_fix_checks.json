@@ -1,0 +1,10 @@
+{
+  "nested_combiner_experiment_before_precision_check.py": {
+    "only_changed_function": "run_outer",
+    "all_training_data_encoding_head_functions_unchanged": true
+  },
+  "nested_combiner_experiment_before_nonhangul_check.py": {
+    "only_changed_function": "run_outer",
+    "all_training_data_encoding_head_functions_unchanged": true
+  }
+}

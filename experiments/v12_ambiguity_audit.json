@@ -1,0 +1,17 @@
+{
+  "current_model_fields": {
+    "hangul_oracle": 0.9956926952141376,
+    "weighted_oracle_english_fixed": 0.9964409649746175,
+    "conflicting_input_groups": 19,
+    "rows_in_conflicting_groups": 68,
+    "lost_hangul_mass": 0.004307304785894207
+  },
+  "with_arrival_year": {
+    "hangul_oracle": 0.9988832913518741,
+    "weighted_oracle_english_fixed": 0.9986743822710331,
+    "conflicting_input_groups": 7,
+    "rows_in_conflicting_groups": 14,
+    "lost_hangul_mass": 0.0011167086481947942
+  },
+  "caveat": "Truth-aware bound only for artificial reused CV scenarios, collisions grouped within vessel-held-out fold; not official/Public ceiling. Current model fields exclude callsign/IDs/year. Year column is an input-information audit, not a learned model."
+}

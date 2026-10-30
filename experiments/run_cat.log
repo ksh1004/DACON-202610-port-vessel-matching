@@ -1,0 +1,2 @@
+{'oof': 12222, 'hard': 5382, 'testlike': 3573}
+{"name": "cat_yeti400", "testlike": 0.8978, "testlike_hangul": 0.8549, "tl_gt": 0.9656, "tl_dw": 0.7976, "tl_both": 0.5164, "oof": 0.9965, "oof_hangul": 0.9958, "oof_non_hangul": 0.998, "hard": 0.836, "hard_hangul": 0.8304, "hard_non_hangul": 0.849, "minutes": 66.4}
