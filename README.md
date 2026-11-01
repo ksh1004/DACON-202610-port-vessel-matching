@@ -8,6 +8,8 @@ DACON **「항만 문제해결을 위한 AI 기술 공모전」** 참가 기록�
 
 ## 점수 변화
 
+![Public 점수 변화: 0.362 → 0.965](docs/figures/score_journey.png)
+
 | # | 버전 | 핵심 변경 | Public |
 |---|---|---|---:|
 | 1 | baseline | 공식 베이스라인 (TF-IDF 후보 + RandomForest) | 0.3616 |

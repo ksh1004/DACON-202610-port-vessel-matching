@@ -1699,3 +1699,4 @@ hard 세트 후보 recall (한글)
 - 카탈로그 한글 음역표(catalog_ko.json, catalog_ko_nbest.json)는 올리지 않았다. 키가 카탈로그 선박명이라 대회 데이터 재배포가 되기 때문이다. .gitignore 에 규칙을 더하고, README 재현 방법에 다시 만드는 명령을 적었다.
 - README: 결과(0.9652, 제출 19회), 점수 표 16~19행, 파이프라인 그림(한글 공간 보정·영문 퍼지), 6단계 개선 과정, 어려웠던 점 2개, 배운 점 2개를 더했다. v19~v21b 요약 문서 [hangul_space_20261101.md](hangul_space_20261101.md)를 새로 썼다.
 - 새 코드(src/llm_ko.py, src/fuzzy_candidates.py, tools/catalog_ko*.py, tools/eval_v2*_noise.py, tools/make_english_noise*.py, tools/probe_ko_rerank.py, tools/retrain_organizer.py, tools/train_final_organizer.py)와 실험 로그·결과 JSON도 함께 올린다. 새 로그에 데이터 행(ID·선박명)이 없는지 확인했다.
+- README 맨 위 점수 표 앞에 성능 개선 과정 그림 한 장을 넣었다([figures/score_journey.png](figures/score_journey.png), 생성 스크립트 [tools/make_figures.py](../tools/make_figures.py)). 위 패널은 19회 제출 전체, 아래 패널은 0.90 이후 확대와 단계별 변경 내용이다.
