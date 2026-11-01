@@ -1,0 +1,46 @@
+{
+ "V0": {
+  "oof_hangul": 0.9924,
+  "oof_non_hangul": 0.9981,
+  "org": 0.8875,
+  "org_gt": 0.9542,
+  "org_nogt": 0.8195,
+  "org_correct": 2114,
+  "org_n": 2382,
+  "minutes": 0.9,
+  "rounds": 150
+ },
+ "V1": {
+  "oof_hangul": 0.9924,
+  "oof_non_hangul": 0.9982,
+  "org": 0.8921,
+  "org_gt": 0.9559,
+  "org_nogt": 0.8271,
+  "org_correct": 2125,
+  "org_n": 2382,
+  "minutes": 1.6,
+  "rounds": 150
+ },
+ "V2": {
+  "oof_hangul": 0.9908,
+  "oof_non_hangul": 0.9981,
+  "org": 0.9135,
+  "org_gt": 0.9709,
+  "org_nogt": 0.8551,
+  "org_correct": 2176,
+  "org_n": 2382,
+  "minutes": 2.4,
+  "rounds": 150
+ },
+ "V3": {
+  "oof_hangul": 0.9891,
+  "oof_non_hangul": 0.998,
+  "org": 0.9106,
+  "org_gt": 0.9692,
+  "org_nogt": 0.8508,
+  "org_correct": 2169,
+  "org_n": 2382,
+  "minutes": 2.3,
+  "rounds": 150
+ }
+}

@@ -1,0 +1,15 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\qwen' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\encoder' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Saved 764 predictions to E:\dacon_tmp\noise\pred_KO_W4.0_KO_K50.csv
+KO_W=4.0,KO_K=50 {'acc': 0.9319, 'nogt': 0.8971, 'gt': 0.9662, 'correct': 712}
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\qwen' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\encoder' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+You're using a Qwen2TokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+You're using a XLMRobertaTokenizerFast tokenizer. Please note that with a fast tokenizer, using the `__call__` method is faster than using a method to encode the text followed by a call to the `pad` method to get a padded encoding.
+Saved 764 predictions to E:\dacon_tmp\noise\pred_KO_W6.0_KO_K50.csv
+KO_W=6.0,KO_K=50 {'acc': 0.9372, 'nogt': 0.905, 'gt': 0.9688, 'correct': 716}
+KO_W=6.0,KO_K=50 vs KO_W=4.0,KO_K=50: 회복 4 / 손실 0
+eval exit 0

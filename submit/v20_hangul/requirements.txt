@@ -1,0 +1,1 @@
+# 평가 서버에 기본 설치된 numpy, pandas, scikit-learn, joblib, lightgbm, catboost, rapidfuzz, torch, transformers 만 사용

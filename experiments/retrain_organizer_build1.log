@@ -1,0 +1,17 @@
+train@0: 12222질의, 후보 2,175,989행 (0.63GB), 147초
+aug@0: 15795질의, 후보 2,964,098행 (0.86GB), 282초
+train@500: 12222질의, 후보 3,127,148행 (0.91GB), 199초
+aug@500: 15795질의, 후보 6,752,456행 (1.96GB), 437초
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "E:\code\공모전\DACON202610_handoff\repo\tools\retrain_organizer.py", line 259, in <module>
+    main()
+  File "E:\code\공모전\DACON202610_handoff\repo\tools\retrain_organizer.py", line 253, in main
+    cmd_build()
+  File "E:\code\공모전\DACON202610_handoff\repo\tools\retrain_organizer.py", line 109, in cmd_build
+    sig = r.generate(part, llm_beams=beams(part["vessel_name"].tolist()))
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\code\공모전\DACON202610_handoff\repo\src\llm_cache.py", line 50, in __call__
+    raise KeyError(f"LLM 캐시에 없는 이름: {name}")
+KeyError: 'LLM 캐시에 없는 이름: 산부 파이오니어'

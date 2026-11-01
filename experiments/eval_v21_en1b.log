@@ -1,0 +1,14 @@
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\qwen' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\encoder' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Saved 800 predictions to E:\dacon_tmp\noise_en\pred_EN_K50.csv
+EN_K=50 {'acc': 0.9775, 'nogt': 0.9549, 'gt': 0.9976, 'correct': 782}
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\qwen' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\encoder' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Saved 800 predictions to E:\dacon_tmp\noise_en\pred_EN_K50_EN_WIN30.csv
+EN_K=50,EN_WIN=30 {'acc': 0.9775, 'nogt': 0.9549, 'gt': 0.9976, 'correct': 782}
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\qwen' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+The tokenizer you are loading from 'E:\dacon_tmp\v21pkg\model\encoder' with an incorrect regex pattern: https://huggingface.co/mistralai/Mistral-Small-3.1-24B-Instruct-2503/discussions/84#69121093e8b480e709447d5e. This will lead to incorrect tokenization. You should set the `fix_mistral_regex=True` flag when loading this tokenizer to fix this issue.
+Saved 800 predictions to E:\dacon_tmp\noise_en\pred_EN_K50_EN_WIN30_EN_PREFIX30.csv
+EN_K=50,EN_WIN=30,EN_PREFIX=30 {'acc': 0.9775, 'nogt': 0.9549, 'gt': 0.9976, 'correct': 782}
+EN_K=50,EN_WIN=30 vs EN_K=50: 회복 1 / 손실 1
+EN_K=50,EN_WIN=30,EN_PREFIX=30 vs EN_K=50: 회복 1 / 손실 1

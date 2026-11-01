@@ -1,0 +1,272 @@
+{
+ "indel_w0": {
+  "clean": 0.9924,
+  "org": 0.8875,
+  "org_nogt": 0.8195,
+  "org_gt": 0.9542
+ },
+ "indel_w1": {
+  "clean": 0.9924,
+  "org": 0.9013,
+  "org_nogt": 0.839,
+  "org_gt": 0.9626
+ },
+ "indel_w2": {
+  "clean": 0.9924,
+  "org": 0.9089,
+  "org_nogt": 0.8483,
+  "org_gt": 0.9684
+ },
+ "indel_w3": {
+  "clean": 0.9916,
+  "org": 0.9139,
+  "org_nogt": 0.8576,
+  "org_gt": 0.9692
+ },
+ "indel_w4": {
+  "clean": 0.9916,
+  "org": 0.9173,
+  "org_nogt": 0.8653,
+  "org_gt": 0.9684
+ },
+ "indel_w6": {
+  "clean": 0.9916,
+  "org": 0.9257,
+  "org_nogt": 0.878,
+  "org_gt": 0.9725
+ },
+ "indel_w8": {
+  "clean": 0.9916,
+  "org": 0.9282,
+  "org_nogt": 0.8831,
+  "org_gt": 0.9725
+ },
+ "indel_w12": {
+  "clean": 0.9908,
+  "org": 0.9181,
+  "org_nogt": 0.8763,
+  "org_gt": 0.9592
+ },
+ "indel_w16": {
+  "clean": 0.9815,
+  "org": 0.9009,
+  "org_nogt": 0.8619,
+  "org_gt": 0.9393
+ },
+ "osa_w0": {
+  "clean": 0.9924,
+  "org": 0.8875,
+  "org_nogt": 0.8195,
+  "org_gt": 0.9542
+ },
+ "osa_w1": {
+  "clean": 0.9924,
+  "org": 0.9009,
+  "org_nogt": 0.8381,
+  "org_gt": 0.9626
+ },
+ "osa_w2": {
+  "clean": 0.9924,
+  "org": 0.906,
+  "org_nogt": 0.8449,
+  "org_gt": 0.9659
+ },
+ "osa_w3": {
+  "clean": 0.9916,
+  "org": 0.9131,
+  "org_nogt": 0.8559,
+  "org_gt": 0.9692
+ },
+ "osa_w4": {
+  "clean": 0.9916,
+  "org": 0.9198,
+  "org_nogt": 0.8686,
+  "org_gt": 0.97
+ },
+ "osa_w6": {
+  "clean": 0.9916,
+  "org": 0.9253,
+  "org_nogt": 0.8805,
+  "org_gt": 0.9692
+ },
+ "osa_w8": {
+  "clean": 0.9916,
+  "org": 0.9244,
+  "org_nogt": 0.8788,
+  "org_gt": 0.9692
+ },
+ "osa_w12": {
+  "clean": 0.9874,
+  "org": 0.9194,
+  "org_nogt": 0.8754,
+  "org_gt": 0.9626
+ },
+ "osa_w16": {
+  "clean": 0.9807,
+  "org": 0.9018,
+  "org_nogt": 0.8585,
+  "org_gt": 0.9443
+ },
+ "jamo_w0": {
+  "clean": 0.9924,
+  "org": 0.8875,
+  "org_nogt": 0.8195,
+  "org_gt": 0.9542
+ },
+ "jamo_w1": {
+  "clean": 0.9924,
+  "org": 0.8988,
+  "org_nogt": 0.8364,
+  "org_gt": 0.9601
+ },
+ "jamo_w2": {
+  "clean": 0.9924,
+  "org": 0.9039,
+  "org_nogt": 0.8432,
+  "org_gt": 0.9634
+ },
+ "jamo_w3": {
+  "clean": 0.9941,
+  "org": 0.9072,
+  "org_nogt": 0.8466,
+  "org_gt": 0.9667
+ },
+ "jamo_w4": {
+  "clean": 0.9941,
+  "org": 0.9118,
+  "org_nogt": 0.8534,
+  "org_gt": 0.9692
+ },
+ "jamo_w6": {
+  "clean": 0.9941,
+  "org": 0.916,
+  "org_nogt": 0.8627,
+  "org_gt": 0.9684
+ },
+ "jamo_w8": {
+  "clean": 0.9941,
+  "org": 0.9173,
+  "org_nogt": 0.8661,
+  "org_gt": 0.9676
+ },
+ "jamo_w12": {
+  "clean": 0.9941,
+  "org": 0.9165,
+  "org_nogt": 0.8661,
+  "org_gt": 0.9659
+ },
+ "jamo_w16": {
+  "clean": 0.9941,
+  "org": 0.9139,
+  "org_nogt": 0.8636,
+  "org_gt": 0.9634
+ },
+ "jamo_osa_w0": {
+  "clean": 0.9924,
+  "org": 0.8875,
+  "org_nogt": 0.8195,
+  "org_gt": 0.9542
+ },
+ "jamo_osa_w1": {
+  "clean": 0.9924,
+  "org": 0.8976,
+  "org_nogt": 0.8347,
+  "org_gt": 0.9592
+ },
+ "jamo_osa_w2": {
+  "clean": 0.9924,
+  "org": 0.8988,
+  "org_nogt": 0.8356,
+  "org_gt": 0.9609
+ },
+ "jamo_osa_w3": {
+  "clean": 0.9941,
+  "org": 0.903,
+  "org_nogt": 0.8415,
+  "org_gt": 0.9634
+ },
+ "jamo_osa_w4": {
+  "clean": 0.9941,
+  "org": 0.9051,
+  "org_nogt": 0.8449,
+  "org_gt": 0.9642
+ },
+ "jamo_osa_w6": {
+  "clean": 0.9941,
+  "org": 0.9043,
+  "org_nogt": 0.8449,
+  "org_gt": 0.9626
+ },
+ "jamo_osa_w8": {
+  "clean": 0.9941,
+  "org": 0.9051,
+  "org_nogt": 0.8475,
+  "org_gt": 0.9617
+ },
+ "jamo_osa_w12": {
+  "clean": 0.9941,
+  "org": 0.8988,
+  "org_nogt": 0.8398,
+  "org_gt": 0.9567
+ },
+ "jamo_osa_w16": {
+  "clean": 0.9891,
+  "org": 0.8904,
+  "org_nogt": 0.8331,
+  "org_gt": 0.9468
+ },
+ "mix_w0": {
+  "clean": 0.9924,
+  "org": 0.8875,
+  "org_nogt": 0.8195,
+  "org_gt": 0.9542
+ },
+ "mix_w1": {
+  "clean": 0.9924,
+  "org": 0.9005,
+  "org_nogt": 0.8373,
+  "org_gt": 0.9626
+ },
+ "mix_w2": {
+  "clean": 0.9924,
+  "org": 0.9051,
+  "org_nogt": 0.8432,
+  "org_gt": 0.9659
+ },
+ "mix_w3": {
+  "clean": 0.9924,
+  "org": 0.9097,
+  "org_nogt": 0.8492,
+  "org_gt": 0.9692
+ },
+ "mix_w4": {
+  "clean": 0.9924,
+  "org": 0.9156,
+  "org_nogt": 0.861,
+  "org_gt": 0.9692
+ },
+ "mix_w6": {
+  "clean": 0.9933,
+  "org": 0.9228,
+  "org_nogt": 0.8763,
+  "org_gt": 0.9684
+ },
+ "mix_w8": {
+  "clean": 0.9933,
+  "org": 0.9265,
+  "org_nogt": 0.8822,
+  "org_gt": 0.97
+ },
+ "mix_w12": {
+  "clean": 0.9933,
+  "org": 0.9265,
+  "org_nogt": 0.8831,
+  "org_gt": 0.9692
+ },
+ "mix_w16": {
+  "clean": 0.9916,
+  "org": 0.9198,
+  "org_nogt": 0.8797,
+  "org_gt": 0.9592
+ }
+}

@@ -143,6 +143,52 @@ def perturb_row(row: dict, rng: np.random.Generator, style_rng: np.random.Genera
     return row
 
 
+def organizer_edit(name: str, rng: np.random.Generator) -> str:
+    """주최 측 오타 1회: 공백이 아닌 글자(음절) 하나를 삭제 35% / 중복 35% / 인접 순서 바꿈 30%.
+
+    train 영문 이름에 남은 주최 측 노이즈와 같은 종류다 (tools/make_organizer_noise.py 와 같은 규칙).
+    """
+    pos = [i for i, ch in enumerate(name) if not ch.isspace()]
+    if len(pos) < 2:
+        return name
+    op = rng.choice(["delete", "dup", "swap"], p=[0.35, 0.35, 0.30])
+    if op == "swap":
+        pairs = [i for i in pos if i + 1 < len(name) and not name[i + 1].isspace()]
+        if pairs:
+            i = int(rng.choice(pairs))
+            return name[:i] + name[i + 1] + name[i] + name[i + 2:]
+        op = "dup"
+    i = int(rng.choice(pos))
+    if op == "delete":
+        return name[:i] + name[i + 1:]
+    return name[:i + 1] + name[i] + name[i + 1:]
+
+
+def organizer_augment(train: pd.DataFrame, copies: int, seed: int, gt_missing: float = 0.5,
+                      flag_missing: float = 0.17, two_edit: float = 0.3) -> pd.DataFrame:
+    """한글 행만 주최 측 방식 노이즈 복사본을 만든다. `origin` 은 원본 train 위치, `nogt` 는 톤수 결측 여부."""
+    rng = np.random.default_rng(seed)
+    out = []
+    for pos, row in enumerate(train.to_dict("records")):
+        if not is_hangul(row["vessel_name"]):
+            continue
+        for c in range(copies):
+            new = dict(row)
+            name = new["vessel_name"]
+            for _ in range(2 if rng.random() < two_edit else 1):
+                name = organizer_edit(name, rng)
+            new["vessel_name"] = name
+            new["nogt"] = bool(rng.random() < gt_missing)
+            if new["nogt"]:
+                new["gross_tonnage"] = new["international_gross_tonnage"] = np.nan
+            if rng.random() < flag_missing:
+                new["flag_name"] = np.nan
+            new["sample_id"] = f"{row['sample_id']}_org{seed}_{c}"
+            new["origin"] = pos
+            out.append(new)
+    return pd.DataFrame(out)
+
+
 def augment(train: pd.DataFrame, copies_hangul: int = 4, copies_english: int = 1, seed: int = 7,
             abbrev_mix: bool = False, profile: str = "default") -> pd.DataFrame:
     """증강 행을 만든다. `origin` 열은 원본 train 의 위치 인덱스.
