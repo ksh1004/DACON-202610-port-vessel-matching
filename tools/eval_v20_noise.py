@@ -3,7 +3,7 @@
 평가 선박(노이즈 세트의 train 한글 선박)은 제외 목록에서 빼고 돌린다. 패키지 파일은 바꾸지 않는다.
 KO_W=0, KO_K=0 은 v18 과 같은 동작이다. 순위 모델이 평가 선박을 학습했으므로 절대값은 낙관적이다.
 
-    python -m tools.eval_v20_noise ../submit_v20 E:/dacon_tmp/noise 0:0 6:50 8:50
+    python -m tools.eval_v20_noise submit_v20 E:/dacon_tmp/noise 0:0 6:50 8:50
 """
 import json
 import sys

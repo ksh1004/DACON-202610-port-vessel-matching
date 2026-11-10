@@ -4,7 +4,7 @@
 v18 은 증강 시드 7·8·9 로 멤버를 다양화했지만, 여기서는 같은 데이터에 모델 시드만 바꾼다.
 신경망 재판별(Qwen·BGE)과 script.py 는 v18 그대로 쓴다.
 
-    python -m tools.train_final_organizer V2 --pkg ../submit_v19 --work E:/dacon_tmp/v19
+    python -m tools.train_final_organizer V2 --pkg submit_v19 --work E:/dacon_tmp/v19
     (중단 후 이어서: 같은 명령에 --reuse)
 """
 
@@ -25,7 +25,7 @@ from src.features import FEATURE_NAMES, fit_mappers
 from src.train_ranker import PARAMS
 from tools.retrain_organizer import VARIANTS, load, setup, stack
 
-V18 = ROOT.parent / "submit_v18"
+V18 = ROOT / "submit_v18"
 MEMBERS = [  # (이름, 종류, 시드, 가중치) — v18 ensemble.json 과 같은 순서·가중치
     ("cat_yeti400", "cat", 42, 3.0),
     ("cat_yeti400@8", "cat", 8, 3.0),

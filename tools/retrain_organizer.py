@@ -32,7 +32,7 @@ from src.retrieval import CatalogRetriever
 from src.train_ranker import PARAMS
 from src.validate import load_folds
 
-PKG_LLM = ROOT.parent / "submit_v18" / "model" / "llm"  # 패키지와 같은 few-shot Kanana (미세조정 없음)
+PKG_LLM = ROOT / "submit_v21" / "model" / "llm"  # 패키지와 같은 few-shot Kanana (미세조정 없음)
 CACHE = ROOT / "experiments" / "cache" / "retrain_org"
 OUT = ROOT / "experiments" / "retrain_organizer.json"
 EVAL_K = 500  # v18 추론과 같은 퍼지 후보 수

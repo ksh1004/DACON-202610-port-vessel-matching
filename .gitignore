@@ -35,6 +35,8 @@
 /submit/*/model/mappers.joblib
 # 카탈로그 이름 → 한글 음역 표 (키가 카탈로그 선박명이라 대회 데이터 재배포가 됨, tools/catalog_ko*.py 로 다시 만든다)
 /submit/*/model/catalog_ko*.json
+# 실제 제출한 전체 패키지 (가중치·음역표·모델 사본 포함, 6.6GB). 로컬 보관용, 코드와 설정은 submit/ 에 있다
+/submit_v*/
 
 # --- 환경 ---
 /.venv/

@@ -1700,3 +1700,26 @@ hard 세트 후보 recall (한글)
 - README: 결과(0.9652, 제출 19회), 점수 표 16~19행, 파이프라인 그림(한글 공간 보정·영문 퍼지), 6단계 개선 과정, 어려웠던 점 2개, 배운 점 2개를 더했다. v19~v21b 요약 문서 [hangul_space_20261101.md](hangul_space_20261101.md)를 새로 썼다.
 - 새 코드(src/llm_ko.py, src/fuzzy_candidates.py, tools/catalog_ko*.py, tools/eval_v2*_noise.py, tools/make_english_noise*.py, tools/probe_ko_rerank.py, tools/retrain_organizer.py, tools/train_final_organizer.py)와 실험 로그·결과 JSON도 함께 올린다. 새 로그에 데이터 행(ID·선박명)이 없는지 확인했다.
 - README의 "접근 방법"을 "최종 방법 한눈에 보기 (v21b)"로 바꿨다. 핵심 한 줄, 설명 한 문단, 최종 파이프라인 텍스트 트리(① 미리 만든 표 → ② 후보 검색 → ③ 순위 학습 → ④ 한글 공간 보정 → ⑤ 신경망 재판별)로 구성했다. 숫자는 v21b 패키지 설정(ensemble.json, encoder_views.json, script.py)에서 확인했다. 기존 그림의 오류 두 가지도 바로잡았다: 특징 수 ~106 → 78, 한글 공간 보정은 신경망 재판별 뒤가 아니라 앞이다. 잠깐 넣었던 점수 그래프 이미지는 텍스트 트리로 대체해 뺐다.
+
+## 77. 작업 폴더 정리 (2026-11-10)
+
+- 대회가 끝나 작업 폴더를 정리했다. 예전에는 `repo/`(git 저장소) 바깥에 패키지·ZIP·데이터를 두었는데, 이제 폴더 전체가 git 저장소다.
+- **GitHub에 올리는 것:** 코드(src, tools), 문서(docs, README, 계획서), 실험 요약(experiments의 로그·JSON), 제출 스크립트와 설정(submit/<버전>). 이전과 같다.
+- **로컬에만 보관 (.gitignore):** 가상환경, 대회 데이터, 음역표·LLM 캐시(experiments/cache), 최종 전체 패키지 submit_v20·submit_v21(가중치 포함), 작업 메모. `/submit_v*/` 규칙을 새로 넣었다.
+- **삭제 (약 60GB):**
+  - 제출 ZIP 5개(33GB). 패키지와 make_submit.py로 다시 만들 수 있다.
+  - submit_v18·v19 전체 패키지(13GB). v18은 v20·v21에 포함됐고 v19는 기각됐다. 지우기 전에 음역표 생성 도구가 쓰던 v18의 LLM 파일이 submit_v21 것과 바이트 단위로 같은지 확인했다.
+  - v19 재학습 실험의 특징 행렬(6.7GB), 옛 인수인계 문서, 중복 LLM 캐시(내용이 experiments/cache 쪽의 부분집합), CatBoost 학습 로그 폴더.
+- 폴더를 옮기면서 깨진 경로 5곳(`ROOT.parent / "submit_v18"` 등)을 새 구조(`ROOT / "submit_v21"`)로 고쳤다.
+- **배운 점:** 실험 중에는 "나중에 쓸지도 모르는" 산출물이 쌓인다. 무엇을 다시 만들 수 있고(ZIP, 특징 행렬) 무엇은 다시 만드는 데 몇 시간이 걸리는지(음역표 9시간)를 나눠 두면 정리할 때 판단이 쉽다.
+
+## 78. 포트폴리오용 README 재작성 (2026-11-10)
+
+- 최종 결과 확인: **Public 0.96519 (81위), Private 0.92967 (81위 / 468팀)**. 최종 선택 제출은 v21b, 개인 참가(팀 RAZGRIZ), 제출 19회. 리더보드 캡처를 docs/images/ 로 옮겼다.
+- README를 이전 대회 저장소(DACON-202609-microstructure-hardness-prediction)와 같은 틀로 다시 썼다: 제목·배지·결과 표·리더보드 캡처·핵심 성과 4개, 그리고 1 문제 정의 ~ 11 공개 범위.
+  - 4장 핵심 기법은 발음 키·LLM 음역 → 증강 → 앙상블·재판별 → train 선박 제외 → 퍼지 검색 → 한글 음역표 → n-best → 영문 퍼지 순서로, 각 단계의 근거 수치와 Public 변화를 붙였다.
+  - 7장에 Public과 Private의 차이(0.036)를 넣었다. 비한글 정확도가 Public과 같다고 가정하면 Private 한글 정확도는 약 0.91(추정)이다. 순위가 81위로 같아 다른 팀도 비슷하게 떨어진 것으로 보이며, Public으로 19회 고른 선택 편향도 섞였을 수 있다.
+  - 9장 실행 방법에 원래 PC 경로 상수(`D:/KSH/hf_models`)가 남아 있다는 점, 10장에 처음부터 다시 학습하는 검증은 하지 않았다는 점을 그대로 적었다.
+  - 다른 참가자 저장소와 관련된 내용은 README에서 뺐다.
+- MIT 라이선스 파일을 추가했다. 사용한 사전학습 모델 3개(Kanana, Qwen3-Reranker, BGE-reranker)의 라이선스는 배포본의 LICENSE 파일로 Apache-2.0임을 확인했다.
+- **배운 점:** 대회 중에는 "최종 순위 = Public"이라고 알고 있었지만 실제로는 Private 리더보드가 따로 있었다. 규칙의 평가 방식은 처음에 원문으로 확인하고, Public 점수로만 고르는 선택이 쌓일 때의 위험을 염두에 둬야 한다.

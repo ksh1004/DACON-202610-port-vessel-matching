@@ -22,7 +22,7 @@ def main() -> None:
     rest = sorted(set(id2name.values()) - set(first), key=len)
     todo = [n for n in dict.fromkeys(first + rest) if n not in data]
     print(f"이름 {len(set(id2name.values()))}개 중 생성 필요 {len(todo)}개", flush=True)
-    model = KoTransliterator(ROOT.parent / "submit_v18" / "model" / "llm")
+    model = KoTransliterator(ROOT / "submit_v21" / "model" / "llm")
     t0 = time.perf_counter()
     step = 1024
     for s in range(0, len(todo), step):

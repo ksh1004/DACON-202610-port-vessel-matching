@@ -59,7 +59,7 @@ def cmd_run() -> None:
     data = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else {}
     todo = [n for n in order if n not in data]
     print(f"생성 필요 {len(todo)}개 (완료 {len(data)}개)", flush=True)
-    model = KoTransliterator(ROOT.parent / "submit_v18" / "model" / "llm")
+    model = KoTransliterator(ROOT / "submit_v21" / "model" / "llm")
     t0 = time.perf_counter()
     step = 256
     for s in range(0, len(todo), step):
